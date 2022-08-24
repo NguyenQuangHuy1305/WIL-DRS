@@ -108,13 +108,15 @@ def login():
     form = LoginForm()
     if form.validate_on_submit():
         user = User.query.filter_by(username=form.username.data).first()
-        if user:
+        if user: # if the username can be found in the database
             if bcrypt.check_password_hash(user.password, form.password.data):
                 login_user(user)
                 flash(f'Login successful as {form.username.data}!', 'success')
                 return redirect(url_for('home'))
             else:
-                flash("login unsuccessful, please check username and/or password", 'danger')
+                flash("Login unsuccessful, please check username and/or password", 'danger')
+        else:
+            flash("Login unsuccessful, please check username and/or password", 'danger')
     return render_template('login.html', form=form)
 
 @app.route('/register', methods=["POST", "GET"])
@@ -139,6 +141,7 @@ def logout():
     return redirect(url_for("home"))
 
 @app.route("/surpriseme")
+@login_required
 def surpriseme():
     last_id = Location.query.count()
     random_id_list = random.sample(range(1, last_id), 9)
@@ -149,7 +152,7 @@ def surpriseme():
         for i in random_id_list:
             if location.id == i:
                 random_location_list.append(location.name)
-    
+
     return render_template("supriseme.html", locations=random_location_list)
 
 
