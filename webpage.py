@@ -1,3 +1,6 @@
+# todo list: make a function to ask user questions and able to store the answers for those questions
+# show the user a list of locations (with picture and name), store their selection (for ex: user 1 - location2/ user 2 - location10/... in UserLocation table)
+
 from tokenize import String
 from flask import Flask, redirect, url_for, render_template, request, session, flash
 from datetime import timedelta
@@ -33,19 +36,10 @@ login_manager.login_view = "login"
 def load_user(user_id):
     return User.query.get(int(user_id))
 
-# class LoginForm(FlaskForm):
-#     username = StringField('username', validators=[InputRequired(), Length(min=4, max=15)])
-#     password = PasswordField('password', validators=[InputRequired(), Length(min=8, max=80)])
-#     remember = BooleanField('remember me')
-
 class User(db.Model, UserMixin):
     id = db.Column("id", db.Integer, primary_key=True)
     username = db.Column(db.String(100), nullable=False, unique=True)
     password = db.Column(db.String(100), nullable=False)
-
-    # def __init__(self, name, email):
-    #     self.username = username
-    #     self.password = password
 
 class Location(db.Model):
     id = db.Column("id", db.Integer, primary_key=True)
@@ -144,7 +138,7 @@ def logout():
 @login_required
 def surpriseme():
     last_id = Location.query.count()
-    random_id_list = random.sample(range(1, last_id), 9)
+    random_id_list = random.sample(range(1, last_id), 10)
     random_location_list = []
     locations = Location.query.all()
 
