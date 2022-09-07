@@ -85,8 +85,7 @@
               <li><a href="logout" class="text-white">Logout</a></li>
               <li><a href="view" class="text-white">View</a></li>
               <li><a href="surpriseme" class="text-white">Surprise me</a></li>
-              <li><a href="Q1" class="text-white">Q1</a></li>
-              <li><a href="Q2" class="text-white">Q2</a></li>
+              <li><a href="Q1" class="text-white">Recommendation</a></li>
             {% else %}
               <li><a href="login" class="text-white">Login</a></li>
               <li><a href="register" class="text-white">Register</a></li>
@@ -133,7 +132,10 @@
         </div>
 
 
-        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+        <p class="lead text-muted">
+          {% block description %}
+          {% endblock%}
+        </p>
         <p>
           <a href="#" class="btn btn-primary my-2">Main call to action</a>
           <a href="#" class="btn btn-secondary my-2">Secondary action</a>

@@ -1,12 +1,15 @@
 # todo list: make a function to ask user questions and able to store the answers for those questions
 # show the user a list of locations (with picture and name), store their selection (for ex: user 1 - location2/ user 2 - location10/... in UserLocation table)
 
+from audioop import reverse
 from tokenize import String
 from flask import Flask, redirect, url_for, render_template, request, session, flash
 from datetime import timedelta
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import func
 from flask_login import UserMixin, login_user, LoginManager, login_required, logout_user, current_user
+import argparse
+import numpy as np
 
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField, BooleanField
@@ -14,8 +17,7 @@ from wtforms.validators import InputRequired, Length, ValidationError, EqualTo
 from flask_bcrypt import Bcrypt
 
 import random
-
-import model
+from model import DRSModel
 
 app = Flask(__name__)
 db = SQLAlchemy(app)
@@ -223,9 +225,30 @@ def Q2():
 
         # convert the final_dict's value to a list
         final_list = list(final_dict.values())
+        final_list = np.array(final_list)
 
-        print(final_list)
-        return redirect(url_for('Q2'))
+        parser = argparse.ArgumentParser()
+        parser.add_argument('--filepath', default='./Destination_tags_sum.csv')
+        parser.add_argument('--model', default='./drs_model')
+        config = parser.parse_args()
+        model = DRSModel(config)
+
+        # use predict function from model.py to get recommendation, but the return is a tuple, 2nd element in that tuple is the np.array we need
+        result = model.predict(final_list)
+        print(result)
+        # that np.array will be converted to python list for easier access
+        result = np.ndarray.tolist(result[1][0])
+        # since the returned list is in reverse order (lowest to highest probability) --> we need to reverse the list
+        result.reverse()
+
+        recommended_id_list = result
+        recommended_location_list = []
+
+        for i in recommended_id_list:
+            location = Location.query.filter_by(id=i).first()
+            recommended_location_list.append(location.name)
+
+        return render_template("recommendation.html", locations=recommended_location_list)
 
     if 'categories' in session:
         categories = session['categories']
