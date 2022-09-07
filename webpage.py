@@ -155,10 +155,12 @@ def surpriseme():
 @login_required
 def Q1():
     if request.method == 'POST':
-        print(request.form.getlist('Q1'))
         categories = request.form.getlist('Q1')
+        # save the selected categories in session (associated key in session-dict: 'categories')
         session['categories'] = categories
+        # if submit button is pressed, redirect to route Q2
         return redirect(url_for('Q2'))
+
     return render_template('Q1.html')
 
 @app.route("/Q2", methods=["POST", "GET"])
@@ -202,7 +204,7 @@ def Q2():
     }
 
     if request.method == 'POST':
-        # get all the selected tags from the form in Q2, then in final_dict change the value associated with the key "tag"
+        # get all the selected tags from the form in Q2, loop through all of those tags, then in final_dict change the value associated with the key "tag"
         list_of_tags = request.form.getlist('Q2')
         for tag in list_of_tags:            
             final_dict[tag] = 1
@@ -227,54 +229,55 @@ def Q2():
         final_list = list(final_dict.values())
         final_list = np.array(final_list)
 
+        # initiate something for the model
         parser = argparse.ArgumentParser()
         parser.add_argument('--filepath', default='./Destination_tags_sum.csv')
         parser.add_argument('--model', default='./drs_model')
         config = parser.parse_args()
         model = DRSModel(config)
 
-        # use predict function from model.py to get recommendation, but the return is a tuple, 2nd element in that tuple is the np.array we need
+        # use predict function from model.py to get recommendation, but the return is a tuple
+        # 1st element in that tuple is the "accuracy" of prediction
+        # 2nd element in that tuple is the np.array we need
         result = model.predict(final_list)
         print(result)
         # that np.array will be converted to python list for easier access
         result = np.ndarray.tolist(result[1][0])
-        # since the returned list is in reverse order (lowest to highest probability) --> we need to reverse the list
+        # since the returned list is in reverse order (lowest to highest probability) --> we need to reverse the result list
         result.reverse()
 
         recommended_id_list = result
         recommended_location_list = []
 
+        # loop through the list of the recommended locations, then query the database for matching id
         for i in recommended_id_list:
             location = Location.query.filter_by(id=i).first()
             recommended_location_list.append(location.name)
 
         return render_template("recommendation.html", locations=recommended_location_list)
 
+    # if the key categories is in session-dict, then start rendering template Q2.html
+    # get all the selected categories from the Q1 form, check all element from that list, append tags related to each selected categories (from Q1) to tags, then pass that tags to template Q2.html
     if 'categories' in session:
         categories = session['categories']
         for category in categories:
             if category == 'cultural':
                 tags = tags + cultural
-                final_dict['D_Cultural'] = 1
             if category == 'mountain':
                 tags = tags + mountain
-                final_dict['D_Mountain'] = 1
             if category == 'nature':
                 tags = tags + nature
-                final_dict['D_Nature'] = 1
             if category == 'rural':
                 tags = tags + rural
-                final_dict['D_Rural'] = 1
             if category == 'beach':
                 tags = tags + beach
-                final_dict['D_Beach'] = 1
             if category == 'urban':
                 tags = tags + urban
-                final_dict['D_Urban'] = 1
         tags = set(tags)
         tags = sorted(tags)
         return render_template('Q2.html', tags=tags)
     else:
+        # if the user type /Q2 to the URL, they will be greeted with this message
         return f"you haven't answer 1st question"
 
 
