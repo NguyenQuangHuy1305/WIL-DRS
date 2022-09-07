@@ -15,6 +15,8 @@ from flask_bcrypt import Bcrypt
 
 import random
 
+import model
+
 app = Flask(__name__)
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
@@ -44,27 +46,25 @@ class User(db.Model, UserMixin):
 class Location(db.Model):
     id = db.Column("id", db.Integer, primary_key=True)
     name = db.Column(db.String(100), nullable=False, unique=True)
-    urban = db.Column(db.Integer, nullable=False)
+    beach = db.Column(db.Integer, nullable=False)
+    boatTrips = db.Column(db.Integer, nullable=False)
+    indigenousTourism = db.Column(db.Integer, nullable=False)
+    museumsAndCultureCentres = db.Column(db.Integer, nullable=False)
+    nationalParksAndProtectedAreas = db.Column(db.Integer, nullable=False)
     rural = db.Column(db.Integer, nullable=False)
-    canyonvalleys = db.Column(db.Integer, nullable=False)
-    mountain = db.Column(db.Integer, nullable=False)
-    water = db.Column(db.Integer, nullable=False)
-    summer = db.Column(db.Integer, nullable=False)
-    winter = db.Column(db.Integer, nullable=False)
-    nature = db.Column(db.Integer, nullable=False)
-    park = db.Column(db.Integer, nullable=False)
-    wildlife = db.Column(db.Integer, nullable=False)
-    relax = db.Column(db.Integer, nullable=False)
-    entertainment = db.Column(db.Integer, nullable=False)
-    nightlife = db.Column(db.Integer, nullable=False)
-    ethnic = db.Column(db.Integer, nullable=False)
+    themeParks = db.Column(db.Integer, nullable=False)
+    urbanSightseeing = db.Column(db.Integer, nullable=False)
+    waterActivities = db.Column(db.Integer, nullable=False)
+    winterActivities = db.Column(db.Integer, nullable=False)
+    architectureAndHeritage = db.Column(db.Integer, nullable=False)
+    arts = db.Column(db.Integer, nullable=False)
     culture = db.Column(db.Integer, nullable=False)
-    festival = db.Column(db.Integer, nullable=False)
+    excitement = db.Column(db.Integer, nullable=False)
     gastronomy = db.Column(db.Integer, nullable=False)
-    religion = db.Column(db.Integer, nullable=False)
+    nature = db.Column(db.Integer, nullable=False)
+    relaxation = db.Column(db.Integer, nullable=False)
+    religiousTourism = db.Column(db.Integer, nullable=False)
     sports = db.Column(db.Integer, nullable=False)
-    adventure = db.Column(db.Integer, nullable=False)
-    fishing = db.Column(db.Integer, nullable=False)
 
 class RegisterForm(FlaskForm):
     username = StringField('username', validators=[InputRequired(), Length(min=4, max=15)])
@@ -83,7 +83,6 @@ class LoginForm(FlaskForm):
     password = PasswordField('password', validators=[InputRequired(), Length(min=8, max=80)])
     remember = BooleanField('remember me')
     submit = SubmitField('Login')
-
 
 @app.route("/")
 def home():
@@ -130,6 +129,7 @@ def register():
 @app.route("/logout", methods=["POST", "GET"])
 @login_required
 def logout():
+    session.pop("categories", None)
     logout_user()
     flash(f'Log out successful!', 'success')
     return redirect(url_for("home"))
@@ -149,6 +149,110 @@ def surpriseme():
 
     return render_template("supriseme.html", locations=random_location_list)
 
+@app.route("/Q1", methods=["POST", "GET"])
+@login_required
+def Q1():
+    if request.method == 'POST':
+        print(request.form.getlist('Q1'))
+        categories = request.form.getlist('Q1')
+        session['categories'] = categories
+        return redirect(url_for('Q2'))
+    return render_template('Q1.html')
+
+@app.route("/Q2", methods=["POST", "GET"])
+@login_required
+def Q2():
+    cultural = ['Arts', 'Urban sightseeing', 'Religious tourism', 'Architecture and heritage', 'Culture', 'Gastronomy', 'Indigenous tourism', 'Museums and cultural centres', 'Relaxation', 'Sports', 'Theme parks']
+    mountain = ['Beach', 'Sports', 'Relaxation', 'Water-based activities', 'Winter activities']
+    nature = ['Beach', 'Excitement', 'Sports', 'Water-based activities', 'Boat trips', 'Museums and cultural centres', 'Nature', 'Relaxation', 'National parks and protected areas']
+    rural = ['Beach', 'Sports', 'Relaxation', 'Rural', 'Water-based activities']
+    beach = ['Beach', 'Excitement', 'Sports', 'Water-based activities', 'Boat trips', 'Nature', 'Relaxation']
+    urban = ['Architecture and heritage', 'Urban sightseeing', 'Arts', 'Beach', 'Sports', 'Culture', 'Excitement', 'Nature', 'Relaxation', 'Museums and cultural centres', 'Theme parks']
+    categories = []
+    tags = []
+
+    final_dict = {
+        'D_Cultural' : 0,
+        'D_Mountain' : 0,
+        'D_Nature' : 0,
+        'D_Rural' : 0,
+        'D_Beach' : 0,
+        'D_Urban' : 0,
+        'Beach' : 0,
+        'Boat trips' : 0,
+        'Indigenous tourism' : 0,
+        'Museums and cultural centres' : 0,
+        'National parks and protected areas' : 0,
+        'Rural' : 0,
+        'Theme parks' : 0,
+        'Urban sightseeing' : 0,
+        'Water-based activities' : 0,
+        'Winter activities' : 0,
+        'Architecture and heritage' : 0,
+        'Arts' : 0,
+        'Culture' : 0,
+        'Excitement' : 0,
+        'Gastronomy' : 0,
+        'Nature' : 0,
+        'Relaxation' : 0,
+        'Religious tourism' : 0,
+        'Sports' : 0
+    }
+
+    if request.method == 'POST':
+        # get all the selected tags from the form in Q2, then in final_dict change the value associated with the key "tag"
+        list_of_tags = request.form.getlist('Q2')
+        for tag in list_of_tags:            
+            final_dict[tag] = 1
+
+        # get the categories from session (created in Q1), loop through the list categories, change final_dict's value from 0 to 1 for each category (key)
+        categories = session['categories']
+        for category in categories:
+            if category == 'cultural':
+                final_dict['D_Cultural'] = 1
+            if category == 'mountain':
+                final_dict['D_Mountain'] = 1
+            if category == 'nature':
+                final_dict['D_Nature'] = 1
+            if category == 'rural':
+                final_dict['D_Rural'] = 1
+            if category == 'beach':
+                final_dict['D_Beach'] = 1
+            if category == 'urban':
+                final_dict['D_Urban'] = 1
+
+        # convert the final_dict's value to a list
+        final_list = list(final_dict.values())
+
+        print(final_list)
+        return redirect(url_for('Q2'))
+
+    if 'categories' in session:
+        categories = session['categories']
+        for category in categories:
+            if category == 'cultural':
+                tags = tags + cultural
+                final_dict['D_Cultural'] = 1
+            if category == 'mountain':
+                tags = tags + mountain
+                final_dict['D_Mountain'] = 1
+            if category == 'nature':
+                tags = tags + nature
+                final_dict['D_Nature'] = 1
+            if category == 'rural':
+                tags = tags + rural
+                final_dict['D_Rural'] = 1
+            if category == 'beach':
+                tags = tags + beach
+                final_dict['D_Beach'] = 1
+            if category == 'urban':
+                tags = tags + urban
+                final_dict['D_Urban'] = 1
+        tags = set(tags)
+        tags = sorted(tags)
+        return render_template('Q2.html', tags=tags)
+    else:
+        return f"you haven't answer 1st question"
 
 
 # @app.route("/login", methods=["POST", "GET"])

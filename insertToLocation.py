@@ -13,28 +13,25 @@ cursor = connection.cursor()
 create_table = '''CREATE TABLE location(
 				id INTEGER PRIMARY KEY AUTOINCREMENT,
 				name TEXT NOT NULL,
-                urban INTEGER,
-                rural INTEGER,
-                canyonvalleys INTEGER,
-                mountain INTEGER,
-                water INTEGER,
                 beach INTEGER,
-                summer INTEGER,
-                winter INTEGER,
-                nature INTEGER,
-                park INTEGER,
-                wildlife INTEGER,
-                relax INTEGER,
-                entertainment INTEGER,
-                nightlife INTEGER,
-                ethnic INTEGER,
+                boatTrips INTEGER,
+                indigenousTourism INTEGER,
+                museumsAndCultureCentres INTEGER,
+                nationalParksAndProtectedAreas INTEGER,
+                rural INTEGER,
+                themeParks INTEGER,
+                urbanSightseeing INTEGER,
+                waterActivities INTEGER,
+                winterActivities INTEGER,
+                architectureAndHeritage INTEGER,
+                arts INTEGER,
                 culture INTEGER,
-                festival INTEGER,
+                excitement INTEGER,
                 gastronomy INTEGER,
-                religion INTEGER,
-                sports INTEGER,
-                adventure INTEGER,
-                fishing INTEGER)
+                nature INTEGER,
+                relaxation INTEGER,
+                religiousTourism INTEGER,
+                sports INTEGER)
 				'''
 
 # Creating the table into our
@@ -42,15 +39,16 @@ create_table = '''CREATE TABLE location(
 cursor.execute(create_table)
 
 # Opening the person-records.csv file
-file = open('test.csv')
+file = open('Destination_tags_sum.csv')
 
 # Reading the contents of the
 # person-records.csv file
 contents = csv.reader(file)
+next(contents)
 
 # SQL query to insert data into the
 # person table
-insert_records = "INSERT INTO location (name, urban, rural, canyonvalleys, mountain, water, beach, summer, winter, nature, park, wildlife, relax, entertainment, nightlife, ethnic, culture, festival, gastronomy, religion, sports, adventure, fishing) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+insert_records = "INSERT INTO location (name, beach, boatTrips, indigenousTourism, museumsAndCultureCentres, nationalParksAndProtectedAreas, rural, themeParks, urbanSightseeing, waterActivities, winterActivities, architectureAndHeritage, arts, culture, excitement, gastronomy, nature, relaxation, religiousTourism, sports) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
 
 # Importing the contents of the file
 # into our person table
