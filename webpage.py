@@ -156,6 +156,7 @@ def surpriseme():
 def Q1():
     if request.method == 'POST':
         categories = request.form.getlist('Q1')
+        print(categories)
         # save the selected categories in session (associated key in session-dict: 'categories')
         session['categories'] = categories
         # if submit button is pressed, redirect to route Q2
