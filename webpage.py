@@ -211,7 +211,6 @@ def Q2():
             final_dict[tag] = 1
 
         # get the categories from session (created in Q1), loop through the list categories, change final_dict's value from 0 to 1 for each category (key)
-        # this is to change the first 6 D_Categories of the final_list from 0 to 1 if they are selected in Q1
         categories = session['categories']
         for category in categories:
             if category == 'cultural':
@@ -330,6 +329,10 @@ def Q2():
 #     else:
 #         flash("You are not logged in!")
 #         return redirect(url_for("login"))
+
+# @app.route("/admin")
+# def admin():
+#     return redirect(url_for("user", name="you're not admin!"))
 
 if __name__ == "__main__":
     db.create_all()
