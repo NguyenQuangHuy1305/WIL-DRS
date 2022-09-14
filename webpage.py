@@ -155,13 +155,9 @@ def surpriseme():
 @login_required
 def Q1():
     if request.method == 'POST':
-        print(request.form.getlist('Q1'))
         categories = request.form.getlist('Q1')
-<<<<<<< HEAD
         print(categories)
         # save the selected categories in session (associated key in session-dict: 'categories')
-=======
->>>>>>> parent of 382da7f (added some comments)
         session['categories'] = categories
         return redirect(url_for('Q2'))
     return render_template('Q1.html')
