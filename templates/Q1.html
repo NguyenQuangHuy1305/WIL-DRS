@@ -8,17 +8,17 @@
     <title>Document</title>
 </head>
 <style>
-    h3 {
+    .Q1 h3 {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         color: #2a272c;
         text-align: center;
     }
 
-    label {
+    .Q1 label {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
-    input[type=checkbox],
+    .Q1 input[type=checkbox],
     select {
         padding: 12px 20px;
         margin: 8px 0;
@@ -28,13 +28,13 @@
         box-sizing: border-box;
     }
 
-    .submit-button {
+    .Q1 .submit-button {
         display: flex;
         justify-content: center;
         width: 100%;
     }
 
-    input[type=submit] {
+    .Q1 input[type=submit] {
         background-color: #3f3e3f;
         color: white;
         padding: 14px 20px;
@@ -44,11 +44,11 @@
         cursor: pointer;
     }
 
-    input[type=submit]:hover {
+    .Q1 input[type=submit]:hover {
         background-color: #2a272c;
     }
 
-    #form-block {
+    .Q1 #form-block {
         border-radius: 5px;
         padding: 20px;
         width: auto;
@@ -59,7 +59,7 @@
         justify-content: center;
     }
 
-    #ck-button {
+    .Q1 #ck-button {
         margin: 4px;
         border-radius: 8px;
         border: 1px solid #D0D0D0;
@@ -69,7 +69,7 @@
         height: 20; */
     }
 
-    #ck-button label {
+    .Q1 #ck-button label {
         float: left;
         width: 400px;
         height: 40px;
@@ -77,7 +77,7 @@
         overflow: hidden;
     }
 
-    #ck-button label span {
+    .Q1 #ck-button label span {
         text-align: center;
         padding: 8px 0px;
         display: block;
@@ -85,64 +85,71 @@
         height: 100%;
     }
 
-    #ck-button label input {
+    .Q1 #ck-button label input {
         position: absolute;
         top: -30px;
     }
 
-    #ck-button input:hover+span {
-        background-color: #bbd0f6;
+    .Q1 #ck-button input:hover {
+        background-color: #b7d0fd;
     }
+/* 
+    .Q1 #ck-button input:hover+span {
+        background-color: #9abcfb;
+    } */
 
-    #ck-button input:checked+span {
+    .Q1 #ck-button input:checked+span {
         background-color: #72a2fa;
         color: #fff;
     }
 
-    #ck-button input:checked:hover+span {
-        background-color: #5b93fb;
+    .Q1 #ck-button input:checked:hover+span {
+        background-color: #347afb;
         color: #fff;
     }
 </style>
 
 <body>
-    <h3>What types of destinations are you interested to visit next?</h3>
+    <div class="Q1">
+        <h3>What types of destinations are you interested to visit next?</h3>
 
-    <div id="form-block">
-        <form method="POST" action="">
-            <div id="ck-button">
-                <label>
-                    <input type="checkbox" value="cultural"><span>Cultural</span>
-                </label>
-            </div><br>
-            <div id="ck-button">
-                <label>
-                    <input type="checkbox" value="cultural"><span>Mountain</span>
-                </label>
-            </div><br>
-            <div id="ck-button">
-                <label>
-                    <input type="checkbox" value="cultural"><span>Nature</span>
-                </label>
-            </div><br>
-            <div id="ck-button">
-                <label>
-                    <input type="checkbox" value="cultural"><span>Rural</span>
-                </label>
-            </div><br>
-            <div id="ck-button">
-                <label>
-                    <input type="checkbox" value="cultural"><span>Beach</span>
-                </label>
-            </div><br>
-            <div id="ck-button">
-                <label>
-                    <input type="checkbox" value="cultural"><span>Urban</span>
-                </label>
-            </div><br>
-            <div class="submit-button"><input type="submit"></div>
-        </form>
+        <div id="form-block">
+            <form method="POST" action="">
+                <div id="ck-button">
+                    <label>
+                        <input type="checkbox" value="cultural"><span>Cultural</span>
+                    </label>
+                </div><br>
+                <div id="ck-button">
+                    <label>
+                        <input type="checkbox" value="cultural"><span>Mountain</span>
+                    </label>
+                </div><br>
+                <div id="ck-button">
+                    <label>
+                        <input type="checkbox" value="cultural"><span>Nature</span>
+                    </label>
+                </div><br>
+                <div id="ck-button">
+                    <label>
+                        <input type="checkbox" value="cultural"><span>Rural</span>
+                    </label>
+                </div><br>
+                <div id="ck-button">
+                    <label>
+                        <input type="checkbox" value="cultural"><span>Beach</span>
+                    </label>
+                </div><br>
+                <div id="ck-button">
+                    <label>
+                        <input type="checkbox" value="cultural"><span>Urban</span>
+                    </label>
+                </div><br>
+                <div class="submit-button"><input type="submit"></div>
+            </form>
+        </div>
     </div>
+
 </body>
 
 </html>
