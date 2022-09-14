@@ -1,20 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    h3 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #2a272c;
+        text-align: center;
+    }
+
+    label {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    input[type=checkbox],
+    select {
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .submit-button {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    input[type=submit] {
+        background-color: #3f3e3f;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #2a272c;
+    }
+
+    #form-block {
+        border-radius: 5px;
+        padding: 20px;
+        width: auto;
+        max-width: 800px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #ck-button {
+        margin: 4px;
+        border-radius: 8px;
+        border: 1px solid #D0D0D0;
+        overflow: auto;
+        float: left;
+        /* width: 50;
+        height: 20; */
+    }
+
+    #ck-button label {
+        float: left;
+        width: 400px;
+        height: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        overflow: hidden;
+    }
+
+    #ck-button label span {
+        text-align: center;
+        padding: 8px 0px;
+        display: block;
+        border-radius: 4px;
+        height: 100%;
+    }
+
+    #ck-button label input {
+        position: absolute;
+        top: -30px;
+    }
+
+    #ck-button input:hover+span {
+        background-color: #bbd0f6;
+    }
+
+    #ck-button input:checked+span {
+        background-color: #72a2fa;
+        color: #fff;
+    }
+
+    #ck-button input:checked:hover+span {
+        background-color: #5b93fb;
+        color: #fff;
+    }
+</style>
+
 <body>
-    <form method="POST" action="">
-        Cultural<input type="checkbox" value="cultural" name="Q1">
-        Mountain<input type="checkbox" value="mountain" name="Q1">
-        Nature<input type="checkbox" value="nature" name="Q1">
-        Rural<input type="checkbox" value="rural" name="Q1">
-        Beach<input type="checkbox" value="beach" name="Q1">
-        Urban<input type="checkbox" value="urban" name="Q1">
-        <input type="submit">
-    </form>
+    <h3>What types of destinations are you interested to visit next?</h3>
+
+    <div id="form-block">
+        <form method="POST" action="">
+            <div id="ck-button">
+                <label>
+                    <input type="checkbox" value="cultural"><span>Cultural</span>
+                </label>
+            </div><br>
+            <div id="ck-button">
+                <label>
+                    <input type="checkbox" value="cultural"><span>Mountain</span>
+                </label>
+            </div><br>
+            <div id="ck-button">
+                <label>
+                    <input type="checkbox" value="cultural"><span>Nature</span>
+                </label>
+            </div><br>
+            <div id="ck-button">
+                <label>
+                    <input type="checkbox" value="cultural"><span>Rural</span>
+                </label>
+            </div><br>
+            <div id="ck-button">
+                <label>
+                    <input type="checkbox" value="cultural"><span>Beach</span>
+                </label>
+            </div><br>
+            <div id="ck-button">
+                <label>
+                    <input type="checkbox" value="cultural"><span>Urban</span>
+                </label>
+            </div><br>
+            <div class="submit-button"><input type="submit"></div>
+        </form>
+    </div>
 </body>
+
 </html>
