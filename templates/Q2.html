@@ -6,13 +6,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    .Q2 h3 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #5d3621;
+        text-align: center;
+    }
+
+    .Q2 #form-block {
+        border-radius: 5px;
+        padding: 20px;
+        width: auto;
+        max-width: 800px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Q2 #ck-button {
+        margin: 4px;
+        border-radius: 8px;
+        border: 1px solid #D0D0D0;
+        overflow: auto;
+        float: left;
+        box-shadow: 2px 4px #f3f3f3;
+        /* width: 50;
+        height: 20; */
+    }
+
+    .Q2 label {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #5d3621;
+    }
+
+    .Q2 input[type=checkbox],
+    select {
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .Q2 .submit-button {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .Q2 input[type=submit] {
+        background-color: #5d3621;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .Q2 input[type=submit]:hover {
+        background-color: #2a272c;
+    }
+
+    .Q2 #ck-button label {
+        float: left;
+        width: 400px;
+        height: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        overflow: hidden;
+    }
+
+    .Q2 #ck-button label span {
+        text-align: center;
+        padding: 8px 0px;
+        display: block;
+        border-radius: 4px;
+        height: 100%;
+    }
+
+    .Q2 #ck-button label input {
+        position: absolute;
+        top: -30px;
+    }
+
+    .Q2 #ck-button input:hover {
+        background-color: #f6c7ae;
+    }
+/* 
+    .Q2 #ck-button input:hover+span {
+        background-color: #9abcfb;
+    } */
+
+    .Q2 #ck-button input:checked+span {
+        background-color: #f29e70;
+        color: #fff;
+    }
+
+    .Q2 #ck-button input:checked:hover+span {
+        background-color: #dc7e4b;
+        color: #fff;
+    }
+</style>
 <body>
-    <form method="POST" action="">
-        {% for tag in tags %}
-            {{ tag }}<input type="checkbox" value="{{ tag }}" name="Q2">
-            <br>
-        {% endfor %}
-        <input type="submit">
-    </form>
+    <div class="Q2">
+        <h3>What activities are you searching for on your next trip?</h3>
+
+        <div id="form-block">
+            <form method="POST" action="">
+                {% for tag in tags %}
+                    <div id="ck-button">
+                        <label>
+                            <input type="checkbox" value="{{ tag }}" name="Q2"><span>{{ tag }}</span>
+                        </label>
+                    </div><br>
+
+
+                    <!-- {{ tag }}<input type="checkbox" value="{{ tag }}" name="Q2">
+                    <br> -->
+                {% endfor %}
+                <div class="submit-button"><input type="submit"></div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
