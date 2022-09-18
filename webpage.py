@@ -162,6 +162,12 @@ def Q1():
         return redirect(url_for('Q2'))
     return render_template('Q1.html')
 
+@app.route("/Test", methods=["POST", "GET"])
+@login_required
+def Test():
+
+    return render_template('welcome.html')
+
 @app.route("/Q2", methods=["POST", "GET"])
 @login_required
 def Q2():
