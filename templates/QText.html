@@ -128,13 +128,10 @@
 
         <div id="form-block">
             <form method="POST" action="">
-                {% for answer in answers %}
-                <div id="ck-button">
-                    <label>
-                        <input type="checkbox" value="{{ answer }}" name="Q1"><span>{{ answer }}</span>
-                    </label>
-                </div><br>
-                {% endfor %}
+                <label for="destination">First name:</label>
+                <label>
+                    <input type="text" id="destination" value="" name="QText", placeholder="(insert response here)">
+                </label>
                 <div class="submit-button"><input type="submit"></div>
             </form>
         </div>
