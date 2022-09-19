@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block title %}User Instructions{% endblock %}
+{% block content %}
+<style>
+    /* mobile */
+    .responsive {
+        width: 100%;
+        height: 50%;
+    }
+
+    .container-fluid {
+        padding-top: 40px;
+    }
+
+    .welcome-to {
+        text-align: center;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .welcome-name {
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+        line-height: 48px;
+    }
+
+    .welcome-info {
+        text-align: center;
+        font-size: 15px;
+        line-height: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+        color: #545563;
+        padding-top: 6px;
+    }
+
+    .welcome-started {
+        text-align: center;
+        font-size: 16px;
+        line-height: 10px;
+        color: #4E60FF;
+        padding-top: 40px;
+        font-weight: bold;
+    }
+
+    /* desktop */
+    @media (min-width: 768px) {
+        .responsive {
+            width: 100%;
+            height: 60%;
+        }
+    }
+</style>
+
+<img src="static/images/welcome.jpg" alt="Nature" class="responsive" width="600" height="400">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <h6 class="welcome-to">Wellcome to</h6>
+            <p class="welcome-name">
+                Bravo<br>
+                Tourism
+            </p>
+            <p class="welcome-info">
+                Bravo Tourism provides the best recommendations for your next travel destinations...(some info about the
+                app)
+            </p>
+            <div class="welcome-started">
+                <a href="Q1">Get Started</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock%}
