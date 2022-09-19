@@ -19,6 +19,7 @@
         text-align: center;
         font-size: 12px;
         font-weight: 700;
+        color: #2B2B43;
     }
 
     .multiple-choices-question #form-block {
@@ -37,14 +38,13 @@
     }
 
     .multiple-choices-question #ck-button {
-        margin: 4px;
         border-radius: 8px;
         border: 1px solid #D0D0D0;
         overflow: auto;
         float: left;
         box-shadow: 2px 4px #f3f3f3;
         width: 100%;
-        margin-bottom: 3px;
+        margin-bottom: 15px;
     }
 
     .multiple-choices-question input[type=checkbox],
@@ -57,6 +57,12 @@
         box-sizing: border-box;
     }
 
+    .multiple-choices-question .container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
     .multiple-choices-question .submit-button {
         display: flex;
         justify-content: center;
@@ -67,7 +73,23 @@
         background-color: #301c12;
         color: white;
         padding: 14px 20px;
-        margin: 8px 0;
+        margin: 40px 0;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .multiple-choices-question .back-button {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .multiple-choices-question input[type=back] {
+        background-color: #301c12;
+        color: white;
+        padding: 14px 20px;
+        margin: 40px 0;
         border: none;
         border-radius: 8px;
         cursor: pointer;
@@ -149,7 +171,10 @@
                             </label>
                         </div><br>
                         {% endfor %}
-                        <div class="submit-button"><input type="submit"></div>
+                        <div class="container">
+                            <div class="back-button"><input type="back" value="Back"></div>
+                            <div class="submit-button"><input type="submit"></div>
+                        </div>
                     </form>
                 </div>
             </div>
