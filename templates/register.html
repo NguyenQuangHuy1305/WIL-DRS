@@ -17,10 +17,37 @@
     .form-label {
         font-size: 12px;
     }
-
+    
     .login-button {
+        display: block;
+        width: 100%;
+        border: none;
+        background-color:#4E60FF;
+        color: white;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 8px;
+    }
+
+    .login-button:hover {
+        background-color: #394cfa;
+        color: white;
+    }
+
+    .login-href {
         color:#fff;
         text-decoration: none;
+        display: block;
+        font-size: 16px
+    }
+
+    .login-href:hover {
+        color:#fff;
+        text-decoration: none;
+        display: block;
+        font-size: 16px
     }
 
     /* desktop */
@@ -90,13 +117,13 @@
                         </div>
             
                         <div class="text-center text-lg-start mt-4 pt-2">
-                            {{ form.submit(class="btn btn-primary btn-lg btn-block") }}
+                            {{ form.submit(class="login-button") }}
                         </div>
 
                     </form>
                     <div class="text-center text-lg-start mt-4 pt-2">
-                        <button class="btn btn-primary btn-lg btn-block">
-                            <a href="login" class="login-button">Login</a>
+                        <button class="login-button">
+                            <a href="login" class="login-href">Login</a>
                         </button>
                     </div>
                 </div>
