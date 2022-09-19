@@ -169,7 +169,7 @@ def login():
             if bcrypt.check_password_hash(user.password, form.password.data):
                 login_user(user)
                 flash(f'Login successful as {form.username.data}!', 'success')
-                return redirect(url_for('home'))
+                return redirect(url_for('Q1'))
             else:
                 flash("Login unsuccessful, please check username and/or password", 'danger')
         else:
@@ -186,7 +186,7 @@ def register():
         db.session.add(new_user)
         db.session.commit()
         flash(f'Account created for {form.username.data}!', 'success')
-        return redirect(url_for('home'))
+        return redirect(url_for('Q1'))
 
     return render_template('register.html', form=form)
 
@@ -255,7 +255,8 @@ def Q1():
 
     question = "What types of destinations are you interested to visit next?"
     answers = ['Cultural', 'Mountain', 'Nature', 'Rural', 'Beach', 'Urban']
-    return render_template('Q1.html', question = question, answers =  answers)
+    multiple_selection = True
+    return render_template('Q1.html', question = question, answers =  answers, multiple_selection = multiple_selection)
 
 @app.route("/Q2", methods=["POST", "GET"])
 @login_required
