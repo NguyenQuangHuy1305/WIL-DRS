@@ -13,19 +13,19 @@
         {{ form.municipal }}
         <input type="submit">
     </form>
+
     <script>
-        let state_select = document.getElementbyId('state');
+        let state_select = document.getElementById('state');
         let municipal_select = document.getElementById('municipal');
 
         state_select.onchange = function() {
             state = state_select.value;
-
             fetch('/municipal/' + state).then(function(response) {
                 response.json().then(function(data) {
                     let optionHTML = '';
 
                     for (let municipal of data.municipals) {
-                        optionHTML += '<option value="' + municipal.id + '">' + municipal.name + '</option';
+                        optionHTML += '<option value="' + municipal.id + '">' + municipal.name + '</option>';
                     }
 
                     municipal_select.innerHTML = optionHTML;
