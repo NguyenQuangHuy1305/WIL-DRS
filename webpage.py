@@ -150,7 +150,7 @@ class LoginForm(FlaskForm):
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return render_template("welcome.html")
 
 # @app.route("/<name>")
 # def user(name):
@@ -197,6 +197,16 @@ def logout():
     logout_user()
     flash(f'Log out successful!', 'success')
     return redirect(url_for("home"))
+
+@app.route("/welcome", methods=["GET"])
+@login_required
+def welcome():
+    return render_template('welcome.html')
+
+@app.route("/instruction", methods=["POST", "GET"])
+@login_required
+def instruction():
+    return render_template('instruction.html')
 
 @app.route("/surpriseme")
 @login_required
