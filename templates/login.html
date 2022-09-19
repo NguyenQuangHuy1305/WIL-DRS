@@ -2,6 +2,60 @@
 {% block title %}Login{% endblock %}
 {% block content %}
 
+<style>
+    /* mobile */
+    .application-name {
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+        line-height: 60px;
+        padding-top: 80px;
+        padding-bottom: 20px;
+        color: #2b2b43;
+    }
+
+    .form-label {
+        font-size: 12px;
+    }
+    
+    .login-button {
+        display: block;
+        width: 100%;
+        border: none;
+        background-color:#4E60FF;
+        color: white;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 8px;
+    }
+
+    .login-button:hover {
+        background-color: #394cfa;
+        color: white;
+    }
+
+    .login-href {
+        color:#fff;
+        text-decoration: none;
+        display: block;
+        font-size: 16px
+    }
+
+    .login-href:hover {
+        color:#fff;
+        text-decoration: none;
+        display: block;
+        font-size: 16px
+    }
+
+    /* desktop */
+    @media (min-width: 768px) {
+
+    }
+    </style>
+
     {% with messages = get_flashed_messages(with_categories=true) %}
     {% if messages %}
         {% for category, message in messages %}
@@ -37,11 +91,14 @@
                         </div>
             
                         <div class="text-center text-lg-start mt-4 pt-2">
-                            {{ form.submit(class="btn btn-primary btn-lg") }}
-                            <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="register"
-                            class="link-danger">Register here</a></p>
+                            {{ form.submit(class="login-button") }}
                         </div>
 
+                        <div class="text-center text-lg-start mt-4 pt-2">
+                            <button class="login-button">
+                                <a href="register" class="login-href">Register</a>
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
