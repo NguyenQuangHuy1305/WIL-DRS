@@ -198,6 +198,11 @@ def logout():
     flash(f'Log out successful!', 'success')
     return redirect(url_for("home"))
 
+@app.route("/welcome", methods=["POST", "GET"])
+@login_required
+def welcome():
+    return render_template('welcome.html')
+
 @app.route("/surpriseme")
 @login_required
 def surpriseme():
@@ -246,12 +251,6 @@ def Q1():
     question = "What types of destinations are you interested to visit next?"
     answers = ['Cultural', 'Mountain', 'Nature', 'Rural', 'Beach', 'Urban']
     return render_template('Q1.html', question = question, answers =  answers)
-
-@app.route("/Test", methods=["POST", "GET"])
-@login_required
-def Test():
-
-    return render_template('welcome.html')
 
 @app.route("/Q2", methods=["POST", "GET"])
 @login_required
