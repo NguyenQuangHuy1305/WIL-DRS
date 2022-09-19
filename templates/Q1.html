@@ -47,58 +47,6 @@
         margin-bottom: 15px;
     }
 
-    .multiple-choices-question input[type=checkbox],
-    select {
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
-
-    .multiple-choices-question .container {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-    }
-
-    .multiple-choices-question .submit-button {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .multiple-choices-question input[type=submit] {
-        background-color: #301c12;
-        color: white;
-        padding: 14px 20px;
-        margin: 40px 0;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-    }
-
-    .multiple-choices-question .back-button {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .multiple-choices-question input[type=back] {
-        background-color: #301c12;
-        color: white;
-        padding: 14px 20px;
-        margin: 40px 0;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-    }
-
-    .multiple-choices-question input[type=submit]:hover {
-        background-color: #2a272c;
-    }
-
     .multiple-choices-question #ck-button label {
         float: left;
         width: 100%;
@@ -121,6 +69,16 @@
         top: -30px;
     }
 
+    .multiple-choices-question input[type=checkbox],
+    select {
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
     .multiple-choices-question #ck-button input:hover {
         background-color: #f6c7ae;
     }
@@ -133,6 +91,32 @@
     .multiple-choices-question #ck-button input:checked:hover+span {
         background-color: #dc7e4b;
         color: #fff;
+    }
+
+    .multiple-choices-question .container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .multiple-choices-question .container div {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .multiple-choices-question .container button {
+        background-color: #301c12;
+        color: white;
+        padding: 14px 20px;
+        margin: 40px 0;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .multiple-choices-question .container button:hover {
+        background-color: #2a272c;
     }
 
     /* desktop */
@@ -172,8 +156,8 @@
                         </div><br>
                         {% endfor %}
                         <div class="container">
-                            <div class="back-button"><input type="back" value="Back"></div>
-                            <div class="submit-button"><input type="submit"></div>
+                            <div class="back-button"><button type="button">Back</button></div>
+                            <div class="submit-button"><button type="submit">Submit</button></div>
                         </div>
                     </form>
                 </div>
