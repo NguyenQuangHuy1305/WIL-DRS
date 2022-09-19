@@ -8,6 +8,7 @@
         font-size: 20px;
         color: #2B2B43;
         text-align: center;
+        font-weight: 700;
     }
 
     .multiple-choices-question .question {
@@ -17,6 +18,7 @@
     .multiple-choices-question .multiple-selection {
         text-align: center;
         font-size: 12px;
+        font-weight: 700;
     }
 
     .multiple-choices-question #form-block {
@@ -30,6 +32,10 @@
         justify-content: center;
     }
 
+    .multiple-choices-question #form-block form {
+        width: 100%;
+    }
+
     .multiple-choices-question #ck-button {
         margin: 4px;
         border-radius: 8px;
@@ -37,11 +43,8 @@
         overflow: auto;
         float: left;
         box-shadow: 2px 4px #f3f3f3;
-    }
-
-    .multiple-choices-question label {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: #2B2B43;
+        width: 100%;
+        margin-bottom: 3px;
     }
 
     .multiple-choices-question input[type=checkbox],
@@ -76,10 +79,11 @@
 
     .multiple-choices-question #ck-button label {
         float: left;
-        width: 400px;
+        width: 100%;
         height: 40px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
         overflow: hidden;
+        color: #2B2B43;
+        font-weight: bold;
     }
 
     .multiple-choices-question #ck-button label span {
