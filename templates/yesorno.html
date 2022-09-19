@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+{% block title %}Let us know you better{% endblock %}
+{% block content %}
+
+<style>
+    .yes-or-no h3 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #5d3621;
+        text-align: center;
+    }
+
+    .yes-or-no #form-block {
+        border-radius: 5px;
+        padding: 20px;
+        width: auto;
+        max-width: 800px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .yes-or-no #ck-button {
+        margin: 4px;
+        border-radius: 8px;
+        border: 1px solid #D0D0D0;
+        overflow: auto;
+        float: left;
+        box-shadow: 2px 4px #f3f3f3;
+    }
+
+    .yes-or-no label {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #5d3621;
+    }
+
+    .yes-or-no input[type=checkbox],
+    select {
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .yes-or-no .submit-button {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .yes-or-no input[type=submit] {
+        background-color: #301c12;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .yes-or-no input[type=submit]:hover {
+        background-color: #2a272c;
+    }
+
+    .yes-or-no #ck-button label {
+        float: left;
+        width: 400px;
+        height: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        overflow: hidden;
+    }
+
+    .yes-or-no #ck-button label span {
+        text-align: center;
+        padding: 8px 0px;
+        display: block;
+        border-radius: 4px;
+        height: 100%;
+    }
+
+    .yes-or-no #ck-button label input {
+        position: absolute;
+        top: -30px;
+    }
+
+    .yes-or-no #ck-button input:hover {
+        background-color: #f6c7ae;
+    }
+
+    .yes-or-no #ck-button input:checked+span {
+        background-color: #f29e70;
+        color: #fff;
+    }
+
+    .yes-or-no #ck-button input:checked:hover+span {
+        background-color: #dc7e4b;
+        color: #fff;
+    }
+</style>
+
+<body>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    <div class="yes-or-no">
+        <h3>{{ question }}</h3>
+
+        <div id="form-block">
+            <form method="POST" action="">
+                {% for answer in answers %}
+                <div id="ck-button">
+                    <label>
+                        <input type="checkbox" value="{{ answer }}" name="yes-or-no"><span>{{ answer }}</span>
+                    </label>
+                </div><br>
+                {% endfor %}
+                <div class="submit-button"><input type="submit"></div>
+            </form>
+        </div>
+    </div>
+
+{% endblock%}

@@ -150,7 +150,7 @@ class LoginForm(FlaskForm):
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return render_template("welcome.html")
 
 # @app.route("/<name>")
 # def user(name):
