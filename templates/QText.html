@@ -1,22 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Questions</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-</head>
+{% extends "base.html" %}
+{% block title %}Question{% endblock %}
+{% block content %}
 <style>
-    .Q1 h3 {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: #5d3621;
+    /* mobile */
+    .multiple-choices-question h3 {
+        font-size: 20px;
+        color: #2B2B43;
         text-align: center;
+        font-weight: 700;
+        margin-top: 150px;
+        margin-bottom: 30px;
     }
 
-    .Q1 #form-block {
+    .multiple-choices-question .destination-label {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .multiple-choices-question #form-block {
         border-radius: 5px;
         padding: 20px;
         width: auto;
@@ -27,118 +28,62 @@
         justify-content: center;
     }
 
-    .Q1 #ck-button {
-        margin: 4px;
-        border-radius: 8px;
-        border: 1px solid #D0D0D0;
-        overflow: auto;
-        float: left;
-        box-shadow: 2px 4px #f3f3f3;
-        /* width: 50;
-        height: 20; */
+    .multiple-choices-question .container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-top: 30px;
     }
 
-    .Q1 label {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: #5d3621;
-    }
-
-    .Q1 input[type=checkbox],
-    select {
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
-
-    .Q1 .submit-button {
+    .multiple-choices-question .container div {
         display: flex;
         justify-content: center;
-        width: 100%;
     }
 
-    .Q1 input[type=submit] {
-        background-color: #5d3621;
+    .multiple-choices-question .container button {
+        background-color: #301c12;
         color: white;
         padding: 14px 20px;
-        margin: 8px 0;
+        margin: 40px 0;
         border: none;
         border-radius: 8px;
         cursor: pointer;
     }
 
-    .Q1 input[type=submit]:hover {
+    .multiple-choices-question .container button:hover {
         background-color: #2a272c;
     }
 
-    .Q1 #ck-button label {
-        float: left;
-        width: 400px;
-        height: 40px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        overflow: hidden;
+    .multiple-choices-question .back-button button {
+        padding: 14px 30px;
     }
 
-    .Q1 #ck-button label span {
-        text-align: center;
-        padding: 8px 0px;
-        display: block;
-        border-radius: 4px;
-        height: 100%;
-    }
+    /* desktop */
+    @media (min-width: 768px) {
 
-    .Q1 #ck-button label input {
-        position: absolute;
-        top: -30px;
-    }
-
-    .Q1 #ck-button input:hover {
-        background-color: #f6c7ae;
-    }
-/* 
-    .Q1 #ck-button input:hover+span {
-        background-color: #9abcfb;
-    } */
-
-    .Q1 #ck-button input:checked+span {
-        background-color: #f29e70;
-        color: #fff;
-    }
-
-    .Q1 #ck-button input:checked:hover+span {
-        background-color: #dc7e4b;
-        color: #fff;
     }
 </style>
 
 <body>
-    {% with messages = get_flashed_messages(with_categories=true) %}
-        {% if messages %}
-            {% for category, message in messages %}
-                <div class="alert alert-{{ category }}">
-                    {{ message }}
+    <div class="container-fluid h-custom">
+        <div class="row">
+            <div class="multiple-choices-question">
+                <h3>{{ question }}</h3>
+
+                <div id="form-block">
+                    <form method="POST" action="">
+                        <label class="destination-label" for="destination">Destination:</label>
+                        <label>
+                            <input type="text" id="destination" value="" name="QText", placeholder="(insert response here)">
+                        </label>
+                        <div class="container">
+                            <div class="back-button"><button type="button">Back</button></div>
+                            <div class="submit-button"><button type="submit">Submit</button></div>
+                        </div>
+                    </form>
                 </div>
-            {% endfor %}
-        {% endif %}
-    {% endwith %}
-    <div class="Q1">
-        <h3>{{ question }}</h3>
-
-        <div id="form-block">
-            <form method="POST" action="">
-                <label for="destination">First name:</label>
-                <label>
-                    <input type="text" id="destination" value="" name="QText", placeholder="(insert response here)">
-                </label>
-                <div class="submit-button"><input type="submit"></div>
-            </form>
+            </div>
         </div>
-    </div>
+    </div>    
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-</body>
-
-</html>
+{% endblock%}

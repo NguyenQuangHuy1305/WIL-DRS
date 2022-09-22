@@ -617,7 +617,7 @@ def Q14():
 
     question = "Do you have children?"
     answers = ['Yes', 'No']
-    return render_template('Q1.html', question=question, answers=answers)
+    return render_template('yesorno.html', question=question, answers=answers)
 
 
 @app.route("/Q15", methods=["POST", "GET"])
