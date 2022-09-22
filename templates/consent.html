@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block title %}Consent{% endblock %}
+{% block content %}
+<style>
+    /* mobile */
+    .magnify {
+        width: 20%;
+        height: 20%;
+        justify-content: center;
+        padding-top: 100px;
+    }
+
+    .consent-text {
+        text-align: center;
+        font-size: 15px;
+        line-height: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+        color: #545563;
+        padding-top: 6px;
+    }
+
+    .accept-button {
+        width: 80%;
+        border: solid;
+        border-color: #4E60FF;
+        background-color:white;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 8px;
+    }
+
+    .accept-button:hover {
+        background-color: #4E60FF;
+        color: white;
+    }
+
+    .accept-href {
+        color:#4E60FF;
+        text-decoration: none;
+        display: block;
+        font-size: 16px
+    }
+
+    .accept-href:hover {
+        color:#fff;
+        text-decoration: none;
+        display: block;
+        font-size: 16px
+    }
+
+    /* desktop */
+    @media (min-width: 768px) {
+        .magnify {
+            width: 100%;
+            height: 60%;
+        }
+    }
+</style>
+<img src="static/images/magnify.png" alt="Magnify" class="magnify">
+
+<div class="container-fluid">    
+    <div class="row">
+        <div class="col-xs-12">
+            <p class="consent-text">
+                By continuing, you agree to allow this app to use your data for scientific research purposes.
+            </p>
+            <div class="text-center text-lg-start mt-4 pt-2">
+                <button class="accept-button">
+                    <a href="register" class="accept-href">Accept</a>
+                </button>
+            </div>
+            <div class="text-center text-lg-start mt-4 pt-2">
+                <button class="accept-button">
+                    <a href="register" class="accept-href">Cancel</a>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock%}

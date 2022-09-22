@@ -37,14 +37,17 @@ login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = "login"
 
+
 @login_manager.user_loader
 def load_user(user_id):
     return User.query.get(int(user_id))
+
 
 class User(db.Model, UserMixin):
     id = db.Column("id", db.Integer, primary_key=True)
     username = db.Column(db.String(100), nullable=False, unique=True)
     password = db.Column(db.String(100), nullable=False)
+
 
 class Location(db.Model):
     id = db.Column("id", db.Integer, primary_key=True)
@@ -69,52 +72,57 @@ class Location(db.Model):
     religiousTourism = db.Column(db.Integer, nullable=False)
     sports = db.Column(db.Integer, nullable=False)
 
+
 class Municipal(db.Model):
     id = db.Column("id", db.Integer, primary_key=True)
     state = db.Column(db.String(2))
     name = db.Column(db.String(100))
 
+
 class Form(FlaskForm):
     state = SelectField('state', choices=[
-        ('AC', 'Acre'), 
-        ('AL', 'Alagoas'), 
-        ('AP', 'Amapá'), 
-        ('AM', 'Amazonas'), 
-        ('BA', 'Bahia'), 
-        ('CE', 'Ceará'), 
-        ('DF', 'Distrito Federal'), 
-        ('ES', 'Espírito Santo'), 
-        ('GO', 'Goiás'), 
-        ('MA', 'Maranhão'), 
-        ('MT', 'Mato Grosso'), 
-        ('MS', 'Mato Grosso do Sul'), 
-        ('MG', 'Minas Gerais'), 
-        ('PA', 'Pará'), 
-        ('PB', 'Paraíba'), 
-        ('PR', 'Paraná'), 
-        ('PE', 'Pernambuco'), 
-        ('PI', 'Piauí'), 
-        ('RJ', 'Rio de Janeiro'), 
-        ('RN', 'Rio Grande do Norte'), 
-        ('RS', 'Rio Grande do Sul'), 
-        ('RO', 'Rondônia'), 
-        ('RR', 'Roraima'), 
-        ('SC', 'Santa Catarina'), 
-        ('SP', 'São Paulo'), 
-        ('SE', 'Sergipe'), 
+        ('AC', 'Acre'),
+        ('AL', 'Alagoas'),
+        ('AP', 'Amapá'),
+        ('AM', 'Amazonas'),
+        ('BA', 'Bahia'),
+        ('CE', 'Ceará'),
+        ('DF', 'Distrito Federal'),
+        ('ES', 'Espírito Santo'),
+        ('GO', 'Goiás'),
+        ('MA', 'Maranhão'),
+        ('MT', 'Mato Grosso'),
+        ('MS', 'Mato Grosso do Sul'),
+        ('MG', 'Minas Gerais'),
+        ('PA', 'Pará'),
+        ('PB', 'Paraíba'),
+        ('PR', 'Paraná'),
+        ('PE', 'Pernambuco'),
+        ('PI', 'Piauí'),
+        ('RJ', 'Rio de Janeiro'),
+        ('RN', 'Rio Grande do Norte'),
+        ('RS', 'Rio Grande do Sul'),
+        ('RO', 'Rondônia'),
+        ('RR', 'Roraima'),
+        ('SC', 'Santa Catarina'),
+        ('SP', 'São Paulo'),
+        ('SE', 'Sergipe'),
         ('TO', 'Tocantins')])
     municipal = SelectField('municipal', choices=[])
+
 
 @app.route('/test', methods=['GET', 'POST'])
 def test():
     form = Form()
-    form.municipal.choices = [(municipal.id, municipal.name) for municipal in Municipal.query.filter_by(state='AC').all()]
+    form.municipal.choices = [(municipal.id, municipal.name)
+                              for municipal in Municipal.query.filter_by(state='AC').all()]
 
     if request.method == "POST":
         municipal = Municipal.query.filter_by(id=form.municipal.data).first()
         return 'State: {}, Municipal: {}'.format(form.state.data, municipal.name)
 
     return render_template('QSelectField.html', form=form)
+
 
 @app.route('/municipal/<state>')
 def municipal(state):
@@ -130,23 +138,31 @@ def municipal(state):
 
     return jsonify({'municipals': municipalArray})
 
+
 class RegisterForm(FlaskForm):
-    username = StringField('username', validators=[InputRequired(), Length(min=4, max=15)])
-    password = PasswordField('password', validators=[InputRequired(), Length(min=8, max=80)])
-    confirm_password = PasswordField('confirm_password', validators=[InputRequired(), Length(min=8, max=80), EqualTo('password')])
+    username = StringField('username', validators=[
+                           InputRequired(), Length(min=4, max=15)])
+    password = PasswordField('password', validators=[
+                             InputRequired(), Length(min=8, max=80)])
+    confirm_password = PasswordField('confirm_password', validators=[
+                                     InputRequired(), Length(min=8, max=80), EqualTo('password')])
     submit = SubmitField("Register")
 
     def validate_username(self, username):
         exsisting_user_username = User.query.filter_by(
             username=username.data).first()
         if exsisting_user_username:
-            raise ValidationError("That username already exist, please choose a different one.")
+            raise ValidationError(
+                "That username already exist, please choose a different one.")
+
 
 class LoginForm(FlaskForm):
     username = StringField(validators=[InputRequired(), Length(min=4, max=15)])
-    password = PasswordField('password', validators=[InputRequired(), Length(min=8, max=80)])
+    password = PasswordField('password', validators=[
+                             InputRequired(), Length(min=8, max=80)])
     remember = BooleanField('remember me')
     submit = SubmitField('Login')
+
 
 @app.route("/")
 def home():
@@ -156,25 +172,29 @@ def home():
 # def user(name):
 #     return f"Hello {name}!"
 
+
 @app.route("/view")
 def view():
     return render_template("view.html", values=User.query.all())
+
 
 @app.route("/login", methods=["POST", "GET"])
 def login():
     form = LoginForm()
     if form.validate_on_submit():
         user = User.query.filter_by(username=form.username.data).first()
-        if user: # if the username can be found in the database
+        if user:  # if the username can be found in the database
             if bcrypt.check_password_hash(user.password, form.password.data):
                 login_user(user)
                 flash(f'Login successful as {form.username.data}!', 'success')
                 return redirect(url_for('Q1'))
             else:
-                flash("Login unsuccessful, please check username and/or password", 'danger')
+                flash(
+                    "Login unsuccessful, please check username and/or password", 'danger')
         else:
             flash("Login unsuccessful, please check username and/or password", 'danger')
     return render_template('login.html', form=form)
+
 
 @app.route('/register', methods=["POST", "GET"])
 def register():
@@ -190,6 +210,7 @@ def register():
 
     return render_template('register.html', form=form)
 
+
 @app.route("/logout", methods=["POST", "GET"])
 @login_required
 def logout():
@@ -198,15 +219,20 @@ def logout():
     flash(f'Log out successful!', 'success')
     return redirect(url_for("home"))
 
+
 @app.route("/welcome", methods=["GET"])
-@login_required
 def welcome():
     return render_template('welcome.html')
 
-@app.route("/instruction", methods=["POST", "GET"])
-@login_required
+
+@app.route("/instruction", methods=["GET"])
 def instruction():
     return render_template('instruction.html')
+
+@app.route("/consent", methods=["GET"])
+def consent():
+    return render_template('consent.html')
+
 
 @app.route("/surpriseme")
 @login_required
@@ -222,6 +248,7 @@ def surpriseme():
                 random_location_list.append(location.name)
 
     return render_template("supriseme.html", locations=random_location_list)
+
 
 @app.route("/Q0", methods=["POST", "GET"])
 @login_required
@@ -241,7 +268,8 @@ def Q0():
 
     question = "Are you searching for a destination recommendation for a specific trip or just curious to find out about destinations in general?"
     answers = ['Recommend me', 'Surprise me']
-    return render_template('Q1.html', question = question, answers =  answers)
+    return render_template('Q1.html', question=question, answers=answers)
+
 
 @app.route("/Q1", methods=["POST", "GET"])
 @login_required
@@ -256,53 +284,60 @@ def Q1():
     question = "What types of destinations are you interested to visit next?"
     answers = ['Cultural', 'Mountain', 'Nature', 'Rural', 'Beach', 'Urban']
     multiple_selection = True
-    return render_template('Q1.html', question = question, answers =  answers, multiple_selection = multiple_selection)
+    return render_template('Q1.html', question=question, answers=answers, multiple_selection=multiple_selection)
+
 
 @app.route("/Q2", methods=["POST", "GET"])
 @login_required
 def Q2():
-    Cultural = ['Arts', 'Urban sightseeing', 'Religious tourism', 'Architecture and heritage', 'Culture', 'Gastronomy', 'Indigenous tourism', 'Museums and cultural centres', 'Relaxation', 'Sports', 'Theme parks']
-    Mountain = ['Beach', 'Sports', 'Relaxation', 'Water-based activities', 'Winter activities']
-    Nature = ['Beach', 'Excitement', 'Sports', 'Water-based activities', 'Boat trips', 'Museums and cultural centres', 'Nature', 'Relaxation', 'National parks and protected areas']
-    Rural = ['Beach', 'Sports', 'Relaxation', 'Rural', 'Water-based activities']
-    Beach = ['Beach', 'Excitement', 'Sports', 'Water-based activities', 'Boat trips', 'Nature', 'Relaxation']
-    Urban = ['Architecture and heritage', 'Urban sightseeing', 'Arts', 'Beach', 'Sports', 'Culture', 'Excitement', 'Nature', 'Relaxation', 'Museums and cultural centres', 'Theme parks']
+    Cultural = ['Arts', 'Urban sightseeing', 'Religious tourism', 'Architecture and heritage', 'Culture',
+                'Gastronomy', 'Indigenous tourism', 'Museums and cultural centres', 'Relaxation', 'Sports', 'Theme parks']
+    Mountain = ['Beach', 'Sports', 'Relaxation',
+                'Water-based activities', 'Winter activities']
+    Nature = ['Beach', 'Excitement', 'Sports', 'Water-based activities', 'Boat trips',
+              'Museums and cultural centres', 'Nature', 'Relaxation', 'National parks and protected areas']
+    Rural = ['Beach', 'Sports', 'Relaxation',
+             'Rural', 'Water-based activities']
+    Beach = ['Beach', 'Excitement', 'Sports',
+             'Water-based activities', 'Boat trips', 'Nature', 'Relaxation']
+    Urban = ['Architecture and heritage', 'Urban sightseeing', 'Arts', 'Beach', 'Sports', 'Culture',
+             'Excitement', 'Nature', 'Relaxation', 'Museums and cultural centres', 'Theme parks']
     categories = []
     question = 'What activities are you searching for on your next trip?'
     answers = []
 
     final_dict = {
-        'D_Cultural' : 0,
-        'D_Mountain' : 0,
-        'D_Nature' : 0,
-        'D_Rural' : 0,
-        'D_Beach' : 0,
-        'D_Urban' : 0,
-        'Beach' : 0,
-        'Boat trips' : 0,
-        'Indigenous tourism' : 0,
-        'Museums and cultural centres' : 0,
-        'National parks and protected areas' : 0,
-        'Rural' : 0,
-        'Theme parks' : 0,
-        'Urban sightseeing' : 0,
-        'Water-based activities' : 0,
-        'Winter activities' : 0,
-        'Architecture and heritage' : 0,
-        'Arts' : 0,
-        'Culture' : 0,
-        'Excitement' : 0,
-        'Gastronomy' : 0,
-        'Nature' : 0,
-        'Relaxation' : 0,
-        'Religious tourism' : 0,
-        'Sports' : 0
+        'D_Cultural': 0,
+        'D_Mountain': 0,
+        'D_Nature': 0,
+        'D_Rural': 0,
+        'D_Beach': 0,
+        'D_Urban': 0,
+        'Beach': 0,
+        'Boat trips': 0,
+        'Indigenous tourism': 0,
+        'Museums and cultural centres': 0,
+        'National parks and protected areas': 0,
+        'Rural': 0,
+        'Theme parks': 0,
+        'Urban sightseeing': 0,
+        'Water-based activities': 0,
+        'Winter activities': 0,
+        'Architecture and heritage': 0,
+        'Arts': 0,
+        'Culture': 0,
+        'Excitement': 0,
+        'Gastronomy': 0,
+        'Nature': 0,
+        'Relaxation': 0,
+        'Religious tourism': 0,
+        'Sports': 0
     }
 
     if request.method == 'POST':
         # get all the selected tags from the form in Q2, then in final_dict change the value associated with the key "tag"
         list_of_tags = request.form.getlist('Q1')
-        for tag in list_of_tags:            
+        for tag in list_of_tags:
             final_dict[tag] = 1
 
         # get the categories from session (created in Q1), loop through the list categories, change final_dict's value from 0 to 1 for each category (key)
@@ -375,9 +410,10 @@ def Q2():
                 final_dict['D_Urban'] = 1
         answers = set(answers)
         answers = sorted(answers)
-        return render_template('Q1.html', question = question, answers = answers)
+        return render_template('Q1.html', question=question, answers=answers)
     else:
         return f"you haven't answer 1st question"
+
 
 @app.route("/Q3", methods=["POST", "GET"])
 @login_required
@@ -391,8 +427,10 @@ def Q3():
             return redirect(url_for('Q4'))
 
     question = "In which state do you live?"
-    answers = ['AC', 'AL', 'AP', 'AM', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MT', 'MS', 'MG', 'PA', 'PB', 'PR', 'PE', 'PI', 'RN', 'RS', 'RJ', 'RO', 'RR', 'SC', 'SP', 'SE', 'TO']
-    return render_template('Q1.html', question = question, answers = answers)
+    answers = ['AC', 'AL', 'AP', 'AM', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MT', 'MS', 'MG',
+               'PA', 'PB', 'PR', 'PE', 'PI', 'RN', 'RS', 'RJ', 'RO', 'RR', 'SC', 'SP', 'SE', 'TO']
+    return render_template('Q1.html', question=question, answers=answers)
+
 
 @app.route("/Q4", methods=["POST", "GET"])
 @login_required
@@ -407,7 +445,8 @@ def Q4():
 
     question = "In which municipality do you live?"
     answers = []
-    return render_template('Q1.html', question = question, answers = answers)
+    return render_template('Q1.html', question=question, answers=answers)
+
 
 @app.route("/Q5", methods=["POST", "GET"])
 @login_required
@@ -422,11 +461,12 @@ def Q5():
 
     question = "Which mode of transport are you planning to use on your next trip?"
     answers = ['Road [within a 500km radius]', 'Air [+500km radius]']
-    return render_template('Q1.html', question = question, answers = answers)
+    return render_template('Q1.html', question=question, answers=answers)
+
 
 @app.route("/Q6", methods=["POST", "GET"])
 @login_required
-def Q6():    
+def Q6():
     if request.method == 'POST':
         answers = request.form.getlist('Q1')
         if len(answers) != 1:
@@ -440,8 +480,10 @@ def Q6():
                 return redirect(url_for('Q8'))
 
     question = "Who are you planning to travel with in your next trip?"
-    answers = ['Couple', 'Couple with kids', 'Adult friends / Relatives', 'A larger group with kids', 'Alone']
-    return render_template('Q1.html', question = question, answers = answers)
+    answers = ['Couple', 'Couple with kids',
+               'Adult friends / Relatives', 'A larger group with kids', 'Alone']
+    return render_template('Q1.html', question=question, answers=answers)
+
 
 @app.route("/Q7", methods=["POST", "GET"])
 @login_required
@@ -456,7 +498,8 @@ def Q7():
 
     question = "How old are the youngest kids in the travel party?"
     answers = ['0-2 years', '3-5 years', '6-11 years', '12-17 years']
-    return render_template('Q1.html', question = question, answers = answers)
+    return render_template('Q1.html', question=question, answers=answers)
+
 
 @app.route("/Q8", methods=["POST", "GET"])
 @login_required
@@ -471,7 +514,8 @@ def Q8():
 
     question = "How many days do you plan to stay away on your next trip?"
     answers = ['1-4 days', '5-10 days', '11+ days']
-    return render_template('Q1.html', question = question, answers = answers)
+    return render_template('Q1.html', question=question, answers=answers)
+
 
 @app.route("/Q9", methods=["POST", "GET"])
 @login_required
@@ -485,8 +529,10 @@ def Q9():
             return redirect(url_for('Q10'))
 
     question = "How much is your budget for this trip?"
-    answers = ['Less than R$ 1,000', 'R$ 1,000 to R$ 5,000', 'More than R$ 5,000']
-    return render_template('Q1.html', question = question, answers = answers)
+    answers = ['Less than R$ 1,000',
+               'R$ 1,000 to R$ 5,000', 'More than R$ 5,000']
+    return render_template('Q1.html', question=question, answers=answers)
+
 
 @app.route("/Q10", methods=["POST", "GET"])
 @login_required
@@ -501,7 +547,8 @@ def Q10():
 
     question = "What is your gender?"
     answers = ['Male', 'Female', 'Other / Prefer not to state']
-    return render_template('Q1.html', question = question, answers = answers)
+    return render_template('Q1.html', question=question, answers=answers)
+
 
 @app.route("/Q11", methods=["POST", "GET"])
 @login_required
@@ -515,8 +562,10 @@ def Q11():
             return redirect(url_for('Q12'))
 
     question = "What is your age?"
-    answers = ['<10', '10-14', '15-20', '20-25', '25-30', '30-40', '40-50', '>50']
-    return render_template('Q1.html', question = question, answers = answers)
+    answers = ['<10', '10-14', '15-20', '20-25',
+               '25-30', '30-40', '40-50', '>50']
+    return render_template('Q1.html', question=question, answers=answers)
+
 
 @app.route("/Q12", methods=["POST", "GET"])
 @login_required
@@ -530,8 +579,10 @@ def Q12():
             return redirect(url_for('Q13'))
 
     question = "What is your highest level of education?"
-    answers = ['No formal schooling', 'Elementary', 'High school', 'Graduate', 'Postgraduate', 'Prefer not to say']
-    return render_template('Q1.html', question = question, answers = answers)
+    answers = ['No formal schooling', 'Elementary', 'High school',
+               'Graduate', 'Postgraduate', 'Prefer not to say']
+    return render_template('Q1.html', question=question, answers=answers)
+
 
 @app.route("/Q13", methods=["POST", "GET"])
 @login_required
@@ -545,8 +596,10 @@ def Q13():
             return redirect(url_for('Q14'))
 
     question = "What is your current relationship status?"
-    answers = ['Single', 'De facto', 'Married', 'Divorced of Widowed', 'Prefer not to say']
-    return render_template('Q1.html', question = question, answers = answers)
+    answers = ['Single', 'De facto', 'Married',
+               'Divorced of Widowed', 'Prefer not to say']
+    return render_template('Q1.html', question=question, answers=answers)
+
 
 @app.route("/Q14", methods=["POST", "GET"])
 @login_required
@@ -565,7 +618,8 @@ def Q14():
 
     question = "Do you have children?"
     answers = ['Yes', 'No']
-    return render_template('Q1.html', question = question, answers = answers)
+    return render_template('Q1.html', question=question, answers=answers)
+
 
 @app.route("/Q15", methods=["POST", "GET"])
 @login_required
@@ -580,7 +634,8 @@ def Q15():
 
     question = "How old is your youngest kid?"
     answers = ['0-2 years', '3-5 years', '6-11 years', '12-17 years']
-    return render_template('Q1.html', question = question, answers = answers)
+    return render_template('Q1.html', question=question, answers=answers)
+
 
 @app.route("/Q16", methods=["POST", "GET"])
 @login_required
@@ -594,8 +649,10 @@ def Q16():
             return redirect(url_for('Q17'))
 
     question = "What is your household monthly income?"
-    answers = ['R$ 0-500', 'R$ 500 - R$ 1000', 'R$ 1001 - R$ 2000', 'R$ 2001 - R$ 4000', 'R$ 4001 - R$ 8000', 'R$ 8001+']
-    return render_template('Q1.html', question = question, answers = answers)
+    answers = ['R$ 0-500', 'R$ 500 - R$ 1000', 'R$ 1001 - R$ 2000',
+               'R$ 2001 - R$ 4000', 'R$ 4001 - R$ 8000', 'R$ 8001+']
+    return render_template('Q1.html', question=question, answers=answers)
+
 
 @app.route("/Q17", methods=["POST", "GET"])
 @login_required
@@ -610,7 +667,8 @@ def Q17():
 
     question = "How many states in Brazil have you visited?"
     answers = ['Only my own state', '2-4 states', '5-10 states', '10+ states']
-    return render_template('Q1.html', question = question, answers = answers)
+    return render_template('Q1.html', question=question, answers=answers)
+
 
 @app.route("/Q18", methods=["POST", "GET"])
 @login_required
@@ -624,12 +682,16 @@ def Q18():
             return redirect(url_for('Q19'))
 
     question = "How many countries have you been to?"
-    answers = ['Only Brazil', '2-4 countries', '5-10 countries', '10+ countries']
-    return render_template('Q1.html', question = question, answers = answers)
+    answers = ['Only Brazil', '2-4 countries',
+               '5-10 countries', '10+ countries']
+    return render_template('Q1.html', question=question, answers=answers)
 
 # func to check if a string has a number
+
+
 def has_numbers(inputString):
     return any(char.isdigit() for char in inputString)
+
 
 @app.route("/Q19", methods=["POST", "GET"])
 @login_required
@@ -645,10 +707,10 @@ def Q19():
             return redirect(url_for('Q19'))
         else:
             recommended_location_list = session['recommended_location_list']
-            return render_template("recommendation.html", locations = recommended_location_list)
+            return render_template("recommendation.html", locations=recommended_location_list)
 
     question = "Which was the best destination you have been to?"
-    return render_template('QText.html', question = question)
+    return render_template('QText.html', question=question)
 
 # @app.route("/Q20", methods=["POST", "GET"])
 # @login_required
@@ -696,7 +758,7 @@ def Q19():
 #         return render_template("login.html")
 
 # @app.route("/signup", methods=["POST", "GET"])
-# def signup(): 
+# def signup():
 
 # @app.route("/user", methods=["POST", "GET"])
 # def user():
@@ -723,6 +785,7 @@ def Q19():
 # @app.route("/admin")
 # def admin():
 #     return redirect(url_for("user", name="you're not admin!"))
+
 
 if __name__ == "__main__":
     db.create_all()

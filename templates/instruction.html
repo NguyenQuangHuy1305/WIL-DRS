@@ -3,29 +3,18 @@
 {% block content %}
 <style>
     /* mobile */
-    .responsive {
+    .phone {
         width: 100%;
-        height: 50%;
-    }
-
-    .container-fluid {
+        height: 70%;
+        justify-content: center;
         padding-top: 40px;
     }
 
-    .welcome-to {
-        text-align: center;
-        font-size: 20px;
-        line-height: 20px;
+    .instruction-container {
+        padding-top: 20px;
     }
 
-    .welcome-name {
-        text-align: center;
-        font-size: 50px;
-        font-weight: bold;
-        line-height: 48px;
-    }
-
-    .welcome-info {
+    .instruction-text {
         text-align: center;
         font-size: 15px;
         line-height: 20px;
@@ -35,39 +24,33 @@
         padding-top: 6px;
     }
 
-    .welcome-started {
+    .skip {
         text-align: center;
-        font-size: 16px;
+        font-size: 20px;
         line-height: 10px;
-        color: #4E60FF;
         padding-top: 40px;
         font-weight: bold;
+        text-decoration: none;
     }
 
     /* desktop */
     @media (min-width: 768px) {
-        .responsive {
+        .phone {
             width: 100%;
             height: 60%;
         }
     }
 </style>
+<img src="static/images/phone.png" alt="Phone" class="phone">
 
-<img src="static/images/welcome.jpg" alt="Nature" class="responsive" width="600" height="400">
-<div class="container-fluid">
+<div class="container-fluid">    
     <div class="row">
         <div class="col-xs-12">
-            <h6 class="welcome-to">Wellcome to</h6>
-            <p class="welcome-name">
-                Bravo<br>
-                Tourism
+            <p class="instruction-text">
+                Answer the prompts about your travel preferences...(a few user instruction screens on how to use the app)
             </p>
-            <p class="welcome-info">
-                Bravo Tourism provides the best recommendations for your next travel destinations...(some info about the
-                app)
-            </p>
-            <div class="welcome-started">
-                <a href="Q1">Get Started</a>
+            <div class="skip">
+                <a href="consent">Skip</a>
             </div>
         </div>
     </div>
