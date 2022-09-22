@@ -236,7 +236,10 @@ def consent():
 @app.route("/Q20", methods=["GET"])
 @login_required
 def Q20():
-    return render_template('Q20.html')
+    # Please retrieve a location image here and pass to the frontend page.
+    question = "Have you been to this destination?"
+    answers = ['Yes', 'No']
+    return render_template('Q20.html', question=question, answers=answers)
 
 @app.route("/surpriseme")
 @login_required

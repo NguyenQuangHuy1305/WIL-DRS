@@ -3,19 +3,8 @@
 {% block content %}
 <style>
     /* mobile */
-    .responsive {
-        width: 100%;
-        height: 50%;
-    }
-
     .container-fluid {
         padding-top: 40px;
-    }
-
-    .welcome-to {
-        text-align: center;
-        font-size: 20px;
-        line-height: 20px;
     }
 
     .welcome-name {
@@ -26,6 +15,7 @@
     }
 
     .welcome-info {
+        margin-bottom: 0;
         text-align: center;
         font-size: 15px;
         line-height: 20px;
@@ -35,18 +25,109 @@
         font-weight: 400;
     }
 
-    .welcome-started {
+    .show-map {
         text-align: center;
-        font-size: 20px;
-        line-height: 10px;
-        padding-top: 40px;
-        font-weight: bold;
+        font-size: 15px;
         text-decoration: none;
+        margin-bottom: 5px;
+    }
+
+    .responsive {
+        width: 100%;
+        height: 50%;
+    }
+
+    .question-q20 {
+        margin-top: 50px;
+        margin-bottom: 0;
+        text-align: center;
+        font-size: 15px;
+        line-height: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+        color: #545563;
+        font-weight: 400;
     }
 
     a {
         text-decoration: none;
         color: #4E60FF;
+    }
+
+    .option-block {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #ck-button {
+        border-radius: 8px;
+        border: 1px solid #D0D0D0;
+        overflow: auto;
+        float: left;
+        box-shadow: 2px 4px #f3f3f3;
+        width: 45%;
+        margin: 10px 0px
+    }
+
+    input[type=checkbox],
+    select {
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    #ck-button label {
+        float: left;
+        width: 100%;
+        overflow: hidden;
+        color: #2B2B43;
+        font-weight: bold;
+    }
+
+    #ck-button label span {
+        text-align: center;
+        padding: 8px 0px;
+        display: block;
+        border-radius: 4px;
+        height: 100%;
+    }
+
+    #ck-button label input {
+        position: absolute;
+        top: -30px;
+    }
+
+    #ck-button input:hover {
+        background-color: #f6c7ae;
+    }
+
+    #ck-button input:checked+span {
+        background-color: #f29e70;
+        color: #fff;
+    }
+
+    #ck-button input:checked:hover+span {
+        background-color: #dc7e4b;
+        color: #fff;
+    }
+
+    .q20-submit .submit-button {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+    }
+
+    .q20-submit button {
+        background-color: #301c12;
+        color: white;
+        padding: 14px 20px;
+        margin: 10px auto;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
     }
 
     /* desktop */
@@ -69,16 +150,31 @@
                 Rio de Janeiro
             </p>
 
+            <div class="show-map">
+                <a href="instruction">Show Map</a>
+            </div>
+
             <img src="static/images/welcome.jpg" alt="Nature" class="responsive" width="600" height="400">
 
-            <h6 class="welcome-to">Wellcome to</h6>
- 
-            <p class="welcome-info">
-                Bravo Tourism provides the best recommendations for your next travel destinations...(some info about the
-                app)
+            <p class="question-q20">
+                {{question}}
             </p>
-            <div class="welcome-started">
-                <a href="instruction">Get Started</a>
+
+            <div id="form-block">
+                <form method="POST" action="">
+                    <div class="option-block">
+                        {% for answer in answers %}
+                        <div id="ck-button">
+                            <label>
+                                <input type="checkbox" value="{{ answer }}" name="Q20"><span>{{ answer }}</span>
+                            </label>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div class="q20-submit">
+                        <div class="submit-button"><button type="submit">Submit</button></div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
