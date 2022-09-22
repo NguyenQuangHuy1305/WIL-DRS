@@ -233,6 +233,11 @@ def instruction():
 def consent():
     return render_template('consent.html')
 
+@app.route("/Q20", methods=["GET"])
+@login_required
+def Q20():
+    return render_template('Q20.html')
+
 @app.route("/surpriseme")
 @login_required
 def surpriseme():
