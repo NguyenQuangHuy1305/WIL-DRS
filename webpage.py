@@ -276,15 +276,18 @@ def Q1():
     if request.method == 'POST':
         categories = request.form.getlist('Q1')
         print(categories)
-        # save the selected categories in session (associated key in session-dict: 'categories')
-        session['categories'] = categories
-        return redirect(url_for('Q2'))
+        if len(categories) == 0:
+            flash("Please choose 1 option", 'danger')
+            return redirect(url_for('Q1'))
+        else:
+            # save the selected categories in session (associated key in session-dict: 'categories')
+            session['categories'] = categories
+            return redirect(url_for('Q2'))
 
     question = "What types of destinations are you interested to visit next?"
     answers = ['Cultural', 'Mountain', 'Nature', 'Rural', 'Beach', 'Urban']
     multiple_selection = True
     return render_template('Q1.html', question=question, answers=answers, multiple_selection=multiple_selection)
-
 
 @app.route("/Q2", methods=["POST", "GET"])
 @login_required
