@@ -3,13 +3,27 @@
 {% block content %}
 
 <style>
-    .yes-or-no h3 {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: #5d3621;
+    /* mobile */
+    .multiple-choices-question h3 {
+        font-size: 20px;
+        color: #2B2B43;
         text-align: center;
+        font-weight: 700;
     }
 
-    .yes-or-no #form-block {
+    .multiple-choices-question .question {
+        text-align: center;
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+    .multiple-choices-question .multiple-selection {
+        text-align: center;
+        font-size: 12px;
+        font-weight: 700;
+        color: #2B2B43;
+    }
+
+    .multiple-choices-question #form-block {
         border-radius: 5px;
         padding: 20px;
         width: auto;
@@ -20,21 +34,43 @@
         justify-content: center;
     }
 
-    .yes-or-no #ck-button {
-        margin: 4px;
+    .multiple-choices-question #form-block form {
+        width: 100%;
+    }
+
+    .multiple-choices-question #ck-button {
         border-radius: 8px;
         border: 1px solid #D0D0D0;
         overflow: auto;
         float: left;
         box-shadow: 2px 4px #f3f3f3;
+        width: 100%;
+        margin-bottom: 15px;
     }
 
-    .yes-or-no label {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: #5d3621;
+    .multiple-choices-question #ck-button label {
+        float: left;
+        width: 100%;
+        height: 40px;
+        overflow: hidden;
+        color: #2B2B43;
+        font-weight: bold;
     }
 
-    .yes-or-no input[type=checkbox],
+    .multiple-choices-question #ck-button label span {
+        text-align: center;
+        padding: 8px 0px;
+        display: block;
+        border-radius: 4px;
+        height: 100%;
+    }
+
+    .multiple-choices-question #ck-button label input {
+        position: absolute;
+        top: -30px;
+    }
+
+    .multiple-choices-question input[type=checkbox],
     select {
         padding: 12px 20px;
         margin: 8px 0;
@@ -44,87 +80,81 @@
         box-sizing: border-box;
     }
 
-    .yes-or-no .submit-button {
-        display: flex;
-        justify-content: center;
-        width: 100%;
+    .multiple-choices-question #ck-button input:hover {
+        background-color: #f6c7ae;
     }
 
-    .yes-or-no input[type=submit] {
+    .multiple-choices-question #ck-button input:checked+span {
+        background-color: #f29e70;
+        color: #fff;
+    }
+
+    .multiple-choices-question #ck-button input:checked:hover+span {
+        background-color: #dc7e4b;
+        color: #fff;
+    }
+
+    .multiple-choices-question .container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .multiple-choices-question .container div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .multiple-choices-question .container button {
         background-color: #301c12;
         color: white;
         padding: 14px 20px;
-        margin: 8px 0;
+        margin: 40px 0;
         border: none;
         border-radius: 8px;
         cursor: pointer;
     }
 
-    .yes-or-no input[type=submit]:hover {
+    .multiple-choices-question .container button:hover {
         background-color: #2a272c;
     }
 
-    .yes-or-no #ck-button label {
-        float: left;
-        width: 400px;
-        height: 40px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        overflow: hidden;
-    }
+    /* desktop */
+    @media (min-width: 768px) {
 
-    .yes-or-no #ck-button label span {
-        text-align: center;
-        padding: 8px 0px;
-        display: block;
-        border-radius: 4px;
-        height: 100%;
-    }
-
-    .yes-or-no #ck-button label input {
-        position: absolute;
-        top: -30px;
-    }
-
-    .yes-or-no #ck-button input:hover {
-        background-color: #f6c7ae;
-    }
-
-    .yes-or-no #ck-button input:checked+span {
-        background-color: #f29e70;
-        color: #fff;
-    }
-
-    .yes-or-no #ck-button input:checked:hover+span {
-        background-color: #dc7e4b;
-        color: #fff;
     }
 </style>
 
-<body>
-    {% with messages = get_flashed_messages(with_categories=true) %}
-        {% if messages %}
-            {% for category, message in messages %}
-                <div class="alert alert-{{ category }}">
-                    {{ message }}
+<div class="container-fluid h-custom">
+    <div class="row">
+        <div class="multiple-choices-question">
+            <div class="col-xs-12">
+                <div class="question">
+                    <h3>{{ question }}</h3>
+                    {% if multiple_selection %}
+                    <p class="multiple-selection">(Multiple selection allowed)</p>
+                    {% endif %}
                 </div>
-            {% endfor %}
-        {% endif %}
-    {% endwith %}
-    <div class="yes-or-no">
-        <h3>{{ question }}</h3>
-
-        <div id="form-block">
-            <form method="POST" action="">
-                {% for answer in answers %}
-                <div id="ck-button">
-                    <label>
-                        <input type="checkbox" value="{{ answer }}" name="yes-or-no"><span>{{ answer }}</span>
-                    </label>
-                </div><br>
-                {% endfor %}
-                <div class="submit-button"><input type="submit"></div>
-            </form>
+            
+                <div id="form-block">
+                    <form method="POST" action="">
+                        {% for answer in answers %}
+                        <div id="ck-button">
+                            <label>
+                                <input type="checkbox" value="{{ answer }}" name="Q1"><span>{{ answer }}</span>
+                            </label>
+                        </div><br>
+                        {% endfor %}
+                        <div class="container">
+                            <div class="back-button"><button type="button">Back</button></div>
+                            <div class="submit-button"><button type="submit">Submit</button></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
+</div>
+
 
 {% endblock%}

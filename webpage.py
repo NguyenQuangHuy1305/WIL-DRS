@@ -233,7 +233,6 @@ def instruction():
 def consent():
     return render_template('consent.html')
 
-
 @app.route("/surpriseme")
 @login_required
 def surpriseme():
@@ -267,8 +266,8 @@ def Q0():
             return redirect(url_for('Q1'))
 
     question = "Are you searching for a destination recommendation for a specific trip or just curious to find out about destinations in general?"
-    answers = ['Recommend me', 'Surprise me']
-    return render_template('Q1.html', question=question, answers=answers)
+    answers = ['Yes - I want information for a specific trip', 'No - I am just curious to find out about destinations in general']
+    return render_template('yesorno.html', question=question, answers=answers)
 
 
 @app.route("/Q1", methods=["POST", "GET"])
