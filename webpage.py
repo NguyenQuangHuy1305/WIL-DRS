@@ -460,7 +460,7 @@ def Q5():
 
     question = "Which mode of transport are you planning to use on your next trip?"
     answers = ['Road [within a 500km radius]', 'Air [+500km radius]']
-    return render_template('Q1.html', question=question, answers=answers)
+    return render_template('yesorno.html', question=question, answers=answers)
 
 
 @app.route("/Q6", methods=["POST", "GET"])
