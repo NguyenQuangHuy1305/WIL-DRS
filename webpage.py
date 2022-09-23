@@ -257,12 +257,12 @@ def Q0():
         if len(answer) == 0:
             flash("Please choose 1 option", 'danger')
             return redirect(url_for('Q0'))
-        elif "Surprise me" in answer and "Recommend me" in answer:
+        elif "Yes - I want information for a specific trip" in answer and "No - I am just curious to find out about destinations in general" in answer:
             flash("You can only choose 1 option", 'danger')
             return redirect(url_for('Q0'))
-        elif "Surprise me" in answer:
+        elif "No - I am just curious to find out about destinations in general" in answer:
             return redirect(url_for('surpriseme'))
-        elif "Recommend me" in answer:
+        elif "Yes - I want information for a specific trip" in answer:
             return redirect(url_for('Q1'))
 
     question = "Are you searching for a destination recommendation for a specific trip or just curious to find out about destinations in general?"
