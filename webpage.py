@@ -121,7 +121,8 @@ def Q4():
         municipal = Municipal.query.filter_by(id=form.municipal.data).first()
         return 'State: {}, Municipal: {}'.format(form.state.data, municipal.name)
 
-    return render_template('QSelectField.html', form=form)
+    question = "In which state do you live?"
+    return render_template('QSelectField.html', form=form, question=question)
 
 
 @app.route('/municipal/<state>')

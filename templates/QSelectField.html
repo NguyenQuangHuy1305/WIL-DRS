@@ -1,37 +1,119 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Questions</title>
-</head>
-<body>
-    <form method="POST">
-        {{ form.csrf_token }}
-        {{ form.state }}
-        {{ form.municipal }}
-        <input type="submit">
-    </form>
+{% extends "base.html" %}
+{% block title %}Let us know you better{% endblock %}
+{% block content %}
 
-    <script>
-        let state_select = document.getElementById('state');
-        let municipal_select = document.getElementById('municipal');
+<style>
+    /* mobile */
+    .Q3 .question {
+        text-align: center;
+        margin-top: 150px;
+    }
 
-        state_select.onchange = function() {
-            state = state_select.value;
-            fetch('/municipal/' + state).then(function(response) {
-                response.json().then(function(data) {
-                    let optionHTML = '';
+    .Q3 h3 {
+        font-size: 20px;
+        color: #2B2B43;
+        font-weight: 700;
+    }
 
-                    for (let municipal of data.municipals) {
-                        optionHTML += '<option value="' + municipal.id + '">' + municipal.name + '</option>';
-                    }
+    .Q3 .dropdown {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        border-radius: 8px;
+    }
 
-                    municipal_select.innerHTML = optionHTML;
-                });
+    .Q3 .container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .Q3 .container div {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .Q3 .container button {
+        background-color: #301c12;
+        color: white;
+        padding: 14px 20px;
+        margin: 40px 0;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .Q3 .container button:hover {
+        background-color: #2a272c;
+    }
+
+    .Q3 .back-button button {
+        padding: 14px 30px;
+    }
+
+    /* desktop */
+    @media (min-width: 768px) {
+
+    }
+</style>
+
+<div class="container-fluid">
+    <div class="Q3">
+        <div class="row">
+            <div class="col-xs-12">
+                <form method="POST">
+                    {{ form.csrf_token }}
+                    <div class="question">
+                        <h3>{{question}}</h3>
+                    </div>
+
+                    <div class="dropdown">
+                        <label>
+                            {{ form.state }}
+                        </label>
+                    </div>
+
+                    <div class="dropdown">
+                        {% if form.municipal %}
+                            <label>
+                                {{ form.municipal }}
+                            </label>   
+                        {% else %}
+                            <label>
+                                No municipal
+                            </label>
+                        {% endif %}
+                    </div>
+
+                    <div class="container">
+                        <div class="back-button"><button type="button">Back</button></div>
+                        <div class="submit-button"><button type="submit">Submit</button></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<script>
+    let state_select = document.getElementById('state');
+    let municipal_select = document.getElementById('municipal');
+
+    state_select.onchange = function() {
+        state = state_select.value;
+        fetch('/municipal/' + state).then(function(response) {
+            response.json().then(function(data) {
+                let optionHTML = '';
+
+                for (let municipal of data.municipals) {
+                    optionHTML += '<option value="' + municipal.id + '">' + municipal.name + '</option>';
+                }
+
+                municipal_select.innerHTML = optionHTML;
             });
-        }
-    </script>
-</body>
-</html>
+        });
+    }
+</script>
+
+{% endblock%}
