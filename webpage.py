@@ -797,6 +797,11 @@ def Q21():
     answers = ['Yes', 'No']
     return render_template('yesorno.html', question=question, answers=answers)
 
+@app.route("/test2", methods=["POST", "GET"])
+@login_required
+def test2():
+    return render_template('StarRating.html')
+
 # @app.route("/login", methods=["POST", "GET"])
 # def login():
 #     if request.method == "POST":
