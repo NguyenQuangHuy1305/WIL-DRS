@@ -1,6 +1,7 @@
 # todo list: make a function to ask user questions and able to store the answers for those questions
 # show the user a list of locations (with picture and name), store their selection (for ex: user 1 - location2/ user 2 - location10/... in UserLocation table)
 
+from asyncio.windows_events import NULL
 from audioop import reverse
 from tkinter.tix import Select
 from tokenize import String
@@ -48,7 +49,6 @@ class User(db.Model, UserMixin):
     username = db.Column(db.String(100), nullable=False, unique=True)
     password = db.Column(db.String(100), nullable=False)
 
-
 class Location(db.Model):
     id = db.Column("id", db.Integer, primary_key=True)
     name = db.Column(db.String(100), nullable=False, unique=True)
@@ -72,6 +72,10 @@ class Location(db.Model):
     religiousTourism = db.Column(db.Integer, nullable=False)
     sports = db.Column(db.Integer, nullable=False)
 
+class History(db.Model):
+    id = db.Column("id", db.Integer, primary_key=True)
+    user = db.Column(db.String(100))
+    location = db.Column(db.String(100))
 
 class Municipal(db.Model):
     id = db.Column("id", db.Integer, primary_key=True)
@@ -233,13 +237,13 @@ def instruction():
 def consent():
     return render_template('consent.html')
 
-@app.route("/Q20", methods=["GET"])
-@login_required
-def Q20():
-    # Please retrieve a location image here and pass to the frontend page.
-    question = "Have you been to this destination?"
-    answers = ['Yes', 'No']
-    return render_template('Q20.html', question=question, answers=answers)
+# @app.route("/Q20", methods=["GET"])
+# @login_required
+# def Q20():
+#     # Please retrieve a location image here and pass to the frontend page.
+#     question = "Have you been to this destination?"
+#     answers = ['Yes', 'No']
+#     return render_template('Q20.html', question=question, answers=answers)
 
 @app.route("/surpriseme")
 @login_required
@@ -275,7 +279,8 @@ def Q0():
 
     question = "Are you searching for a destination recommendation for a specific trip or just curious to find out about destinations in general?"
     answers = ['Yes - I want information for a specific trip', 'No - I am just curious to find out about destinations in general']
-    return render_template('yesorno.html', question=question, answers=answers)
+    back = "/"
+    return render_template('yesorno.html', question=question, answers=answers, back=back)
 
 
 @app.route("/Q1", methods=["POST", "GET"])
@@ -393,6 +398,8 @@ def Q2():
             recommended_location_list.append(location.name)
 
         session['recommended_location_list'] = recommended_location_list
+        session['recommended_id_list'] = recommended_id_list
+
         # return render_template("recommendation.html", locations = recommended_location_list)
         return redirect(url_for('Q3'))
 
@@ -708,7 +715,7 @@ def has_numbers(inputString):
 def Q19():
     if request.method == 'POST':
         answers = request.form.getlist('QText')
-        print(answers)
+        print(current_user.id)
         if len(answers[0]) == 0:
             flash("Destination name must not be blank", 'danger')
             return redirect(url_for('Q19'))
@@ -716,33 +723,80 @@ def Q19():
             flash("Destination name must not have numbers", 'danger')
             return redirect(url_for('Q19'))
         else:
-            recommended_location_list = session['recommended_location_list']
-            return render_template("recommendation.html", locations=recommended_location_list)
+            session['times_looped'] = 0
+            recommended_id_list = session['recommended_id_list']
+            print(recommended_id_list)
+            return redirect(url_for('Q20'))
 
     question = "Which was the best destination you have been to?"
     return render_template('QText.html', question=question)
 
-# @app.route("/Q20", methods=["POST", "GET"])
-# @login_required
-# def Q20():
-#     if request.method == 'POST':
-#         answer = request.form.getlist('QPicture')
-#         if len(answers) != 1 and session['times_looped'] != 3:
-#             flash("You can only choose 1 option", 'danger')
-#             return redirect(url_for('Q18'))
-#         elif answer[0] == "Yes" and session['times_looped'] != 3:
-#             session['times_looped'] += 1
-#             return redirect(url_for('Q20'))
-#         elif answer[0] == "No" and session['times_looped'] != 3:
-#             session['times_looped'] += 1
-#             return redirect(url_for('Q20'))
-#         elif session['times_looped'] == 3:
-#             return redirect(url_for('/'))
+@app.route("/Q20", methods=["POST", "GET"])
+@login_required
+def Q20():
 
-#     question = "Have you been to this destination?"
-#     answers = ['Yes', 'No']
-#     location =''
-#     return render_template('QPicture.html', question = question, location = location, answers = answers)
+    recommended_id_list = session['recommended_id_list']
+    times_needed_to_loop = 3 # times_needed_to_loop = how many time do we need to loop Q20
+    times_looped = session['times_looped']
+
+    # loop through the recommended_id_list, if any locationId were found in the History table, remove that locationId from recommended_id_list
+    for locationID in recommended_id_list:
+        result = History.query.filter_by(user=current_user.id, location=locationID).first()
+        if result is not None:
+            print(recommended_id_list)
+            recommended_id_list.remove(int(result.location))
+            print(recommended_id_list)
+
+    if request.method == 'POST':
+        answer = request.form.getlist('Q20')
+
+        # if the user choose both yes and no
+        if len(answer) != 1 and times_looped != times_needed_to_loop:
+            flash("You can only choose 1 option", 'danger')
+            return redirect(url_for('Q20'))
+
+        # if the user had been to this location before (yes)
+        elif answer[0] == "Yes":
+
+            new_history = History(user=current_user.id, location=recommended_id_list[times_looped])
+            db.session.add(new_history)
+            db.session.commit()
+
+            return render_template('DestinationEvaluation.html', location=recommended_id_list[times_looped])
+
+        # if the user has not been to this location before (no)
+        elif answer[0] == "No" and times_looped != times_needed_to_loop:
+            session['times_looped'] += 1
+            print(session['times_looped'])
+
+            return render_template('DestinationDetail.html', location=recommended_id_list[times_looped])
+
+    question = "Have you been to this destination?"
+    answers = ['Yes', 'No']
+    location = Location.query.filter_by(id=recommended_id_list[times_looped]).first()
+    location = location.name
+    if times_looped != times_needed_to_loop:
+        return render_template('Q20.html', question = question, location = location, answers = answers)
+    elif times_looped == times_needed_to_loop:
+        return redirect(url_for('Q21'))
+
+@app.route("/Q21", methods=["POST", "GET"])
+@login_required
+def Q21():
+    if request.method == 'POST':
+        answer = request.form.getlist('Q1')
+        print(answer)
+        if len(answer) != 1:
+            flash("You can only choose 1 option", 'danger')
+            return redirect(url_for('Q21'))
+        elif "Yes" in answer:
+            return redirect(url_for('Q0'))
+        elif "No" in answer:
+            return redirect(url_for('welcome'))
+
+    question = "Would you like to be recommended more destinations?"
+    answers = ['Yes', 'No']
+    return render_template('yesorno.html', question=question, answers=answers)
 
 # @app.route("/login", methods=["POST", "GET"])
 # def login():
