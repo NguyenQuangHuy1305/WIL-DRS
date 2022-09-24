@@ -39,7 +39,7 @@ create_table = '''CREATE TABLE location(
 cursor.execute(create_table)
 
 # Opening the person-records.csv file
-file = open('Destination_tags_sum.csv')
+file = open('test.csv')
 
 # Reading the contents of the
 # person-records.csv file

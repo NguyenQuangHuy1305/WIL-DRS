@@ -761,9 +761,64 @@ def Q20():
             db.session.commit()
 
             location = Location.query.filter_by(id=recommended_id_list[times_looped]).first()
-            location = location.name
+            
+            activities = Location.__table__.columns.keys()
+            activities = activities[2:]
+            temp_activities = []
 
-            return render_template('DestinationEvaluation.html', location=location, question='Rate this destination')
+            for activity in activities:
+                count = getattr(location, activity)
+                if count != 0:
+                    temp_activities.append(activity)
+
+            # determine if count of temp_activities > 8 or not, if not then pass all 8, descending count
+            if len(temp_activities) <= 8:
+                final_activities = temp_activities # do nothing
+            elif len(temp_activities) > 8:
+                final_activities = []
+                # find top 3 labels, call top_3
+                top_3 = []
+                # creating a list of count of all activities
+                count_list = []
+                for activity in temp_activities:
+                    count = getattr(location, activity)
+                    count_list.append(count)
+                # create a list of tuples, sort that tuple (sort always sort by 1st element of a tuple), get top 3 tuples
+                top_3_tuples = sorted(zip(count_list, temp_activities), reverse=True)[:3]
+                # loop through the tuples, append the top 3 activities
+                for i in top_3_tuples:
+                    top_3.append(i[1])
+                # pick random 1 of the 3
+                final_activities.append(random.choice(top_3))
+                top_3.remove(final_activities[0])
+                temp_activities.remove(final_activities[0])
+                # pick random 1 of the remaining 2 in top_3
+                final_activities.append(random.choice(top_3))
+                temp_activities.remove(final_activities[1])
+
+                # find all labels with freq > 2 (not including the 2 chosen one above), called freq_more_than_2
+                freq_more_than_2 = []
+                for activity in temp_activities:
+                    count = getattr(location, activity)
+                    if count >=2:
+                        freq_more_than_2.append(activity)
+                # continue to pick from freq_more_than_2 until got 6 labels (activities) in total or there's no more activities in freq_more_than_2
+                while len(freq_more_than_2) > 0 and len(final_activities) < 6:
+                    # pick 1 random from freq_more_than_2
+                    random_activity = random.choice(freq_more_than_2)
+                    final_activities.append(random_activity)
+                    freq_more_than_2.remove(random_activity)
+                    temp_activities.remove(random_activity)
+
+                # pick 1 random from the remaining labels (not including the chosen 6), keep picking until got 8 labels
+                while len(final_activities) != 8:
+                    random_activity = random.choice(temp_activities)
+                    final_activities.append(random_activity)
+                    temp_activities.remove(random_activity)
+                # pass into template
+            print(f'{final_activities}')
+
+            return render_template('DestinationEvaluation.html', location=location.name, question='Rate this destination', activities=final_activities)
 
         # if the user has not been to this location before (no)
         elif answer[0] == "No" and times_looped != times_needed_to_loop:
