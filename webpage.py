@@ -114,20 +114,6 @@ class Form(FlaskForm):
         ('TO', 'Tocantins')])
     municipal = SelectField('municipal', choices=[])
 
-
-@app.route('/test', methods=['GET', 'POST'])
-def test():
-    form = Form()
-    form.municipal.choices = [(municipal.id, municipal.name)
-                              for municipal in Municipal.query.filter_by(state='AC').all()]
-
-    if request.method == "POST":
-        municipal = Municipal.query.filter_by(id=form.municipal.data).first()
-        return 'State: {}, Municipal: {}'.format(form.state.data, municipal.name)
-
-    return render_template('QSelectField.html', form=form)
-
-
 @app.route('/municipal/<state>')
 def municipal(state):
     municipals = Municipal.query.filter_by(state=state).all()
@@ -191,7 +177,7 @@ def login():
             if bcrypt.check_password_hash(user.password, form.password.data):
                 login_user(user)
                 flash(f'Login successful as {form.username.data}!', 'success')
-                return redirect(url_for('Q1'))
+                return redirect(url_for('Q0'))
             else:
                 flash(
                     "Login unsuccessful, please check username and/or password", 'danger')
@@ -431,38 +417,51 @@ def Q2():
     else:
         return f"you haven't answer 1st question"
 
-
-@app.route("/Q3", methods=["POST", "GET"])
+@app.route('/Q3', methods=['GET', 'POST'])
 @login_required
 def Q3():
-    if request.method == 'POST':
-        answers = request.form.getlist('Q1')
-        if len(answers) != 1:
-            flash("You can only choose 1 option", 'danger')
-            return redirect(url_for('Q3'))
-        else:
-            return redirect(url_for('Q4'))
+    form = Form()
+    form.municipal.choices = [(municipal.id, municipal.name)
+                              for municipal in Municipal.query.filter_by(state='AC').all()]
+
+    if request.method == "POST":
+        municipal = Municipal.query.filter_by(id=form.municipal.data).first()
+        return 'State: {}, Municipal: {}'.format(form.state.data, municipal.name)
 
     question = "In which state do you live?"
-    answers = ['AC', 'AL', 'AP', 'AM', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MT', 'MS', 'MG',
-               'PA', 'PB', 'PR', 'PE', 'PI', 'RN', 'RS', 'RJ', 'RO', 'RR', 'SC', 'SP', 'SE', 'TO']
-    return render_template('Q1.html', question=question, answers=answers)
+    return render_template('QSelectField.html', form=form, question=question)
+
+# @app.route("/Q3", methods=["POST", "GET"])
+# @login_required
+# def Q3():
+#     if request.method == 'POST':
+#         answers = request.form.getlist('Q1')
+#         if len(answers) != 1:
+#             flash("You can only choose 1 option", 'danger')
+#             return redirect(url_for('Q3'))
+#         else:
+#             return redirect(url_for('Q4'))
+
+#     question = "In which state do you live?"
+#     answers = ['AC', 'AL', 'AP', 'AM', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MT', 'MS', 'MG',
+#                'PA', 'PB', 'PR', 'PE', 'PI', 'RN', 'RS', 'RJ', 'RO', 'RR', 'SC', 'SP', 'SE', 'TO']
+#     return render_template('Q1.html', question=question, answers=answers)
 
 
-@app.route("/Q4", methods=["POST", "GET"])
-@login_required
-def Q4():
-    if request.method == 'POST':
-        answers = request.form.getlist('Q1')
-        if len(answers) != 1:
-            flash("You can only choose 1 option", 'danger')
-            return redirect(url_for('Q4'))
-        else:
-            return redirect(url_for('Q5'))
+# @app.route("/Q4", methods=["POST", "GET"])
+# @login_required
+# def Q4():
+#     if request.method == 'POST':
+#         answers = request.form.getlist('Q1')
+#         if len(answers) != 1:
+#             flash("You can only choose 1 option", 'danger')
+#             return redirect(url_for('Q4'))
+#         else:
+#             return redirect(url_for('Q5'))
 
-    question = "In which municipality do you live?"
-    answers = []
-    return render_template('Q1.html', question=question, answers=answers)
+#     question = "In which municipality do you live?"
+#     answers = []
+#     return render_template('Q1.html', question=question, answers=answers)
 
 
 @app.route("/Q5", methods=["POST", "GET"])
