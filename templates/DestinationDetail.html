@@ -1,18 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>This is the detail page</p>
-    
-    <p>{{ location }}</p>
+{% extends "base.html" %}
+{% block title %}Homepage{% endblock %}
+{% block content %}
 
-    <form action="/Q20">
-        <input type="submit" value="Next" />
-    </form>
-</body>
-</html>
+<style>
+    /* mobile */
+    .container-fluid {
+        padding-top: 40px;
+    }
+
+    .welcome-name {
+        text-align: center;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .welcome-info {
+        margin-bottom: 0;
+        text-align: center;
+        font-size: 15px;
+        line-height: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+        color: #545563;
+        font-weight: 400;
+    }    
+    
+    .location-description {
+        margin-bottom: 0;
+        text-align: center;
+        font-size: 15px;
+        line-height: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 30px;
+        color: #545563;
+        font-weight: 400;
+    }
+
+    .responsive {
+        width: 100%;
+        height: 50%;
+    }
+
+    a {
+        text-decoration: none;
+        color: #4E60FF;
+    }
+
+    .rating-title {
+        font-weight: bold;
+        margin-left: 22px;
+        margin-right: 22px;
+        margin-top: 25px;
+    }
+
+    .q20-submit .submit-button {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+    }
+
+    .q20-submit button {
+        background-color: #301c12;
+        color: white;
+        padding: 14px 20px;
+        margin: 10px auto;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    /* desktop */
+    @media (min-width: 768px) {
+        .responsive {
+            width: 100%;
+            height: 60%;
+        }
+    }
+</style>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <p class="welcome-info">
+                Recommended Destination<br>
+            </p>
+
+            <p class="welcome-name">
+                <!-- retrieve location name from the backend variable  -->
+                {{ location }}
+            </p>
+
+            <img src="static/images/mountains.jpg" alt="Houses" class="responsive" width="600" height="400">
+
+            <p class="location-description">
+                Rio de Janeiro is a huge seaside city in Brazil, famed for its Copacabana...(some info about the destination)
+            </p>
+
+            <div>
+                <p class="rating-title">
+                    Best destination for:
+                </p>
+
+            </div>
+
+            <div id="form-block">
+                <form method="POST" action="/Q20">
+                    <div class="q20-submit">
+                        <div class="submit-button"><button type="submit" value="Next">More Destinations</button></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock%}
