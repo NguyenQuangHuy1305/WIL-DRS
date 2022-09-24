@@ -760,7 +760,10 @@ def Q20():
             db.session.add(new_history)
             db.session.commit()
 
-            return render_template('DestinationEvaluation.html', location=recommended_id_list[times_looped])
+            location = Location.query.filter_by(id=recommended_id_list[times_looped]).first()
+            location = location.name
+
+            return render_template('DestinationEvaluation.html', location=location, question='Rate this destination')
 
         # if the user has not been to this location before (no)
         elif answer[0] == "No" and times_looped != times_needed_to_loop:
@@ -799,6 +802,13 @@ def Q21():
 @app.route("/test2", methods=["POST", "GET"])
 @login_required
 def test2():
+    if request.method == 'POST':
+        answer = request.form.getlist('rate')
+        print(answer)
+        answer2 = request.form.getlist('rate2')
+        print(answer2)
+        return redirect(url_for('test2'))
+
     return render_template('StarRating.html')
 
 # @app.route("/login", methods=["POST", "GET"])

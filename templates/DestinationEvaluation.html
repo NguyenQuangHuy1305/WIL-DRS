@@ -1,18 +1,192 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>This is the evaluation page</p>
+{% extends "base.html" %}
+{% block title %}Let us know you better{% endblock %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="static/style.css">
 
-    <p>{{ location }}</p>
+<style>
+    /* mobile */
+    .container-fluid {
+        padding-top: 40px;
+    }
 
-    <form action="/Q20">
-        <input type="submit" value="Next" />
-    </form>
-</body>
-</html>
+    .welcome-name {
+        text-align: center;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .welcome-info {
+        margin-bottom: 0;
+        text-align: center;
+        font-size: 15px;
+        line-height: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+        color: #545563;
+        font-weight: 400;
+    }
+
+    .show-map {
+        text-align: center;
+        font-size: 15px;
+        text-decoration: none;
+        margin-bottom: 5px;
+    }
+
+    .responsive {
+        width: 100%;
+        height: 50%;
+    }
+
+    .question-q20 {
+        margin-top: 50px;
+        margin-bottom: 0;
+        text-align: center;
+        font-size: 15px;
+        line-height: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+        color: #545563;
+        font-weight: 400;
+    }
+
+    a {
+        text-decoration: none;
+        color: #4E60FF;
+    }
+
+    .option-block {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #ck-button {
+        border-radius: 8px;
+        border: 1px solid #D0D0D0;
+        overflow: auto;
+        float: left;
+        box-shadow: 2px 4px #f3f3f3;
+        width: 45%;
+        margin: 10px 0px
+    }
+
+    input[type=checkbox],
+    select {
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    #ck-button label {
+        float: left;
+        width: 100%;
+        overflow: hidden;
+        color: #2B2B43;
+        font-weight: bold;
+    }
+
+    #ck-button label span {
+        text-align: center;
+        padding: 8px 0px;
+        display: block;
+        border-radius: 4px;
+        height: 100%;
+    }
+
+    #ck-button label input {
+        position: absolute;
+        top: -30px;
+    }
+
+    #ck-button input:hover {
+        background-color: #f6c7ae;
+    }
+
+    #ck-button input:checked+span {
+        background-color: #f29e70;
+        color: #fff;
+    }
+
+    #ck-button input:checked:hover+span {
+        background-color: #dc7e4b;
+        color: #fff;
+    }
+
+    .q20-submit .submit-button {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+    }
+
+    .q20-submit button {
+        background-color: #301c12;
+        color: white;
+        padding: 14px 20px;
+        margin: 10px auto;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    /* desktop */
+    @media (min-width: 768px) {
+        .responsive {
+            width: 100%;
+            height: 60%;
+        }
+    }
+</style>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <p class="welcome-info">
+                Destination evaluation<br>
+            </p>
+
+            <p class="welcome-name">
+                <!-- retrieve location name from the backend variable  -->
+                {{ location }}
+            </p>
+
+            <img src="static/images/welcome.jpg" alt="Nature" class="responsive" width="400" height="300">
+
+            <p class="question-q20">
+                {{ question }}
+                <br>
+                <br>
+            </p>
+
+            <div id="form-block">
+                <div class="stars">
+                    <form method="POST" action="">
+                        <div class="option-block">
+                            <!-- This is the where the stars will be -->
+                            <input type="radio" id="one" name="rate" value="1">
+                            <label for="one"></label>
+                            <input type="radio" id="two" name="rate" value="2">
+                            <label for="two"></label>
+                            <input type="radio" id="three" name="rate" value="3">
+                            <label for="three"></label>
+                            <input type="radio" id="four" name="rate" value="4">
+                            <label for="four"></label>
+                            <input type="radio" id="five" name="rate" value="5">
+                            <label for="five"></label>
+                            <input type="radio" id="six" name="rate" value="6">
+                            <label for="six"></label>
+                            <input type="radio" id="seven" name="rate" value="7">
+                            <label for="seven"></label>
+                        </div>
+                        <div class="q20-submit">
+                            <div class="submit-button"><button type="submit">Submit</button></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock%}

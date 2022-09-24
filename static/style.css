@@ -12,15 +12,15 @@
 }
 .center .stars{
   height: 150px;
-  width: 500px;
+  width: 700px;
   text-align: center;
 }
 .stars input{
   display: none;
 }
 .stars label{
-  float: right;
-  font-size: 100px;
+  float: left;
+  font-size: 20px;
   color: lightgrey;
   margin: 0 5px;
   text-shadow: 1px 1px #bbb;
@@ -54,10 +54,10 @@
   font-family: 'Poppins', sans-serif;
   display: none;
 }
-.stars input:checked ~ .result:before{
+/* .stars input:checked ~ .result:before{
   display: block;
 }
-/* .stars #five:checked ~ .result:before{
+.stars #five:checked ~ .result:before{
   content: "I love it ";
 }
 .stars #four:checked ~ .result:before{
