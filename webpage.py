@@ -1,7 +1,6 @@
 # todo list: make a function to ask user questions and able to store the answers for those questions
 # show the user a list of locations (with picture and name), store their selection (for ex: user 1 - location2/ user 2 - location10/... in UserLocation table)
 
-from asyncio.windows_events import NULL
 from audioop import reverse
 from tkinter.tix import Select
 from tokenize import String
