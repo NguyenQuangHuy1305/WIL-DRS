@@ -27,20 +27,7 @@
         font-weight: 400;
     }
 
-    .show-map {
-        text-align: center;
-        font-size: 15px;
-        text-decoration: none;
-        margin-bottom: 5px;
-    }
-
-    .responsive {
-        width: 100%;
-        height: 50%;
-    }
-
-    .question-q20 {
-        margin-top: 50px;
+    .rate-this-destination {
         margin-bottom: 0;
         text-align: center;
         font-size: 15px;
@@ -49,71 +36,18 @@
         margin-right: 15px;
         color: #545563;
         font-weight: 400;
+        margin-top: 20px;
     }
 
-    a {
-        text-decoration: none;
-        color: #4E60FF;
+    .responsive {
+        width: 100%;
+        height: 50%;
     }
 
     .option-block {
         display: flex;
         justify-content: space-evenly;
-    }
-
-    #ck-button {
-        border-radius: 8px;
-        border: 1px solid #D0D0D0;
-        overflow: auto;
-        float: left;
-        box-shadow: 2px 4px #f3f3f3;
-        width: 45%;
-        margin: 10px 0px
-    }
-
-    input[type=checkbox],
-    select {
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
-
-    #ck-button label {
-        float: left;
-        width: 100%;
-        overflow: hidden;
-        color: #2B2B43;
-        font-weight: bold;
-    }
-
-    #ck-button label span {
-        text-align: center;
-        padding: 8px 0px;
-        display: block;
-        border-radius: 4px;
-        height: 100%;
-    }
-
-    #ck-button label input {
-        position: absolute;
-        top: -30px;
-    }
-
-    #ck-button input:hover {
-        background-color: #f6c7ae;
-    }
-
-    #ck-button input:checked+span {
-        background-color: #f29e70;
-        color: #fff;
-    }
-
-    #ck-button input:checked:hover+span {
-        background-color: #dc7e4b;
-        color: #fff;
+        margin-top: 5px;
     }
 
     .q20-submit .submit-button {
@@ -154,15 +88,14 @@
 
             <img src="static/images/welcome.jpg" alt="Nature" class="responsive" width="400" height="300">
 
-            <p class="question-q20">
-                {{ question }}
-                <br>
-                <br>
+            <p class="rate-this-destination">
+                Rate this destination<br>
             </p>
 
             <div id="form-block">
                 <div class="stars">
                     <form method="POST" action="">
+                        {% for i in range(8): %}
                         <div class="option-block">
                             <!-- This is the where the stars will be -->
                             <input type="radio" id="one" name="rate" value="1">
@@ -180,6 +113,7 @@
                             <input type="radio" id="seven" name="rate" value="7">
                             <label for="seven"></label>
                         </div>
+                        {% endfor %}
                         <div class="q20-submit">
                             <div class="submit-button"><button type="submit">Submit</button></div>
                         </div>

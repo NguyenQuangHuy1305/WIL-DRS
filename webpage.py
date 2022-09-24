@@ -763,7 +763,7 @@ def Q20():
             location = Location.query.filter_by(id=recommended_id_list[times_looped]).first()
             location = location.name
 
-            return render_template('DestinationEvaluation.html', location=location, question='Rate this destination')
+            return render_template('DestinationEvaluation.html', location=location)
 
         # if the user has not been to this location before (no)
         elif answer[0] == "No" and times_looped != times_needed_to_loop:
