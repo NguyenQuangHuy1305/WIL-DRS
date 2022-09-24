@@ -111,8 +111,8 @@ class Form(FlaskForm):
     municipal = SelectField('municipal', choices=[])
 
 
-@app.route('/test', methods=['GET', 'POST'])
-def test():
+@app.route('/Q4', methods=['GET', 'POST'])
+def Q4():
     form = Form()
     form.municipal.choices = [(municipal.id, municipal.name)
                               for municipal in Municipal.query.filter_by(state='AC').all()]
@@ -442,20 +442,20 @@ def Q3():
     return render_template('Q1.html', question=question, answers=answers)
 
 
-@app.route("/Q4", methods=["POST", "GET"])
-@login_required
-def Q4():
-    if request.method == 'POST':
-        answers = request.form.getlist('Q1')
-        if len(answers) != 1:
-            flash("You can only choose 1 option", 'danger')
-            return redirect(url_for('Q4'))
-        else:
-            return redirect(url_for('Q5'))
+# @app.route("/Q4", methods=["POST", "GET"])
+# @login_required
+# def Q4():
+#     if request.method == 'POST':
+#         answers = request.form.getlist('Q1')
+#         if len(answers) != 1:
+#             flash("You can only choose 1 option", 'danger')
+#             return redirect(url_for('Q4'))
+#         else:
+#             return redirect(url_for('Q5'))
 
-    question = "In which municipality do you live?"
-    answers = []
-    return render_template('Q1.html', question=question, answers=answers)
+#     question = "In which municipality do you live?"
+#     answers = []
+#     return render_template('Q1.html', question=question, answers=answers)
 
 
 @app.route("/Q5", methods=["POST", "GET"])
