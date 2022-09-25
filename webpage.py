@@ -17,6 +17,7 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField, BooleanField, SelectField
 from wtforms.validators import InputRequired, Length, ValidationError, EqualTo
 from flask_bcrypt import Bcrypt
+from collections import Counter
 
 import random
 from model import DRSModel
@@ -87,6 +88,26 @@ class Rating(db.Model):
     user = db.Column(db.String(2))
     location_id = db.Column(db.String(100))
     location_rating = db.Column(db.String(1))
+
+    beach_rating = db.Column(db.Integer, nullable=False)
+    boatTrips_rating = db.Column(db.Integer, nullable=False)
+    indigenousTourism_rating = db.Column(db.Integer, nullable=False)
+    museumsAndCultureCentres_rating = db.Column(db.Integer, nullable=False)
+    nationalParksAndProtectedAreas_rating = db.Column(db.Integer, nullable=False)
+    rural_rating = db.Column(db.Integer, nullable=False)
+    themeParks_rating = db.Column(db.Integer, nullable=False)
+    urbanSightseeing_rating = db.Column(db.Integer, nullable=False)
+    waterActivities_rating = db.Column(db.Integer, nullable=False)
+    winterActivities_rating = db.Column(db.Integer, nullable=False)
+    architectureAndHeritage_rating = db.Column(db.Integer, nullable=False)
+    arts_rating = db.Column(db.Integer, nullable=False)
+    culture_rating = db.Column(db.Integer, nullable=False)
+    excitement_rating = db.Column(db.Integer, nullable=False)
+    gastronomy_rating = db.Column(db.Integer, nullable=False)
+    nature_rating = db.Column(db.Integer, nullable=False)
+    relaxation_rating = db.Column(db.Integer, nullable=False)
+    religiousTourism_rating = db.Column(db.Integer, nullable=False)
+    sports_rating = db.Column(db.Integer, nullable=False)
 
 class Form(FlaskForm):
     state = SelectField('state', choices=[
@@ -747,9 +768,9 @@ def Q20():
     for locationID in recommended_id_list:
         result = History.query.filter_by(user=current_user.id, location=locationID).first()
         if result is not None:
-            print(recommended_id_list)
+            # print(recommended_id_list)
             recommended_id_list.remove(int(result.location))
-            print(recommended_id_list)
+            # print(recommended_id_list)
 
     if request.method == 'POST':
         answer = request.form.getlist('Q20')
@@ -822,7 +843,6 @@ def Q20():
                     final_activities.append(random_activity)
                     temp_activities.remove(random_activity)
                 # pass into template
-            print(f'{final_activities}')
             session['final_activities'] = final_activities
             session['current_location_name'] = location.name
             session['current_location_id'] = location.id
@@ -831,10 +851,57 @@ def Q20():
 
         # if the user has not been to this location before (no)
         elif "No" in answer and times_looped != times_needed_to_loop:
-            session['times_looped'] += 1
-            print(session['times_looped'])
+            location = Location.query.filter_by(id=recommended_id_list[times_looped]).first()
+            location_name = location.name     
+
+            avg = {}
+            # query all average ratings of all activities belong to that location
+            ratings = Rating.__table__.columns.keys()
+            ratings = ratings[4:]
+
+            # get all rating belongs to the current location
+            all_rating_of_current_location = Rating.query.filter_by(location_id=location.id).all()
+
+            # get the average rating of a location:
+            sum = 0
+            count = 0
+            for i in all_rating_of_current_location:
+                score = i.location_rating
+                if score != 0:
+                    sum = sum + score
+                    count += 1
+            if count != 0:
+                location_average_rating = sum / count
+            elif count == 0:
+                location_average_rating = 0
+            print(location_average_rating)
+
+            # loop through all rating, we'll add key-value pair (rating-avg_rating) to the avg dict with each loop
+            for rating in ratings:
+                sum = 0
+                count = 0
+                for i in all_rating_of_current_location:
+                    score = getattr(i, rating)
+                    # we only count if the rating is not 0, 0 means that no one has rated that location, or any location related activities yet
+                    if score != 0:
+                        sum = sum + score
+                        count += 1
+                # if we found out that indeed there had been rating for this location, then add the activity-avg_rating to the avg dict
+                if count != 0:
+                    avg[f'{rating}'] = sum / count
+                # if we can't find any rating for that location, then just give the default value of 0
+                elif count == 0:
+                    avg[f'{rating}'] = 0
+
+            # getting the top 3 pairs (highest value aka average rating) in avg dict
+            c = Counter(avg)
+            top_three_activities = c.most_common(3)  # returns top 3 pairs
+            print(top_three_activities)
+
+            # create a dict for those 3 activities
             top_three_activities = ['Relaxation', 'Excitment', 'Culture']# need a dictionary including tuples here: each rate activity should also be retrieved with the average review stars such as 6
-            return render_template('DestinationDetail.html', location=recommended_id_list[times_looped], top_three_activities=top_three_activities)
+            session['times_looped'] += 1
+            return render_template('DestinationDetail.html', location=location_name, top_three_activities=top_three_activities)
 
     question = "Have you been to this destination?"
     answers = ['Yes', 'No']
@@ -849,13 +916,56 @@ def Q20():
 @login_required
 def DestinationEvaluation():
     if request.method == 'POST':
-        answer = request.form.getlist('rate')
-        print(answer)
+        # data is where we will store all rating scores
+        data = {}
 
-        if len(answer) != 0:
-            new_rating = Rating(user=current_user.id, location_id=session['current_location_id'], location_rating = answer[0])
-            db.session.add(new_rating)
-            db.session.commit()
+        # getting the list of rating for the "location rating" part
+        location_rate = request.form.getlist('location-rate')
+        # if the user rated the location (1-7 star(s)), then add that key-value pair to the dict
+        if len(location_rate) != 0:
+            data['location_rating'] = location_rate[0]
+        # if the user didn't rate (0 star), then add the key-value (value = 0) to the dict
+        elif len(activity_rate) == 0:
+            data['location_rating'] = '0'
+
+        final_activities = session['final_activities']
+        # loop through the list of 8 (ideally) activities being rated in the DestinationEvaluation route, get the corresponding rating from the form, then create new key-value pairs in data dict accordingly
+        for activity in final_activities:
+            activity_rate = request.form.getlist(f'{activity}-rate')
+            # print(activity_rate)
+            if len(activity_rate) != 0:
+                data[f'{activity}_rating'] = activity_rate[0]
+            elif len(activity_rate) == 0:
+                data[f'{activity}_rating'] = '0'
+        print(data)
+
+        # create a new Rating row (record), if we can find the key (activity), then use the associated value, if not we assume the user rated 0 for that activity 
+        # 0 in Rating table means that there's no rating for that activity yet, not rating of 0 (worst)
+        new_rating = Rating(user=current_user.id, 
+                            location_id=session['current_location_id'],
+                            location_rating = data.get('location_rating', '0'),
+                            beach_rating = data.get('beach_rating', '0'),
+                            boatTrips_rating = data.get('boatTrips_rating', '0'),
+                            indigenousTourism_rating = data.get('indigenousTourism_rating', '0'),
+                            museumsAndCultureCentres_rating = data.get('museumsAndCultureCentres_rating', '0'),
+                            nationalParksAndProtectedAreas_rating = data.get('nationalParksAndProtectedAreas_rating', '0'),
+                            rural_rating = data.get('rural_rating', '0'),
+                            themeParks_rating = data.get('themeParks_rating', '0'),
+                            urbanSightseeing_rating = data.get('urbanSightseeing_rating', '0'),
+                            waterActivities_rating = data.get('waterActivities_rating', '0'),
+                            winterActivities_rating = data.get('winterActivities_rating', '0'),
+                            architectureAndHeritage_rating = data.get('architectureAndHeritage_rating', '0'),
+                            arts_rating = data.get('arts_rating', '0'),
+                            culture_rating = data.get('culture_rating', '0'),
+                            excitement_rating = data.get('excitement_rating', '0'),
+                            gastronomy_rating = data.get('gastronomy_rating', '0'),
+                            nature_rating = data.get('nature_rating', '0'),
+                            relaxation_rating = data.get('relaxation_rating', '0'),
+                            religiousTourism_rating = data.get('religiousTourism_rating', '0'),
+                            sports_rating = data.get('sports_rating', '0')
+                            )
+        db.session.add(new_rating)
+        db.session.commit()
 
         return redirect(url_for('Q20'))
 
@@ -870,7 +980,6 @@ def DestinationEvaluation():
 def Q21():
     if request.method == 'POST':
         answer = request.form.getlist('Q1')
-        print(answer)
         if len(answer) != 1:
             flash("You can only choose 1 option", 'danger')
             return redirect(url_for('Q21'))
