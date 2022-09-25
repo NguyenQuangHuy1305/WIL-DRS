@@ -74,6 +74,7 @@
     .rate-stars-location {
         display: flex;
         justify-content: center;
+        flex-direction: row-reverse;
     }
 
     .rate-stars {
@@ -158,7 +159,7 @@
                             
                             <div class="rate-stars">
                                 {% for i in range(1, 8) %}
-                                    <input type="radio" id="{{ final_activity + '-' }}{{i}}" name="{{ final_activity + '-' }}{{i}}" value="{{i}}">
+                                    <input type="radio" id="{{ final_activity + '-' }}{{i}}" name="{{ final_activity + '-' }}rate" value="{{i}}">
                                     <label for="{{ final_activity + '-' }}{{i}}"></label>
                                 {% endfor %}
                             </div>
