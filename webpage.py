@@ -4,6 +4,7 @@
 from audioop import reverse
 from tkinter.tix import Select
 from tokenize import String
+from typing import final
 from flask import Flask, redirect, url_for, render_template, request, session, flash, jsonify
 from datetime import timedelta
 from flask_sqlalchemy import SQLAlchemy
@@ -81,6 +82,11 @@ class Municipal(db.Model):
     state = db.Column(db.String(2))
     name = db.Column(db.String(100))
 
+class Rating(db.Model):
+    id = db.Column("id", db.Integer, primary_key=True)
+    user = db.Column(db.String(2))
+    location_id = db.Column(db.String(100))
+    location_rating = db.Column(db.String(1))
 
 class Form(FlaskForm):
     state = SelectField('state', choices=[
@@ -749,12 +755,12 @@ def Q20():
         answer = request.form.getlist('Q20')
 
         # if the user choose both yes and no
-        if len(answer) != 1 and times_looped != times_needed_to_loop:
+        if "Yes" in answer and "No" in answer:
             flash("You can only choose 1 option", 'danger')
             return redirect(url_for('Q20'))
 
         # if the user had been to this location before (yes)
-        elif answer[0] == "Yes":
+        elif "Yes" in answer:
 
             new_history = History(user=current_user.id, location=recommended_id_list[times_looped])
             db.session.add(new_history)
@@ -817,11 +823,14 @@ def Q20():
                     temp_activities.remove(random_activity)
                 # pass into template
             print(f'{final_activities}')
+            session['final_activities'] = final_activities
+            session['current_location_name'] = location.name
+            session['current_location_id'] = location.id
 
-            return render_template('DestinationEvaluation.html', location=location.name, question='Rate this destination', activities=final_activities)
+            return redirect(url_for('DestinationEvaluation'))
 
         # if the user has not been to this location before (no)
-        elif answer[0] == "No" and times_looped != times_needed_to_loop:
+        elif "No" in answer and times_looped != times_needed_to_loop:
             session['times_looped'] += 1
             print(session['times_looped'])
 
@@ -835,6 +844,26 @@ def Q20():
         return render_template('Q20.html', question = question, location = location, answers = answers)
     elif times_looped == times_needed_to_loop:
         return redirect(url_for('Q21'))
+
+@app.route("/DestinationEvaluation", methods=["POST", "GET"])
+@login_required
+def DestinationEvaluation():
+    if request.method == 'POST':
+        answer = request.form.getlist('rate')
+        print(answer)
+
+        if len(answer) != 0:
+            new_rating = Rating(user=current_user.id, location_id=session['current_location_id'], location_rating = answer[0])
+            db.session.add(new_rating)
+            db.session.commit()
+
+        return redirect(url_for('Q20'))
+
+    question='Rate this destination'
+    location_name = session['current_location_name']
+    final_activities = session['final_activities']
+
+    return render_template('DestinationEvaluation.html', location_name=location_name, question=question, final_activities=final_activities)
 
 @app.route("/Q21", methods=["POST", "GET"])
 @login_required

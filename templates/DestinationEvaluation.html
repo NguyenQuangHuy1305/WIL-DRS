@@ -95,9 +95,7 @@
             <div id="form-block">
                 <div class="stars">
                     <form method="POST" action="">
-                        {% for i in range(8): %}
                         <div class="option-block">
-                            <!-- This is the where the stars will be -->
                             <input type="radio" id="one" name="rate" value="1">
                             <label for="one"></label>
                             <input type="radio" id="two" name="rate" value="2">
@@ -113,7 +111,6 @@
                             <input type="radio" id="seven" name="rate" value="7">
                             <label for="seven"></label>
                         </div>
-                        {% endfor %}
                         <div class="q20-submit">
                             <div class="submit-button"><button type="submit">Submit</button></div>
                         </div>
