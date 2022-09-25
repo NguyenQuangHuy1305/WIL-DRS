@@ -4,6 +4,10 @@
 
 <style>
     /* mobile */
+    .row {
+        display: block;
+    }
+
     .container-fluid {
         padding-top: 40px;
     }
@@ -50,18 +54,56 @@
 
     .rating-title {
         font-weight: bold;
-        margin-left: 22px;
-        margin-right: 22px;
+        margin-left: 16px;
+        margin-right: 16px;
         margin-top: 25px;
     }
 
-    .q20-submit .submit-button {
+    .option-block {
         display: flex;
-        justify-content: center;
-        padding-top: 30px;
+        justify-content: flex-start;
     }
 
-    .q20-submit button {
+    p {
+        margin-bottom: 0;
+        font-size: 15px;
+        font-weight: bold;
+        align-self: center;
+    }
+
+    .stars {
+        margin: 15px;
+    }
+
+    .rate-category {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .rate-stars {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+    }
+
+    .detail-stars label:before {
+        float: left;
+        font-size: 20px;
+        margin: 0 0;
+        text-shadow: 1px 1px #bbb;
+        content: '★';
+        color: gold;
+        text-shadow: 1px 1px #c60;
+        padding-right: 5px;
+    }
+
+    #form-block .q20-submit .submit-button {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    #form-block .q20-submit button {
         background-color: #301c12;
         color: white;
         padding: 14px 20px;
@@ -101,15 +143,28 @@
                 <p class="rating-title">
                     Best destination for:
                 </p>
-
             </div>
 
             <div id="form-block">
-                <form method="POST" action="">
-                    <div class="q20-submit">
-                        <div class="submit-button"><button type="submit" value="Next">More Destinations</button></div>
+                <div class="stars">
+                    <div class="detail-stars">
+                        <form method="POST" action="">
+                            {% for top_three_activity in top_three_activities %}
+                            <div class="option-block">
+                                <div class="rate-stars">
+                                    <label for="{{ top_three_activity + '-' }}{{i}}"></label>
+                                </div>
+                                <div class="rate-category">
+                                    <p> 6/7 - {{ top_three_activity.capitalize() }}</p>
+                                </div>
+                            </div>
+                            {% endfor %}
+                            <div class="q20-submit">
+                                <div class="submit-button"><button type="submit" value="Next">More Destinations</button></div>
+                            </div>
+                        </form>
                     </div>
-                </form>
+                </div>                
             </div>
         </div>
     </div>

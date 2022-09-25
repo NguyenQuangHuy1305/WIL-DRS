@@ -22,7 +22,7 @@
   float: left;
   font-size: 20px;
   color: lightgrey;
-  margin: 0 5px;
+  margin: 0 0;
   text-shadow: 1px 1px #bbb;
 }
 .stars label:before{
