@@ -68,7 +68,7 @@
         margin-bottom: 0;
         font-size: 15px;
         font-weight: bold;
-        vertical-align: baseline;
+        align-self: center;
     }
 
     .stars {
@@ -94,6 +94,7 @@
         content: '★';
         color: gold;
         text-shadow: 1px 1px #c60;
+        padding-right: 5px;
     }
 
     #form-block .q20-submit .submit-button {
@@ -154,7 +155,7 @@
                                     <label for="{{ top_three_activity + '-' }}{{i}}"></label>
                                 </div>
                                 <div class="rate-category">
-                                    <p>{{ top_three_activity.capitalize() }}</p>
+                                    <p> 6/7 - {{ top_three_activity.capitalize() }}</p>
                                 </div>
                             </div>
                             {% endfor %}

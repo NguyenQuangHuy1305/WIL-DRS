@@ -833,7 +833,7 @@ def Q20():
         elif "No" in answer and times_looped != times_needed_to_loop:
             session['times_looped'] += 1
             print(session['times_looped'])
-            top_three_activities = ['Relaxation', 'Excitment', 'Culture']
+            top_three_activities = ['Relaxation', 'Excitment', 'Culture']# need a dictionary including tuples here: each rate activity should also be retrieved with the average review stars such as 6
             return render_template('DestinationDetail.html', location=recommended_id_list[times_looped], top_three_activities=top_three_activities)
 
     question = "Have you been to this destination?"
