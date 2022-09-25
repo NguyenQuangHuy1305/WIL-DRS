@@ -83,19 +83,21 @@
 
             <p class="welcome-name">
                 <!-- retrieve location name from the backend variable  -->
-                {{ location }}
+                {{ location_name }}
             </p>
 
             <img src="static/images/welcome.jpg" alt="Nature" class="responsive" width="400" height="300">
 
             <p class="rate-this-destination">
-                Rate this destination<br>
+                {{ question }}
             </p>
 
             <div id="form-block">
                 <div class="stars">
                     <form method="POST" action="">
+                        {% for final_activity in final_activities %}
                         <div class="option-block">
+                            <p>{{ final_activity.capitalize() }}</p>
                             <input type="radio" id="one" name="rate" value="1">
                             <label for="one"></label>
                             <input type="radio" id="two" name="rate" value="2">
@@ -111,10 +113,10 @@
                             <input type="radio" id="seven" name="rate" value="7">
                             <label for="seven"></label>
                         </div>
+                        {% endfor %}
                         <div class="q20-submit">
                             <div class="submit-button"><button type="submit">Submit</button></div>
                         </div>
-                        {{ activities }}
                     </form>
                 </div>
             </div>
