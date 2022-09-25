@@ -27,6 +27,10 @@
         font-weight: 400;
     }
 
+    .stars {
+        margin: 15px;
+    }
+
     .rate-this-destination {
         margin-bottom: 0;
         text-align: center;
@@ -75,6 +79,7 @@
     .rate-stars {
         display: flex;
         justify-content: flex-end;
+        flex-direction: row-reverse;
     }
 
     .q20-submit .submit-button {
@@ -152,20 +157,10 @@
                             </div>
                             
                             <div class="rate-stars">
-                                <input type="radio" id="one" name="rate" value="1">
-                                <label for="one"></label>
-                                <input type="radio" id="two" name="rate" value="2">
-                                <label for="two"></label>
-                                <input type="radio" id="three" name="rate" value="3">
-                                <label for="three"></label>
-                                <input type="radio" id="four" name="rate" value="4">
-                                <label for="four"></label>
-                                <input type="radio" id="five" name="rate" value="5">
-                                <label for="five"></label>
-                                <input type="radio" id="six" name="rate" value="6">
-                                <label for="six"></label>
-                                <input type="radio" id="seven" name="rate" value="7">
-                                <label for="seven"></label>
+                                {% for i in range(1, 8) %}
+                                    <input type="radio" id="{{ final_activity + '-' }}{{i}}" name="{{ final_activity + '-' }}{{i}}" value="{{i}}">
+                                    <label for="{{ final_activity + '-' }}{{i}}"></label>
+                                {% endfor %}
                             </div>
                         </div>
                         {% endfor %}
