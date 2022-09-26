@@ -109,6 +109,11 @@ class Rating(db.Model):
     religiousTourism_rating = db.Column(db.Integer, nullable=False)
     sports_rating = db.Column(db.Integer, nullable=False)
 
+class Image(db.Model):
+    id = db.Column("id", db.Integer, primary_key=True)
+    location_name = db.Column(db.String(100), nullable=False)
+    img_url = db.Column(db.String(100))
+
 class Form(FlaskForm):
     state = SelectField('state', choices=[
         ('AC', 'Acre'),
@@ -789,7 +794,9 @@ def Q20():
 
             location = Location.query.filter_by(id=recommended_id_list[times_looped]).first()
             
+            # get all the column names from the Location table
             activities = Location.__table__.columns.keys()
+            # get all the activities from the column' names
             activities = activities[2:]
             temp_activities = []
 
@@ -842,7 +849,15 @@ def Q20():
                     random_activity = random.choice(temp_activities)
                     final_activities.append(random_activity)
                     temp_activities.remove(random_activity)
-                # pass into template
+
+
+            # getting the images of the current location
+            img_data = Image.query.filter_by(location_name=location.name).all()
+            images = []
+            for i in img_data:
+                images.append(i.img_url)
+
+            session['images'] = images
             session['final_activities'] = final_activities
             session['current_location_name'] = location.name
             session['current_location_id'] = location.id
@@ -897,6 +912,13 @@ def Q20():
             c = Counter(avg)
             top_three_activities = c.most_common(3)  # returns top 3 pairs
             print(top_three_activities)
+
+            # getting the images of the current location
+            img_data = Image.query.filter_by(location_name=location.name).all()
+            images = []
+            for i in img_data:
+                images.append(i.img_url)
+            print(images)
 
             # create a dict for those 3 activities
             session['times_looped'] += 1
@@ -971,7 +993,8 @@ def DestinationEvaluation():
     question='Rate this destination'
     location_name = session['current_location_name']
     final_activities = session['final_activities']
-
+    images= session['images']
+    
     return render_template('DestinationEvaluation.html', location_name=location_name, question=question, final_activities=final_activities)
 
 @app.route("/Q21", methods=["POST", "GET"])
