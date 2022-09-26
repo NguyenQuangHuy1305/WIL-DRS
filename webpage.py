@@ -899,7 +899,6 @@ def Q20():
             print(top_three_activities)
 
             # create a dict for those 3 activities
-            top_three_activities = ['Relaxation', 'Excitment', 'Culture']# need a dictionary including tuples here: each rate activity should also be retrieved with the average review stars such as 6
             session['times_looped'] += 1
             return render_template('DestinationDetail.html', location=location_name, top_three_activities=top_three_activities)
 
