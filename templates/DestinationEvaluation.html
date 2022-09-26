@@ -132,7 +132,7 @@
                         </p>
 
                         <div class="rate-stars-location">
-                            {% for i in range(1, 8) %}
+                            {% for i in range(7, 0, -1): %}
                                 <input type="radio" id="location-{{i}}" name="location-rate" value="{{i}}">
                                 <label for="location-{{i}}"></label>
                             {% endfor %}
@@ -149,7 +149,7 @@
                             </div>
                             
                             <div class="rate-stars">
-                                {% for i in range(1, 8) %}
+                                {% for i in range(7, 0, -1): %}
                                     <input type="radio" id="{{ final_activity + '-' }}{{i}}" name="{{ final_activity + '-' }}rate" value="{{i}}">
                                     <label for="{{ final_activity + '-' }}{{i}}"></label>
                                 {% endfor %}
