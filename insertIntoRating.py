@@ -15,25 +15,26 @@ create_table = '''CREATE TABLE rating(
 				user INTEGER,
 				location_id INTEGER,
 				location_rating INTEGER,
-				beach_rating INTEGER,
-				boatTrips_rating INTEGER,
-				indigenousTourism_rating INTEGER,
-				museumsAndCultureCentres_rating INTEGER,
-				nationalParksAndProtectedAreas_rating INTEGER,
-				rural_rating INTEGER,
-				themeParks_rating INTEGER,
-				urbanSightseeing_rating INTEGER,
-				waterActivities_rating INTEGER,
-				winterActivities_rating INTEGER,
-				architectureAndHeritage_rating INTEGER,
-				arts_rating INTEGER,
-				culture_rating INTEGER,
-				excitement_rating INTEGER,
-				gastronomy_rating INTEGER,
-				nature_rating INTEGER,
-				relaxation_rating INTEGER,
-				religiousTourism_rating INTEGER,
-				sports_rating INTEGER)
+
+				beach INTEGER,
+				boat_trips INTEGER,
+				indigenous_tourism INTEGER,
+				museums_and_culture_centres INTEGER,
+				national_parks_and_protected_areas INTEGER,
+				rural INTEGER,
+				theme_parks INTEGER,
+				urban_sightseeing INTEGER,
+				water_activities INTEGER,
+				winter_activities INTEGER,
+				architecture_and_heritage INTEGER,
+				arts INTEGER,
+				culture INTEGER,
+				excitement INTEGER,
+				gastronomy INTEGER,
+				nature INTEGER,
+				relaxation INTEGER,
+				religious_tourism INTEGER,
+				sports INTEGER)
 				'''
 
 # Creating the table into our
@@ -50,7 +51,7 @@ next(contents)
 
 # SQL query to insert data into the
 # person table
-insert_records = "INSERT INTO rating (user, location_id, location_rating, beach_rating, boatTrips_rating, indigenousTourism_rating, museumsAndCultureCentres_rating, nationalParksAndProtectedAreas_rating, rural_rating, themeParks_rating, urbanSightseeing_rating, waterActivities_rating, winterActivities_rating, architectureAndHeritage_rating, arts_rating, culture_rating, excitement_rating, gastronomy_rating, nature_rating, relaxation_rating, religiousTourism_rating, sports_rating) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+insert_records = "INSERT INTO rating (user, location_id, location_rating, beach, boat_trips, indigenous_tourism, museums_and_culture_centres, national_parks_and_protected_areas, rural, theme_parks, urban_sightseeing, water_activities, winter_activities, architecture_and_heritage, arts, culture, excitement, gastronomy, nature, relaxation, religious_tourism, sports) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
 
 # Importing the contents of the file
 # into our person table

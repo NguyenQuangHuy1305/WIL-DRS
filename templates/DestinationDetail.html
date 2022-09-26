@@ -113,6 +113,51 @@
         cursor: pointer;
     }
 
+    /* Slideshow container */
+        .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    /* Next & previous buttons */
+        .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+        .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Fading animation */
+    .image-fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+
     /* desktop */
     @media (min-width: 768px) {
         .responsive {
@@ -133,7 +178,19 @@
                 {{ location }}
             </p>
 
-            <img src="http://live.staticflickr.com/795/26019072727_e999f5d321_k.jpg" alt="Houses" class="responsive" width="600" height="400">
+            <div class="slideshow-container">
+
+                {% for image in images: %}
+                    <div class="mySlides image-fade">
+                        <img src="{{ image }}" alt="Images" class="responsive" width="600" height="400">
+                    </div>
+                {% endfor %}
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+            </div>
+            
             <p class="location-description">
                 Rio de Janeiro is a huge seaside city in Brazil, famed for its Copacabana...(some info about the destination)
             </p>
@@ -151,11 +208,18 @@
                             {% for top_three_activity in top_three_activities %}
                             <div class="option-block">
                                 <div class="rate-stars">
-                                    <label for="{{ top_three_activity + '-' }}{{i}}"></label>
+                                    <label for="{{ top_three_activity[0] + '-' }}{{i}}"></label>
                                 </div>
-                                <div class="rate-category">
-                                    <p> 6/7 - {{ top_three_activity.capitalize() }}</p>
-                                </div>
+                                {% if top_three_activity[1] != 0: %}
+                                    <div class="rate-category">
+                                        <p> {{ top_three_activity[1] }}/7 - {{ top_three_activity[0].capitalize() }}</p>
+                                    </div>
+                                {% elif top_three_activity[1] == 0: %}
+                                    <div class="rate-category">
+                                        <p> No review for this tag</p>
+                                    </div>
+                                {% endif %}
+
                             </div>
                             {% endfor %}
                             <div class="q20-submit">
@@ -168,5 +232,29 @@
         </div>
     </div>
 </div>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slides[slideIndex-1].style.display = "block";  
+    }
+</script>
 
 {% endblock%}

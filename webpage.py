@@ -89,25 +89,25 @@ class Rating(db.Model):
     location_id = db.Column(db.String(100))
     location_rating = db.Column(db.String(1))
 
-    beach_rating = db.Column(db.Integer, nullable=False)
-    boatTrips_rating = db.Column(db.Integer, nullable=False)
-    indigenousTourism_rating = db.Column(db.Integer, nullable=False)
-    museumsAndCultureCentres_rating = db.Column(db.Integer, nullable=False)
-    nationalParksAndProtectedAreas_rating = db.Column(db.Integer, nullable=False)
-    rural_rating = db.Column(db.Integer, nullable=False)
-    themeParks_rating = db.Column(db.Integer, nullable=False)
-    urbanSightseeing_rating = db.Column(db.Integer, nullable=False)
-    waterActivities_rating = db.Column(db.Integer, nullable=False)
-    winterActivities_rating = db.Column(db.Integer, nullable=False)
-    architectureAndHeritage_rating = db.Column(db.Integer, nullable=False)
-    arts_rating = db.Column(db.Integer, nullable=False)
-    culture_rating = db.Column(db.Integer, nullable=False)
-    excitement_rating = db.Column(db.Integer, nullable=False)
-    gastronomy_rating = db.Column(db.Integer, nullable=False)
-    nature_rating = db.Column(db.Integer, nullable=False)
-    relaxation_rating = db.Column(db.Integer, nullable=False)
-    religiousTourism_rating = db.Column(db.Integer, nullable=False)
-    sports_rating = db.Column(db.Integer, nullable=False)
+    beach = db.Column(db.Integer, nullable=False)
+    boat_trips = db.Column(db.Integer, nullable=False)
+    indigenous_tourism = db.Column(db.Integer, nullable=False)
+    museums_and_culture_centres = db.Column(db.Integer, nullable=False)
+    national_parks_and_protected_areas = db.Column(db.Integer, nullable=False)
+    rural = db.Column(db.Integer, nullable=False)
+    theme_parks = db.Column(db.Integer, nullable=False)
+    urban_sightseeing = db.Column(db.Integer, nullable=False)
+    water_activities = db.Column(db.Integer, nullable=False)
+    winter_activities = db.Column(db.Integer, nullable=False)
+    architecture_and_heritage = db.Column(db.Integer, nullable=False)
+    arts = db.Column(db.Integer, nullable=False)
+    culture = db.Column(db.Integer, nullable=False)
+    excitement = db.Column(db.Integer, nullable=False)
+    gastronomy = db.Column(db.Integer, nullable=False)
+    nature = db.Column(db.Integer, nullable=False)
+    relaxation = db.Column(db.Integer, nullable=False)
+    religious_tourism = db.Column(db.Integer, nullable=False)
+    sports = db.Column(db.Integer, nullable=False)
 
 class Image(db.Model):
     id = db.Column("id", db.Integer, primary_key=True)
@@ -911,19 +911,22 @@ def Q20():
             # getting the top 3 pairs (highest value aka average rating) in avg dict
             c = Counter(avg)
             top_three_activities = c.most_common(3)  # returns top 3 pairs
-            print(top_three_activities)
+            formatted_top_3_activities = {}
+            for activity in top_three_activities:
+                new_key = activity[0].replace('_', ' ')
+                formatted_top_3_activities[f'{new_key}'] = activity[1]
 
+            print(formatted_top_3_activities)
+            
             # getting the images of the current location
             img_data = Image.query.filter_by(location_name=location.name).all()
             images = []
             for i in img_data:
                 images.append(i.img_url)
-            print(images)
 
             # create a dict for those 3 activities
-            top_three_activities = ['Relaxation', 'Excitment', 'Culture']# need a dictionary including tuples here: each rate activity should also be retrieved with the average review stars such as 6
             session['times_looped'] += 1
-            return render_template('DestinationDetail.html', location=location_name, top_three_activities=top_three_activities)
+            return render_template('DestinationDetail.html', location=location_name, top_three_activities=formatted_top_3_activities, images=images)
 
     question = "Have you been to this destination?"
     answers = ['Yes', 'No']
@@ -996,7 +999,7 @@ def DestinationEvaluation():
     final_activities = session['final_activities']
     images= session['images']
     
-    return render_template('DestinationEvaluation.html', location_name=location_name, question=question, final_activities=final_activities)
+    return render_template('DestinationEvaluation.html', location_name=location_name, question=question, final_activities=final_activities, images=images)
 
 @app.route("/Q21", methods=["POST", "GET"])
 @login_required
