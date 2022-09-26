@@ -151,11 +151,18 @@
                             {% for top_three_activity in top_three_activities %}
                             <div class="option-block">
                                 <div class="rate-stars">
-                                    <label for="{{ top_three_activity + '-' }}{{i}}"></label>
+                                    <label for="{{ top_three_activity[0] + '-' }}{{i}}"></label>
                                 </div>
-                                <div class="rate-category">
-                                    <p> 6/7 - {{ top_three_activity.capitalize() }}</p>
-                                </div>
+                                {% if top_three_activity[1] != 0: %}
+                                    <div class="rate-category">
+                                        <p> {{ top_three_activity[1] }}/7 - {{ top_three_activity[0].capitalize() }}</p>
+                                    </div>
+                                {% elif top_three_activity[1] == 0: %}
+                                    <div class="rate-category">
+                                        <p> No rates for this tag</p>
+                                    </div>
+                                {% endif %}
+
                             </div>
                             {% endfor %}
                             <div class="q20-submit">
