@@ -917,7 +917,7 @@ def Q20():
                 formatted_top_3_activities[f'{new_key}'] = activity[1]
 
             print(formatted_top_3_activities)
-            
+
             # getting the images of the current location
             img_data = Image.query.filter_by(location_name=location.name).all()
             images = []
