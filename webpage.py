@@ -918,6 +918,7 @@ def Q20():
             images = []
             for i in img_data:
                 images.append(i.img_url)
+            print(images)
 
             # create a dict for those 3 activities
             top_three_activities = ['Relaxation', 'Excitment', 'Culture']# need a dictionary including tuples here: each rate activity should also be retrieved with the average review stars such as 6
@@ -993,7 +994,8 @@ def DestinationEvaluation():
     question='Rate this destination'
     location_name = session['current_location_name']
     final_activities = session['final_activities']
-
+    images= session['images']
+    
     return render_template('DestinationEvaluation.html', location_name=location_name, question=question, final_activities=final_activities)
 
 @app.route("/Q21", methods=["POST", "GET"])
