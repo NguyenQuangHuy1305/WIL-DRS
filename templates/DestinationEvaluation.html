@@ -100,6 +100,57 @@
         cursor: pointer;
     }
 
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: rgb(205, 201, 201);
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+        
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: white;
+        color: rgb(205, 201, 201);
+    }
+
+    /* Fading animation */
+    .image-fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+
     /* desktop */
     @media (min-width: 768px) {
         .responsive {
@@ -120,8 +171,19 @@
                 {{ location_name }}
             </p>
 
-            <div class="image-container"> 
-                <img src="static/images/welcome.jpg" alt="Nature" class="responsive" width="400" height="300">
+            <div class="slideshow-container">
+
+                {% for image in images: %}
+                    <div class="mySlides image-fade">
+                        <div class="image-container"> 
+                            <img src="{{ image }}" alt="Images" class="responsive" width="400" height="300">
+                        </div>
+                    </div>
+                {% endfor %}
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
             </div>
 
             <div id="form-block">
@@ -165,4 +227,28 @@
         </div>
     </div>
 </div>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slides[slideIndex-1].style.display = "block";  
+    }
+</script>
 {% endblock%}

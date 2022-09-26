@@ -922,7 +922,7 @@ def Q20():
 
             # create a dict for those 3 activities
             session['times_looped'] += 1
-            return render_template('DestinationDetail.html', location=location_name, top_three_activities=top_three_activities)
+            return render_template('DestinationDetail.html', location=location_name, top_three_activities=top_three_activities, images=images)
 
     question = "Have you been to this destination?"
     answers = ['Yes', 'No']
@@ -995,7 +995,7 @@ def DestinationEvaluation():
     final_activities = session['final_activities']
     images= session['images']
     
-    return render_template('DestinationEvaluation.html', location_name=location_name, question=question, final_activities=final_activities)
+    return render_template('DestinationEvaluation.html', location_name=location_name, question=question, final_activities=final_activities, images=images)
 
 @app.route("/Q21", methods=["POST", "GET"])
 @login_required
