@@ -216,7 +216,7 @@
                                     </div>
                                 {% elif top_three_activities[top_three_activity] == 0: %}
                                     <div class="rate-category">
-                                        <p> No review for this tag</p>
+                                        <p> No review for {{ top_three_activity.capitalize() }}</p>
                                     </div>
                                 {% endif %}
 
