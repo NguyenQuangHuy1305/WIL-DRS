@@ -66,6 +66,7 @@
             <p class="consent-text">
                 By continuing, you agree to allow this app to use your data for scientific research purposes.
             </p>
+
             <div id="form-block">
                 <form method="POST" action="">
                     {% for answer in answers %}
@@ -75,8 +76,10 @@
                         </label>
                     </div><br>
                     {% endfor %}
+                    <div class="submit-button"><button type="submit">Submit</button></div>
                 </form>
             </div>
+            
         </div>
     </div>
 </div>

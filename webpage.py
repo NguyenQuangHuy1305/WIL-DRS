@@ -274,9 +274,30 @@ def welcome():
 def instruction():
     return render_template('instruction.html')
 
-@app.route("/consent", methods=["GET"])
+@app.route("/consent", methods=["POST", "GET"])
 def consent():
-    return render_template('consent.html')
+    if request.method == 'POST':
+        # remove recommended_id_list if existed in session
+        answer = request.form.getlist('Q1')
+        if len(answer) == 0:
+            flash("Please choose 1 option", 'danger')
+            return redirect(url_for('Q0'))
+        elif len(answer) == 2:
+            flash("You can only choose 1 option", 'danger')
+            return redirect(url_for('Q0'))
+        elif "Accept" in answer:
+            return redirect(url_for('register'))
+        elif "Cancle" in answer:
+            flash("You need to agree to our term in order to use this application", 'danger')
+            return redirect(url_for('consent'))
+
+    if current_user.is_authenticated:
+        return redirect(url_for('Q0'))
+    else:
+        print(current_user)
+        question = "By continuing, you agree to allow this app to use your data for scientific research purposes."
+        answers = ['Accept', 'Cancle']
+        return render_template('consent.html', question=question, answers=answers)
 
 @app.route("/surpriseme")
 @login_required
