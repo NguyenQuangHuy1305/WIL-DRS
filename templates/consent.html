@@ -66,15 +66,29 @@
             <p class="consent-text">
                 By continuing, you agree to allow this app to use your data for scientific research purposes.
             </p>
+
             <div class="text-center text-lg-start mt-4 pt-2">
                 <button class="accept-button">
                     <a href="register" class="accept-href">Accept</a>
                 </button>
             </div>
+
             <div class="text-center text-lg-start mt-4 pt-2">
                 <button class="accept-button">
-                    <a href="register" class="accept-href">Cancel</a>
+                    <a href="welcome" class="accept-href">Cancel</a>
                 </button>
+            </div>
+
+            <div id="form-block">
+                <form method="POST" action="">
+                    {% for answer in answers %}
+                    <div id="ck-button">
+                        <label>
+                            <input type="checkbox" value="{{ answer }}" name="Q1"><span>{{ answer }}</span>
+                        </label>
+                    </div><br>
+                    {% endfor %}
+                </form>
             </div>
         </div>
     </div>
