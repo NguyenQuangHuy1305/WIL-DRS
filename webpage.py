@@ -44,7 +44,6 @@ login_manager.login_view = "login"
 def load_user(user_id):
     return User.query.get(int(user_id))
 
-
 class User(db.Model, UserMixin):
     id = db.Column("id", db.Integer, primary_key=True)
     username = db.Column(db.String(100), nullable=False, unique=True)
@@ -85,7 +84,7 @@ class Municipal(db.Model):
 
 class Rating(db.Model):
     id = db.Column("id", db.Integer, primary_key=True)
-    user = db.Column(db.String(2))
+    user = db.Column(db.String(100))
     location_id = db.Column(db.String(100))
     location_rating = db.Column(db.String(1))
 
@@ -113,6 +112,30 @@ class Image(db.Model):
     id = db.Column("id", db.Integer, primary_key=True)
     location_name = db.Column(db.String(100), nullable=False)
     img_url = db.Column(db.String(100))
+
+class Answer(db.Model):
+    id = db.Column("id", db.Integer, primary_key=True)
+    user = db.Column(db.String(100))
+
+    Q1 = db.Column(db.String(100), nullable=True)
+    Q2 = db.Column(db.String(100), nullable=True)
+    Q3 = db.Column(db.String(100), nullable=True)
+    Q4 = db.Column(db.String(100), nullable=True)
+    Q5 = db.Column(db.String(100), nullable=True)
+    Q6 = db.Column(db.String(100), nullable=True)
+    Q7 = db.Column(db.String(100), nullable=True)
+    Q8 = db.Column(db.String(100), nullable=True)
+    Q9 = db.Column(db.String(100), nullable=True)
+    Q10 = db.Column(db.String(100), nullable=True)
+    Q11 = db.Column(db.String(100), nullable=True)
+    Q12 = db.Column(db.String(100), nullable=True)
+    Q13 = db.Column(db.String(100), nullable=True)
+    Q14 = db.Column(db.String(100), nullable=True)
+    Q15 = db.Column(db.String(100), nullable=True)
+    Q16 = db.Column(db.String(100), nullable=True)
+    Q17 = db.Column(db.String(100), nullable=True)
+    Q18 = db.Column(db.String(100), nullable=True)
+    Q19 = db.Column(db.String(100), nullable=True)
 
 class Form(FlaskForm):
     state = SelectField('state', choices=[
@@ -254,14 +277,6 @@ def instruction():
 def consent():
     return render_template('consent.html')
 
-# @app.route("/Q20", methods=["GET"])
-# @login_required
-# def Q20():
-#     # Please retrieve a location image here and pass to the frontend page.
-#     question = "Have you been to this destination?"
-#     answers = ['Yes', 'No']
-#     return render_template('Q20.html', question=question, answers=answers)
-
 @app.route("/surpriseme")
 @login_required
 def surpriseme():
@@ -305,13 +320,18 @@ def Q0():
 def Q1():
     if request.method == 'POST':
         categories = request.form.getlist('Q1')
-        print(categories)
+
         if len(categories) == 0:
             flash("Please choose 1 option", 'danger')
             return redirect(url_for('Q1'))
         else:
             # save the selected categories in session (associated key in session-dict: 'categories')
             session['categories'] = categories
+
+            # store the answer into session to save later
+            answer = ', '.join(categories)
+            session['Q1'] = answer
+
             return redirect(url_for('Q2'))
 
     question = "What types of destinations are you interested to visit next?"
@@ -322,18 +342,12 @@ def Q1():
 @app.route("/Q2", methods=["POST", "GET"])
 @login_required
 def Q2():
-    Cultural = ['Arts', 'Urban sightseeing', 'Religious tourism', 'Architecture and heritage', 'Culture',
-                'Gastronomy', 'Indigenous tourism', 'Museums and cultural centres', 'Relaxation', 'Sports', 'Theme parks']
-    Mountain = ['Beach', 'Sports', 'Relaxation',
-                'Water-based activities', 'Winter activities']
-    Nature = ['Beach', 'Excitement', 'Sports', 'Water-based activities', 'Boat trips',
-              'Museums and cultural centres', 'Nature', 'Relaxation', 'National parks and protected areas']
-    Rural = ['Beach', 'Sports', 'Relaxation',
-             'Rural', 'Water-based activities']
-    Beach = ['Beach', 'Excitement', 'Sports',
-             'Water-based activities', 'Boat trips', 'Nature', 'Relaxation']
-    Urban = ['Architecture and heritage', 'Urban sightseeing', 'Arts', 'Beach', 'Sports', 'Culture',
-             'Excitement', 'Nature', 'Relaxation', 'Museums and cultural centres', 'Theme parks']
+    Cultural = ['Arts', 'Urban sightseeing', 'Religious tourism', 'Architecture and heritage', 'Culture', 'Gastronomy', 'Indigenous tourism', 'Museums and cultural centres', 'Relaxation', 'Sports', 'Theme parks']
+    Mountain = ['Beach', 'Sports', 'Relaxation', 'Water-based activities', 'Winter activities']
+    Nature = ['Beach', 'Excitement', 'Sports', 'Water-based activities', 'Boat trips', 'Museums and cultural centres', 'Nature', 'Relaxation', 'National parks and protected areas']
+    Rural = ['Beach', 'Sports', 'Relaxation', 'Rural', 'Water-based activities']
+    Beach = ['Beach', 'Excitement', 'Sports', 'Water-based activities', 'Boat trips', 'Nature', 'Relaxation']
+    Urban = ['Architecture and heritage', 'Urban sightseeing', 'Arts', 'Beach', 'Sports', 'Culture', 'Excitement', 'Nature', 'Relaxation', 'Museums and cultural centres', 'Theme parks']
     categories = []
     question = 'What activities are you searching for on your next trip?'
     answers = []
@@ -369,56 +383,65 @@ def Q2():
     if request.method == 'POST':
         # get all the selected tags from the form in Q2, then in final_dict change the value associated with the key "tag"
         list_of_tags = request.form.getlist('Q1')
-        for tag in list_of_tags:
-            final_dict[tag] = 1
 
-        # get the categories from session (created in Q1), loop through the list categories, change final_dict's value from 0 to 1 for each category (key)
-        categories = session['categories']
-        for category in categories:
-            if category == 'cultural':
-                final_dict['D_Cultural'] = 1
-            if category == 'mountain':
-                final_dict['D_Mountain'] = 1
-            if category == 'nature':
-                final_dict['D_Nature'] = 1
-            if category == 'rural':
-                final_dict['D_Rural'] = 1
-            if category == 'beach':
-                final_dict['D_Beach'] = 1
-            if category == 'urban':
-                final_dict['D_Urban'] = 1
+        if len(list_of_tags) == 0:
+            flash("Please choose 1 option", 'danger')
+            return redirect(url_for('Q1'))
+        else:
+            # store the answer into session to save later
+            answer = ', '.join(list_of_tags)
+            session['Q2'] = answer
 
-        # convert the final_dict's value to a list
-        final_list = list(final_dict.values())
-        final_list = np.array(final_list)
+            for tag in list_of_tags:
+                final_dict[tag] = 1
 
-        # initiate the DRSModel
-        parser = argparse.ArgumentParser()
-        parser.add_argument('--filepath', default='./Destination_tags_sum.csv')
-        parser.add_argument('--model', default='./drs_model')
-        config = parser.parse_args()
-        model = DRSModel(config)
+            # get the categories from session (created in Q1), loop through the list categories, change final_dict's value from 0 to 1 for each category (key)
+            categories = session['categories']
+            for category in categories:
+                if category == 'cultural':
+                    final_dict['D_Cultural'] = 1
+                if category == 'mountain':
+                    final_dict['D_Mountain'] = 1
+                if category == 'nature':
+                    final_dict['D_Nature'] = 1
+                if category == 'rural':
+                    final_dict['D_Rural'] = 1
+                if category == 'beach':
+                    final_dict['D_Beach'] = 1
+                if category == 'urban':
+                    final_dict['D_Urban'] = 1
 
-        # use predict function from model.py to get recommendation, but the return is a tuple, 2nd element in that tuple is the np.array we need
-        result = model.predict(final_list)
-        print(result)
-        # that np.array will be converted to python list for easier access
-        result = np.ndarray.tolist(result[1][0])
-        # since the returned list is in reverse order (lowest to highest probability) --> we need to reverse the list
-        result.reverse()
+            # convert the final_dict's value to a list
+            final_list = list(final_dict.values())
+            final_list = np.array(final_list)
 
-        recommended_id_list = result
-        recommended_location_list = []
+            # initiate the DRSModel
+            parser = argparse.ArgumentParser()
+            parser.add_argument('--filepath', default='./Destination_tags_sum.csv')
+            parser.add_argument('--model', default='./drs_model')
+            config = parser.parse_args()
+            model = DRSModel(config)
 
-        for i in recommended_id_list:
-            location = Location.query.filter_by(id=i).first()
-            recommended_location_list.append(location.name)
+            # use predict function from model.py to get recommendation, but the return is a tuple, 2nd element in that tuple is the np.array we need
+            result = model.predict(final_list)
+            print(result)
+            # that np.array will be converted to python list for easier access
+            result = np.ndarray.tolist(result[1][0])
+            # since the returned list is in reverse order (lowest to highest probability) --> we need to reverse the list
+            result.reverse()
 
-        session['recommended_location_list'] = recommended_location_list
-        session['recommended_id_list'] = recommended_id_list
+            recommended_id_list = result
+            recommended_location_list = []
 
-        # return render_template("recommendation.html", locations = recommended_location_list)
-        return redirect(url_for('Q3'))
+            for i in recommended_id_list:
+                location = Location.query.filter_by(id=i).first()
+                recommended_location_list.append(location.name)
+
+            session['recommended_location_list'] = recommended_location_list
+            session['recommended_id_list'] = recommended_id_list
+
+            # return render_template("recommendation.html", locations = recommended_location_list)
+            return redirect(url_for('Q3'))
 
     # if session['categories'] is not blank, which mean the user has chose some categories from Q1, then:
     if 'categories' in session:
@@ -448,62 +471,38 @@ def Q2():
     else:
         return f"you haven't answer 1st question"
 
-@app.route('/Q3', methods=['GET', 'POST'])
+@app.route('/Q3+4', methods=['GET', 'POST'])
 @login_required
 def Q3():
     form = Form()
-    form.municipal.choices = [(municipal.id, municipal.name)
-                              for municipal in Municipal.query.filter_by(state='AC').all()]
+    form.municipal.choices = [(municipal.id, municipal.name) for municipal in Municipal.query.filter_by(state='AC').all()]
 
     if request.method == "POST":
         municipal = Municipal.query.filter_by(id=form.municipal.data).first()
-        return 'State: {}, Municipal: {}'.format(form.state.data, municipal.name)
+
+        # store the answer into session to save later
+        session['Q3'] = form.state.data
+        session['Q4'] = municipal.name
+
+        return redirect(url_for('Q5'))
+        # return 'State: {}, Municipal: {}'.format(form.state.data, municipal.name)
 
     question = "In which state do you live?"
     return render_template('QSelectField.html', form=form, question=question)
-
-# @app.route("/Q3", methods=["POST", "GET"])
-# @login_required
-# def Q3():
-#     if request.method == 'POST':
-#         answers = request.form.getlist('Q1')
-#         if len(answers) != 1:
-#             flash("You can only choose 1 option", 'danger')
-#             return redirect(url_for('Q3'))
-#         else:
-#             return redirect(url_for('Q4'))
-
-#     question = "In which state do you live?"
-#     answers = ['AC', 'AL', 'AP', 'AM', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MT', 'MS', 'MG',
-#                'PA', 'PB', 'PR', 'PE', 'PI', 'RN', 'RS', 'RJ', 'RO', 'RR', 'SC', 'SP', 'SE', 'TO']
-#     return render_template('Q1.html', question=question, answers=answers)
-
-
-# @app.route("/Q4", methods=["POST", "GET"])
-# @login_required
-# def Q4():
-#     if request.method == 'POST':
-#         answers = request.form.getlist('Q1')
-#         if len(answers) != 1:
-#             flash("You can only choose 1 option", 'danger')
-#             return redirect(url_for('Q4'))
-#         else:
-#             return redirect(url_for('Q5'))
-
-#     question = "In which municipality do you live?"
-#     answers = []
-#     return render_template('Q1.html', question=question, answers=answers)
-
 
 @app.route("/Q5", methods=["POST", "GET"])
 @login_required
 def Q5():
     if request.method == 'POST':
-        answers = request.form.getlist('Q1')
-        if len(answers) != 1:
+        answer = request.form.getlist('Q1')
+
+        if len(answer) != 1:
             flash("You can only choose 1 option", 'danger')
             return redirect(url_for('Q5'))
         else:
+            # store the answer into session to save later
+            session['Q5'] = answer[0]
+
             return redirect(url_for('Q6'))
 
     question = "Which mode of transport are you planning to use on your next trip?"
@@ -515,20 +514,27 @@ def Q5():
 @login_required
 def Q6():
     if request.method == 'POST':
-        answers = request.form.getlist('Q1')
-        if len(answers) != 1:
+        answer = request.form.getlist('Q1')
+
+        if len(answer) != 1:
             flash("You can only choose 1 option", 'danger')
             return redirect(url_for('Q6'))
         else:
-            if 'kid' in answers:
+            if 'kid' in answer:
+                # store the answer into session to save later
+                session['Q6'] = answer[0]
+
                 return redirect(url_for('Q7'))
             # if there's no kid travelling, then skip Q7 and go straight to Q8
             else:
+                # store the answer into session to save later
+                session['Q6'] = answer[0]
+                session['Q7'] = None
+
                 return redirect(url_for('Q8'))
 
     question = "Who are you planning to travel with in your next trip?"
-    answers = ['Couple', 'Couple with kids',
-               'Adult friends / Relatives', 'A larger group with kids', 'Alone']
+    answers = ['Couple', 'Couple with kids', 'Adult friends / Relatives', 'A larger group with kids', 'Alone']
     return render_template('Q1.html', question=question, answers=answers)
 
 
@@ -536,11 +542,15 @@ def Q6():
 @login_required
 def Q7():
     if request.method == 'POST':
-        answers = request.form.getlist('Q1')
-        if len(answers) != 1:
+        answer = request.form.getlist('Q1')
+
+        if len(answer) != 1:
             flash("You can only choose 1 option", 'danger')
             return redirect(url_for('Q7'))
         else:
+            # immediately store the answer into session to save later
+            session['Q7'] = answer[0]
+
             return redirect(url_for('Q8'))
 
     question = "How old are the youngest kids in the travel party?"
@@ -552,11 +562,15 @@ def Q7():
 @login_required
 def Q8():
     if request.method == 'POST':
-        answers = request.form.getlist('Q1')
-        if len(answers) != 1:
+        answer = request.form.getlist('Q1')
+
+        if len(answer) != 1:
             flash("You can only choose 1 option", 'danger')
             return redirect(url_for('Q8'))
         else:
+            # immediately store the answer into session to save later
+            session['Q8'] = answer[0]
+
             return redirect(url_for('Q9'))
 
     question = "How many days do you plan to stay away on your next trip?"
@@ -568,16 +582,19 @@ def Q8():
 @login_required
 def Q9():
     if request.method == 'POST':
-        answers = request.form.getlist('Q1')
-        if len(answers) != 1:
+        answer = request.form.getlist('Q1')
+
+        if len(answer) != 1:
             flash("You can only choose 1 option", 'danger')
             return redirect(url_for('Q9'))
         else:
+            # immediately store the answer into session to save later
+            session['Q9'] = answer[0]
+
             return redirect(url_for('Q10'))
 
     question = "How much is your budget for this trip?"
-    answers = ['Less than R$ 1,000',
-               'R$ 1,000 to R$ 5,000', 'More than R$ 5,000']
+    answers = ['Less than R$ 1,000', 'R$ 1,000 to R$ 5,000', 'More than R$ 5,000']
     return render_template('Q1.html', question=question, answers=answers)
 
 
@@ -585,11 +602,15 @@ def Q9():
 @login_required
 def Q10():
     if request.method == 'POST':
-        answers = request.form.getlist('Q1')
-        if len(answers) != 1:
+        answer = request.form.getlist('Q1')
+
+        if len(answer) != 1:
             flash("You can only choose 1 option", 'danger')
             return redirect(url_for('Q10'))
         else:
+            # immediately store the answer into session to save later
+            session['Q10'] = answer[0]
+
             return redirect(url_for('Q11'))
 
     question = "What is your gender?"
@@ -601,16 +622,19 @@ def Q10():
 @login_required
 def Q11():
     if request.method == 'POST':
-        answers = request.form.getlist('Q1')
-        if len(answers) != 1:
+        answer = request.form.getlist('Q1')
+
+        if len(answer) != 1:
             flash("You can only choose 1 option", 'danger')
             return redirect(url_for('Q11'))
         else:
+            # immediately store the answer into session to save later
+            session['Q11'] = answer[0]
+
             return redirect(url_for('Q12'))
 
     question = "What is your age?"
-    answers = ['<10', '10-14', '15-20', '20-25',
-               '25-30', '30-40', '40-50', '>50']
+    answers = ['<10', '10-14', '15-20', '20-25', '25-30', '30-40', '40-50', '>50']
     return render_template('Q1.html', question=question, answers=answers)
 
 
@@ -618,16 +642,19 @@ def Q11():
 @login_required
 def Q12():
     if request.method == 'POST':
-        answers = request.form.getlist('Q1')
-        if len(answers) != 1:
+        answer = request.form.getlist('Q1')
+
+        if len(answer) != 1:
             flash("You can only choose 1 option", 'danger')
             return redirect(url_for('Q12'))
         else:
+            # immediately store the answer into session to save later
+            session['Q12'] = answer[0]
+
             return redirect(url_for('Q13'))
 
     question = "What is your highest level of education?"
-    answers = ['No formal schooling', 'Elementary', 'High school',
-               'Graduate', 'Postgraduate', 'Prefer not to say']
+    answers = ['No formal schooling', 'Elementary', 'High school', 'Graduate', 'Postgraduate', 'Prefer not to say']
     return render_template('Q1.html', question=question, answers=answers)
 
 
@@ -635,16 +662,19 @@ def Q12():
 @login_required
 def Q13():
     if request.method == 'POST':
-        answers = request.form.getlist('Q1')
-        if len(answers) != 1:
+        answer = request.form.getlist('Q1')
+
+        if len(answer) != 1:
             flash("You can only choose 1 option", 'danger')
             return redirect(url_for('Q13'))
         else:
+            # immediately store the answer into session to save later
+            session['Q13'] = answer[0]
+
             return redirect(url_for('Q14'))
 
     question = "What is your current relationship status?"
-    answers = ['Single', 'De facto', 'Married',
-               'Divorced of Widowed', 'Prefer not to say']
+    answers = ['Single', 'De facto', 'Married', 'Divorced of Widowed', 'Prefer not to say']
     return render_template('Q1.html', question=question, answers=answers)
 
 
@@ -652,15 +682,23 @@ def Q13():
 @login_required
 def Q14():
     if request.method == 'POST':
-        answers = request.form.getlist('Q1')
-        if len(answers) != 1:
+        answer = request.form.getlist('Q1')
+
+        if len(answer) != 1:
             flash("You can only choose 1 option", 'danger')
             return redirect(url_for('Q14'))
         else:
-            if 'Yes' in answers:
+            if 'Yes' in answer:
+                # immediately store the answer into session to save later
+                session['Q14'] = answer[0]
+
                 return redirect(url_for('Q15'))
             # if there's no kid travelling, then skip Q15 and go straight to Q16
             else:
+                # immediately store the answer into session to save later
+                session['Q14'] = answer[0]
+                session['Q15'] =  None
+
                 return redirect(url_for('Q16'))
 
     question = "Do you have children?"
@@ -672,11 +710,15 @@ def Q14():
 @login_required
 def Q15():
     if request.method == 'POST':
-        answers = request.form.getlist('Q1')
-        if len(answers) != 1:
+        answer = request.form.getlist('Q1')
+
+        if len(answer) != 1:
             flash("You can only choose 1 option", 'danger')
             return redirect(url_for('Q15'))
         else:
+            # immediately store the answer into session to save later
+            session['Q15'] = answer[0]
+
             return redirect(url_for('Q16'))
 
     question = "How old is your youngest kid?"
@@ -688,16 +730,19 @@ def Q15():
 @login_required
 def Q16():
     if request.method == 'POST':
-        answers = request.form.getlist('Q1')
-        if len(answers) != 1:
+        answer = request.form.getlist('Q1')
+
+        if len(answer) != 1:
             flash("You can only choose 1 option", 'danger')
             return redirect(url_for('Q16'))
         else:
+            # immediately store the answer into session to save later
+            session['Q16'] = answer[0]
+
             return redirect(url_for('Q17'))
 
     question = "What is your household monthly income?"
-    answers = ['R$ 0-500', 'R$ 500 - R$ 1000', 'R$ 1001 - R$ 2000',
-               'R$ 2001 - R$ 4000', 'R$ 4001 - R$ 8000', 'R$ 8001+']
+    answers = ['R$ 0-500', 'R$ 500 - R$ 1000', 'R$ 1001 - R$ 2000', 'R$ 2001 - R$ 4000', 'R$ 4001 - R$ 8000', 'R$ 8001+']
     return render_template('Q1.html', question=question, answers=answers)
 
 
@@ -705,11 +750,15 @@ def Q16():
 @login_required
 def Q17():
     if request.method == 'POST':
-        answers = request.form.getlist('Q1')
-        if len(answers) != 1:
+        answer = request.form.getlist('Q1')
+
+        if len(answer) != 1:
             flash("You can only choose 1 option", 'danger')
             return redirect(url_for('Q17'))
         else:
+            # immediately store the answer into session to save later
+            session['Q17'] = answer[0]
+
             return redirect(url_for('Q18'))
 
     question = "How many states in Brazil have you visited?"
@@ -721,41 +770,85 @@ def Q17():
 @login_required
 def Q18():
     if request.method == 'POST':
-        answers = request.form.getlist('Q1')
-        if len(answers) != 1:
+        answer = request.form.getlist('Q1')
+
+        if len(answer) != 1:
             flash("You can only choose 1 option", 'danger')
             return redirect(url_for('Q18'))
         else:
+            # immediately store the answer into session to save later
+            session['Q18'] = answer[0]
+            
             return redirect(url_for('Q19'))
 
     question = "How many countries have you been to?"
-    answers = ['Only Brazil', '2-4 countries',
-               '5-10 countries', '10+ countries']
+    answers = ['Only Brazil', '2-4 countries', '5-10 countries', '10+ countries']
     return render_template('Q1.html', question=question, answers=answers)
 
 # func to check if a string has a number
-
-
 def has_numbers(inputString):
     return any(char.isdigit() for char in inputString)
-
 
 @app.route("/Q19", methods=["POST", "GET"])
 @login_required
 def Q19():
     if request.method == 'POST':
-        answers = request.form.getlist('QText')
-        print(current_user.id)
-        if len(answers[0]) == 0:
+        answer = request.form.getlist('QText')
+
+        if len(answer[0]) == 0:
             flash("Destination name must not be blank", 'danger')
             return redirect(url_for('Q19'))
-        elif has_numbers(answers[0]):
+        elif has_numbers(answer[0]):
             flash("Destination name must not have numbers", 'danger')
             return redirect(url_for('Q19'))
         else:
             session['times_looped'] = 0
-            recommended_id_list = session['recommended_id_list']
-            print(recommended_id_list)
+
+            # get all answer from Q1 to Q19
+            Q1 = session['Q1']
+            Q2 = session['Q2']
+            Q3 = session['Q3']
+            Q4 = session['Q4']
+            Q5 = session['Q5']
+            Q6 = session['Q6']
+            Q7 = session['Q7']
+            Q8 = session['Q8']
+            Q9 = session['Q8']
+            Q10 = session['Q10']
+            Q11 = session['Q11']
+            Q12 = session['Q12']
+            Q13 = session['Q13']
+            Q14 = session['Q14']
+            Q15 = session['Q15']
+            Q16 = session['Q16']
+            Q17 = session['Q17']
+            Q18 = session['Q18']
+            Q19 = answer[0]
+
+            # store them in the database
+            new_answer = Answer(user=current_user.id, 
+                                Q1=Q1, 
+                                Q2=Q2, 
+                                Q3=Q3, 
+                                Q4=Q4, 
+                                Q5=Q5, 
+                                Q6=Q6, 
+                                Q7=Q7, 
+                                Q8=Q8, 
+                                Q9=Q9, 
+                                Q10=Q10, 
+                                Q11=Q11, 
+                                Q12=Q12, 
+                                Q13=Q13, 
+                                Q14=Q14, 
+                                Q15=Q15, 
+                                Q16=Q16, 
+                                Q17=Q17, 
+                                Q18=Q18, 
+                                Q19=Q19)
+            db.session.add(new_answer)
+            db.session.commit()
+
             return redirect(url_for('Q20'))
 
     question = "Which was the best destination you have been to?"
