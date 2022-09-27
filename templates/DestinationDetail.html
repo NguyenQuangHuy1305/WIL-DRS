@@ -210,11 +210,11 @@
                                 <div class="rate-stars">
                                     <label for="{{ top_three_activity[0] + '-' }}{{i}}"></label>
                                 </div>
-                                {% if top_three_activity[1] != 0: %}
+                                {% if top_three_activities[top_three_activity] != 0: %}
                                     <div class="rate-category">
-                                        <p> Rated {{ top_three_activity[1] }}/7 for {{ top_three_activity[0].capitalize() }}</p>
+                                        <p> Rated {{ top_three_activities[top_three_activity] }}/7 for {{ top_three_activity.capitalize() }}</p>
                                     </div>
-                                {% elif top_three_activity[1] == 0: %}
+                                {% elif top_three_activities[top_three_activity] == 0: %}
                                     <div class="rate-category">
                                         <p> No review for this tag</p>
                                     </div>
