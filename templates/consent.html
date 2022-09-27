@@ -69,18 +69,17 @@
 
             <div id="form-block">
                 <form method="POST" action="">
-                    <div class="text-center text-lg-start mt-4 pt-2">
-                        <button class="accept-button">
-                            <a href="register" class="accept-href">Accept</a>
-                        </button>
-                    </div>
-                    <div class="text-center text-lg-start mt-4 pt-2">
-                        <button class="accept-button">
-                            <a href="register" class="accept-href">Cancel</a>
-                        </button>
-                    </div>
+                    {% for answer in answers %}
+                    <div id="ck-button">
+                        <label>
+                            <input type="checkbox" value="{{ answer }}" name="Q1"><span>{{ answer }}</span>
+                        </label>
+                    </div><br>
+                    {% endfor %}
+                    <div class="submit-button"><button type="submit">Submit</button></div>
                 </form>
             </div>
+            
         </div>
     </div>
 </div>

@@ -52,24 +52,25 @@ class User(db.Model, UserMixin):
 class Location(db.Model):
     id = db.Column("id", db.Integer, primary_key=True)
     name = db.Column(db.String(100), nullable=False, unique=True)
+
     beach = db.Column(db.Integer, nullable=False)
-    boatTrips = db.Column(db.Integer, nullable=False)
-    indigenousTourism = db.Column(db.Integer, nullable=False)
-    museumsAndCultureCentres = db.Column(db.Integer, nullable=False)
-    nationalParksAndProtectedAreas = db.Column(db.Integer, nullable=False)
+    boat_trips = db.Column(db.Integer, nullable=False)
+    indigenous_tourism = db.Column(db.Integer, nullable=False)
+    museums_and_culture_centres = db.Column(db.Integer, nullable=False)
+    national_parks_and_protected_areas = db.Column(db.Integer, nullable=False)
     rural = db.Column(db.Integer, nullable=False)
-    themeParks = db.Column(db.Integer, nullable=False)
-    urbanSightseeing = db.Column(db.Integer, nullable=False)
-    waterActivities = db.Column(db.Integer, nullable=False)
-    winterActivities = db.Column(db.Integer, nullable=False)
-    architectureAndHeritage = db.Column(db.Integer, nullable=False)
+    theme_parks = db.Column(db.Integer, nullable=False)
+    urban_sightseeing = db.Column(db.Integer, nullable=False)
+    water_activities = db.Column(db.Integer, nullable=False)
+    winter_activities = db.Column(db.Integer, nullable=False)
+    architecture_and_heritage = db.Column(db.Integer, nullable=False)
     arts = db.Column(db.Integer, nullable=False)
     culture = db.Column(db.Integer, nullable=False)
     excitement = db.Column(db.Integer, nullable=False)
     gastronomy = db.Column(db.Integer, nullable=False)
     nature = db.Column(db.Integer, nullable=False)
     relaxation = db.Column(db.Integer, nullable=False)
-    religiousTourism = db.Column(db.Integer, nullable=False)
+    religious_tourism = db.Column(db.Integer, nullable=False)
     sports = db.Column(db.Integer, nullable=False)
 
 class History(db.Model):
@@ -273,9 +274,30 @@ def welcome():
 def instruction():
     return render_template('instruction.html')
 
-@app.route("/consent", methods=["GET"])
+@app.route("/consent", methods=["POST", "GET"])
 def consent():
-    return render_template('consent.html')
+    if request.method == 'POST':
+        # remove recommended_id_list if existed in session
+        answer = request.form.getlist('Q1')
+        if len(answer) == 0:
+            flash("Please choose 1 option", 'danger')
+            return redirect(url_for('Q0'))
+        elif len(answer) == 2:
+            flash("You can only choose 1 option", 'danger')
+            return redirect(url_for('Q0'))
+        elif "Accept" in answer:
+            return redirect(url_for('register'))
+        elif "Cancle" in answer:
+            flash("You need to agree to our term in order to use this application", 'danger')
+            return redirect(url_for('consent'))
+
+    if current_user.is_authenticated:
+        return redirect(url_for('Q0'))
+    else:
+        print(current_user)
+        question = "By continuing, you agree to allow this app to use your data for scientific research purposes."
+        answers = ['Accept', 'Cancle']
+        return render_template('consent.html', question=question, answers=answers)
 
 @app.route("/surpriseme")
 @login_required
@@ -297,22 +319,23 @@ def surpriseme():
 @login_required
 def Q0():
     if request.method == 'POST':
+        # remove recommended_id_list if existed in session
+        session.pop("recommended_id_list", None)
         answer = request.form.getlist('Q1')
         if len(answer) == 0:
             flash("Please choose 1 option", 'danger')
             return redirect(url_for('Q0'))
-        elif "Yes - I want information for a specific trip" in answer and "No - I am just curious to find out about destinations in general" in answer:
+        elif len(answer) == 2:
             flash("You can only choose 1 option", 'danger')
             return redirect(url_for('Q0'))
         elif "No - I am just curious to find out about destinations in general" in answer:
-            return redirect(url_for('surpriseme'))
+            return redirect(url_for('Q20'))
         elif "Yes - I want information for a specific trip" in answer:
             return redirect(url_for('Q1'))
 
     question = "Are you searching for a destination recommendation for a specific trip or just curious to find out about destinations in general?"
     answers = ['Yes - I want information for a specific trip', 'No - I am just curious to find out about destinations in general']
-    back = "/"
-    return render_template('yesorno.html', question=question, answers=answers, back=back)
+    return render_template('yesorno.html', question=question, answers=answers)
 
 
 @app.route("/Q1", methods=["POST", "GET"])
@@ -857,8 +880,23 @@ def Q19():
 @app.route("/Q20", methods=["POST", "GET"])
 @login_required
 def Q20():
+    # if we have recommended_id_list in session, which mean the user has answered Q1 and Q2:
+    if 'recommended_id_list' in session:
+        recommended_id_list = session['recommended_id_list']
+    # if the user chose "random location recommendation func", then get random locations to recommend
+    elif 'recommended_id_list' not in session:
+        last_id = Location.query.count()
+        random_id_list = random.sample(range(1, last_id), 10)
+        random_location_list = []
+        locations = Location.query.all()
 
-    recommended_id_list = session['recommended_id_list']
+        for location in locations:
+            for i in random_id_list:
+                if location.id == i:
+                    random_location_list.append(location.id)
+        recommended_id_list = random_location_list
+    print(recommended_id_list)
+    
     times_needed_to_loop = 3 # times_needed_to_loop = how many time do we need to loop Q20
     times_looped = session['times_looped']
 
@@ -950,11 +988,16 @@ def Q20():
             for i in img_data:
                 images.append(i.img_url)
 
-            session['images'] = images
+            # converting the final_activities so that it's more human-readable
+            count = 0
+            for activity in final_activities:
+                activity = activity.replace('_', ' ')
+                final_activities[count] = activity
+                count += 1
             session['final_activities'] = final_activities
             session['current_location_name'] = location.name
             session['current_location_id'] = location.id
-
+            session['images'] = images
             return redirect(url_for('DestinationEvaluation'))
 
         # if the user has not been to this location before (no)
@@ -1055,32 +1098,31 @@ def DestinationEvaluation():
                 data[f'{activity}_rating'] = activity_rate[0]
             elif len(activity_rate) == 0:
                 data[f'{activity}_rating'] = '0'
-        print(data)
 
         # create a new Rating row (record), if we can find the key (activity), then use the associated value, if not we assume the user rated 0 for that activity 
         # 0 in Rating table means that there's no rating for that activity yet, not rating of 0 (worst)
         new_rating = Rating(user=current_user.id, 
                             location_id=session['current_location_id'],
                             location_rating = data.get('location_rating', '0'),
-                            beach_rating = data.get('beach_rating', '0'),
-                            boatTrips_rating = data.get('boatTrips_rating', '0'),
-                            indigenousTourism_rating = data.get('indigenousTourism_rating', '0'),
-                            museumsAndCultureCentres_rating = data.get('museumsAndCultureCentres_rating', '0'),
-                            nationalParksAndProtectedAreas_rating = data.get('nationalParksAndProtectedAreas_rating', '0'),
-                            rural_rating = data.get('rural_rating', '0'),
-                            themeParks_rating = data.get('themeParks_rating', '0'),
-                            urbanSightseeing_rating = data.get('urbanSightseeing_rating', '0'),
-                            waterActivities_rating = data.get('waterActivities_rating', '0'),
-                            winterActivities_rating = data.get('winterActivities_rating', '0'),
-                            architectureAndHeritage_rating = data.get('architectureAndHeritage_rating', '0'),
-                            arts_rating = data.get('arts_rating', '0'),
-                            culture_rating = data.get('culture_rating', '0'),
-                            excitement_rating = data.get('excitement_rating', '0'),
-                            gastronomy_rating = data.get('gastronomy_rating', '0'),
-                            nature_rating = data.get('nature_rating', '0'),
-                            relaxation_rating = data.get('relaxation_rating', '0'),
-                            religiousTourism_rating = data.get('religiousTourism_rating', '0'),
-                            sports_rating = data.get('sports_rating', '0')
+                            beach = data.get('beach', '0'),
+                            boat_trips = data.get('boat_trips', '0'),
+                            indigenous_tourism = data.get('indigenous_tourism', '0'),
+                            museums_and_culture_centres = data.get('museums_and_culture_centres', '0'),
+                            national_parks_and_protected_areas = data.get('national_parks_and_protected_areas', '0'),
+                            rural = data.get('rural', '0'),
+                            theme_parks = data.get('theme_parks', '0'),
+                            urban_sightseeing = data.get('urban_sightseeing', '0'),
+                            water_activities = data.get('water_activities', '0'),
+                            winter_activities = data.get('winter_activities', '0'),
+                            architecture_and_heritage = data.get('architecture_and_heritage', '0'),
+                            arts = data.get('arts', '0'),
+                            culture = data.get('culture', '0'),
+                            excitement = data.get('excitement', '0'),
+                            gastronomy = data.get('gastronomy', '0'),
+                            nature = data.get('nature', '0'),
+                            relaxation = data.get('relaxation', '0'),
+                            religious_tourism = data.get('religious_tourism', '0'),
+                            sports = data.get('sports', '0')
                             )
         db.session.add(new_rating)
         db.session.commit()
