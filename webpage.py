@@ -296,7 +296,7 @@ def consent():
     else:
         print(current_user)
         question = "By continuing, you agree to allow this app to use your data for scientific research purposes."
-        answers = ['Accept', 'Cancle']
+        answers = ['Accept', 'Cancel']
         return render_template('consent.html', question=question, answers=answers)
 
 @app.route("/surpriseme")

@@ -19,6 +19,102 @@
         padding-top: 6px;
     }
 
+    .consent-form #form-block {
+        border-radius: 5px;
+        padding: 20px;
+        width: auto;
+        max-width: 800px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .consent-form #form-block form {
+        width: 100%;
+    }
+
+    .consent-form #ck-button {
+        border-radius: 8px;
+        border: 1px solid #D0D0D0;
+        overflow: auto;
+        float: left;
+        box-shadow: 2px 4px #f3f3f3;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .consent-form #ck-button label {
+        float: left;
+        width: 100%;
+        overflow: hidden;
+        color: #2B2B43;
+        font-weight: bold;
+    }
+
+    .consent-form #ck-button label span {
+        text-align: center;
+        padding: 8px 0px;
+        display: block;
+        border-radius: 4px;
+        height: 100%;
+    }
+
+    .consent-form #ck-button label input {
+        position: absolute;
+        top: -30px;
+    }
+
+    .consent-form input[type=checkbox],
+    select {
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .consent-form #ck-button input:hover {
+        background-color: #f6c7ae;
+    }
+
+    .consent-form #ck-button input:checked+span {
+        background-color: #f29e70;
+        color: #fff;
+    }
+
+    .consent-form #ck-button input:checked:hover+span {
+        background-color: #dc7e4b;
+        color: #fff;
+    }
+
+    .consent-form .container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .consent-form .container div {
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+    }
+
+    .consent-form .container button {
+        background-color: #301c12;
+        color: white;
+        padding: 14px 20px;
+        margin: 40px 0;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .consent-form .container button:hover {
+        background-color: #2a272c;
+    }
+
     .accept-button {
         width: 80%;
         border: solid;
@@ -67,19 +163,22 @@
                 By continuing, you agree to allow this app to use your data for scientific research purposes.
             </p>
 
-            <div id="form-block">
-                <form method="POST" action="">
-                    {% for answer in answers %}
-                    <div id="ck-button">
-                        <label>
-                            <input type="checkbox" value="{{ answer }}" name="Q1"><span>{{ answer }}</span>
-                        </label>
-                    </div><br>
-                    {% endfor %}
-                    <div class="submit-button"><button type="submit">Submit</button></div>
-                </form>
+            <div class="consent-form">
+                <div id="form-block">
+                    <form method="POST" action="">
+                        {% for answer in answers %}
+                        <div id="ck-button">
+                            <label>
+                                <input type="checkbox" value="{{ answer }}" name="Q1"><span>{{ answer }}</span>
+                            </label>
+                        </div><br>
+                        {% endfor %}
+                        <div class="container">
+                            <div class="submit-button"><button type="submit">Submit</button></div>
+                        </div>
+                    </form>
+                </div>
             </div>
-            
         </div>
     </div>
 </div>
