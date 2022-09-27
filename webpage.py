@@ -294,7 +294,6 @@ def consent():
     if current_user.is_authenticated:
         return redirect(url_for('Q0'))
     else:
-        print(current_user)
         question = "By continuing, you agree to allow this app to use your data for scientific research purposes."
         answers = ['Accept', 'Cancel']
         return render_template('consent.html', question=question, answers=answers)
@@ -895,7 +894,6 @@ def Q20():
                 if location.id == i:
                     random_location_list.append(location.id)
         recommended_id_list = random_location_list
-    print(recommended_id_list)
     
     times_needed_to_loop = 3 # times_needed_to_loop = how many time do we need to loop Q20
     times_looped = session['times_looped']
@@ -1025,7 +1023,6 @@ def Q20():
                 location_average_rating = sum / count
             elif count == 0:
                 location_average_rating = 0
-            print(location_average_rating)
 
             # loop through all rating, we'll add key-value pair (rating-avg_rating) to the avg dict with each loop
             for rating in ratings:
@@ -1051,8 +1048,6 @@ def Q20():
             for activity in top_three_activities:
                 new_key = activity[0].replace('_', ' ')
                 formatted_top_3_activities[f'{new_key}'] = activity[1]
-
-            print(formatted_top_3_activities)
 
             # getting the images of the current location
             img_data = Image.query.filter_by(location_name=location.name).all()
@@ -1092,36 +1087,37 @@ def DestinationEvaluation():
         final_activities = session['final_activities']
         # loop through the list of 8 (ideally) activities being rated in the DestinationEvaluation route, get the corresponding rating from the form, then create new key-value pairs in data dict accordingly
         for activity in final_activities:
-            activity_rate = request.form.getlist(f'{activity}-rate')
+            activity_rate = request.form.getlist(f'{activity}')
             # print(activity_rate)
             if len(activity_rate) != 0:
-                data[f'{activity}_rating'] = activity_rate[0]
+                data[f'{activity}'] = activity_rate[0]
             elif len(activity_rate) == 0:
-                data[f'{activity}_rating'] = '0'
+                data[f'{activity}'] = '0'
 
         # create a new Rating row (record), if we can find the key (activity), then use the associated value, if not we assume the user rated 0 for that activity 
         # 0 in Rating table means that there's no rating for that activity yet, not rating of 0 (worst)
         new_rating = Rating(user=current_user.id, 
                             location_id=session['current_location_id'],
                             location_rating = data.get('location_rating', '0'),
+
                             beach = data.get('beach', '0'),
-                            boat_trips = data.get('boat_trips', '0'),
-                            indigenous_tourism = data.get('indigenous_tourism', '0'),
-                            museums_and_culture_centres = data.get('museums_and_culture_centres', '0'),
-                            national_parks_and_protected_areas = data.get('national_parks_and_protected_areas', '0'),
+                            boat_trips = data.get('boat trips', '0'),
+                            indigenous_tourism = data.get('indigenous tourism', '0'),
+                            museums_and_culture_centres = data.get('museums and culture_centres', '0'),
+                            national_parks_and_protected_areas = data.get('national parks and protected_areas', '0'),
                             rural = data.get('rural', '0'),
-                            theme_parks = data.get('theme_parks', '0'),
-                            urban_sightseeing = data.get('urban_sightseeing', '0'),
-                            water_activities = data.get('water_activities', '0'),
-                            winter_activities = data.get('winter_activities', '0'),
-                            architecture_and_heritage = data.get('architecture_and_heritage', '0'),
+                            theme_parks = data.get('theme parks', '0'),
+                            urban_sightseeing = data.get('urban sightseeing', '0'),
+                            water_activities = data.get('water activities', '0'),
+                            winter_activities = data.get('winter activities', '0'),
+                            architecture_and_heritage = data.get('architecture and_heritage', '0'),
                             arts = data.get('arts', '0'),
                             culture = data.get('culture', '0'),
                             excitement = data.get('excitement', '0'),
                             gastronomy = data.get('gastronomy', '0'),
                             nature = data.get('nature', '0'),
                             relaxation = data.get('relaxation', '0'),
-                            religious_tourism = data.get('religious_tourism', '0'),
+                            religious_tourism = data.get('religious tourism', '0'),
                             sports = data.get('sports', '0')
                             )
         db.session.add(new_rating)
@@ -1152,18 +1148,6 @@ def Q21():
     question = "Would you like to be recommended more destinations?"
     answers = ['Yes', 'No']
     return render_template('yesorno.html', question=question, answers=answers)
-
-@app.route("/test2", methods=["POST", "GET"])
-@login_required
-def test2():
-    if request.method == 'POST':
-        answer = request.form.getlist('rate')
-        print(answer)
-        answer2 = request.form.getlist('rate2')
-        print(answer2)
-        return redirect(url_for('test2'))
-
-    return render_template('StarRating.html')
 
 # @app.route("/login", methods=["POST", "GET"])
 # def login():
