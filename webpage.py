@@ -298,21 +298,6 @@ def consent():
         answers = ['Accept', 'Cancle']
         return render_template('consent.html', question=question, answers=answers)
 
-@app.route("/surpriseme")
-@login_required
-def surpriseme():
-    last_id = Location.query.count()
-    random_id_list = random.sample(range(1, last_id), 10)
-    random_location_list = []
-    locations = Location.query.all()
-
-    for location in locations:
-        for i in random_id_list:
-            if location.id == i:
-                random_location_list.append(location.name)
-
-    return render_template("supriseme.html", locations=random_location_list)
-
 
 @app.route("/Q0", methods=["POST", "GET"])
 @login_required
