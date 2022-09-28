@@ -295,7 +295,7 @@ def consent():
         return redirect(url_for('Q0'))
     else:
         question = "By continuing, you agree to allow this app to use your data for scientific research purposes."
-        answers = ['Accept', 'Cancle']
+        answers = ['Accept', 'Cancel']
         return render_template('consent.html', question=question, answers=answers)
 
 
