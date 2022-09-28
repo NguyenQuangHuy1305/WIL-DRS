@@ -213,15 +213,6 @@ class LoginForm(FlaskForm):
 def home():
     return render_template("welcome.html")
 
-# @app.route("/<name>")
-# def user(name):
-#     return f"Hello {name}!"
-
-
-@app.route("/view")
-def view():
-    return render_template("view.html", values=User.query.all())
-
 
 @app.route("/login", methods=["POST", "GET"])
 def login():
