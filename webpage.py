@@ -211,6 +211,8 @@ class LoginForm(FlaskForm):
 
 @app.route("/")
 def home():
+    if 'consent' in session: 
+        session.pop('consent', None)
     return render_template("welcome.html")
 
 
@@ -244,7 +246,15 @@ def register():
         flash(f'Account created for {form.username.data}!', 'success')
         return redirect(url_for('Q1'))
 
-    return render_template('register.html', form=form)
+    if 'consent' in session:
+        if session['consent'] == 'Accept':
+            return render_template('register.html', form=form)
+        if session['consent'] == 'Cancel':
+            flash("You need to agree to our term in order to use this application", 'danger')
+            return redirect(url_for('consent'))
+    else:
+        flash("You need to agree to our term in order to use this application", 'danger')
+        return redirect(url_for('consent'))
 
 
 @app.route("/logout", methods=["POST", "GET"])
@@ -268,18 +278,19 @@ def instruction():
 @app.route("/consent", methods=["POST", "GET"])
 def consent():
     if request.method == 'POST':
-        # remove recommended_id_list if existed in session
         answer = request.form.getlist('Q1')
         if len(answer) == 0:
             flash("Please choose 1 option", 'danger')
-            return redirect(url_for('Q0'))
+            return redirect(url_for('consent'))
         elif len(answer) == 2:
             flash("You can only choose 1 option", 'danger')
             return redirect(url_for('Q0'))
         elif "Accept" in answer:
+            session['consent'] = 'Accept'
             return redirect(url_for('register'))
-        elif "Cancle" in answer:
+        elif "Cancel" in answer:
             flash("You need to agree to our term in order to use this application", 'danger')
+            session['consent'] = 'Cancel'
             return redirect(url_for('consent'))
 
     if current_user.is_authenticated:
@@ -294,8 +305,27 @@ def consent():
 @login_required
 def Q0():
     if request.method == 'POST':
-        # remove recommended_id_list if existed in session
-        session.pop("recommended_id_list", None)
+        # remove Q1-19 from session before starting
+        if 'recommended_id_list' in session: session.pop("recommended_id_list", None)
+        if 'Q1' in session: session.pop("Q1", None)
+        if 'Q2' in session: session.pop("Q2", None)
+        if 'Q3' in session: session.pop("Q3", None)
+        if 'Q4' in session: session.pop("Q4", None)
+        if 'Q5' in session: session.pop("Q5", None)
+        if 'Q6' in session: session.pop("Q6", None)
+        if 'Q7' in session: session.pop("Q7", None)
+        if 'Q8' in session: session.pop("Q8", None)
+        if 'Q9' in session: session.pop("Q9", None)
+        if 'Q10' in session: session.pop("Q10", None)
+        if 'Q11' in session: session.pop("Q11", None)
+        if 'Q12' in session: session.pop("Q12", None)
+        if 'Q13' in session: session.pop("Q13", None)
+        if 'Q14' in session: session.pop("Q14", None)
+        if 'Q15' in session: session.pop("Q15", None)
+        if 'Q16' in session: session.pop("Q16", None)
+        if 'Q17' in session: session.pop("Q17", None)
+        if 'Q18' in session: session.pop("Q18", None)
+
         answer = request.form.getlist('Q1')
         if len(answer) == 0:
             flash("Please choose 1 option", 'danger')
@@ -336,6 +366,7 @@ def Q1():
     answers = ['Cultural', 'Mountain', 'Nature', 'Rural', 'Beach', 'Urban']
     multiple_selection = True
     return render_template('Q1.html', question=question, answers=answers, multiple_selection=multiple_selection)
+
 
 @app.route("/Q2", methods=["POST", "GET"])
 @login_required
@@ -469,6 +500,7 @@ def Q2():
     else:
         return f"you haven't answer 1st question"
 
+
 @app.route('/Q3+4', methods=['GET', 'POST'])
 @login_required
 def Q3():
@@ -487,6 +519,7 @@ def Q3():
 
     question = "In which state do you live?"
     return render_template('QSelectField.html', form=form, question=question)
+
 
 @app.route("/Q5", methods=["POST", "GET"])
 @login_required
@@ -792,7 +825,6 @@ def has_numbers(inputString):
 def Q19():
     if request.method == 'POST':
         answer = request.form.getlist('QText')
-
         if len(answer[0]) == 0:
             flash("Destination name must not be blank", 'danger')
             return redirect(url_for('Q19'))
@@ -803,24 +835,24 @@ def Q19():
             session['times_looped'] = 0
 
             # get all answer from Q1 to Q19
-            Q1 = session['Q1']
-            Q2 = session['Q2']
-            Q3 = session['Q3']
-            Q4 = session['Q4']
-            Q5 = session['Q5']
-            Q6 = session['Q6']
-            Q7 = session['Q7']
-            Q8 = session['Q8']
-            Q9 = session['Q8']
-            Q10 = session['Q10']
-            Q11 = session['Q11']
-            Q12 = session['Q12']
-            Q13 = session['Q13']
-            Q14 = session['Q14']
-            Q15 = session['Q15']
-            Q16 = session['Q16']
-            Q17 = session['Q17']
-            Q18 = session['Q18']
+            Q1 = session['Q1'] if 'Q1' in session else None
+            Q2 = session['Q2'] if 'Q1' in session else None
+            Q3 = session['Q3'] if 'Q1' in session else None
+            Q4 = session['Q4'] if 'Q1' in session else None
+            Q5 = session['Q5'] if 'Q1' in session else None
+            Q6 = session['Q6'] if 'Q1' in session else None
+            Q7 = session['Q7'] if 'Q1' in session else None
+            Q8 = session['Q8'] if 'Q1' in session else None
+            Q9 = session['Q8'] if 'Q1' in session else None
+            Q10 = session['Q10'] if 'Q1' in session else None
+            Q11 = session['Q11'] if 'Q1' in session else None
+            Q12 = session['Q12'] if 'Q1' in session else None
+            Q13 = session['Q13'] if 'Q1' in session else None
+            Q14 = session['Q14'] if 'Q1' in session else None
+            Q15 = session['Q15'] if 'Q1' in session else None
+            Q16 = session['Q16'] if 'Q1' in session else None
+            Q17 = session['Q17'] if 'Q1' in session else None
+            Q18 = session['Q18'] if 'Q1' in session else None
             Q19 = answer[0]
 
             # store them in the database
