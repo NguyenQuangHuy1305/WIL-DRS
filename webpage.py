@@ -369,6 +369,8 @@ def Q0():
 def Q1():
     if request.method == 'POST':
         categories = request.form.getlist('Q1')
+        print(type(categories))
+        print(categories)
         if len(categories) == 0:
             flash("Please choose 1 option", 'danger')
             return redirect(url_for('Q1'))
