@@ -433,7 +433,7 @@ def Q2():
     if request.method == 'POST':
         # get all the selected tags from the form in Q2, then in final_dict change the value associated with the key "tag"
         list_of_tags = request.form.getlist('Q1')
-
+        print(list_of_tags)
         if len(list_of_tags) == 0:
             flash("Please choose 1 option", 'danger')
             return redirect(url_for('Q2'))
