@@ -2,7 +2,6 @@
 # show the user a list of locations (with picture and name), store their selection (for ex: user 1 - location2/ user 2 - location10/... in UserLocation table)
 
 from audioop import reverse
-from tkinter.tix import Select
 from tokenize import String
 from typing import final
 from flask import Flask, redirect, url_for, render_template, request, session, flash, jsonify
