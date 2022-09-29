@@ -465,10 +465,13 @@ def Q2():
             final_list = list(final_dict.values())
             final_list = np.array(final_list)
 
+
+
+
             # initiate the DRSModel
             parser = argparse.ArgumentParser()
-            parser.add_argument('--filepath', default='./Destination_tags_sum.csv')
-            parser.add_argument('--model', default='./drs_model')
+            parser.add_argument('--filepath', default='Destination_tags_sum.csv')
+            parser.add_argument('--model', default='drs_model')
             config = parser.parse_args()
             model = DRSModel(config)
 
@@ -482,6 +485,9 @@ def Q2():
 
             recommended_id_list = result
             session['recommended_id_list'] = recommended_id_list
+
+
+
 
             return redirect(url_for('Q3'))
 
