@@ -80,12 +80,9 @@
             <ul class="list-unstyled">
               {% if current_user.is_authenticated %}
               <li><a href="logout" class="text-white">Logout</a></li>
-              <li><a href="view" class="text-white">View</a></li>
-              <li><a href="surpriseme" class="text-white">Surprise me</a></li>
               <li><a href="Q0" class="text-white">Recommendation</a></li>
               {% else %}
               <li><a href="login" class="text-white">Login</a></li>
-              <li><a href="register" class="text-white">Register</a></li>
               {% endif %}
             </ul>
           </div>
