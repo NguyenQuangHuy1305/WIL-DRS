@@ -56,8 +56,8 @@ class DRSModel:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--filepath', default='./Destination_tags_sum.csv')
-    parser.add_argument('--model', default='./drs_model')
+    parser.add_argument('--filepath', default='Destination_tags_sum.csv')
+    parser.add_argument('--model', default='drs_model')
     config = parser.parse_args()
     model = DRSModel(config)
 

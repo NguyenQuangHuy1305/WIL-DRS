@@ -2,7 +2,6 @@
 # show the user a list of locations (with picture and name), store their selection (for ex: user 1 - location2/ user 2 - location10/... in UserLocation table)
 
 from audioop import reverse
-from tkinter.tix import Select
 from tokenize import String
 from typing import final
 from flask import Flask, redirect, url_for, render_template, request, session, flash, jsonify
@@ -347,8 +346,6 @@ def Q0():
     if 'Q17' in session: session.pop("Q17", None)
     if 'Q18' in session: session.pop("Q18", None)
 
-    print(session)
-
     if request.method == 'POST':
         answer = request.form.getlist('Q1')
         if len(answer) == 0:
@@ -372,7 +369,6 @@ def Q0():
 def Q1():
     if request.method == 'POST':
         categories = request.form.getlist('Q1')
-
         if len(categories) == 0:
             flash("Please choose 1 option", 'danger')
             return redirect(url_for('Q1'))
@@ -383,6 +379,7 @@ def Q1():
             # store the answer into session to save later
             answer = ', '.join(categories)
             session['Q1'] = answer
+            print(type(session['Q1']))
 
             return redirect(url_for('Q2'))
 
@@ -436,10 +433,10 @@ def Q2():
     if request.method == 'POST':
         # get all the selected tags from the form in Q2, then in final_dict change the value associated with the key "tag"
         list_of_tags = request.form.getlist('Q1')
-
+        print(list_of_tags)
         if len(list_of_tags) == 0:
             flash("Please choose 1 option", 'danger')
-            return redirect(url_for('Q1'))
+            return redirect(url_for('Q2'))
         else:
             # store the answer into session to save later
             answer = ', '.join(list_of_tags)
@@ -468,10 +465,13 @@ def Q2():
             final_list = list(final_dict.values())
             final_list = np.array(final_list)
 
+
+
+
             # initiate the DRSModel
             parser = argparse.ArgumentParser()
-            parser.add_argument('--filepath', default='./Destination_tags_sum.csv')
-            parser.add_argument('--model', default='./drs_model')
+            parser.add_argument('--filepath', default='Destination_tags_sum.csv')
+            parser.add_argument('--model', default='drs_model')
             config = parser.parse_args()
             model = DRSModel(config)
 
@@ -485,6 +485,9 @@ def Q2():
 
             recommended_id_list = result
             session['recommended_id_list'] = recommended_id_list
+
+
+
 
             return redirect(url_for('Q3'))
 
