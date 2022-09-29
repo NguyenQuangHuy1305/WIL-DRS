@@ -369,8 +369,6 @@ def Q0():
 def Q1():
     if request.method == 'POST':
         categories = request.form.getlist('Q1')
-        print(type(categories))
-        print(categories)
         if len(categories) == 0:
             flash("Please choose 1 option", 'danger')
             return redirect(url_for('Q1'))
@@ -381,7 +379,7 @@ def Q1():
             # store the answer into session to save later
             answer = ', '.join(categories)
             session['Q1'] = answer
-            print(session['Q1'])
+            print(type(session['Q1']))
 
             return redirect(url_for('Q2'))
 
