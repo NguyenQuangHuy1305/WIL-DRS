@@ -346,8 +346,6 @@ def Q0():
     if 'Q17' in session: session.pop("Q17", None)
     if 'Q18' in session: session.pop("Q18", None)
 
-    print(session)
-
     if request.method == 'POST':
         answer = request.form.getlist('Q1')
         if len(answer) == 0:
@@ -371,7 +369,7 @@ def Q0():
 def Q1():
     if request.method == 'POST':
         categories = request.form.getlist('Q1')
-
+        print(categories)
         if len(categories) == 0:
             flash("Please choose 1 option", 'danger')
             return redirect(url_for('Q1'))
