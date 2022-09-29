@@ -1207,11 +1207,12 @@ def DestinationEvaluation():
 
         # getting the list of rating for the "location rating" part
         location_rate = request.form.getlist('location-rate')
+        print(location_rate)
         # if the user rated the location (1-7 star(s)), then add that key-value pair to the dict
         if len(location_rate) != 0:
             data['location_rating'] = location_rate[0]
         # if the user didn't rate (0 star), then add the key-value (value = 0) to the dict
-        elif len(activity_rate) == 0:
+        elif len(location_rate) == 0:
             data['location_rating'] = '0'
 
         final_activities = session['final_activities']
