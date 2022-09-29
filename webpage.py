@@ -836,23 +836,23 @@ def Q19():
 
             # get all answer from Q1 to Q19
             Q1 = session['Q1'] if 'Q1' in session else None
-            Q2 = session['Q2'] if 'Q1' in session else None
-            Q3 = session['Q3'] if 'Q1' in session else None
-            Q4 = session['Q4'] if 'Q1' in session else None
-            Q5 = session['Q5'] if 'Q1' in session else None
-            Q6 = session['Q6'] if 'Q1' in session else None
-            Q7 = session['Q7'] if 'Q1' in session else None
-            Q8 = session['Q8'] if 'Q1' in session else None
-            Q9 = session['Q8'] if 'Q1' in session else None
-            Q10 = session['Q10'] if 'Q1' in session else None
-            Q11 = session['Q11'] if 'Q1' in session else None
-            Q12 = session['Q12'] if 'Q1' in session else None
-            Q13 = session['Q13'] if 'Q1' in session else None
-            Q14 = session['Q14'] if 'Q1' in session else None
-            Q15 = session['Q15'] if 'Q1' in session else None
-            Q16 = session['Q16'] if 'Q1' in session else None
-            Q17 = session['Q17'] if 'Q1' in session else None
-            Q18 = session['Q18'] if 'Q1' in session else None
+            Q2 = session['Q2'] if 'Q2' in session else None
+            Q3 = session['Q3'] if 'Q3' in session else None
+            Q4 = session['Q4'] if 'Q4' in session else None
+            Q5 = session['Q5'] if 'Q5' in session else None
+            Q6 = session['Q6'] if 'Q6' in session else None
+            Q7 = session['Q7'] if 'Q7' in session else None
+            Q8 = session['Q8'] if 'Q8' in session else None
+            Q9 = session['Q8'] if 'Q9' in session else None
+            Q10 = session['Q10'] if 'Q10' in session else None
+            Q11 = session['Q11'] if 'Q11' in session else None
+            Q12 = session['Q12'] if 'Q12' in session else None
+            Q13 = session['Q13'] if 'Q13' in session else None
+            Q14 = session['Q14'] if 'Q14' in session else None
+            Q15 = session['Q15'] if 'Q15' in session else None
+            Q16 = session['Q16'] if 'Q16' in session else None
+            Q17 = session['Q17'] if 'Q17' in session else None
+            Q18 = session['Q18'] if 'Q18' in session else None
             Q19 = answer[0]
 
             # store them in the database
