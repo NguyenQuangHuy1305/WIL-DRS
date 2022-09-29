@@ -170,6 +170,7 @@ class Form(FlaskForm):
     municipal = SelectField('municipal', choices=[])
 
 @app.route('/municipal/<state>')
+@login_required
 def municipal(state):
     municipals = Municipal.query.filter_by(state=state).all()
 
@@ -211,8 +212,28 @@ class LoginForm(FlaskForm):
 
 @app.route("/")
 def home():
-    if 'consent' in session: 
-        session.pop('consent', None)
+    # remove Q1-19 from session before starting
+    if 'recommended_id_list' in session: session.pop("recommended_id_list", None)
+    if 'Q1' in session: session.pop("Q1", None)
+    if 'Q2' in session: session.pop("Q2", None)
+    if 'Q3' in session: session.pop("Q3", None)
+    if 'Q4' in session: session.pop("Q4", None)
+    if 'Q5' in session: session.pop("Q5", None)
+    if 'Q6' in session: session.pop("Q6", None)
+    if 'Q7' in session: session.pop("Q7", None)
+    if 'Q8' in session: session.pop("Q8", None)
+    if 'Q9' in session: session.pop("Q9", None)
+    if 'Q10' in session: session.pop("Q10", None)
+    if 'Q11' in session: session.pop("Q11", None)
+    if 'Q12' in session: session.pop("Q12", None)
+    if 'Q13' in session: session.pop("Q13", None)
+    if 'Q14' in session: session.pop("Q14", None)
+    if 'Q15' in session: session.pop("Q15", None)
+    if 'Q16' in session: session.pop("Q16", None)
+    if 'Q17' in session: session.pop("Q17", None)
+    if 'Q18' in session: session.pop("Q18", None)
+
+    if 'consent' in session: session.pop('consent', None)
     return render_template("welcome.html")
 
 
@@ -260,9 +281,8 @@ def register():
 @app.route("/logout", methods=["POST", "GET"])
 @login_required
 def logout():
-    session.pop("categories", None)
+    session.clear()
     logout_user()
-    flash(f'Log out successful!', 'success')
     return redirect(url_for("home"))
 
 
@@ -304,6 +324,8 @@ def consent():
 @app.route("/Q0", methods=["POST", "GET"])
 @login_required
 def Q0():
+    # getting the time_looped for Q20
+    session['times_looped'] = 0
     # remove Q1-19 from session before starting
     if 'recommended_id_list' in session: session.pop("recommended_id_list", None)
     if 'Q1' in session: session.pop("Q1", None)
@@ -324,6 +346,8 @@ def Q0():
     if 'Q16' in session: session.pop("Q16", None)
     if 'Q17' in session: session.pop("Q17", None)
     if 'Q18' in session: session.pop("Q18", None)
+
+    print(session)
 
     if request.method == 'POST':
         answer = request.form.getlist('Q1')
@@ -460,16 +484,8 @@ def Q2():
             result.reverse()
 
             recommended_id_list = result
-            recommended_location_list = []
-
-            for i in recommended_id_list:
-                location = Location.query.filter_by(id=i).first()
-                recommended_location_list.append(location.name)
-
-            session['recommended_location_list'] = recommended_location_list
             session['recommended_id_list'] = recommended_id_list
 
-            # return render_template("recommendation.html", locations = recommended_location_list)
             return redirect(url_for('Q3'))
 
     # if session['categories'] is not blank, which mean the user has chose some categories from Q1, then:
@@ -498,7 +514,8 @@ def Q2():
         answers = sorted(answers)
         return render_template('Q1.html', question=question, answers=answers)
     else:
-        return f"you haven't answer 1st question"
+        flash("You have to answer this question before proceeding", 'danger')
+        return redirect(url_for('Q1'))
 
 
 @app.route('/Q3+4', methods=['GET', 'POST'])
@@ -832,8 +849,6 @@ def Q19():
             flash("Destination name must not have numbers", 'danger')
             return redirect(url_for('Q19'))
         else:
-            session['times_looped'] = 0
-
             # get all answer from Q1 to Q19
             Q1 = session['Q1'] if 'Q1' in session else None
             Q2 = session['Q2'] if 'Q2' in session else None
@@ -924,7 +939,7 @@ def Q20():
 
         # if the user had been to this location before (yes)
         elif "Yes" in answer:
-
+            # if the user press yes aka they had been to this location before, then create a new entry in the History table
             new_history = History(user=current_user.id, location=recommended_id_list[times_looped])
             db.session.add(new_history)
             db.session.commit()
