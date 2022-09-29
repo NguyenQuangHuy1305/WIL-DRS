@@ -436,7 +436,7 @@ def Q2():
 
         if len(list_of_tags) == 0:
             flash("Please choose 1 option", 'danger')
-            return redirect(url_for('Q1'))
+            return redirect(url_for('Q2'))
         else:
             # store the answer into session to save later
             answer = ', '.join(list_of_tags)
