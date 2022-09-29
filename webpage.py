@@ -1085,9 +1085,10 @@ def Q20():
     question = "Have you been to this destination?"
     answers = ['Yes', 'No']
     location = Location.query.filter_by(id=recommended_id_list[times_looped]).first()
-    location = location.name
+    img = Image.query.filter_by(location_name=location.name).first().img_url
+
     if times_looped != times_needed_to_loop:
-        return render_template('Q20.html', question = question, location = location, answers = answers)
+        return render_template('Q20.html', question=question, location=location.name, answers=answers, img=img)
     elif times_looped == times_needed_to_loop:
         return redirect(url_for('Q21'))
 
