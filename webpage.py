@@ -512,7 +512,8 @@ def Q2():
                 final_dict['D_Urban'] = 1
         answers = set(answers)
         answers = sorted(answers)
-        return render_template('Q1.html', question=question, answers=answers)
+        multiple_selection = True
+        return render_template('Q1.html', question=question, answers=answers, multiple_selection=multiple_selection)
     else:
         flash("You have to answer this question before proceeding", 'danger')
         return redirect(url_for('Q1'))
@@ -553,10 +554,16 @@ def Q5():
 
             return redirect(url_for('Q6'))
 
-    question = "Which mode of transport are you planning to use on your next trip?"
-    answers = ['Road [within a 500km radius]', 'Air [+500km radius]']
-    return render_template('yesorno.html', question=question, answers=answers)
-
+    if 'Q1' in session and 'Q2' in session:
+        question = "Which mode of transport are you planning to use on your next trip?"
+        answers = ['Road [within a 500km radius]', 'Air [+500km radius]']
+        return render_template('yesorno.html', question=question, answers=answers)
+    elif 'Q1' in session and 'Q2' not in session:
+        flash("You have to answer this question before proceeding", 'danger')
+        return redirect(url_for('Q2'))
+    else:
+        flash("You have to answer this question before proceeding", 'danger')
+        return redirect(url_for('Q1'))
 
 @app.route("/Q6", methods=["POST", "GET"])
 @login_required
@@ -581,9 +588,16 @@ def Q6():
 
                 return redirect(url_for('Q8'))
 
-    question = "Who are you planning to travel with in your next trip?"
-    answers = ['Couple', 'Couple with kids', 'Adult friends / Relatives', 'A larger group with kids', 'Alone']
-    return render_template('Q1.html', question=question, answers=answers)
+    if 'Q1' in session and 'Q2' in session:
+        question = "Who are you planning to travel with in your next trip?"
+        answers = ['Couple', 'Couple with kids', 'Adult friends / Relatives', 'A larger group with kids', 'Alone']
+        return render_template('Q1.html', question=question, answers=answers)
+    elif 'Q1' in session and 'Q2' not in session:
+        flash("You have to answer this question before proceeding", 'danger')
+        return redirect(url_for('Q2'))
+    else:
+        flash("You have to answer this question before proceeding", 'danger')
+        return redirect(url_for('Q1'))
 
 
 @app.route("/Q7", methods=["POST", "GET"])
@@ -601,9 +615,16 @@ def Q7():
 
             return redirect(url_for('Q8'))
 
-    question = "How old are the youngest kids in the travel party?"
-    answers = ['0-2 years', '3-5 years', '6-11 years', '12-17 years']
-    return render_template('Q1.html', question=question, answers=answers)
+    if 'Q1' in session and 'Q2' in session:
+        question = "How old are the youngest kids in the travel party?"
+        answers = ['0-2 years', '3-5 years', '6-11 years', '12-17 years']
+        return render_template('Q1.html', question=question, answers=answers)
+    elif 'Q1' in session and 'Q2' not in session:
+        flash("You have to answer this question before proceeding", 'danger')
+        return redirect(url_for('Q2'))
+    else:
+        flash("You have to answer this question before proceeding", 'danger')
+        return redirect(url_for('Q1'))
 
 
 @app.route("/Q8", methods=["POST", "GET"])
@@ -621,9 +642,16 @@ def Q8():
 
             return redirect(url_for('Q9'))
 
-    question = "How many days do you plan to stay away on your next trip?"
-    answers = ['1-4 days', '5-10 days', '11+ days']
-    return render_template('Q1.html', question=question, answers=answers)
+    if 'Q1' in session and 'Q2' in session:
+        question = "How many days do you plan to stay away on your next trip?"
+        answers = ['1-4 days', '5-10 days', '11+ days']
+        return render_template('Q1.html', question=question, answers=answers)
+    elif 'Q1' in session and 'Q2' not in session:
+        flash("You have to answer this question before proceeding", 'danger')
+        return redirect(url_for('Q2'))
+    else:
+        flash("You have to answer this question before proceeding", 'danger')
+        return redirect(url_for('Q1'))
 
 
 @app.route("/Q9", methods=["POST", "GET"])
@@ -641,9 +669,16 @@ def Q9():
 
             return redirect(url_for('Q10'))
 
-    question = "How much is your budget for this trip?"
-    answers = ['Less than R$ 1,000', 'R$ 1,000 to R$ 5,000', 'More than R$ 5,000']
-    return render_template('Q1.html', question=question, answers=answers)
+    if 'Q1' in session and 'Q2' in session:
+        question = "How much is your budget for this trip?"
+        answers = ['Less than R$ 1,000', 'R$ 1,000 to R$ 5,000', 'More than R$ 5,000']
+        return render_template('Q1.html', question=question, answers=answers)
+    elif 'Q1' in session and 'Q2' not in session:
+        flash("You have to answer this question before proceeding", 'danger')
+        return redirect(url_for('Q2'))
+    else:
+        flash("You have to answer this question before proceeding", 'danger')
+        return redirect(url_for('Q1'))
 
 
 @app.route("/Q10", methods=["POST", "GET"])
@@ -661,9 +696,16 @@ def Q10():
 
             return redirect(url_for('Q11'))
 
-    question = "What is your gender?"
-    answers = ['Male', 'Female', 'Other / Prefer not to state']
-    return render_template('Q1.html', question=question, answers=answers)
+    if 'Q1' in session and 'Q2' in session:
+        question = "What is your gender?"
+        answers = ['Male', 'Female', 'Other / Prefer not to state']
+        return render_template('Q1.html', question=question, answers=answers)
+    elif 'Q1' in session and 'Q2' not in session:
+        flash("You have to answer this question before proceeding", 'danger')
+        return redirect(url_for('Q2'))
+    else:
+        flash("You have to answer this question before proceeding", 'danger')
+        return redirect(url_for('Q1'))
 
 
 @app.route("/Q11", methods=["POST", "GET"])
@@ -681,9 +723,16 @@ def Q11():
 
             return redirect(url_for('Q12'))
 
-    question = "What is your age?"
-    answers = ['<10', '10-14', '15-20', '20-25', '25-30', '30-40', '40-50', '>50']
-    return render_template('Q1.html', question=question, answers=answers)
+    if 'Q1' in session and 'Q2' in session:
+        question = "What is your age?"
+        answers = ['<10', '10-14', '15-20', '20-25', '25-30', '30-40', '40-50', '>50']
+        return render_template('Q1.html', question=question, answers=answers)
+    elif 'Q1' in session and 'Q2' not in session:
+        flash("You have to answer this question before proceeding", 'danger')
+        return redirect(url_for('Q2'))
+    else:
+        flash("You have to answer this question before proceeding", 'danger')
+        return redirect(url_for('Q1'))
 
 
 @app.route("/Q12", methods=["POST", "GET"])
@@ -701,9 +750,16 @@ def Q12():
 
             return redirect(url_for('Q13'))
 
-    question = "What is your highest level of education?"
-    answers = ['No formal schooling', 'Elementary', 'High school', 'Graduate', 'Postgraduate', 'Prefer not to say']
-    return render_template('Q1.html', question=question, answers=answers)
+    if 'Q1' in session and 'Q2' in session:
+        question = "What is your highest level of education?"
+        answers = ['No formal schooling', 'Elementary', 'High school', 'Graduate', 'Postgraduate', 'Prefer not to say']
+        return render_template('Q1.html', question=question, answers=answers)
+    elif 'Q1' in session and 'Q2' not in session:
+        flash("You have to answer this question before proceeding", 'danger')
+        return redirect(url_for('Q2'))
+    else:
+        flash("You have to answer this question before proceeding", 'danger')
+        return redirect(url_for('Q1'))
 
 
 @app.route("/Q13", methods=["POST", "GET"])
@@ -721,9 +777,16 @@ def Q13():
 
             return redirect(url_for('Q14'))
 
-    question = "What is your current relationship status?"
-    answers = ['Single', 'De facto', 'Married', 'Divorced of Widowed', 'Prefer not to say']
-    return render_template('Q1.html', question=question, answers=answers)
+    if 'Q1' in session and 'Q2' in session:
+        question = "What is your current relationship status?"
+        answers = ['Single', 'De facto', 'Married', 'Divorced of Widowed', 'Prefer not to say']
+        return render_template('Q1.html', question=question, answers=answers)
+    elif 'Q1' in session and 'Q2' not in session:
+        flash("You have to answer this question before proceeding", 'danger')
+        return redirect(url_for('Q2'))
+    else:
+        flash("You have to answer this question before proceeding", 'danger')
+        return redirect(url_for('Q1'))
 
 
 @app.route("/Q14", methods=["POST", "GET"])
@@ -749,9 +812,16 @@ def Q14():
 
                 return redirect(url_for('Q16'))
 
-    question = "Do you have children?"
-    answers = ['Yes', 'No']
-    return render_template('yesorno.html', question=question, answers=answers)
+    if 'Q1' in session and 'Q2' in session:
+        question = "Do you have children?"
+        answers = ['Yes', 'No']
+        return render_template('yesorno.html', question=question, answers=answers)
+    elif 'Q1' in session and 'Q2' not in session:
+        flash("You have to answer this question before proceeding", 'danger')
+        return redirect(url_for('Q2'))
+    else:
+        flash("You have to answer this question before proceeding", 'danger')
+        return redirect(url_for('Q1'))
 
 
 @app.route("/Q15", methods=["POST", "GET"])
@@ -769,9 +839,16 @@ def Q15():
 
             return redirect(url_for('Q16'))
 
-    question = "How old is your youngest kid?"
-    answers = ['0-2 years', '3-5 years', '6-11 years', '12-17 years']
-    return render_template('Q1.html', question=question, answers=answers)
+    if 'Q1' in session and 'Q2' in session:
+        question = "How old is your youngest kid?"
+        answers = ['0-2 years', '3-5 years', '6-11 years', '12-17 years']
+        return render_template('Q1.html', question=question, answers=answers)
+    elif 'Q1' in session and 'Q2' not in session:
+        flash("You have to answer this question before proceeding", 'danger')
+        return redirect(url_for('Q2'))
+    else:
+        flash("You have to answer this question before proceeding", 'danger')
+        return redirect(url_for('Q1'))
 
 
 @app.route("/Q16", methods=["POST", "GET"])
@@ -789,9 +866,16 @@ def Q16():
 
             return redirect(url_for('Q17'))
 
-    question = "What is your household monthly income?"
-    answers = ['R$ 0-500', 'R$ 500 - R$ 1000', 'R$ 1001 - R$ 2000', 'R$ 2001 - R$ 4000', 'R$ 4001 - R$ 8000', 'R$ 8001+']
-    return render_template('Q1.html', question=question, answers=answers)
+    if 'Q1' in session and 'Q2' in session:
+        question = "What is your household monthly income?"
+        answers = ['R$ 0-500', 'R$ 500 - R$ 1000', 'R$ 1001 - R$ 2000', 'R$ 2001 - R$ 4000', 'R$ 4001 - R$ 8000', 'R$ 8001+']
+        return render_template('Q1.html', question=question, answers=answers)
+    elif 'Q1' in session and 'Q2' not in session:
+        flash("You have to answer this question before proceeding", 'danger')
+        return redirect(url_for('Q2'))
+    else:
+        flash("You have to answer this question before proceeding", 'danger')
+        return redirect(url_for('Q1'))
 
 
 @app.route("/Q17", methods=["POST", "GET"])
@@ -809,9 +893,16 @@ def Q17():
 
             return redirect(url_for('Q18'))
 
-    question = "How many states in Brazil have you visited?"
-    answers = ['Only my own state', '2-4 states', '5-10 states', '10+ states']
-    return render_template('Q1.html', question=question, answers=answers)
+    if 'Q1' in session and 'Q2' in session:
+        question = "How many states in Brazil have you visited?"
+        answers = ['Only my own state', '2-4 states', '5-10 states', '10+ states']
+        return render_template('Q1.html', question=question, answers=answers)
+    elif 'Q1' in session and 'Q2' not in session:
+        flash("You have to answer this question before proceeding", 'danger')
+        return redirect(url_for('Q2'))
+    else:
+        flash("You have to answer this question before proceeding", 'danger')
+        return redirect(url_for('Q1'))
 
 
 @app.route("/Q18", methods=["POST", "GET"])
@@ -829,9 +920,16 @@ def Q18():
             
             return redirect(url_for('Q19'))
 
-    question = "How many countries have you been to?"
-    answers = ['Only Brazil', '2-4 countries', '5-10 countries', '10+ countries']
-    return render_template('Q1.html', question=question, answers=answers)
+    if 'Q1' in session and 'Q2' in session:
+        question = "How many countries have you been to?"
+        answers = ['Only Brazil', '2-4 countries', '5-10 countries', '10+ countries']
+        return render_template('Q1.html', question=question, answers=answers)
+    elif 'Q1' in session and 'Q2' not in session:
+        flash("You have to answer this question before proceeding", 'danger')
+        return redirect(url_for('Q2'))
+    else:
+        flash("You have to answer this question before proceeding", 'danger')
+        return redirect(url_for('Q1'))
 
 # func to check if a string has a number
 def has_numbers(inputString):
@@ -896,8 +994,16 @@ def Q19():
 
             return redirect(url_for('Q20'))
 
-    question = "Which was the best destination you have been to?"
-    return render_template('QText.html', question=question)
+    if 'Q1' in session and 'Q2' in session:
+        question = "Which was the best destination you have been to?"
+        return render_template('QText.html', question=question)
+    elif 'Q1' in session and 'Q2' not in session:
+        flash("You have to answer this question before proceeding", 'danger')
+        return redirect(url_for('Q2'))
+    else:
+        flash("You have to answer this question before proceeding", 'danger')
+        return redirect(url_for('Q1'))
+
 
 @app.route("/Q20", methods=["POST", "GET"])
 @login_required
