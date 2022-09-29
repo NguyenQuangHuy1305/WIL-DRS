@@ -265,7 +265,7 @@ def register():
         db.session.add(new_user)
         db.session.commit()
         flash(f'Account created for {form.username.data}!', 'success')
-        return redirect(url_for('Q1'))
+        return redirect(url_for('login'))
 
     if 'consent' in session:
         if session['consent'] == 'Accept':
@@ -283,7 +283,7 @@ def register():
 def logout():
     session.clear()
     logout_user()
-    return redirect(url_for("home"))
+    return redirect(url_for("welcome"))
 
 
 @app.route("/welcome", methods=["GET"])
