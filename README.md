@@ -1,10 +1,11 @@
 # WIL-DRS
-
 The application's name is Destmatch, you can access it at: https://destmatch.herokuapp.com/
 
-In case you want to run this version of the app locally (on PC or Mac), users need to:
+This application is designed to be run from mobile devices, you CAN run it from a PC or a MAC, but the css will **** it up, making the layout looks weird
 
-For PC/Window:
+In case you still want to run this version of the app locally (on PC or Mac), users need to:
+
+## For PC/Window:
 - Install a code editor, for example: Pycharm or Visual studio code (VSC), which can be downloaded using the following links
   + Pycharm: https://www.jetbrains.com/pycharm/
   + VSC: https://code.visualstudio.com/
@@ -17,7 +18,7 @@ For PC/Window:
 - Press Ctrl + Shift + M to switch to "mobile view"
 - Use the app
 
-For Mac:
+## For Mac:
 - Install a code editor, for example: Pycharm or Visual studio code (VSC), which can be downloaded using the following links
 Pycharm: https://www.jetbrains.com/pycharm/
 VSC: https://code.visualstudio.com/
