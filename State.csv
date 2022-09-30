@@ -1,3685 +1,3685 @@
-﻿State,Municipal
+﻿State,Abadia de Goiás
 AC,Assis Brasil
 AC,Brasiléia
-AC,Epitaciolândia
-AC,Xapuri
-AC,Acrelândia
 AC,Bujari
 AC,Capixaba
-AC,Plácido de Castro
-AC,Porto Acre
-AC,Senador Guiomard
-AC,Manoel Urbano
-AC,Santa Rosa do Purus
-AC,Sena Madureira
 AC,Cruzeiro do Sul
-AC,Mâncio Lima
-AC,Marechal Thaumaturgo
-AC,Porto Walter
-AC,Rodrigues Alves
+AC,Epitaciolândia
 AC,Feijó
 AC,Jordão
+AC,Mâncio Lima
+AC,Manoel Urbano
+AC,Marechal Thaumaturgo
+AC,Municipal
+AC,Plácido de Castro
+AC,Porto Acre
+AC,Porto Walter
+AC,Rodrigues Alves
+AC,Santa Rosa do Purus
+AC,Sena Madureira
+AC,Senador Guiomard
 AC,Tarauacá
+AC,Xapuri
+AL,Água Branca
+AL,Anadia
 AL,Arapiraca
-AL,Campo Grande
-AL,Coité do Nóia
-AL,Craíbas
-AL,Feira Grande
-AL,Girau do Ponciano
-AL,Lagoa da Canoa
-AL,Limoeiro de Anadia
-AL,São Sebastião
-AL,Taquarana
-AL,Belém
-AL,Cacimbinhas
-AL,Estrela de Alagoas
-AL,Igaci
-AL,Mar Vermelho
-AL,Maribondo
-AL,Minador do Negrão
-AL,Palmeira dos Índios
-AL,Paulo Jacinto
-AL,Quebrangulo
-AL,Tanque d'Arca
-AL,Olho d'Água Grande
-AL,São Brás
-AL,Traipu
-AL,Japaratinga
-AL,Maragogi
-AL,Passo de Camaragibe
-AL,Porto de Pedras
-AL,São Miguel dos Milagres
+AL,Atalaia
 AL,Barra de Santo Antônio
 AL,Barra de São Miguel
-AL,Coqueiro Seco
-AL,Maceió
-AL,Marechal Deodoro
-AL,Paripueira
-AL,Pilar
-AL,Rio Largo
-AL,Santa Luzia do Norte
-AL,Satuba
-AL,Atalaia
+AL,Batalha
+AL,Belém
+AL,Belo Monte
+AL,Boca da Mata
 AL,Branquinha
+AL,Cacimbinhas
 AL,Cajueiro
 AL,Campestre
+AL,Campo Alegre
+AL,Campo Grande
+AL,Canapi
 AL,Capela
+AL,Carneiros
+AL,Chã Preta
+AL,Coité do Nóia
 AL,Colônia Leopoldina
+AL,Coqueiro Seco
+AL,Coruripe
+AL,Craíbas
+AL,Delmiro Gouveia
+AL,Dois Riachos
+AL,Estrela de Alagoas
+AL,Feira Grande
+AL,Feliz Deserto
 AL,Flexeiras
+AL,Girau do Ponciano
+AL,Ibateguara
+AL,Igaci
+AL,Igreja Nova
+AL,Inhapi
+AL,Jacaré dos Homens
 AL,Jacuípe
+AL,Japaratinga
+AL,Jaramataia
+AL,Jequiá da Praia
 AL,Joaquim Gomes
 AL,Jundiá
+AL,Junqueiro
+AL,Lagoa da Canoa
+AL,Limoeiro de Anadia
+AL,Maceió
+AL,Major Isidoro
+AL,Mar Vermelho
+AL,Maragogi
+AL,Maravilha
+AL,Marechal Deodoro
+AL,Maribondo
+AL,Mata Grande
 AL,Matriz de Camaragibe
 AL,Messias
+AL,Minador do Negrão
+AL,Monteirópolis
 AL,Murici
 AL,Novo Lino
-AL,Porto Calvo
-AL,São Luís do Quitunde
-AL,Feliz Deserto
-AL,Igreja Nova
-AL,Penedo
-AL,Piaçabuçu
-AL,Porto Real do Colégio
-AL,Anadia
-AL,Boca da Mata
-AL,Campo Alegre
-AL,Coruripe
-AL,Jequiá da Praia
-AL,Junqueiro
-AL,Roteiro
-AL,São Miguel dos Campos
-AL,Teotônio Vilela
-AL,Chã Preta
-AL,Ibateguara
-AL,Pindoba
-AL,Santana do Mundaú
-AL,São José da Laje
-AL,União dos Palmares
-AL,Viçosa
-AL,Delmiro Gouveia
-AL,Olho d'Água do Casado
-AL,Piranhas
-AL,Batalha
-AL,Belo Monte
-AL,Jacaré dos Homens
-AL,Jaramataia
-AL,Major Isidoro
-AL,Monteirópolis
 AL,Olho d'Água das Flores
+AL,Olho d'Água do Casado
+AL,Olho d'Água Grande
 AL,Olivença
-AL,Carneiros
-AL,Dois Riachos
-AL,Maravilha
 AL,Ouro Branco
 AL,Palestina
+AL,Palmeira dos Índios
 AL,Pão de Açúcar
-AL,Poço das Trincheiras
-AL,Santana do Ipanema
-AL,São José da Tapera
-AL,Senador Rui Palmeira
-AL,Água Branca
-AL,Canapi
-AL,Inhapi
-AL,Mata Grande
 AL,Pariconha
+AL,Paripueira
+AL,Passo de Camaragibe
+AL,Paulo Jacinto
+AL,Penedo
+AL,Piaçabuçu
+AL,Pilar
+AL,Pindoba
+AL,Piranhas
+AL,Poço das Trincheiras
+AL,Porto Calvo
+AL,Porto de Pedras
+AL,Porto Real do Colégio
+AL,Quebrangulo
+AL,Rio Largo
+AL,Roteiro
+AL,Santa Luzia do Norte
+AL,Santana do Ipanema
+AL,Santana do Mundaú
+AL,São Brás
+AL,São José da Laje
+AL,São José da Tapera
+AL,São Luís do Quitunde
+AL,São Miguel dos Campos
+AL,São Miguel dos Milagres
+AL,São Sebastião
+AL,Satuba
+AL,Senador Rui Palmeira
+AL,Tanque d'Arca
+AL,Taquarana
+AL,Teotônio Vilela
+AL,Traipu
+AL,União dos Palmares
+AL,Viçosa
 AP,Amapá
-AP,Pracuúba
-AP,Tartarugalzinho
 AP,Calçoene
-AP,Oiapoque
 AP,Cutias
 AP,Ferreira Gomes
 AP,Itaubal
+AP,Laranjal do Jari
 AP,Macapá
+AP,Mazagão
+AP,Oiapoque
 AP,Pedra Branca do Amapari
 AP,Porto Grande
+AP,Pracuúba
 AP,Santana
 AP,Serra do Navio
-AP,Laranjal do Jari
-AP,Mazagão
+AP,Tartarugalzinho
 AP,Vitória do Jari
+AM,Alvarães
+AM,Amaturá
 AM,Anamã
 AM,Anori
-AM,Beruri
-AM,Caapiranga
-AM,Coari
-AM,Codajás
-AM,Itacoatiara
-AM,Itapiranga
-AM,Nova Olinda do Norte
-AM,Silves
-AM,Urucurituba
+AM,Apuí
+AM,Atalaia do Norte
 AM,Autazes
+AM,Barcelos
+AM,Barreirinha
+AM,Benjamin Constant
+AM,Beruri
+AM,Boa Vista do Ramos
+AM,Boca do Acre
+AM,Borba
+AM,Caapiranga
+AM,Canutama
+AM,Carauari
 AM,Careiro
 AM,Careiro da Várzea
-AM,Iranduba
-AM,Manacapuru
-AM,Manaquiri
-AM,Barreirinha
-AM,Boa Vista do Ramos
-AM,Maués
-AM,Nhamundá
-AM,Parintins
-AM,São Sebastião do Uatumã
-AM,Urucará
-AM,Presidente Figueiredo
-AM,Rio Preto da Eva
-AM,Alvarães
-AM,Tefé
-AM,Uarini
-AM,Japurá
-AM,Maraã
-AM,Barcelos
-AM,Novo Airão
-AM,Santa Isabel do Rio Negro
-AM,São Gabriel da Cachoeira
-AM,Amaturá
-AM,Atalaia do Norte
-AM,Benjamin Constant
-AM,Fonte Boa
-AM,Jutaí
-AM,Santo Antônio do Içá
-AM,São Paulo de Olivença
-AM,Tabatinga
-AM,Tonantins
-AM,Carauari
+AM,Coari
+AM,Codajás
 AM,Eirunepé
 AM,Envira
+AM,Fonte Boa
 AM,Guajará
-AM,Ipixuna
-AM,Itamarati
-AM,Juruá
-AM,Boca do Acre
-AM,Pauini
-AM,Apuí
-AM,Borba
 AM,Humaitá
-AM,Manicoré
-AM,Novo Aripuanã
-AM,Canutama
+AM,Ipixuna
+AM,Iranduba
+AM,Itacoatiara
+AM,Itamarati
+AM,Itapiranga
+AM,Japurá
+AM,Juruá
+AM,Jutaí
 AM,Lábrea
+AM,Manacapuru
+AM,Manaquiri
+AM,Manicoré
+AM,Maraã
+AM,Maués
+AM,Nhamundá
+AM,Nova Olinda do Norte
+AM,Novo Airão
+AM,Novo Aripuanã
+AM,Parintins
+AM,Pauini
+AM,Presidente Figueiredo
+AM,Rio Preto da Eva
+AM,Santa Isabel do Rio Negro
+AM,Santo Antônio do Içá
+AM,São Gabriel da Cachoeira
+AM,São Paulo de Olivença
+AM,São Sebastião do Uatumã
+AM,Silves
+AM,Tabatinga
 AM,Tapauá
+AM,Tefé
+AM,Tonantins
+AM,Uarini
+AM,Urucará
+AM,Urucurituba
+BA,Abaré
+BA,Acajutiba
+BA,Acrelândia
+BA,Adustina
 BA,Água Fria
-BA,Amélia Rodrigues
-BA,Anguera
-BA,Antônio Cardoso
-BA,Conceição da Feira
-BA,Coração de Maria
-BA,Elísio Medrado
-BA,Feira de Santana
-BA,Ipecaetá
-BA,Ipirá
-BA,Irará
-BA,Itatim
-BA,Ouriçangas
-BA,Pedrão
-BA,Pintadas
-BA,Rafael Jambeiro
-BA,Santa Bárbara
-BA,Santa Teresinha
-BA,Santanópolis
-BA,Santo Estêvão
-BA,São Gonçalo dos Campos
-BA,Serra Preta
-BA,Tanquinho
-BA,Teodoro Sampaio
-BA,América Dourada
-BA,Barra do Mendes
-BA,Barro Alto
-BA,Cafarnaum
-BA,Canarana
-BA,Central
-BA,Gentio do Ouro
-BA,Ibipeba
-BA,Ibititá
-BA,Iraquara
-BA,Irecê
-BA,João Dourado
-BA,Jussara
-BA,Lapão
-BA,Mulungu do Morro
-BA,Presidente Dutra
-BA,São Gabriel
-BA,Souto Soares
-BA,Uibaí
-BA,Baixa Grande
-BA,Boa Vista do Tupim
-BA,Iaçu
-BA,Ibiquera
-BA,Itaberaba
-BA,Lajedinho
-BA,Macajuba
-BA,Mairi
-BA,Mundo Novo
-BA,"Ruy Barbosa, Bahia"
-BA,Tapiramutá
-BA,Várzea da Roça
-BA,Caém
-BA,Caldeirão Grande
-BA,Capim Grosso
-BA,Jacobina
-BA,Miguel Calmon
-BA,Mirangaba
-BA,Morro do Chapéu
-BA,Ourolândia
-BA,Piritiba
-BA,Ponto Novo
-BA,Quixabeira
-BA,São José do Jacuípe
-BA,Saúde
-BA,Serrolândia
-BA,Várzea do Poço
-BA,Várzea Nova
-BA,Andorinha
-BA,Antônio Gonçalves
-BA,Campo Formoso
-BA,Filadélfia
-BA,Itiúba
-BA,Jaguarari
-BA,Pindobaçu
-BA,Senhor do Bonfim
-BA,Umburanas
-BA,Boquira
-BA,Botuporã
-BA,Brotas de Macaúbas
-BA,Caturama
-BA,Ibipitanga
-BA,Ibitiara
-BA,Ipupiara
-BA,Macaúbas
-BA,Novo Horizonte
-BA,Oliveira dos Brejinhos
-BA,Tanque Novo
-BA,Aracatu
-BA,Brumado
-BA,Caraíbas
-BA,Condeúba
-BA,Cordeiros
-BA,Guajeru
-BA,Ituaçu
-BA,Maetinga
-BA,Malhada de Pedras
-BA,Piripá
-BA,Presidente Jânio Quadros
-BA,Rio do Antônio
-BA,Tanhaçu
-BA,Tremedal
-BA,Caculé
-BA,Caetité
-BA,Candiba
-BA,Guanambi
-BA,Ibiassucê
-BA,Igaporã
-BA,Iuiú
-BA,Jacaraci
-BA,Lagoa Real
-BA,Licínio de Almeida
-BA,Malhada
-BA,Matina
-BA,Mortugaba
-BA,Palmas de Monte Alto
-BA,Pindaí
-BA,Riacho de Santana
-BA,Sebastião Laranjeiras
-BA,Urandi
-BA,Encruzilhada
-BA,Itambé
-BA,Itapetinga
-BA,Itarantim
-BA,Itororó
-BA,Macarani
-BA,Maiquinique
-BA,Potiraguá
-BA,Ribeirão do Largo
 BA,Aiquara
+BA,Alagoinhas
+BA,Alcobaça
+BA,Almadina
 BA,Amargosa
-BA,Apuarema
-BA,Brejões
-BA,Cravolândia
-BA,Irajuba
-BA,Iramaia
-BA,Itagi
-BA,Itaquara
-BA,Itiruçu
-BA,Jaguaquara
-BA,Jequié
-BA,Jiquiriçá
-BA,Jitaúna
-BA,Lafaiete Coutinho
-BA,Laje
-BA,Lajedo do Tabocal
-BA,Maracás
-BA,Marcionílio Souza
-BA,Milagres
-BA,Mutuípe
-BA,Nova Itarana
-BA,Planaltino
-BA,Santa Inês
-BA,São Miguel das Matas
-BA,Ubaíra
-BA,Dom Basílio
-BA,Érico Cardoso
-BA,Livramento de Nossa Senhora
-BA,Paramirim
-BA,Rio do Pires
-BA,Abaíra
+BA,Amélia Rodrigues
+BA,América Dourada
+BA,Anagé
 BA,Andaraí
+BA,Andorinha
+BA,Angical
+BA,Anguera
+BA,Antas
+BA,Antônio Cardoso
+BA,Antônio Gonçalves
+BA,Aporá
+BA,Apuarema
+BA,Araças
+BA,Aracatu
+BA,Araci
+BA,Aramari
+BA,Arataca
+BA,Aratuípe
+BA,Aurelino Leal
+BA,Baianópolis
+BA,Baixa Grande
+BA,Banzaê
+BA,Barra
 BA,Barra da Estiva
+BA,Barra do Choça
+BA,Barra do Mendes
+BA,Barra do Rocha
+BA,Barreiras
+BA,Barro Alto
+BA,Barro Preto
+BA,Barrocas
+BA,Belmonte
+BA,Belo Campo
+BA,Biritinga
+BA,Boa Nova
+BA,Boa Vista do Tupim
+BA,Bom Jesus da Lapa
+BA,Bom Jesus da Serra
 BA,Boninal
 BA,Bonito
-BA,Contendas do Sincorá
-BA,Ibicoara
-BA,Itaeté
-BA,Jussiape
-BA,Lençóis
-BA,Mucugê
-BA,Nova Redenção
-BA,Palmeiras
-BA,Piatã
-BA,Rio de Contas
-BA,Seabra
-BA,Utinga
-BA,Wagner
-BA,Anagé
-BA,Barra do Choça
-BA,Belo Campo
-BA,Boa Nova
-BA,Bom Jesus da Serra
-BA,Caatiba
-BA,Caetanos
-BA,Cândido Sales
-BA,Dário Meira
-BA,Ibicuí
-BA,Iguaí
-BA,Manoel Vitorino
-BA,Mirante
-BA,Nova Canaã
-BA,Planalto
-BA,Poções
-BA,Vitória da Conquista
-BA,Baianópolis
-BA,Barreiras
-BA,Catolândia
-BA,Formosa do Rio Preto
-BA,Luís Eduardo Magalhães
-BA,Riachão das Neves
-BA,São Desidério
-BA,Angical
+BA,Boquira
+BA,Botuporã
+BA,Brejões
 BA,Brejolândia
-BA,Cotegipe
-BA,Cristópolis
-BA,Mansidão
-BA,Santa Rita de Cássia
-BA,Tabocas do Brejo Velho
-BA,Wanderley
-BA,Canápolis
-BA,Cocos
-BA,Coribe
-BA,Correntina
-BA,Jaborandi
-BA,Santa Maria da Vitória
-BA,Santana
-BA,São Félix do Coribe
-BA,Serra Dourada
-BA,Catu
-BA,Conceição do Jacuípe
-BA,Itanagra
-BA,Mata de São João
-BA,Pojuca
-BA,São Sebastião do Passé
-BA,Terra Nova
-BA,Camaçari
-BA,Candeias
-BA,Dias d'Ávila
-BA,Itaparica
-BA,Lauro de Freitas
-BA,Madre de Deus
-BA,Salvador
-BA,São Francisco do Conde
-BA,Simões Filho
-BA,Vera Cruz
-BA,Aratuípe
+BA,Brotas de Macaúbas
+BA,Brumado
+BA,Buerarema
+BA,Buritirama
+BA,Caatiba
 BA,Cabaceiras do Paraguaçu
 BA,Cachoeira
-BA,Castro Alves
-BA,Conceição do Almeida
-BA,Cruz das Almas
-BA,Dom Macedo Costa
-BA,Governador Mangabeira
-BA,Jaguaripe
-BA,Maragogipe
-BA,Muniz Ferreira
-BA,Muritiba
-BA,Nazaré
-BA,Salinas da Margarida
-BA,Santo Amaro
-BA,Santo Antônio de Jesus
-BA,São Felipe
-BA,São Félix
-BA,Sapeaçu
-BA,Saubara
-BA,Varzedo
-BA,Acajutiba
-BA,Alagoinhas
-BA,Aporá
-BA,Araças
-BA,Aramari
-BA,Barrocas
-BA,Crisópolis
-BA,Inhambupe
-BA,Rio Real
-BA,Sátiro Dias
-BA,Cardeal da Silva
-BA,Conde
-BA,Entre Rios
-BA,Esplanada
-BA,Jandaíra
+BA,Caculé
+BA,Caém
+BA,Caetanos
+BA,Caetité
+BA,Cafarnaum
+BA,Cairu
+BA,Caldeirão Grande
+BA,Camacan
+BA,Camaçari
+BA,Camamu
+BA,Campo Alegre de Lourdes
+BA,Campo Formoso
+BA,Canápolis
+BA,Canarana
+BA,Canavieiras
+BA,Candeal
+BA,Candeias
+BA,Candiba
+BA,Cândido Sales
 BA,Cansanção
 BA,Canudos
-BA,Euclides da Cunha
-BA,Monte Santo
-BA,Nordestina
-BA,Queimadas
-BA,Quijingue
-BA,Tucano
-BA,Uauá
-BA,Coronel João Sá
-BA,Jeremoabo
-BA,Pedro Alexandre
-BA,Santa Brígida
-BA,Sítio do Quinto
-BA,Adustina
-BA,Antas
-BA,Banzaê
+BA,Capela do Alto Alegre
+BA,Capim Grosso
+BA,Caraíbas
+BA,Caravelas
+BA,Cardeal da Silva
+BA,Carinhanha
+BA,Casa Nova
+BA,Castro Alves
+BA,Catolândia
+BA,Catu
+BA,Caturama
+BA,Central
+BA,Chorrochó
 BA,Cícero Dantas
 BA,Cipó
-BA,Fátima
-BA,Heliópolis
-BA,Itapicuru
-BA,Nova Soure
-BA,Novo Triunfo
-BA,Olindina
-BA,Paripiranga
-BA,Ribeira do Amparo
-BA,Ribeira do Pombal
-BA,Araci
-BA,Biritinga
-BA,Candeal
-BA,Capela do Alto Alegre
-BA,Conceição do Coité
-BA,Gavião
-BA,Ichu
-BA,Lamarão
-BA,Nova Fátima
-BA,Pé de Serra
-BA,Retirolândia
-BA,Riachão do Jacuípe
-BA,Santaluz
-BA,São Domingos
-BA,Serrinha
-BA,Teofilândia
-BA,Valente
-BA,Almadina
-BA,Arataca
-BA,Aurelino Leal
-BA,Barra do Rocha
-BA,Barro Preto
-BA,Belmonte
-BA,Buerarema
-BA,Camacan
-BA,Canavieiras
 BA,Coaraci
+BA,Cocos
+BA,Conceição da Feira
+BA,Conceição do Almeida
+BA,Conceição do Coité
+BA,Conceição do Jacuípe
+BA,Conde
+BA,Condeúba
+BA,Contendas do Sincorá
+BA,Coração de Maria
+BA,Cordeiros
+BA,Coribe
+BA,Coronel João Sá
+BA,Correntina
+BA,Cotegipe
+BA,Cravolândia
+BA,Crisópolis
+BA,Cristópolis
+BA,Cruz das Almas
+BA,Curaçá
+BA,Dário Meira
+BA,Dias d'Ávila
+BA,Dom Basílio
+BA,Dom Macedo Costa
+BA,Elísio Medrado
+BA,Encruzilhada
+BA,Entre Rios
+BA,Érico Cardoso
+BA,Esplanada
+BA,Euclides da Cunha
+BA,Eunápolis
+BA,Fátima
+BA,Feira da Mata
+BA,Feira de Santana
+BA,Filadélfia
 BA,Firmino Alves
 BA,Floresta Azul
+BA,Formosa do Rio Preto
 BA,Gandu
+BA,Gavião
+BA,Gentio do Ouro
+BA,Glória
 BA,Gongogi
+BA,Governador Mangabeira
+BA,Guajeru
+BA,Guanambi
+BA,Guaratinga
+BA,Heliópolis
+BA,Iaçu
+BA,Ibiassucê
 BA,Ibicaraí
+BA,Ibicoara
+BA,Ibicuí
+BA,Ibipeba
+BA,Ibipitanga
+BA,Ibiquera
 BA,Ibirapitanga
+BA,Ibirapuã
 BA,Ibirataia
+BA,Ibitiara
+BA,Ibititá
+BA,Ibotirama
+BA,Ichu
+BA,Igaporã
+BA,Igrapiúna
+BA,Iguaí
 BA,Ilhéus
+BA,Inhambupe
+BA,Ipecaetá
 BA,Ipiaú
+BA,Ipirá
+BA,Ipupiara
+BA,Irajuba
+BA,Iramaia
+BA,Iraquara
+BA,Irará
+BA,Irecê
+BA,Itabela
+BA,Itaberaba
 BA,Itabuna
 BA,Itacaré
+BA,Itaeté
+BA,Itagi
 BA,Itagibá
+BA,Itagimirim
+BA,Itaguaçu da Bahia
 BA,Itaju do Colônia
 BA,Itajuípe
+BA,Itamaraju
 BA,Itamari
+BA,Itambé
+BA,Itanagra
+BA,Itanhém
+BA,Itaparica
 BA,Itapé
 BA,Itapebi
+BA,Itapetinga
+BA,Itapicuru
 BA,Itapitanga
+BA,Itaquara
+BA,Itarantim
+BA,Itatim
+BA,Itiruçu
+BA,Itiúba
+BA,Itororó
+BA,Ituaçu
+BA,Ituberá
+BA,Iuiú
+BA,Jaborandi
+BA,Jacaraci
+BA,Jacobina
+BA,Jaguaquara
+BA,Jaguarari
+BA,Jaguaripe
+BA,Jandaíra
+BA,Jequié
+BA,Jeremoabo
+BA,Jiquiriçá
+BA,Jitaúna
+BA,João Dourado
+BA,Juazeiro
+BA,Jucuruçu
+BA,Jussara
 BA,Jussari
+BA,Jussiape
+BA,Lafaiete Coutinho
+BA,Lagoa Real
+BA,Laje
+BA,Lajedão
+BA,Lajedinho
+BA,Lajedo do Tabocal
+BA,Lamarão
+BA,Lapão
+BA,Lauro de Freitas
+BA,Lençóis
+BA,Licínio de Almeida
+BA,Livramento de Nossa Senhora
+BA,Luís Eduardo Magalhães
+BA,Macajuba
+BA,Macarani
+BA,Macaúbas
+BA,Macururé
+BA,Madre de Deus
+BA,Maetinga
+BA,Maiquinique
+BA,Mairi
+BA,Malhada
+BA,Malhada de Pedras
+BA,Manoel Vitorino
+BA,Mansidão
+BA,Maracás
+BA,Maragogipe
+BA,Maraú
+BA,Marcionílio Souza
 BA,Mascote
+BA,Mata de São João
+BA,Matina
+BA,Medeiros Neto
+BA,Miguel Calmon
+BA,Milagres
+BA,Mirangaba
+BA,Mirante
+BA,Monte Santo
+BA,Morpará
+BA,Morro do Chapéu
+BA,Mortugaba
+BA,Mucugê
+BA,Mucuri
+BA,Mulungu do Morro
+BA,Mundo Novo
+BA,Muniz Ferreira
+BA,Muquém de São Francisco
+BA,Muritiba
+BA,Mutuípe
+BA,Nazaré
+BA,Nilo Peçanha
+BA,Nordestina
+BA,Nova Canaã
+BA,Nova Fátima
 BA,Nova Ibiá
+BA,Nova Itarana
+BA,Nova Redenção
+BA,Nova Soure
+BA,Nova Viçosa
+BA,Novo Horizonte
+BA,Novo Triunfo
+BA,Olindina
+BA,Oliveira dos Brejinhos
+BA,Ouriçangas
+BA,Ourolândia
+BA,Palmas de Monte Alto
+BA,Palmeiras
+BA,Paramirim
+BA,Paratinga
+BA,Paripiranga
 BA,Pau Brasil
+BA,Paulo Afonso
+BA,Pé de Serra
+BA,Pedrão
+BA,Pedro Alexandre
+BA,Piatã
+BA,Pilão Arcado
+BA,Pindaí
+BA,Pindobaçu
+BA,Pintadas
+BA,Piraí do Norte
+BA,Piripá
+BA,Piritiba
+BA,Planaltino
+BA,Planalto
+BA,Poções
+BA,Pojuca
+BA,Ponto Novo
+BA,Porto Seguro
+BA,Potiraguá
+BA,Prado
+BA,Presidente Dutra
+BA,Presidente Jânio Quadros
+BA,Presidente Tancredo Neves
+BA,Queimadas
+BA,Quijingue
+BA,Quixabeira
+BA,Rafael Jambeiro
+BA,Remanso
+BA,Retirolândia
+BA,Riachão das Neves
+BA,Riachão do Jacuípe
+BA,Riacho de Santana
+BA,Ribeira do Amparo
+BA,Ribeira do Pombal
+BA,Ribeirão do Largo
+BA,Rio de Contas
+BA,Rio do Antônio
+BA,Rio do Pires
+BA,Rio Real
+BA,Rodelas
+BA,"Ruy Barbosa, Bahia"
+BA,Salinas da Margarida
+BA,Salvador
+BA,Santa Bárbara
+BA,Santa Brígida
+BA,Santa Cruz Cabrália
 BA,Santa Cruz da Vitória
+BA,Santa Inês
 BA,Santa Luzia
+BA,Santa Maria da Vitória
+BA,Santa Rita de Cássia
+BA,Santa Teresinha
+BA,Santaluz
+BA,Santana
+BA,Santanópolis
+BA,Santo Amaro
+BA,Santo Antônio de Jesus
+BA,Santo Estêvão
+BA,São Desidério
+BA,São Domingos
+BA,São Felipe
+BA,São Félix
+BA,São Félix do Coribe
+BA,São Francisco do Conde
+BA,São Gabriel
+BA,São Gonçalo dos Campos
 BA,São José da Vitória
+BA,São José do Jacuípe
+BA,São Miguel das Matas
+BA,São Sebastião do Passé
+BA,Sapeaçu
+BA,Sátiro Dias
+BA,Saubara
+BA,Saúde
+BA,Seabra
+BA,Sebastião Laranjeiras
+BA,Senhor do Bonfim
+BA,Sento Sé
+BA,Serra do Ramalho
+BA,Serra Dourada
+BA,Serra Preta
+BA,Serrinha
+BA,Serrolândia
+BA,Simões Filho
+BA,Sítio do Mato
+BA,Sítio do Quinto
+BA,Sobradinho
+BA,Souto Soares
+BA,Tabocas do Brejo Velho
+BA,Tanhaçu
+BA,Tanque Novo
+BA,Tanquinho
+BA,Taperoá
+BA,Tapiramutá
+BA,Teixeira de Freitas
+BA,Teodoro Sampaio
+BA,Teofilândia
 BA,Teolândia
+BA,Terra Nova
+BA,Tremedal
+BA,Tucano
+BA,Uauá
+BA,Ubaíra
 BA,Ubaitaba
 BA,Ubatã
+BA,Uibaí
+BA,Umburanas
 BA,Una
+BA,Urandi
 BA,Uruçuca
-BA,Wenceslau Guimarães
-BA,Alcobaça
-BA,Caravelas
-BA,Eunápolis
-BA,Guaratinga
-BA,Ibirapuã
-BA,Itabela
-BA,Itagimirim
-BA,Itamaraju
-BA,Itanhém
-BA,Jucuruçu
-BA,Lajedão
-BA,Medeiros Neto
-BA,Mucuri
-BA,Nova Viçosa
-BA,Porto Seguro
-BA,Prado
-BA,Santa Cruz Cabrália
-BA,Teixeira de Freitas
-BA,Vereda
-BA,Cairu
-BA,Camamu
-BA,Igrapiúna
-BA,Ituberá
-BA,Maraú
-BA,Nilo Peçanha
-BA,Piraí do Norte
-BA,Presidente Tancredo Neves
-BA,Taperoá
+BA,Utinga
 BA,Valença
-BA,Barra
-BA,Buritirama
-BA,Ibotirama
-BA,Itaguaçu da Bahia
-BA,Morpará
-BA,Muquém de São Francisco
+BA,Valente
+BA,Várzea da Roça
+BA,Várzea do Poço
+BA,Várzea Nova
+BA,Varzedo
+BA,Vera Cruz
+BA,Vereda
+BA,Vitória da Conquista
+BA,Wagner
+BA,Wanderley
+BA,Wenceslau Guimarães
 BA,Xique-Xique
-BA,Bom Jesus da Lapa
-BA,Carinhanha
-BA,Feira da Mata
-BA,Paratinga
-BA,Serra do Ramalho
-BA,Sítio do Mato
-BA,Campo Alegre de Lourdes
-BA,Casa Nova
-BA,Curaçá
-BA,Juazeiro
-BA,Pilão Arcado
-BA,Remanso
-BA,Sento Sé
-BA,Sobradinho
-BA,Abaré
-BA,Chorrochó
-BA,Glória
-BA,Macururé
-BA,Paulo Afonso
-BA,Rodelas
+CE,Abaíra
+CE,Acarape
+CE,Acaraú
+CE,Acopiara
+CE,Aiuaba
+CE,Alcântaras
+CE,Altaneira
+CE,Alto Santo
+CE,Amontada
+CE,Antonina do Norte
+CE,Apuiarés
+CE,Aquiraz
+CE,Aracati
+CE,Aracoiaba
+CE,Ararendá
+CE,Araripe
+CE,Aratuba
+CE,Arneiroz
+CE,Assaré
+CE,Aurora
+CE,Baixio
+CE,Banabuiú
+CE,Barbalha
+CE,Barreira
+CE,Barro
+CE,Barroquinha
+CE,Baturité
+CE,Beberibe
+CE,Bela Cruz
+CE,Boa Viagem
+CE,Brejo Santo
+CE,Camocim
+CE,Campos Sales
+CE,Canindé
+CE,Capistrano
+CE,Caridade
+CE,Cariré
+CE,Caririaçu
+CE,Cariús
+CE,Carnaubal
+CE,Cascavel
+CE,Catarina
+CE,Catunda
+CE,Caucaia
 CE,Cedro
+CE,Chaval
+CE,Choró
+CE,Chorozinho
+CE,Coreaú
+CE,Crateús
+CE,Crato
+CE,Croatá
+CE,Cruz
+CE,Deputado Irapuan Pinheiro
+CE,Ererê
+CE,Eusébio
+CE,Farias Brito
+CE,Forquilha
+CE,Fortaleza
+CE,Fortim
+CE,Frecheirinha
+CE,General Sampaio
+CE,Graça
+CE,Granja
+CE,Granjeiro
+CE,Groaíras
+CE,Guaiúba
+CE,Guaraciaba do Norte
+CE,Guaramiranga
+CE,Hidrolândia
+CE,Horizonte
+CE,Ibaretama
+CE,Ibiapina
+CE,Ibicuitinga
+CE,Icapuí
 CE,Icó
 CE,Iguatu
-CE,Orós
-CE,Quixelô
-CE,Baixio
+CE,Independência
+CE,Ipaporanga
 CE,Ipaumirim
-CE,Lavras da Mangabeira
-CE,Umari
-CE,Antonina do Norte
-CE,Cariús
-CE,Jucás
-CE,Tarrafas
-CE,Várzea Alegre
-CE,Alto Santo
-CE,Ibicuitinga
-CE,Jaguaruana
-CE,Limoeiro do Norte
-CE,Morada Nova
-CE,Palhano
-CE,Quixeré
-CE,Russas
-CE,São João do Jaguaribe
-CE,Tabuleiro do Norte
-CE,Aracati
-CE,Fortim
-CE,Icapuí
+CE,Ipú
+CE,Ipueiras
+CE,Iracema
+CE,Irauçuba
 CE,Itaiçaba
+CE,Itaitinga
+CE,Itapagé
+CE,Itapipoca
+CE,Itapiúna
+CE,Itarema
+CE,Itatira
 CE,Jaguaretama
 CE,Jaguaribara
 CE,Jaguaribe
-CE,Ererê
-CE,Iracema
-CE,Pereiro
-CE,Potiretama
-CE,Aquiraz
-CE,Caucaia
-CE,Eusébio
-CE,Fortaleza
-CE,Guaiúba
-CE,Itaitinga
+CE,Jaguaruana
+CE,Jardim
+CE,Jati
+CE,Jijoca de Jericoacoara
+CE,Juazeiro do Norte
+CE,Jucás
+CE,Lavras da Mangabeira
+CE,Limoeiro do Norte
+CE,Madalena
 CE,Maracanaú
 CE,Maranguape
-CE,Pacatuba
-CE,Horizonte
-CE,Pacajus
-CE,Coreaú
-CE,Frecheirinha
-CE,Moraújo
-CE,Uruoca
-CE,Carnaubal
-CE,Croatá
-CE,Guaraciaba do Norte
-CE,Ibiapina
-CE,São Benedito
-CE,Tianguá
-CE,Ubajara
-CE,Viçosa do Ceará
-CE,Ipú
-CE,Ipueiras
-CE,Pires Ferreira
-CE,Poranga
-CE,Reriutaba
-CE,Varjota
-CE,Acaraú
-CE,Barroquinha
-CE,Bela Cruz
-CE,Camocim
-CE,Chaval
-CE,Cruz
-CE,Granja
-CE,Itarema
-CE,Jijoca de Jericoacoara
 CE,Marco
 CE,Martinópole
-CE,Morrinhos
-CE,Alcântaras
-CE,Meruoca
-CE,Catunda
-CE,Hidrolândia
-CE,Santa Quitéria
-CE,Cariré
-CE,Forquilha
-CE,Graça
-CE,Groaíras
-CE,Irauçuba
 CE,Massapê
+CE,Mauriti
+CE,Meruoca
+CE,Milagres
+CE,Milhã
 CE,Miraíma
-CE,Mucambo
-CE,Pacujá
-CE,Santana do Acaraú
-CE,Senador Sá
-CE,Sobral
-CE,Paracuru
-CE,Paraipaba
-CE,São Gonçalo do Amarante
-CE,Acarape
-CE,Aracoiaba
-CE,Aratuba
-CE,Baturité
-CE,Capistrano
-CE,Guaramiranga
-CE,Itapiúna
-CE,Mulungu
-CE,Pacoti
-CE,Palmácia
-CE,Redenção
-CE,Canindé
-CE,Caridade
-CE,Itatira
-CE,Paramoti
-CE,Beberibe
-CE,Cascavel
-CE,Pindoretama
-CE,Barreira
-CE,Chorozinho
-CE,Ocara
-CE,Amontada
-CE,Itapipoca
-CE,Trairi
-CE,Apuiarés
-CE,General Sampaio
-CE,Pentecoste
-CE,São Luís do Curu
-CE,Tejuçuoca
-CE,Itapagé
-CE,Tururu
-CE,Umirim
-CE,Uruburetama
-CE,Ararendá
-CE,Crateús
-CE,Independência
-CE,Ipaporanga
+CE,Missão Velha
+CE,Mombaça
 CE,Monsenhor Tabosa
+CE,Morada Nova
+CE,Moraújo
+CE,Morrinhos
+CE,Mucambo
+CE,Mulungu
+CE,Nova Olinda
 CE,Nova Russas
 CE,Novo Oriente
-CE,Quiterianópolis
-CE,Tamboril
-CE,Aiuaba
-CE,Arneiroz
-CE,Catarina
+CE,Ocara
+CE,Orós
+CE,Pacajus
+CE,Pacatuba
+CE,Pacoti
+CE,Pacujá
+CE,Palhano
+CE,Palmácia
+CE,Paracuru
+CE,Paraipaba
 CE,Parambu
-CE,Saboeiro
-CE,Tauá
-CE,Banabuiú
-CE,Boa Viagem
-CE,Choró
-CE,Ibaretama
-CE,Madalena
-CE,Quixadá
-CE,Quixeramobim
-CE,Acopiara
-CE,Deputado Irapuan Pinheiro
-CE,Milhã
-CE,Mombaça
+CE,Paramoti
 CE,Pedra Branca
-CE,Piquet Carneiro
-CE,Senador Pompeu
-CE,Solonópole
-CE,Aurora
-CE,Barro
-CE,Mauriti
-CE,Abaiara
-CE,Brejo Santo
-CE,Jati
-CE,Milagres
 CE,Penaforte
-CE,Barbalha
-CE,Crato
-CE,Jardim
-CE,Juazeiro do Norte
-CE,Missão Velha
-CE,Nova Olinda
+CE,Pentecoste
+CE,Pereiro
+CE,Pindoretama
+CE,Piquet Carneiro
+CE,Pires Ferreira
+CE,Poranga
 CE,Porteiras
-CE,Santana do Cariri
-CE,Altaneira
-CE,Caririaçu
-CE,Farias Brito
-CE,Granjeiro
-CE,Araripe
-CE,Assaré
-CE,Campos Sales
 CE,Potengi
+CE,Potiretama
+CE,Quiterianópolis
+CE,Quixadá
+CE,Quixelô
+CE,Quixeramobim
+CE,Quixeré
+CE,Redenção
+CE,Reriutaba
+CE,Russas
+CE,Saboeiro
 CE,Salitre
+CE,Santa Quitéria
+CE,Santana do Acaraú
+CE,Santana do Cariri
+CE,São Benedito
+CE,São Gonçalo do Amarante
+CE,São João do Jaguaribe
+CE,São Luís do Curu
+CE,Senador Pompeu
+CE,Senador Sá
+CE,Sobral
+CE,Solonópole
+CE,Tabuleiro do Norte
+CE,Tamboril
+CE,Tarrafas
+CE,Tauá
+CE,Tejuçuoca
+CE,Tianguá
+CE,Trairi
+CE,Tururu
+CE,Ubajara
+CE,Umari
+CE,Umirim
+CE,Uruburetama
+CE,Uruoca
+CE,Varjota
+CE,Várzea Alegre
+CE,Viçosa do Ceará
 ES,Afonso Cláudio
-ES,Brejetuba
-ES,Conceição do Castelo
-ES,Domingos Martins
-ES,Laranja da Terra
-ES,Marechal Floriano
-ES,Venda Nova do Imigrante
+ES,Água Doce do Norte
+ES,Águia Branca
+ES,Alegre
 ES,Alfredo Chaves
+ES,Alto Rio Novo
 ES,Anchieta
+ES,Apiacá
+ES,Aracruz
+ES,Atílio Vivacqua
+ES,Baixo Guandu
+ES,Barra de São Francisco
+ES,Boa Esperança
+ES,Bom Jesus do Norte
+ES,Brejetuba
+ES,Cachoeiro de Itapemirim
+ES,Cariacica
+ES,Castelo
+ES,Colatina
+ES,Conceição da Barra
+ES,Conceição do Castelo
+ES,Divino de São Lourenço
+ES,Domingos Martins
+ES,Dores do Rio Preto
+ES,Ecoporanga
+ES,Fundão
+ES,Governador Lindenberg
+ES,Guaçuí
 ES,Guarapari
+ES,Ibatiba
+ES,Ibiraçu
+ES,Ibitirama
 ES,Iconha
-ES,Piúma
-ES,Rio Novo do Sul
+ES,Irupi
 ES,Itaguaçu
+ES,Itapemirim
 ES,Itarana
+ES,Iúna
+ES,Jaguaré
+ES,Jerônimo Monteiro
+ES,João Neiva
+ES,Laranja da Terra
+ES,Linhares
+ES,Mantenópolis
+ES,Marataízes
+ES,Marechal Floriano
+ES,Marilândia
+ES,Mimoso do Sul
+ES,Montanha
+ES,Mucurici
+ES,Muniz Freire
+ES,Muqui
+ES,Nova Venécia
+ES,Pancas
+ES,Pedro Canário
+ES,Pinheiros
+ES,Piúma
+ES,Ponto Belo
+ES,Presidente Kennedy
+ES,Rio Bananal
+ES,Rio Novo do Sul
 ES,Santa Leopoldina
 ES,Santa Maria do Jetibá
 ES,Santa Teresa
-ES,São Roque do Canaã
-ES,Cariacica
-ES,Serra
-ES,Viana
-ES,Vila Velha
-ES,Vitória
-ES,Aracruz
-ES,Fundão
-ES,Ibiraçu
-ES,João Neiva
-ES,Linhares
-ES,Rio Bananal
-ES,Sooretama
-ES,Montanha
-ES,Mucurici
-ES,Pinheiros
-ES,Ponto Belo
-ES,Conceição da Barra
-ES,Jaguaré
-ES,Pedro Canário
-ES,São Mateus
-ES,Água Doce do Norte
-ES,Barra de São Francisco
-ES,Ecoporanga
-ES,Mantenópolis
-ES,Alto Rio Novo
-ES,Baixo Guandu
-ES,Colatina
-ES,Governador Lindenberg
-ES,Marilândia
-ES,Pancas
 ES,São Domingos do Norte
-ES,Águia Branca
-ES,Boa Esperança
-ES,Nova Venécia
 ES,São Gabriel da Palha
+ES,São José do Calçado
+ES,São Mateus
+ES,São Roque do Canaã
+ES,Serra
+ES,Sooretama
+ES,Vargem Alta
+ES,Venda Nova do Imigrante
+ES,Viana
 ES,Vila Pavão
 ES,Vila Valério
-ES,Alegre
-ES,Divino de São Lourenço
-ES,Dores do Rio Preto
-ES,Guaçuí
-ES,Ibatiba
-ES,Ibitirama
-ES,Irupi
-ES,Iúna
-ES,Muniz Freire
-ES,Apiacá
-ES,Atílio Vivacqua
-ES,Bom Jesus do Norte
-ES,Cachoeiro de Itapemirim
-ES,Castelo
-ES,Jerônimo Monteiro
-ES,Mimoso do Sul
-ES,Muqui
-ES,São José do Calçado
-ES,Vargem Alta
-ES,Itapemirim
-ES,Marataízes
-ES,Presidente Kennedy
+ES,Vila Velha
+ES,Vitória
+GO,Abadiânia
+GO,Abaiara
+GO,Acreúna
+GO,Adelândia
+GO,Água Fria de Goiás
+GO,Água Limpa
+GO,Águas Lindas de Goiás
+GO,Alexânia
+GO,Aloândia
+GO,Alto Horizonte
+GO,Alto Paraíso de Goiás
+GO,Alvorada do Norte
+GO,Amaralina
+GO,Americano do Brasil
+GO,Amorinópolis
 GO,Anápolis
+GO,Anhanguera
+GO,Anicuns
+GO,Aparecida de Goiânia
+GO,Aparecida do Rio Doce
+GO,Aporé
 GO,Araçu
+GO,Aragarças
+GO,Aragoiânia
+GO,Araguapaz
+GO,Arenópolis
+GO,Aruanã
+GO,Aurilândia
+GO,Avelinópolis
+GO,Baliza
+GO,Barro Alto
+GO,Bela Vista de Goiás
+GO,Bom Jardim de Goiás
+GO,Bom Jesus de Goiás
+GO,Bonfinópolis
+GO,Bonópolis
 GO,Brazabrantes
+GO,Britânia
+GO,Buriti Alegre
+GO,Buriti de Goiás
+GO,Buritinópolis
+GO,Cabeceiras
+GO,Cachoeira Alta
+GO,Cachoeira de Goiás
+GO,Cachoeira Dourada
+GO,Caçu
+GO,Caiapônia
+GO,Caldas Novas
+GO,Caldazinha
+GO,Campestre de Goiás
+GO,Campinaçu
+GO,Campinorte
+GO,Campo Alegre de Goiás
 GO,Campo Limpo de Goiás
+GO,Campos Belos
+GO,Campos Verdes
+GO,Carmo do Rio Verde
+GO,Castelândia
+GO,Catalão
 GO,Caturaí
+GO,Cavalcante
+GO,Ceres
+GO,Cezarina
+GO,Chapadão do Céu
+GO,Cidade Ocidental
+GO,Cocalzinho de Goiás
+GO,Colinas do Sul
+GO,Córrego do Ouro
+GO,Corumbá de Goiás
+GO,Corumbaíba
+GO,Cristalina
+GO,Cristianópolis
+GO,Crixás
+GO,Cromínia
+GO,Cumari
+GO,Damianópolis
 GO,Damolândia
+GO,Davinópolis
+GO,Diorama
+GO,Divinópolis de Goiás
+GO,Doverlândia
+GO,Edealina
+GO,Edéia
+GO,Estrela do Norte
+GO,Faina
+GO,Fazenda Nova
+GO,Firminópolis
+GO,Flores de Goiás
+GO,Formosa
+GO,Formoso
+GO,Gameleira de Goiás
+GO,Goianápolis
+GO,Goiandira
+GO,Goianésia
+GO,Goiânia
+GO,Goianira
+GO,Goiás
+GO,Goiatuba
+GO,Gouvelândia
+GO,Guapó
+GO,Guaraíta
+GO,Guarani de Goiás
+GO,Guarinos
 GO,Heitoraí
+GO,Hidrolândia
+GO,Hidrolina
+GO,Iaciara
+GO,Inaciolândia
+GO,Indiara
 GO,Inhumas
+GO,Ipameri
+GO,Ipiranga de Goiás
+GO,Iporá
+GO,Israelândia
 GO,Itaberaí
 GO,Itaguari
 GO,Itaguaru
-GO,Itauçu
-GO,Jaraguá
-GO,Jesúpolis
-GO,Nova Veneza
-GO,Ouro Verde de Goiás
-GO,Petrolina de Goiás
-GO,Santa Rosa de Goiás
-GO,São Francisco de Goiás
-GO,Taquaral de Goiás
-GO,Adelândia
-GO,Americano do Brasil
-GO,Anicuns
-GO,Aurilândia
-GO,Avelinópolis
-GO,Buriti de Goiás
-GO,Firminópolis
-GO,Mossâmedes
-GO,Nazário
-GO,Sanclerlândia
-GO,Santa Bárbara de Goiás
-GO,São Luís de Montes Belos
-GO,Turvânia
-GO,Barro Alto
-GO,Carmo do Rio Verde
-GO,Ceres
-GO,Goianésia
-GO,Guaraíta
-GO,Guarinos
-GO,Hidrolina
-GO,Ipiranga de Goiás
+GO,Itajá
 GO,Itapaci
-GO,Itapuranga
-GO,Morro Agudo de Goiás
-GO,Nova América
-GO,Nova Glória
-GO,Pilar de Goiás
-GO,Rialma
-GO,Rianápolis
-GO,Rubiataba
-GO,Santa Isabel
-GO,Santa Rita do Novo Destino
-GO,São Luíz do Norte
-GO,São Patrício
-GO,Uruana
-GO,Abadia de Goiás
-GO,Aparecida de Goiânia
-GO,Aragoiânia
-GO,Bela Vista de Goiás
-GO,Bonfinópolis
-GO,Caldazinha
-GO,Goianápolis
-GO,Goiânia
-GO,Goianira
-GO,Guapó
-GO,Hidrolândia
-GO,Leopoldo de Bulhões
-GO,Nerópolis
-GO,Santo Antônio de Goiás
-GO,Senador Canedo
-GO,Terezópolis de Goiás
-GO,Trindade
-GO,Amorinópolis
-GO,Cachoeira de Goiás
-GO,Córrego do Ouro
-GO,Fazenda Nova
-GO,Iporá
-GO,Israelândia
-GO,Ivolândia
-GO,Jaupaci
-GO,Moiporá
-GO,Novo Brasil
-GO,Abadiânia
-GO,Água Fria de Goiás
-GO,Águas Lindas de Goiás
-GO,Alexânia
-GO,Cabeceiras
-GO,Cidade Ocidental
-GO,Cocalzinho de Goiás
-GO,Corumbá de Goiás
-GO,Cristalina
-GO,Formosa
-GO,Luziânia
-GO,Mimoso de Goiás
-GO,Novo Gama
-GO,Padre Bernardo
-GO,Pirenópolis
-GO,Planaltina
-GO,Santo Antônio do Descoberto
-GO,Valparaíso de Goiás
-GO,Vila Boa
-GO,Vila Propício
-GO,Alvorada do Norte
-GO,Buritinópolis
-GO,Damianópolis
-GO,Divinópolis de Goiás
-GO,Flores de Goiás
-GO,Guarani de Goiás
-GO,Iaciara
-GO,Mambaí
-GO,Posse
-GO,São Domingos
-GO,Simolândia
-GO,Sítio d'Abadia
-GO,Aragarças
-GO,Arenópolis
-GO,Baliza
-GO,Bom Jardim de Goiás
-GO,Diorama
-GO,Montes Claros de Goiás
-GO,"Piranhas, Goiás"
-GO,Araguapaz
-GO,Aruanã
-GO,Britânia
-GO,Faina
-GO,Goiás
 GO,Itapirapuã
+GO,Itapuranga
+GO,Itarumã
+GO,Itauçu
+GO,Itumbiara
+GO,Ivolândia
+GO,Jandaia
+GO,Jaraguá
+GO,Jataí
+GO,Jaupaci
+GO,Jesúpolis
+GO,Joviânia
 GO,Jussara
+GO,Lagoa Santa
+GO,Leopoldo de Bulhões
+GO,Luziânia
+GO,Mairipotaba
+GO,Mambaí
+GO,Mara Rosa
+GO,Marzagão
 GO,Matrinchã
-GO,Santa Fé de Goiás
-GO,Crixás
+GO,Maurilândia
+GO,Mimoso de Goiás
+GO,Minaçu
+GO,Mineiros
+GO,Moiporá
+GO,Monte Alegre de Goiás
+GO,Montes Claros de Goiás
+GO,Montividiu
+GO,Montividiu do Norte
+GO,Morrinhos
+GO,Morro Agudo de Goiás
+GO,Mossâmedes
 GO,Mozarlândia
 GO,Mundo Novo
-GO,Nova Crixás
-GO,Novo Planalto
-GO,São Miguel do Araguaia
-GO,Uirapuru
-GO,Alto Paraíso de Goiás
-GO,Campos Belos
-GO,Cavalcante
-GO,Colinas do Sul
-GO,Monte Alegre de Goiás
-GO,Nova Roma
-GO,São João d'Aliança
-GO,Teresina de Goiás
-GO,Alto Horizonte
-GO,Amaralina
-GO,Bonópolis
-GO,Campinaçu
-GO,Campinorte
-GO,Campos Verdes
-GO,Estrela do Norte
-GO,Formoso
-GO,Mara Rosa
-GO,Minaçu
-GO,Montividiu do Norte
 GO,Mutunópolis
+GO,Nazário
+GO,Nerópolis
 GO,Niquelândia
+GO,Nova América
+GO,Nova Aurora
+GO,Nova Crixás
+GO,Nova Glória
 GO,Nova Iguaçu de Goiás
+GO,Nova Roma
+GO,Nova Veneza
+GO,Novo Brasil
+GO,Novo Gama
+GO,Novo Planalto
+GO,Orizona
+GO,Ouro Verde de Goiás
+GO,Ouvidor
+GO,Padre Bernardo
+GO,Palestina de Goiás
+GO,Palmeiras de Goiás
+GO,Palmelo
+GO,Palminópolis
+GO,Panamá
+GO,Paranaiguara
+GO,Paraúna
+GO,Perolândia
+GO,Petrolina de Goiás
+GO,Pilar de Goiás
+GO,Piracanjuba
+GO,"Piranhas, Goiás"
+GO,Pirenópolis
+GO,Pires do Rio
+GO,Planaltina
+GO,Pontalina
 GO,Porangatu
+GO,Porteirão
+GO,Portelândia
+GO,Posse
+GO,Professor Jamil
+GO,Quirinópolis
+GO,Rialma
+GO,Rianápolis
+GO,Rio Quente
+GO,Rio Verde
+GO,Rubiataba
+GO,Sanclerlândia
+GO,Santa Bárbara de Goiás
+GO,Santa Cruz de Goiás
+GO,Santa Fé de Goiás
+GO,Santa Helena de Goiás
+GO,Santa Isabel
+GO,Santa Rita do Araguaia
+GO,Santa Rita do Novo Destino
+GO,Santa Rosa de Goiás
 GO,Santa Tereza de Goiás
 GO,Santa Terezinha de Goiás
-GO,Trombas
-GO,Uruaçu
-GO,Anhanguera
-GO,Campo Alegre de Goiás
-GO,Catalão
-GO,Corumbaíba
-GO,Cumari
-GO,Davinópolis
-GO,Goiandira
-GO,Ipameri
-GO,Nova Aurora
-GO,Ouvidor
-GO,Três Ranchos
-GO,Água Limpa
-GO,Aloândia
-GO,Bom Jesus de Goiás
-GO,Buriti Alegre
-GO,Cachoeira Dourada
-GO,Caldas Novas
-GO,Cromínia
-GO,Goiatuba
-GO,Inaciolândia
-GO,Itumbiara
-GO,Joviânia
-GO,Mairipotaba
-GO,Marzagão
-GO,Morrinhos
-GO,Panamá
-GO,Piracanjuba
-GO,Pontalina
-GO,Porteirão
-GO,Professor Jamil
-GO,Rio Quente
-GO,Vicentinópolis
-GO,Cristianópolis
-GO,Gameleira de Goiás
-GO,Orizona
-GO,Palmelo
-GO,Pires do Rio
-GO,Santa Cruz de Goiás
-GO,São Miguel do Passa Quatro
-GO,Silvânia
-GO,Urutaí
-GO,Vianópolis
-GO,Cachoeira Alta
-GO,Caçu
-GO,Gouvelândia
-GO,Itajá
-GO,Itarumã
-GO,Lagoa Santa
-GO,Paranaiguara
-GO,Quirinópolis
-GO,São Simão
-GO,Aparecida do Rio Doce
-GO,Aporé
-GO,Caiapônia
-GO,Castelândia
-GO,Chapadão do Céu
-GO,Doverlândia
-GO,Jataí
-GO,Maurilândia
-GO,Mineiros
-GO,Montividiu
-GO,Palestina de Goiás
-GO,Perolândia
-GO,Portelândia
-GO,Rio Verde
-GO,Santa Helena de Goiás
-GO,Santa Rita do Araguaia
 GO,Santo Antônio da Barra
-GO,Serranópolis
-GO,Acreúna
-GO,Campestre de Goiás
-GO,Cezarina
-GO,Edealina
-GO,Edéia
-GO,Indiara
-GO,Jandaia
-GO,Palmeiras de Goiás
-GO,Palminópolis
-GO,Paraúna
+GO,Santo Antônio de Goiás
+GO,Santo Antônio do Descoberto
+GO,São Domingos
+GO,São Francisco de Goiás
 GO,São João da Paraúna
+GO,São João d'Aliança
+GO,São Luís de Montes Belos
+GO,São Luíz do Norte
+GO,São Miguel do Araguaia
+GO,São Miguel do Passa Quatro
+GO,São Patrício
+GO,São Simão
+GO,Senador Canedo
+GO,Serranópolis
+GO,Silvânia
+GO,Simolândia
+GO,Sítio d'Abadia
+GO,Taquaral de Goiás
+GO,Teresina de Goiás
+GO,Terezópolis de Goiás
+GO,Três Ranchos
+GO,Trindade
+GO,Trombas
+GO,Turvânia
 GO,Turvelândia
+GO,Uirapuru
+GO,Uruaçu
+GO,Uruana
+GO,Urutaí
+GO,Valparaíso de Goiás
 GO,Varjão
+GO,Vianópolis
+GO,Vicentinópolis
+GO,Vila Boa
+GO,Vila Propício
+MA,Açailândia
+MA,Afonso Cunha
+MA,Água Doce do Maranhão
+MA,Alcântara
+MA,Aldeias Altas
+MA,Altamira do Maranhão
+MA,Alto Alegre do Maranhão
+MA,Alto Alegre do Pindaré
+MA,Alto Parnaíba
+MA,Amapá do Maranhão
+MA,Amarante do Maranhão
+MA,Anajatuba
+MA,Anapurus
+MA,Apicum-Açu
+MA,Araguanã
+MA,Araioses
 MA,Arame
+MA,Arari
+MA,Axixá
+MA,Bacabal
+MA,Bacabeira
+MA,Bacuri
+MA,Bacurituba
+MA,Balsas
+MA,Barão de Grajaú
 MA,Barra do Corda
+MA,Barreirinhas
+MA,Bela Vista do Maranhão
+MA,Belágua
+MA,Benedito Leite
+MA,Bequimão
+MA,Bernardo do Mearim
+MA,Boa Vista do Gurupi
+MA,Bom Jardim
+MA,Bom Jesus das Selvas
+MA,Bom Lugar
+MA,Brejo
+MA,Brejo de Areia
+MA,Buriti
+MA,Buriti Bravo
+MA,Buriticupu
+MA,Buritirana
+MA,Cachoeira Grande
+MA,Cajapió
+MA,Cajari
+MA,Campestre do Maranhão
+MA,Cândido Mendes
+MA,Cantanhede
+MA,Capinzal do Norte
+MA,Carolina
+MA,Carutapera
+MA,Caxias
+MA,Cedral
+MA,Central do Maranhão
+MA,Centro do Guilherme
+MA,Centro Novo do Maranhão
+MA,Chapadinha
+MA,Cidelândia
+MA,Codó
+MA,Coelho Neto
+MA,Colinas
+MA,Conceição do Lago-Açu
+MA,Coroatá
+MA,Cururupu
+MA,Davinópolis
+MA,Dom Pedro
+MA,Duque Bacelar
+MA,Esperantinópolis
+MA,Estreito
+MA,Feira Nova do Maranhão
 MA,Fernando Falcão
 MA,Formosa da Serra Negra
+MA,Fortaleza dos Nogueiras
+MA,Fortuna
+MA,Godofredo Viana
+MA,Gonçalves Dias
+MA,Governador Archer
+MA,Governador Edison Lobão
+MA,Governador Eugênio Barros
+MA,Governador Luiz Rocha
+MA,Governador Newton Bello
+MA,Governador Nunes Freire
+MA,Graça Aranha
 MA,Grajaú
-MA,Itaipava do Grajaú
-MA,Jenipapo dos Vieiras
-MA,Joselândia
-MA,Santa Filomena do Maranhão
-MA,Sítio Novo
-MA,Tuntum
-MA,Bacabal
-MA,Bernardo do Mearim
-MA,Bom Lugar
-MA,Esperantinópolis
+MA,Guimarães
+MA,Humberto de Campos
+MA,Icatu
+MA,Igarapé do Meio
 MA,Igarapé Grande
+MA,Imperatriz
+MA,Itaipava do Grajaú
+MA,Itapecuru Mirim
+MA,Itinga do Maranhão
+MA,Jatobá
+MA,Jenipapo dos Vieiras
+MA,João Lisboa
+MA,Joselândia
+MA,Junco do Maranhão
+MA,Lago da Pedra
 MA,Lago do Junco
 MA,Lago dos Rodrigues
 MA,Lago Verde
-MA,Lima Campos
-MA,Olho d'Água das Cunhãs
-MA,Pedreiras
-MA,Pio XII
-MA,Poção de Pedras
-MA,Santo Antônio dos Lopes
-MA,São Luís Gonzaga do Maranhão
-MA,São Mateus do Maranhão
-MA,São Raimundo do Doca Bezerra
-MA,São Roberto
-MA,Satubinha
-MA,Trizidela do Vale
-MA,Dom Pedro
-MA,Fortuna
-MA,Gonçalves Dias
-MA,Governador Archer
-MA,Governador Eugênio Barros
-MA,Governador Luiz Rocha
-MA,Graça Aranha
-MA,Presidente Dutra
-MA,Senador Alexandre Costa
-MA,São Domingos do Maranhão
-MA,São José dos Basílios
-MA,Água Doce do Maranhão
-MA,Araioses
-MA,Magalhães de Almeida
-MA,Santa Quitéria do Maranhão
-MA,Santana do Maranhão
-MA,São Bernardo
-MA,Buriti Bravo
-MA,Caxias
-MA,Matões
-MA,Parnarama
-MA,São João do Soter
-MA,Timon
-MA,Barão de Grajaú
-MA,Colinas
-MA,Jatobá
 MA,Lagoa do Mato
+MA,Lagoa Grande do Maranhão
+MA,Lajeado Novo
+MA,Lima Campos
+MA,Loreto
+MA,Luís Domingues
+MA,Magalhães de Almeida
+MA,Maracaçumé
+MA,Marajá do Sena
+MA,Maranhãozinho
+MA,Mata Roma
+MA,Matinha
+MA,Matões
+MA,Matões do Norte
+MA,Milagres do Maranhão
 MA,Mirador
+MA,Miranda do Norte
+MA,Mirinzal
+MA,Monção
+MA,Montes Altos
+MA,Morros
+MA,Nina Rodrigues
+MA,Nova Colinas
 MA,Nova Iorque
+MA,Nova Olinda do Maranhão
+MA,Olho d'Água das Cunhãs
+MA,Olinda Nova do Maranhão
+MA,Paço do Lumiar
+MA,Palmeirândia
 MA,Paraibano
+MA,Parnarama
 MA,Passagem Franca
 MA,Pastos Bons
-MA,São Francisco do Maranhão
-MA,São João dos Patos
-MA,Sucupira do Norte
-MA,Sucupira do Riachão
-MA,Anapurus
-MA,Belágua
-MA,Brejo
-MA,Buriti
-MA,Chapadinha
-MA,Mata Roma
-MA,Milagres do Maranhão
-MA,São Benedito do Rio Preto
-MA,Urbano Santos
-MA,Alto Alegre do Maranhão
-MA,Capinzal do Norte
-MA,Codó
-MA,Coroatá
-MA,Peritoró
-MA,Timbiras
-MA,Afonso Cunha
-MA,Aldeias Altas
-MA,Coelho Neto
-MA,Duque Bacelar
-MA,Paço do Lumiar
-MA,Raposa
-MA,São José de Ribamar
-MA,São Luís
-MA,Anajatuba
-MA,Arari
-MA,Bela Vista do Maranhão
-MA,Cajari
-MA,Conceição do Lago-Açu
-MA,Igarapé do Meio
-MA,Matinha
-MA,Monção
-MA,Olinda Nova do Maranhão
-MA,Palmeirândia
+MA,Paulino Neves
+MA,Paulo Ramos
+MA,Pedreiras
 MA,Pedro do Rosário
 MA,Penalva
 MA,Peri Mirim
-MA,Pinheiro
-MA,Presidente Sarney
-MA,Santa Helena
-MA,São Bento
-MA,São João Batista
-MA,São Vicente Ferrer
-MA,Viana
-MA,Vitória do Mearim
-MA,Cantanhede
-MA,Itapecuru Mirim
-MA,Matões do Norte
-MA,Miranda do Norte
-MA,Nina Rodrigues
-MA,Pirapemas
-MA,Presidente Vargas
-MA,Vargem Grande
-MA,Barreirinhas
-MA,Humberto de Campos
-MA,Paulino Neves
-MA,Primeira Cruz
-MA,Santo Amaro do Maranhão
-MA,Tutóia
-MA,Alcântara
-MA,Apicum-Açu
-MA,Bacuri
-MA,Bacurituba
-MA,Bequimão
-MA,Cajapió
-MA,Cedral
-MA,Central do Maranhão
-MA,Cururupu
-MA,Guimarães
-MA,Mirinzal
-MA,Porto Rico do Maranhão
-MA,Serrano do Maranhão
-MA,Axixá
-MA,Bacabeira
-MA,Cachoeira Grande
-MA,Icatu
-MA,Morros
-MA,Presidente Juscelino
-MA,Rosário
-MA,Santa Rita
-MA,Amapá do Maranhão
-MA,Boa Vista do Gurupi
-MA,Cândido Mendes
-MA,Carutapera
-MA,Centro do Guilherme
-MA,Centro Novo do Maranhão
-MA,Godofredo Viana
-MA,Governador Nunes Freire
-MA,Junco do Maranhão
-MA,Luís Domingues
-MA,Maracaçumé
-MA,Maranhãozinho
-MA,Turiaçu
-MA,Turilândia
-MA,Açailândia
-MA,Amarante do Maranhão
-MA,Buritirana
-MA,Cidelândia
-MA,Davinópolis
-MA,Governador Edison Lobão
-MA,Imperatriz
-MA,Itinga do Maranhão
-MA,João Lisboa
-MA,Lajeado Novo
-MA,Montes Altos
-MA,Ribamar Fiquene
-MA,São Francisco do Brejão
-MA,São Pedro da Água Branca
-MA,Senador La Rocque
-MA,Vila Nova dos Martírios
-MA,Altamira do Maranhão
-MA,Alto Alegre do Pindaré
-MA,Araguanã
-MA,Bom Jardim
-MA,Bom Jesus das Selvas
-MA,Brejo de Areia
-MA,Buriticupu
-MA,Governador Newton Bello
-MA,Lagoa Grande do Maranhão
-MA,Lago da Pedra
-MA,Marajá do Sena
-MA,Nova Olinda do Maranhão
-MA,Paulo Ramos
+MA,Peritoró
 MA,Pindaré-Mirim
+MA,Pinheiro
+MA,Pio XII
+MA,Pirapemas
+MA,Poção de Pedras
+MA,Porto Franco
+MA,Porto Rico do Maranhão
+MA,Presidente Dutra
+MA,Presidente Juscelino
 MA,Presidente Médici
+MA,Presidente Sarney
+MA,Presidente Vargas
+MA,Primeira Cruz
+MA,Raposa
+MA,Riachão
+MA,Ribamar Fiquene
+MA,Rosário
+MA,Sambaíba
+MA,Santa Filomena do Maranhão
+MA,Santa Helena
 MA,Santa Inês
 MA,Santa Luzia
 MA,Santa Luzia do Paruá
+MA,Santa Quitéria do Maranhão
+MA,Santa Rita
+MA,Santana do Maranhão
+MA,Santo Amaro do Maranhão
+MA,Santo Antônio dos Lopes
+MA,São Benedito do Rio Preto
+MA,São Bento
+MA,São Bernardo
+MA,São Domingos do Azeitão
+MA,São Domingos do Maranhão
+MA,São Félix de Balsas
+MA,São Francisco do Brejão
+MA,São Francisco do Maranhão
+MA,São João Batista
 MA,São João do Carú
+MA,São João do Paraíso
+MA,São João do Soter
+MA,São João dos Patos
+MA,São José de Ribamar
+MA,São José dos Basílios
+MA,São Luís
+MA,São Luís Gonzaga do Maranhão
+MA,São Mateus do Maranhão
+MA,São Pedro da Água Branca
+MA,São Pedro dos Crentes
+MA,São Raimundo das Mangabeiras
+MA,São Raimundo do Doca Bezerra
+MA,São Roberto
+MA,São Vicente Ferrer
+MA,Satubinha
+MA,Senador Alexandre Costa
+MA,Senador La Rocque
+MA,Serrano do Maranhão
+MA,Sítio Novo
+MA,Sucupira do Norte
+MA,Sucupira do Riachão
+MA,Tasso Fragoso
+MA,Timbiras
+MA,Timon
+MA,Trizidela do Vale
 MA,Tufilândia
+MA,Tuntum
+MA,Turiaçu
+MA,Turilândia
+MA,Tutóia
+MA,Urbano Santos
+MA,Vargem Grande
+MA,Viana
+MA,Vila Nova dos Martírios
+MA,Vitória do Mearim
 MA,Vitorino Freire
 MA,Zé Doca
-MA,Benedito Leite
-MA,Fortaleza dos Nogueiras
-MA,Loreto
-MA,Nova Colinas
-MA,Sambaíba
-MA,São Domingos do Azeitão
-MA,São Félix de Balsas
-MA,São Raimundo das Mangabeiras
-MA,Alto Parnaíba
-MA,Balsas
-MA,Feira Nova do Maranhão
-MA,Riachão
-MA,Tasso Fragoso
-MA,Campestre do Maranhão
-MA,Carolina
-MA,Estreito
-MA,Porto Franco
-MA,São João do Paraíso
-MA,São Pedro dos Crentes
-MT,Barão de Melgaço
-MT,Cáceres
-MT,Curvelândia
-MT,Poconé
-MT,Alto Paraguai
-MT,Arenápolis
-MT,Nortelândia
-MT,Nova Marilândia
-MT,Santo Afonso
-MT,Chapada dos Guimarães
-MT,Cuiabá
-MT,Nossa Senhora do Livramento
-MT,Santo Antônio do Leverger
-MT,Várzea Grande
 MT,Acorizal
-MT,Jangada
-MT,Rosário Oeste
 MT,Água Boa
-MT,Campinápolis
-MT,Canarana
-MT,Nova Nazaré
-MT,Nova Xavantina
-MT,Novo São Joaquim
-MT,Querência
-MT,Santo Antônio do Leste
-MT,Araguaiana
-MT,Barra do Garças
-MT,Cocalinho
-MT,Alto Boa Vista
-MT,Bom Jesus do Araguaia
-MT,Canabrava do Norte
-MT,Confresa
-MT,Luciára
-MT,Novo Santo Antônio
-MT,Porto Alegre do Norte
-MT,Ribeirão Cascalheira
-MT,Santa Cruz do Xingu
-MT,Santa Terezinha
-MT,São Félix do Araguaia
-MT,São José do Xingu
-MT,Serra Nova Dourada
-MT,Vila Rica
 MT,Alta Floresta
+MT,Alto Araguaia
+MT,Alto Boa Vista
+MT,Alto Garças
+MT,Alto Paraguai
+MT,Alto Taquari
 MT,Apiacás
+MT,Araguaiana
+MT,Araguainha
+MT,Araputanga
+MT,Arenápolis
+MT,Aripuanã
+MT,Barão de Melgaço
+MT,Barra do Bugres
+MT,Barra do Garças
+MT,Bom Jesus do Araguaia
+MT,Brasnorte
+MT,Cáceres
+MT,Campinápolis
+MT,Campo Novo do Parecis
+MT,Campo Verde
+MT,Campos de Júlio
+MT,Canabrava do Norte
+MT,Canarana
 MT,Carlinda
-MT,Nova Bandeirantes
-MT,Nova Monte Verde
-MT,Paranaíta
+MT,Castanheira
+MT,Chapada dos Guimarães
+MT,Cláudia
+MT,Cocalinho
+MT,Colíder
+MT,Colniza
+MT,Comodoro
+MT,Confresa
+MT,Conquista d'Oeste
+MT,Cotriguaçu
+MT,Cuiabá
+MT,Curvelândia
+MT,Denise
+MT,Diamantino
+MT,Dom Aquino
+MT,Feliz Natal
+MT,Figueirópolis d'Oeste
+MT,Gaúcha do Norte
+MT,General Carneiro
+MT,Glória d'Oeste
+MT,Guarantã do Norte
+MT,Guiratinga
+MT,Indiavaí
 MT,Ipiranga do Norte
 MT,Itanhangá
-MT,Lucas do Rio Verde
-MT,Nobres
-MT,Nova Mutum
-MT,Nova Ubiratã
-MT,Santa Rita do Trivelato
-MT,Sorriso
-MT,Tapurah
-MT,Juara
-MT,Nova Maringá
-MT,Novo Horizonte do Norte
-MT,Porto dos Gaúchos
-MT,São José do Rio Claro
-MT,Tabaporã
-MT,Aripuanã
-MT,Brasnorte
-MT,Castanheira
-MT,Colniza
-MT,Cotriguaçu
-MT,Juína
-MT,Juruena
-MT,Rondolândia
-MT,Colíder
-MT,Guarantã do Norte
-MT,Matupá
-MT,Nova Canaã do Norte
-MT,Nova Guarita
-MT,Novo Mundo
-MT,Peixoto de Azevedo
-MT,Terra Nova do Norte
-MT,Gaúcha do Norte
-MT,Nova Brasilândia
-MT,Paranatinga
-MT,Planalto da Serra
-MT,Comodoro
-MT,Campo Novo do Parecis
-MT,Campos de Júlio
-MT,Diamantino
-MT,Sapezal
-MT,Cláudia
-MT,Feliz Natal
 MT,Itaúba
-MT,Marcelândia
-MT,Nova Santa Helena
-MT,Santa Carmem
-MT,Sinop
-MT,União do Sul
-MT,Vera
-MT,Alto Araguaia
-MT,Alto Garças
-MT,Alto Taquari
-MT,Campo Verde
-MT,Primavera do Leste
-MT,Dom Aquino
 MT,Itiquira
 MT,Jaciara
+MT,Jangada
+MT,Jauru
+MT,Juara
+MT,Juína
+MT,Juruena
 MT,Juscimeira
+MT,Lambari d'Oeste
+MT,Lucas do Rio Verde
+MT,Luciára
+MT,Marcelândia
+MT,Matupá
+MT,Mirassol d'Oeste
+MT,Nobres
+MT,Nortelândia
+MT,Nossa Senhora do Livramento
+MT,Nova Bandeirantes
+MT,Nova Brasilândia
+MT,Nova Canaã do Norte
+MT,Nova Guarita
+MT,Nova Lacerda
+MT,Nova Marilândia
+MT,Nova Maringá
+MT,Nova Monte Verde
+MT,Nova Mutum
+MT,Nova Nazaré
+MT,Nova Olímpia
+MT,Nova Santa Helena
+MT,Nova Ubiratã
+MT,Nova Xavantina
+MT,Novo Horizonte do Norte
+MT,Novo Mundo
+MT,Novo Santo Antônio
+MT,Novo São Joaquim
+MT,Paranaíta
+MT,Paranatinga
 MT,Pedra Preta
-MT,Rondonópolis
-MT,São José do Povo
-MT,São Pedro da Cipa
-MT,Araguainha
-MT,General Carneiro
-MT,Guiratinga
+MT,Peixoto de Azevedo
+MT,Planalto da Serra
+MT,Poconé
 MT,Pontal do Araguaia
 MT,Ponte Branca
+MT,Pontes e Lacerda
+MT,Porto Alegre do Norte
+MT,Porto dos Gaúchos
+MT,Porto Esperidião
+MT,Porto Estrela
 MT,Poxoréo
+MT,Primavera do Leste
+MT,Querência
+MT,Reserva do Cabaçal
+MT,Ribeirão Cascalheira
 MT,Ribeirãozinho
+MT,Rio Branco
+MT,Rondolândia
+MT,Rondonópolis
+MT,Rosário Oeste
+MT,Salto do Céu
+MT,Santa Carmem
+MT,Santa Cruz do Xingu
+MT,Santa Rita do Trivelato
+MT,Santa Terezinha
+MT,Santo Afonso
+MT,Santo Antônio do Leste
+MT,Santo Antônio do Leverger
+MT,São Félix do Araguaia
+MT,São José do Povo
+MT,São José do Rio Claro
+MT,São José do Xingu
+MT,São José dos Quatro Marcos
+MT,São Pedro da Cipa
+MT,Sapezal
+MT,Serra Nova Dourada
+MT,Sinop
+MT,Sorriso
+MT,Tabaporã
+MT,Tangará da Serra
+MT,Tapurah
+MT,Terra Nova do Norte
 MT,Tesouro
 MT,Torixoréu
-MT,Conquista d'Oeste
-MT,Nova Lacerda
-MT,Pontes e Lacerda
+MT,União do Sul
 MT,Vale de São Domingos
+MT,Várzea Grande
+MT,Vera
 MT,Vila Bela da Santíssima Trindade
-MT,Araputanga
-MT,Figueirópolis d'Oeste
-MT,Glória d'Oeste
-MT,Indiavaí
-MT,Jauru
-MT,Lambari d'Oeste
-MT,Mirassol d'Oeste
-MT,Porto Esperidião
-MT,Reserva do Cabaçal
-MT,Rio Branco
-MT,Salto do Céu
-MT,São José dos Quatro Marcos
-MT,Barra do Bugres
-MT,Denise
-MT,Nova Olímpia
-MT,Porto Estrela
-MT,Tangará da Serra
+MT,Vila Rica
+MS,Água Clara
 MS,Alcinópolis
-MS,Camapuã
-MS,Figueirão
-MS,Coxim
-MS,Pedro Gomes
-MS,Rio Verde de Mato Grosso
-MS,São Gabriel do Oeste
-MS,Sonora
-MS,Bandeirantes
-MS,Campo Grande
-MS,Corguinho
-MS,Jaraguari
-MS,Rio Negro
-MS,Rochedo
-MS,Sidrolândia
-MS,Terenos
-MS,Cassilândia
-MS,Chapadão do Sul
-MS,Costa Rica
-MS,Paraíso das Águas
+MS,Amambaí
+MS,Anastácio
 MS,Anaurilândia
+MS,Angélica
+MS,Antônio João
+MS,Aparecida do Taboado
+MS,Aquidauana
+MS,Aral Moreira
+MS,Bandeirantes
 MS,Bataguassu
 MS,Bataiporã
-MS,Nova Andradina
-MS,Taquarussu
-MS,Aparecida do Taboado
-MS,Inocência
-MS,Paranaíba
-MS,Selvíria
-MS,Água Clara
-MS,Brasilândia
-MS,Ribas do Rio Pardo
-MS,Santa Rita do Pardo
-MS,Três Lagoas
-MS,Anastácio
-MS,Aquidauana
-MS,Dois Irmãos do Buriti
-MS,Miranda
-MS,Corumbá
-MS,Ladário
-MS,Porto Murtinho
 MS,Bela Vista
 MS,Bodoquena
 MS,Bonito
-MS,Caracol
-MS,Guia Lopes da Laguna
-MS,Jardim
-MS,Nioaque
-MS,Amambaí
-MS,Antônio João
-MS,Aral Moreira
+MS,Brasilândia
 MS,Caarapó
+MS,Camapuã
+MS,Campo Grande
+MS,Caracol
+MS,Cassilândia
+MS,Chapadão do Sul
+MS,Corguinho
+MS,Coronel Sapucaia
+MS,Corumbá
+MS,Costa Rica
+MS,Coxim
+MS,Deodápolis
+MS,Dois Irmãos do Buriti
 MS,Douradina
 MS,Dourados
-MS,Fátima do Sul
-MS,Itaporã
-MS,Juti
-MS,Laguna Carapã
-MS,Maracaju
-MS,Nova Alvorada do Sul
-MS,Ponta Porã
-MS,Rio Brilhante
-MS,Vicentina
-MS,Angélica
-MS,Coronel Sapucaia
-MS,Deodápolis
 MS,Eldorado
+MS,Fátima do Sul
+MS,Figueirão
 MS,Glória de Dourados
+MS,Guia Lopes da Laguna
 MS,Iguatemi
+MS,Inocência
+MS,Itaporã
 MS,Itaquiraí
 MS,Ivinhema
 MS,Japorã
+MS,Jaraguari
+MS,Jardim
 MS,Jateí
+MS,Juti
+MS,Ladário
+MS,Laguna Carapã
+MS,Maracaju
+MS,Miranda
 MS,Mundo Novo
 MS,Naviraí
+MS,Nioaque
+MS,Nova Alvorada do Sul
+MS,Nova Andradina
 MS,Novo Horizonte do Sul
+MS,Paraíso das Águas
+MS,Paranaíba
 MS,Paranhos
+MS,Pedro Gomes
+MS,Ponta Porã
+MS,Porto Murtinho
+MS,Ribas do Rio Pardo
+MS,Rio Brilhante
+MS,Rio Negro
+MS,Rio Verde de Mato Grosso
+MS,Rochedo
+MS,Santa Rita do Pardo
+MS,São Gabriel do Oeste
+MS,Selvíria
 MS,Sete Quedas
+MS,Sidrolândia
+MS,Sonora
 MS,Tacuru
-MG,Alfredo Vasconcelos
-MG,Antônio Carlos
-MG,Barbacena
-MG,Barroso
-MG,Capela Nova
-MG,Caranaíba
-MG,Carandaí
-MG,Desterro do Melo
-MG,Ibertioga
-MG,Ressaquinha
-MG,Santa Bárbara do Tugúrio
-MG,Senhora dos Remédios
-MG,Carrancas
-MG,Ijaci
-MG,Ingaí
-MG,Itumirim
-MG,Itutinga
-MG,Lavras
-MG,Luminárias
-MG,Nepomuceno
-MG,Ribeirão Vermelho
-MG,Conceição da Barra de Minas
-MG,Coronel Xavier Chaves
-MG,Dores de Campos
-MG,Lagoa Dourada
-MG,Madre de Deus de Minas
-MG,Nazareno
-MG,Piedade do Rio Grande
-MG,Prados
-MG,Resende Costa
-MG,Ritápolis
-MG,Santa Cruz de Minas
-MG,Santana do Garambéu
-MG,São João del Rei
-MG,São Tiago
-MG,Tiradentes
-MG,Araújos
-MG,Bom Despacho
-MG,Dores do Indaiá
-MG,Estrela do Indaiá
-MG,Japaraíba
-MG,Lagoa da Prata
-MG,Leandro Ferreira
-MG,Luz
-MG,Martinho Campos
-MG,Moema
-MG,Quartel Geral
-MG,Serra da Saudade
-MG,Augusto de Lima
-MG,Buenópolis
-MG,Corinto
-MG,Curvelo
-MG,Felixlândia
-MG,Inimutaba
-MG,Joaquim Felício
-MG,Monjolos
-MG,Morro da Garça
-MG,Presidente Juscelino
-MG,Santo Hipólito
-MG,Abaeté
-MG,Biquinhas
-MG,Cedro do Abaeté
-MG,Morada Nova de Minas
-MG,Paineiras
-MG,Pompéu
-MG,Três Marias
-MG,Almenara
-MG,Bandeira
-MG,Divisópolis
-MG,Felisburgo
-MG,Jacinto
-MG,Jequitinhonha
-MG,Joaíma
-MG,Jordânia
-MG,Mata Verde
-MG,Monte Formoso
-MG,Palmópolis
-MG,Rio do Prado
-MG,Rubim
-MG,Salto da Divisa
-MG,Santa Maria do Salto
-MG,Santo Antônio do Jacinto
-MG,Araçuaí
-MG,Caraí
-MG,Coronel Murta
-MG,Itinga
-MG,Novo Cruzeiro
-MG,Padre Paraíso
-MG,Ponto dos Volantes
-MG,Virgem da Lapa
-MG,Angelândia
-MG,Aricanduva
-MG,Berilo
-MG,Capelinha
-MG,Carbonita
-MG,Chapada do Norte
-MG,Francisco Badaró
-MG,Itamarandiba
-MG,Jenipapo de Minas
-MG,José Gonçalves de Minas
-MG,Leme do Prado
-MG,Minas Novas
-MG,Turmalina
-MG,Veredinha
-MG,Couto de Magalhaes de Minas
-MG,Datas
-MG,Diamantina
-MG,Felício dos Santos
-MG,Gouveia
-MG,Presidente Kubitschek
-MG,São Gonçalo do Rio Preto
-MG,Senador Modestino Gonçalves
-MG,Cachoeira de Pajeú
-MG,Comercinho
-MG,Itaobim
-MG,Medina
-MG,Pedra Azul
-MG,Belo Horizonte
-MG,Betim
-MG,Brumadinho
-MG,Caeté
-MG,Confins
-MG,Contagem
-MG,Esmeraldas
-MG,Ibirité
-MG,Igarapé
-MG,Juatuba
-MG,Lagoa Santa
-MG,Mário Campos
-MG,Mateus Leme
-MG,Nova Lima
-MG,Pedro Leopoldo
-MG,Raposos
-MG,Ribeirão das Neves
-MG,Rio Acima
-MG,Sabará
-MG,Santa Luzia
-MG,São Joaquim de Bicas
-MG,São José da Lapa
-MG,Sarzedo
-MG,Vespasiano
-MG,Alvorada de Minas
-MG,Conceição do Mato Dentro
-MG,Congonhas do Norte
-MG,Dom Joaquim
-MG,Itambé do Mato Dentro
-MG,Morro do Pilar
-MG,Passabém
-MG,Rio Vermelho
-MG,Santo Antônio do Itambé
-MG,Santo Antônio do Rio Abaixo
-MG,São Sebastião do Rio Preto
-MG,Serra Azul de Minas
-MG,Serro
-MG,Casa Grande
-MG,Catas Altas da Noruega
-MG,Congonhas
-MG,Conselheiro Lafaiete
-MG,Cristiano Otoni
-MG,Desterro de Entre Rios
-MG,Entre Rios de Minas
-MG,Itaverava
-MG,Ouro Branco
-MG,Queluzito
-MG,Santana dos Montes
-MG,São Brás do Suaçuí
-MG,Alvinópolis
-MG,Barão de Cocais
-MG,Bela Vista de Minas
-MG,Bom Jesus do Amparo
-MG,Catas Altas
-MG,Dionísio
-MG,Ferros
-MG,Itabira
-MG,João Monlevade
-MG,Nova Era
-MG,Nova União
-MG,Rio Piracicaba
-MG,Santa Bárbara
-MG,Santa Maria de Itabira
-MG,São Domingos do Prata
-MG,São Gonçalo do Rio Abaixo
-MG,São José do Goiabal
-MG,Taquaraçu de Minas
-MG,Belo Vale
-MG,Bonfim
-MG,Crucilândia
-MG,Itaguara
-MG,Itatiaiuçu
-MG,Jeceaba
-MG,Moeda
-MG,Piedade dos Gerais
-MG,Rio Manso
-MG,Diogo de Vasconcelos
-MG,Itabirito
-MG,Mariana
-MG,Ouro Preto
-MG,Florestal
-MG,Onça de Pitangui
-MG,Pará de Minas
-MG,Pitangui
-MG,São José da Varginha
-MG,Araçaí
-MG,Baldim
-MG,Cachoeira da Prata
-MG,Caetanópolis
-MG,Capim Branco
-MG,Cordisburgo
-MG,Fortuna de Minas
-MG,Funilândia
-MG,Inhaúma
-MG,Jaboticatubas
-MG,Jequitibá
-MG,Maravilhas
-MG,Matozinhos
-MG,Papagaios
-MG,Paraopeba
-MG,Pequi
-MG,Prudente de Morais
-MG,Santana de Pirapama
-MG,Santana do Riacho
-MG,Sete Lagoas
-MG,Brasilândia de Minas
-MG,Guarda-Mor
-MG,João Pinheiro
-MG,Lagamar
-MG,Lagoa Grande
-MG,Paracatu
-MG,Presidente Olegário
-MG,São Gonçalo do Abaeté
-MG,Varjão de Minas
-MG,Vazante
-MG,Arinos
-MG,Bonfinópolis de Minas
-MG,Buritis
-MG,Cabeceira Grande
-MG,Dom Bosco
-MG,Formoso
-MG,Natalândia
-MG,Unaí
-MG,Uruana de Minas
-MG,Bocaiúva
-MG,Engenheiro Navarro
-MG,Francisco Dumont
-MG,Guaraciama
-MG,Olhos-d'Água
-MG,Botumirim
-MG,Cristália
-MG,Grão Mogol
-MG,Itacambira
-MG,Josenópolis
-MG,Padre Carvalho
-MG,Catuti
-MG,Espinosa
-MG,Gameleiras
-MG,Jaíba
-MG,Janaúba
-MG,Mamonas
-MG,Mato Verde
-MG,Monte Azul
-MG,Nova Porteirinha
-MG,Pai Pedro
-MG,Porteirinha
-MG,Riacho dos Machados
-MG,Serranópolis de Minas
-MG,Bonito de Minas
-MG,Chapada Gaúcha
-MG,Cônego Marinho
-MG,Icaraí de Minas
-MG,Itacarambi
-MG,Januária
-MG,Juvenília
-MG,Manga
-MG,Matias Cardoso
-MG,Miravânia
-MG,Montalvânia
-MG,Pedras de Maria da Cruz
-MG,Pintópolis
-MG,São Francisco
-MG,São João das Missões
-MG,Urucuia
-MG,Brasília de Minas
-MG,Campo Azul
-MG,Capitão Enéas
-MG,Claro dos Poções
-MG,Coração de Jesus
-MG,Francisco Sá
-MG,Glaucilândia
-MG,Ibiracatu
-MG,Japonvar
-MG,Juramento
-MG,Lontra
-MG,Luislândia
-MG,Mirabela
-MG,Montes Claros
-MG,Patis
-MG,Ponto Chique
-MG,São João da Lagoa
-MG,São João da Ponte
-MG,São João do Pacuí
-MG,Ubaí
-MG,Varzelândia
-MG,Verdelândia
-MG,Buritizeiro
-MG,Ibiaí
-MG,Jequitaí
-MG,Lagoa dos Patos
-MG,Lassance
-MG,Pirapora
-MG,Riachinho
-MG,Santa Fé de Minas
-MG,São Romão
-MG,Várzea da Palma
-MG,Águas Vermelhas
-MG,Berizal
-MG,Curral de Dentro
-MG,Divisa Alegre
-MG,Fruta de Leite
-MG,Indaiabira
-MG,Montezuma
-MG,Ninheira
-MG,Novorizonte
-MG,Rio Pardo de Minas
-MG,Rubelita
-MG,Salinas
-MG,Santa Cruz de Salinas
-MG,Santo Antônio do Retiro
-MG,São João do Paraíso
-MG,Taiobeiras
-MG,Vargem Grande do Rio Pardo
-MG,Aguanil
-MG,Campo Belo
-MG,Cana Verde
-MG,Candeias
-MG,Cristais
-MG,Perdões
-MG,Santana do Jacaré
-MG,Carmo do Cajuru
-MG,Cláudio
-MG,Conceição do Pará
-MG,Divinópolis
-MG,Igaratinga
-MG,Itaúna
-MG,Nova Serrana
-MG,Perdigão
-MG,Santo Antônio do Monte
-MG,São Gonçalo do Pará
-MG,São Sebastião do Oeste
-MG,Arcos
-MG,Camacho
-MG,Córrego Fundo
-MG,Formiga
-MG,Itapecerica
-MG,Pains
-MG,Pedra do Indaiá
-MG,Pimenta
-MG,Bom Sucesso
-MG,Carmo da Mata
-MG,Carmópolis de Minas
-MG,Ibituruna
-MG,Oliveira
-MG,Passa Tempo
-MG,Piracema
-MG,Santo Antônio do Amparo
-MG,São Francisco de Paula
-MG,Bambuí
-MG,Córrego Danta
-MG,Doresópolis
-MG,Iguatama
-MG,Medeiros
-MG,Piumhi
-MG,São Roque de Minas
-MG,Tapiraí
-MG,Vargem Bonita
-MG,Alfenas
-MG,Alterosa
-MG,Areado
-MG,Carmo do Rio Claro
-MG,Carvalhópolis
-MG,Conceição da Aparecida
-MG,Divisa Nova
-MG,Fama
-MG,Machado
-MG,Paraguaçu
-MG,Poço Fundo
-MG,Serrania
-MG,Aiuruoca
-MG,Andrelândia
-MG,Arantina
-MG,Bocaina de Minas
-MG,Bom Jardim de Minas
-MG,Carvalhos
-MG,Cruzília
-MG,Liberdade
-MG,Minduri
-MG,Passa-Vinte
-MG,São Vicente de Minas
-MG,Seritinga
-MG,Serranos
-MG,Brasópolis
-MG,Consolação
-MG,Cristina
-MG,Delfim Moreira
-MG,Dom Viçoso
-MG,Itajubá
-MG,Maria da Fé
-MG,Marmelópolis
-MG,Paraisópolis
-MG,Piranguçu
-MG,Piranguinho
-MG,Virgínia
-MG,Wenceslau Braz
-MG,Alpinópolis
-MG,Bom Jesus da Penha
-MG,Capetinga
-MG,Capitólio
-MG,Cássia
-MG,Claraval
-MG,Delfinópolis
-MG,Fortaleza de Minas
-MG,Ibiraci
-MG,Itaú de Minas
-MG,Passos
-MG,Pratápolis
-MG,São João Batista do Glória
-MG,São José da Barra
-MG,Albertina
-MG,Andradas
-MG,Bandeira do Sul
-MG,Botelhos
-MG,Caldas
-MG,Campestre
-MG,Ibitiúra de Minas
-MG,Inconfidentes
-MG,Jacutinga
-MG,Monte Sião
-MG,Ouro Fino
-MG,Poços de Caldas
-MG,Santa Rita de Caldas
-MG,Bom Repouso
-MG,Borda da Mata
-MG,Bueno Brandão
-MG,Camanducaia
-MG,Cambuí
-MG,Congonhal
-MG,Córrego do Bom Jesus
-MG,Espírito Santo do Dourado
-MG,Estiva
-MG,Extrema
-MG,Gonçalves
-MG,Ipuiúna
-MG,Itapeva
-MG,Munhoz
-MG,Pouso Alegre
-MG,Sapucaí-Mirim
-MG,Senador Amaral
-MG,Senador José Bento
-MG,Tocos do Moji
-MG,Toledo
-MG,Cachoeira de Minas
-MG,Careaçu
-MG,Conceição das Pedras
-MG,Conceição dos Ouros
-MG,Cordislândia
-MG,Heliodora
-MG,Natércia
-MG,Pedralva
-MG,Santa Rita do Sapucaí
-MG,São Gonçalo do Sapucaí
-MG,São João da Mata
-MG,São José do Alegre
-MG,São Sebastião da Bela Vista
-MG,Silvianópolis
-MG,Turvolândia
-MG,Alagoa
-MG,Baependi
-MG,Cambuquira
-MG,Carmo de Minas
-MG,Caxambu
-MG,Conceição do Rio Verde
-MG,Itamonte
-MG,Itanhandu
-MG,Jesuânia
-MG,Lambari
-MG,Olímpio Noronha
-MG,Passa Quatro
-MG,Pouso Alto
-MG,São Lourenço
-MG,São Sebastião do Rio Verde
-MG,Soledade de Minas
-MG,Arceburgo
-MG,Cabo Verde
-MG,Guaranesia
-MG,Guaxupé
-MG,Itamogi
-MG,Jacuí
-MG,Juruaia
-MG,Monte Belo
-MG,Monte Santo de Minas
-MG,Muzambinho
-MG,Nova Resende
-MG,São Pedro da União
-MG,São Sebastião do Paraíso
-MG,São Tomás de Aquino
-MG,Boa Esperança
-MG,Campanha
-MG,Campo do Meio
-MG,Campos Gerais
-MG,Carmo da Cachoeira
-MG,Coqueiral
-MG,Elói Mendes
-MG,Guapé
-MG,Ilicínea
-MG,Monsenhor Paulo
-MG,Santana da Vargem
-MG,São Bento Abade
-MG,São Thomé das Letras
-MG,Três Corações
-MG,Três Pontas
-MG,Varginha
-MG,Araxá
-MG,Campos Altos
-MG,Ibiá
-MG,Nova Ponte
-MG,Pedrinópolis
-MG,Perdizes
-MG,Pratinha
-MG,Sacramento
-MG,Santa Juliana
-MG,Tapira
-MG,Campina Verde
-MG,Carneirinho
-MG,Comendador Gomes
-MG,Fronteira
-MG,Frutal
-MG,Itapagipe
-MG,Iturama
-MG,Limeira do Oeste
-MG,Pirajuba
-MG,Planura
-MG,São Francisco de Sales
-MG,União de Minas
-MG,Cachoeira Dourada
-MG,Capinópolis
-MG,Gurinhatã
-MG,Ipiaçu
-MG,Ituiutaba
-MG,Santa Vitória
-MG,Arapuá
-MG,Carmo do Paranaíba
-MG,Guimarânia
-MG,Lagoa Formosa
-MG,Matutina
-MG,Patos de Minas
-MG,Rio Paranaíba
-MG,Santa Rosa da Serra
-MG,São Gotardo
-MG,Tiros
+MS,Taquarussu
+MS,Terenos
+MS,Três Lagoas
+MS,Vicentina
 MG,Abadia dos Dourados
-MG,Coromandel
-MG,Cruzeiro da Fortaleza
-MG,Douradoquara
-MG,Estrela do Sul
-MG,Grupiara
-MG,Iraí de Minas
-MG,Monte Carmelo
-MG,Patrocínio
-MG,Romaria
-MG,Serra do Salitre
-MG,Água Comprida
-MG,Campo Florido
-MG,Conceição das Alagoas
-MG,Conquista
-MG,Delta
-MG,Uberaba
-MG,Veríssimo
-MG,Araguari
-MG,Araporã
-MG,Canápolis
-MG,Cascalho Rico
-MG,Centralina
-MG,Indianópolis
-MG,Monte Alegre de Minas
-MG,Prata
-MG,Tupaciguara
-MG,Uberlândia
-MG,Águas Formosas
-MG,Bertópolis
-MG,Carlos Chagas
-MG,Crisólita
-MG,Fronteira dos Vales
-MG,Machacalis
-MG,Nanuque
-MG,Santa Helena de Minas
-MG,Serra dos Aimorés
-MG,Umburatiba
-MG,Ataléia
-MG,Catuji
-MG,Franciscópolis
-MG,Frei Gaspar
-MG,Itaipé
-MG,Ladainha
-MG,Malacacheta
-MG,Novo Oriente de Minas
-MG,Ouro Verde de Minas
-MG,Pavão
-MG,Poté
-MG,Setubinha
-MG,Teófilo Otoni
-MG,Aimorés
-MG,Alvarenga
-MG,Conceição de Ipanema
-MG,Conselheiro Pena
-MG,Cuparaque
-MG,Goiabeira
-MG,Ipanema
-MG,Itueta
-MG,Mutum
-MG,Pocrane
-MG,Resplendor
-MG,Santa Rita do Itueto
-MG,Taparuba
-MG,Bom Jesus do Galho
-MG,Bugre
-MG,Caratinga
-MG,Córrego Novo
-MG,Dom Cavati
-MG,Entre Folhas
-MG,Iapu
-MG,Imbé de Minas
-MG,Inhapim
-MG,Ipaba
-MG,Piedade de Caratinga
-MG,Pingo-d'Água
-MG,Santa Bárbara do Leste
-MG,Santa Rita de Minas
-MG,São Domingos das Dores
-MG,São João do Oriente
-MG,São Sebastião do Anta
-MG,Tarumirim
-MG,Ubaporanga
-MG,Vargem Alegre
-MG,Alpercata
-MG,Campanário
-MG,Capitão Andrade
-MG,Coroaci
-MG,Divino das Laranjeiras
-MG,Engenheiro Caldas
-MG,Fernandes Tourinho
-MG,Frei Inocêncio
-MG,Galiléia
-MG,Governador Valadares
-MG,Itambacuri
-MG,Itanhomi
-MG,Jampruca
-MG,Marilac
-MG,Mathias Lobato
-MG,Nacip Raydan
-MG,Nova Módica
-MG,Pescador
-MG,São Geraldo da Piedade
-MG,São Geraldo do Baixio
-MG,São José da Safira
-MG,São José do Divino
-MG,Sobrália
-MG,Tumiritinga
-MG,Virgolândia
-MG,Braúnas
-MG,Carmésia
-MG,Coluna
-MG,Divinolândia de Minas
-MG,Dores de Guanhães
-MG,Gonzaga
-MG,Guanhães
-MG,Materlândia
-MG,Paulistas
-MG,Sabinópolis
-MG,Santa Efigênia de Minas
-MG,São João Evangelista
-MG,Sardoá
-MG,Senhora do Porto
-MG,Virginópolis
-MG,Açucena
-MG,Antônio Dias
-MG,Belo Oriente
-MG,Coronel Fabriciano
-MG,Ipatinga
-MG,Jaguaraçu
-MG,Joanésia
-MG,Marliéria
-MG,Mesquita
-MG,Naque
-MG,Periquito
-MG,Santana do Paraíso
-MG,Timóteo
-MG,Central de Minas
-MG,Itabirinha
-MG,Mantena
-MG,Mendes Pimentel
-MG,Nova Belém
-MG,São Félix de Minas
-MG,São João do Manteninha
-MG,Água Boa
-MG,Cantagalo
-MG,Frei Lagonegro
-MG,José Raydan
-MG,Peçanha
-MG,Santa Maria do Suaçuí
-MG,São José do Jacuri
-MG,São Pedro do Suaçuí
-MG,São Sebastião do Maranhão
-MG,Além Paraíba
-MG,Argirita
-MG,Cataguases
-MG,Dona Eusébia
-MG,Estrela Dalva
-MG,Itamarati de Minas
-MG,Laranjal
-MG,Leopoldina
-MG,Palma
-MG,Pirapetinga
-MG,Recreio
-MG,Santana de Cataguases
-MG,Santo Antônio do Aventureiro
-MG,Volta Grande
-MG,Aracitaba
-MG,Belmiro Braga
-MG,Bias Fortes
-MG,Bicas
-MG,Chácara
-MG,Chiador
-MG,Coronel Pacheco
-MG,Descoberto
-MG,Ewbank da Câmara
-MG,Goianá
-MG,Guarará
-MG,Juiz de Fora
-MG,Lima Duarte
-MG,Mar de Espanha
-MG,Maripá de Minas
-MG,Matias Barbosa
-MG,Olaria
-MG,Oliveira Fortes
-MG,Paiva
-MG,Pedro Teixeira
-MG,Pequeri
-MG,Piau
-MG,Rio Novo
-MG,Rio Preto
-MG,Rochedo de Minas
-MG,Santa Bárbara do Monte Verde
-MG,Santa Rita de Ibitipoca
-MG,Santa Rita de Jacutinga
-MG,Santana do Deserto
-MG,Santos Dumont
-MG,São João Nepomuceno
-MG,Senador Cortes
-MG,Simão Pereira
+MG,Abaeté
 MG,Abre Campo
+MG,Acaiaca
+MG,Açucena
+MG,Água Boa
+MG,Água Comprida
+MG,Aguanil
+MG,Águas Formosas
+MG,Águas Vermelhas
+MG,Aimorés
+MG,Aiuruoca
+MG,Alagoa
+MG,Albertina
+MG,Além Paraíba
+MG,Alfenas
+MG,Alfredo Vasconcelos
+MG,Almenara
+MG,Alpercata
+MG,Alpinópolis
+MG,Alterosa
 MG,Alto Caparaó
 MG,Alto Jequitibá
+MG,Alto Rio Doce
+MG,Alvarenga
+MG,Alvinópolis
+MG,Alvorada de Minas
+MG,Amparo do Serra
+MG,Andradas
+MG,Andrelândia
+MG,Angelândia
+MG,Antônio Carlos
+MG,Antônio Dias
+MG,Antônio Prado de Minas
+MG,Araçaí
+MG,Aracitaba
+MG,Araçuaí
+MG,Araguari
+MG,Arantina
+MG,Araponga
+MG,Araporã
+MG,Arapuá
+MG,Araújos
+MG,Araxá
+MG,Arceburgo
+MG,Arcos
+MG,Areado
+MG,Argirita
+MG,Aricanduva
+MG,Arinos
+MG,Astolfo Dutra
+MG,Ataléia
+MG,Augusto de Lima
+MG,Baependi
+MG,Baldim
+MG,Bambuí
+MG,Bandeira
+MG,Bandeira do Sul
+MG,Barão de Cocais
+MG,Barão de Monte Alto
+MG,Barbacena
+MG,Barra Longa
+MG,Barroso
+MG,Bela Vista de Minas
+MG,Belmiro Braga
+MG,Belo Horizonte
+MG,Belo Oriente
+MG,Belo Vale
+MG,Berilo
+MG,Berizal
+MG,Bertópolis
+MG,Betim
+MG,Bias Fortes
+MG,Bicas
+MG,Biquinhas
+MG,Boa Esperança
+MG,Bocaina de Minas
+MG,Bocaiúva
+MG,Bom Despacho
+MG,Bom Jardim de Minas
+MG,Bom Jesus da Penha
+MG,Bom Jesus do Amparo
+MG,Bom Jesus do Galho
+MG,Bom Repouso
+MG,Bom Sucesso
+MG,Bonfim
+MG,Bonfinópolis de Minas
+MG,Bonito de Minas
+MG,Borda da Mata
+MG,Botelhos
+MG,Botumirim
+MG,Brás Pires
+MG,Brasilândia de Minas
+MG,Brasília de Minas
+MG,Brasópolis
+MG,Braúnas
+MG,Brumadinho
+MG,Bueno Brandão
+MG,Buenópolis
+MG,Bugre
+MG,Buritis
+MG,Buritizeiro
+MG,Cabeceira Grande
+MG,Cabo Verde
+MG,Cachoeira da Prata
+MG,Cachoeira de Minas
+MG,Cachoeira de Pajeú
+MG,Cachoeira Dourada
+MG,Caetanópolis
+MG,Caeté
+MG,Caiana
+MG,Cajuri
+MG,Caldas
+MG,Camacho
+MG,Camanducaia
+MG,Cambuí
+MG,Cambuquira
+MG,Campanário
+MG,Campanha
+MG,Campestre
+MG,Campina Verde
+MG,Campo Azul
+MG,Campo Belo
+MG,Campo do Meio
+MG,Campo Florido
+MG,Campos Altos
+MG,Campos Gerais
+MG,Cana Verde
+MG,Canaã
+MG,Canápolis
+MG,Candeias
+MG,Cantagalo
 MG,Caparaó
+MG,Capela Nova
+MG,Capelinha
+MG,Capetinga
+MG,Capim Branco
+MG,Capinópolis
+MG,Capitão Andrade
+MG,Capitão Enéas
+MG,Capitólio
 MG,Caputira
+MG,Caraí
+MG,Caranaíba
+MG,Carandaí
+MG,Carangola
+MG,Caratinga
+MG,Carbonita
+MG,Careaçu
+MG,Carlos Chagas
+MG,Carmésia
+MG,Carmo da Cachoeira
+MG,Carmo da Mata
+MG,Carmo de Minas
+MG,Carmo do Cajuru
+MG,Carmo do Paranaíba
+MG,Carmo do Rio Claro
+MG,Carmópolis de Minas
+MG,Carneirinho
+MG,Carrancas
+MG,Carvalhópolis
+MG,Carvalhos
+MG,Casa Grande
+MG,Cascalho Rico
+MG,Cássia
+MG,Cataguases
+MG,Catas Altas
+MG,Catas Altas da Noruega
+MG,Catuji
+MG,Catuti
+MG,Caxambu
+MG,Cedro do Abaeté
+MG,Central de Minas
+MG,Centralina
+MG,Chácara
 MG,Chalé
+MG,Chapada do Norte
+MG,Chapada Gaúcha
+MG,Chiador
+MG,Cipotânea
+MG,Claraval
+MG,Claro dos Poções
+MG,Cláudio
+MG,Coimbra
+MG,Coluna
+MG,Comendador Gomes
+MG,Comercinho
+MG,Conceição da Aparecida
+MG,Conceição da Barra de Minas
+MG,Conceição das Alagoas
+MG,Conceição das Pedras
+MG,Conceição de Ipanema
+MG,Conceição do Mato Dentro
+MG,Conceição do Pará
+MG,Conceição do Rio Verde
+MG,Conceição dos Ouros
+MG,Cônego Marinho
+MG,Confins
+MG,Congonhal
+MG,Congonhas
+MG,Congonhas do Norte
+MG,Conquista
+MG,Conselheiro Lafaiete
+MG,Conselheiro Pena
+MG,Consolação
+MG,Contagem
+MG,Coqueiral
+MG,Coração de Jesus
+MG,Cordisburgo
+MG,Cordislândia
+MG,Corinto
+MG,Coroaci
+MG,Coromandel
+MG,Coronel Fabriciano
+MG,Coronel Murta
+MG,Coronel Pacheco
+MG,Coronel Xavier Chaves
+MG,Córrego Danta
+MG,Córrego do Bom Jesus
+MG,Córrego Fundo
+MG,Córrego Novo
+MG,Couto de Magalhaes de Minas
+MG,Crisólita
+MG,Cristais
+MG,Cristália
+MG,Cristiano Otoni
+MG,Cristina
+MG,Crucilândia
+MG,Cruzeiro da Fortaleza
+MG,Cruzília
+MG,Cuparaque
+MG,Curral de Dentro
+MG,Curvelo
+MG,Datas
+MG,Delfim Moreira
+MG,Delfinópolis
+MG,Delta
+MG,Descoberto
+MG,Desterro de Entre Rios
+MG,Desterro do Melo
+MG,Diamantina
+MG,Diogo de Vasconcelos
+MG,Dionísio
+MG,Divinésia
+MG,Divino
+MG,Divino das Laranjeiras
+MG,Divinolândia de Minas
+MG,Divinópolis
+MG,Divisa Alegre
+MG,Divisa Nova
+MG,Divisópolis
+MG,Dom Bosco
+MG,Dom Cavati
+MG,Dom Joaquim
+MG,Dom Silvério
+MG,Dom Viçoso
+MG,Dona Eusébia
+MG,Dores de Campos
+MG,Dores de Guanhães
+MG,Dores do Indaiá
+MG,Dores do Turvo
+MG,Doresópolis
+MG,Douradoquara
 MG,Durandé
+MG,Elói Mendes
+MG,Engenheiro Caldas
+MG,Engenheiro Navarro
+MG,Entre Folhas
+MG,Entre Rios de Minas
+MG,Ervália
+MG,Esmeraldas
+MG,Espera Feliz
+MG,Espinosa
+MG,Espírito Santo do Dourado
+MG,Estiva
+MG,Estrela Dalva
+MG,Estrela do Indaiá
+MG,Estrela do Sul
+MG,Eugenópolis
+MG,Ewbank da Câmara
+MG,Extrema
+MG,Fama
+MG,Faria Lemos
+MG,Felício dos Santos
+MG,Felisburgo
+MG,Felixlândia
+MG,Fernandes Tourinho
+MG,Ferros
+MG,Fervedouro
+MG,Florestal
+MG,Formiga
+MG,Formoso
+MG,Fortaleza de Minas
+MG,Fortuna de Minas
+MG,Francisco Badaró
+MG,Francisco Dumont
+MG,Francisco Sá
+MG,Franciscópolis
+MG,Frei Gaspar
+MG,Frei Inocêncio
+MG,Frei Lagonegro
+MG,Fronteira
+MG,Fronteira dos Vales
+MG,Fruta de Leite
+MG,Frutal
+MG,Funilândia
+MG,Galiléia
+MG,Gameleiras
+MG,Glaucilândia
+MG,Goiabeira
+MG,Goianá
+MG,Gonçalves
+MG,Gonzaga
+MG,Gouveia
+MG,Governador Valadares
+MG,Grão Mogol
+MG,Grupiara
+MG,Guanhães
+MG,Guapé
+MG,Guaraciaba
+MG,Guaraciama
+MG,Guaranesia
+MG,Guarani
+MG,Guarará
+MG,Guarda-Mor
+MG,Guaxupé
+MG,Guidoval
+MG,Guimarânia
+MG,Guiricema
+MG,Gurinhatã
+MG,Heliodora
+MG,Iapu
+MG,Ibertioga
+MG,Ibiá
+MG,Ibiaí
+MG,Ibiracatu
+MG,Ibiraci
+MG,Ibirité
+MG,Ibitiúra de Minas
+MG,Ibituruna
+MG,Icaraí de Minas
+MG,Igarapé
+MG,Igaratinga
+MG,Iguatama
+MG,Ijaci
+MG,Ilicínea
+MG,Imbé de Minas
+MG,Inconfidentes
+MG,Indaiabira
+MG,Indianópolis
+MG,Ingaí
+MG,Inhapim
+MG,Inhaúma
+MG,Inimutaba
+MG,Ipaba
+MG,Ipanema
+MG,Ipatinga
+MG,Ipiaçu
+MG,Ipuiúna
+MG,Iraí de Minas
+MG,Itabira
+MG,Itabirinha
+MG,Itabirito
+MG,Itacambira
+MG,Itacarambi
+MG,Itaguara
+MG,Itaipé
+MG,Itajubá
+MG,Itamarandiba
+MG,Itamarati de Minas
+MG,Itambacuri
+MG,Itambé do Mato Dentro
+MG,Itamogi
+MG,Itamonte
+MG,Itanhandu
+MG,Itanhomi
+MG,Itaobim
+MG,Itapagipe
+MG,Itapecerica
+MG,Itapeva
+MG,Itatiaiuçu
+MG,Itaú de Minas
+MG,Itaúna
+MG,Itaverava
+MG,Itinga
+MG,Itueta
+MG,Ituiutaba
+MG,Itumirim
+MG,Iturama
+MG,Itutinga
+MG,Jaboticatubas
+MG,Jacinto
+MG,Jacuí
+MG,Jacutinga
+MG,Jaguaraçu
+MG,Jaíba
+MG,Jampruca
+MG,Janaúba
+MG,Januária
+MG,Japaraíba
+MG,Japonvar
+MG,Jeceaba
+MG,Jenipapo de Minas
+MG,Jequeri
+MG,Jequitaí
+MG,Jequitibá
+MG,Jequitinhonha
+MG,Jesuânia
+MG,Joaíma
+MG,Joanésia
+MG,João Monlevade
+MG,João Pinheiro
+MG,Joaquim Felício
+MG,Jordânia
+MG,José Gonçalves de Minas
+MG,José Raydan
+MG,Josenópolis
+MG,Juatuba
+MG,Juiz de Fora
+MG,Juramento
+MG,Juruaia
+MG,Juvenília
+MG,Ladainha
+MG,Lagamar
+MG,Lagoa da Prata
+MG,Lagoa dos Patos
+MG,Lagoa Dourada
+MG,Lagoa Formosa
+MG,Lagoa Grande
+MG,Lagoa Santa
 MG,Lajinha
+MG,Lambari
+MG,Lamim
+MG,Laranjal
+MG,Lassance
+MG,Lavras
+MG,Leandro Ferreira
+MG,Leme do Prado
+MG,Leopoldina
+MG,Liberdade
+MG,Lima Duarte
+MG,Limeira do Oeste
+MG,Lontra
 MG,Luisburgo
+MG,Luislândia
+MG,Luminárias
+MG,Luz
+MG,Machacalis
+MG,Machado
+MG,Madre de Deus de Minas
+MG,Malacacheta
+MG,Mamonas
+MG,Manga
 MG,Manhuaçu
 MG,Manhumirim
+MG,Mantena
+MG,Mar de Espanha
+MG,Maravilhas
+MG,Maria da Fé
+MG,Mariana
+MG,Marilac
+MG,Mário Campos
+MG,Maripá de Minas
+MG,Marliéria
+MG,Marmelópolis
+MG,Martinho Campos
 MG,Martins Soares
+MG,Mata Verde
+MG,Materlândia
+MG,Mateus Leme
+MG,Mathias Lobato
+MG,Matias Barbosa
+MG,Matias Cardoso
 MG,Matipó
-MG,Pedra Bonita
-MG,Reduto
-MG,Santa Margarida
-MG,Santana do Manhuaçu
-MG,São João do Manhuaçu
-MG,São José do Mantimento
-MG,Simonésia
-MG,Antônio Prado de Minas
-MG,Barão de Monte Alto
-MG,Caiana
-MG,Carangola
-MG,Divino
-MG,Espera Feliz
-MG,Eugenópolis
-MG,Faria Lemos
-MG,Fervedouro
+MG,Mato Verde
+MG,Matozinhos
+MG,Matutina
+MG,Medeiros
+MG,Medina
+MG,Mendes Pimentel
+MG,Mercês
+MG,Mesquita
+MG,Minas Novas
+MG,Minduri
+MG,Mirabela
 MG,Miradouro
 MG,Miraí
+MG,Miravânia
+MG,Moeda
+MG,Moema
+MG,Monjolos
+MG,Monsenhor Paulo
+MG,Montalvânia
+MG,Monte Alegre de Minas
+MG,Monte Azul
+MG,Monte Belo
+MG,Monte Carmelo
+MG,Monte Formoso
+MG,Monte Santo de Minas
+MG,Monte Sião
+MG,Montes Claros
+MG,Montezuma
+MG,Morada Nova de Minas
+MG,Morro da Garça
+MG,Morro do Pilar
+MG,Munhoz
 MG,Muriaé
-MG,Orizânia
-MG,Patrocínio do Muriaé
-MG,Pedra Dourada
-MG,Rosário da Limeira
-MG,São Francisco do Glória
-MG,São Sebastião da Vargem Alegre
-MG,Tombos
-MG,Vieiras
-MG,Acaiaca
-MG,Barra Longa
-MG,Dom Silvério
-MG,Guaraciaba
-MG,Jequeri
+MG,Mutum
+MG,Muzambinho
+MG,Nacip Raydan
+MG,Nanuque
+MG,Naque
+MG,Natalândia
+MG,Natércia
+MG,Nazareno
+MG,Nepomuceno
+MG,Ninheira
+MG,Nova Belém
+MG,Nova Era
+MG,Nova Lima
+MG,Nova Módica
+MG,Nova Ponte
+MG,Nova Porteirinha
+MG,Nova Resende
+MG,Nova Serrana
+MG,Nova União
+MG,Novo Cruzeiro
+MG,Novo Oriente de Minas
+MG,Novorizonte
+MG,Olaria
+MG,Olhos-d'Água
+MG,Olímpio Noronha
+MG,Oliveira
+MG,Oliveira Fortes
+MG,Onça de Pitangui
 MG,Oratórios
-MG,Piedade de Ponte Nova
-MG,Ponte Nova
-MG,Raul Soares
-MG,Rio Casca
-MG,Rio Doce
-MG,Santa Cruz do Escalvado
-MG,Santo Antônio do Grama
-MG,São Pedro dos Ferros
-MG,Sem-Peixe
-MG,Sericita
-MG,Urucânia
-MG,Vermelho Novo
-MG,Astolfo Dutra
-MG,Divinésia
-MG,Dores do Turvo
-MG,Guarani
-MG,Guidoval
-MG,Guiricema
-MG,Mercês
-MG,Piraúba
-MG,Rio Pomba
-MG,Rodeiro
-MG,São Geraldo
-MG,Senador Firmino
-MG,Silveirânia
-MG,Tabuleiro
-MG,Tocantins
-MG,Ubá
-MG,Visconde do Rio Branco
-MG,Alto Rio Doce
-MG,Amparo do Serra
-MG,Araponga
-MG,Brás Pires
-MG,Cajuri
-MG,Canaã
-MG,Cipotânea
-MG,Coimbra
-MG,Ervália
-MG,Lamim
+MG,Orizânia
+MG,Ouro Branco
+MG,Ouro Fino
+MG,Ouro Preto
+MG,Ouro Verde de Minas
+MG,Padre Carvalho
+MG,Padre Paraíso
+MG,Pai Pedro
+MG,Paineiras
+MG,Pains
+MG,Paiva
+MG,Palma
+MG,Palmópolis
+MG,Papagaios
+MG,Pará de Minas
+MG,Paracatu
+MG,Paraguaçu
+MG,Paraisópolis
+MG,Paraopeba
+MG,Passa Quatro
+MG,Passa Tempo
+MG,Passabém
+MG,Passa-Vinte
+MG,Passos
+MG,Patis
+MG,Patos de Minas
+MG,Patrocínio
+MG,Patrocínio do Muriaé
 MG,Paula Cândido
+MG,Paulistas
+MG,Pavão
+MG,Peçanha
+MG,Pedra Azul
+MG,Pedra Bonita
 MG,Pedra do Anta
+MG,Pedra do Indaiá
+MG,Pedra Dourada
+MG,Pedralva
+MG,Pedras de Maria da Cruz
+MG,Pedrinópolis
+MG,Pedro Leopoldo
+MG,Pedro Teixeira
+MG,Pequeri
+MG,Pequi
+MG,Perdigão
+MG,Perdizes
+MG,Perdões
+MG,Periquito
+MG,Pescador
+MG,Piau
+MG,Piedade de Caratinga
+MG,Piedade de Ponte Nova
+MG,Piedade do Rio Grande
+MG,Piedade dos Gerais
+MG,Pimenta
+MG,Pingo-d'Água
+MG,Pintópolis
+MG,Piracema
+MG,Pirajuba
 MG,Piranga
+MG,Piranguçu
+MG,Piranguinho
+MG,Pirapetinga
+MG,Pirapora
+MG,Piraúba
+MG,Pitangui
+MG,Piumhi
+MG,Planura
+MG,Poço Fundo
+MG,Poços de Caldas
+MG,Pocrane
+MG,Pompéu
+MG,Ponte Nova
+MG,Ponto Chique
+MG,Ponto dos Volantes
+MG,Porteirinha
 MG,Porto Firme
+MG,Poté
+MG,Pouso Alegre
+MG,Pouso Alto
+MG,Prados
+MG,Prata
+MG,Pratápolis
+MG,Pratinha
 MG,Presidente Bernardes
+MG,Presidente Juscelino
+MG,Presidente Kubitschek
+MG,Presidente Olegário
+MG,Prudente de Morais
+MG,Quartel Geral
+MG,Queluzito
+MG,Raposos
+MG,Raul Soares
+MG,Recreio
+MG,Reduto
+MG,Resende Costa
+MG,Resplendor
+MG,Ressaquinha
+MG,Riachinho
+MG,Riacho dos Machados
+MG,Ribeirão das Neves
+MG,Ribeirão Vermelho
+MG,Rio Acima
+MG,Rio Casca
+MG,Rio do Prado
+MG,Rio Doce
 MG,Rio Espera
+MG,Rio Manso
+MG,Rio Novo
+MG,Rio Paranaíba
+MG,Rio Pardo de Minas
+MG,Rio Piracicaba
+MG,Rio Pomba
+MG,Rio Preto
+MG,Rio Vermelho
+MG,Ritápolis
+MG,Rochedo de Minas
+MG,Rodeiro
+MG,Romaria
+MG,Rosário da Limeira
+MG,Rubelita
+MG,Rubim
+MG,Sabará
+MG,Sabinópolis
+MG,Sacramento
+MG,Salinas
+MG,Salto da Divisa
+MG,Santa Bárbara
+MG,Santa Bárbara do Leste
+MG,Santa Bárbara do Monte Verde
+MG,Santa Bárbara do Tugúrio
+MG,Santa Cruz de Minas
+MG,Santa Cruz de Salinas
+MG,Santa Cruz do Escalvado
+MG,Santa Efigênia de Minas
+MG,Santa Fé de Minas
+MG,Santa Helena de Minas
+MG,Santa Juliana
+MG,Santa Luzia
+MG,Santa Margarida
+MG,Santa Maria de Itabira
+MG,Santa Maria do Salto
+MG,Santa Maria do Suaçuí
+MG,Santa Rita de Caldas
+MG,Santa Rita de Ibitipoca
+MG,Santa Rita de Jacutinga
+MG,Santa Rita de Minas
+MG,Santa Rita do Itueto
+MG,Santa Rita do Sapucaí
+MG,Santa Rosa da Serra
+MG,Santa Vitória
+MG,Santana da Vargem
+MG,Santana de Cataguases
+MG,Santana de Pirapama
+MG,Santana do Deserto
+MG,Santana do Garambéu
+MG,Santana do Jacaré
+MG,Santana do Manhuaçu
+MG,Santana do Paraíso
+MG,Santana do Riacho
+MG,Santana dos Montes
+MG,Santo Antônio do Amparo
+MG,Santo Antônio do Aventureiro
+MG,Santo Antônio do Grama
+MG,Santo Antônio do Itambé
+MG,Santo Antônio do Jacinto
+MG,Santo Antônio do Monte
+MG,Santo Antônio do Retiro
+MG,Santo Antônio do Rio Abaixo
+MG,Santo Hipólito
+MG,Santos Dumont
+MG,São Bento Abade
+MG,São Brás do Suaçuí
+MG,São Domingos das Dores
+MG,São Domingos do Prata
+MG,São Félix de Minas
+MG,São Francisco
+MG,São Francisco de Paula
+MG,São Francisco de Sales
+MG,São Francisco do Glória
+MG,São Geraldo
+MG,São Geraldo da Piedade
+MG,São Geraldo do Baixio
+MG,São Gonçalo do Abaeté
+MG,São Gonçalo do Pará
+MG,São Gonçalo do Rio Abaixo
+MG,São Gonçalo do Rio Preto
+MG,São Gonçalo do Sapucaí
+MG,São Gotardo
+MG,São João Batista do Glória
+MG,São João da Lagoa
+MG,São João da Mata
+MG,São João da Ponte
+MG,São João das Missões
+MG,São João del Rei
+MG,São João do Manhuaçu
+MG,São João do Manteninha
+MG,São João do Oriente
+MG,São João do Pacuí
+MG,São João do Paraíso
+MG,São João Evangelista
+MG,São João Nepomuceno
+MG,São Joaquim de Bicas
+MG,São José da Barra
+MG,São José da Lapa
+MG,São José da Safira
+MG,São José da Varginha
+MG,São José do Alegre
+MG,São José do Divino
+MG,São José do Goiabal
+MG,São José do Jacuri
+MG,São José do Mantimento
+MG,São Lourenço
 MG,São Miguel do Anta
+MG,São Pedro da União
+MG,São Pedro do Suaçuí
+MG,São Pedro dos Ferros
+MG,São Romão
+MG,São Roque de Minas
+MG,São Sebastião da Bela Vista
+MG,São Sebastião da Vargem Alegre
+MG,São Sebastião do Anta
+MG,São Sebastião do Maranhão
+MG,São Sebastião do Oeste
+MG,São Sebastião do Paraíso
+MG,São Sebastião do Rio Preto
+MG,São Sebastião do Rio Verde
+MG,São Thomé das Letras
+MG,São Tiago
+MG,São Tomás de Aquino
+MG,São Vicente de Minas
+MG,Sapucaí-Mirim
+MG,Sardoá
+MG,Sarzedo
+MG,Sem-Peixe
+MG,Senador Amaral
+MG,Senador Cortes
+MG,Senador Firmino
+MG,Senador José Bento
+MG,Senador Modestino Gonçalves
 MG,Senhora de Oliveira
+MG,Senhora do Porto
+MG,Senhora dos Remédios
+MG,Sericita
+MG,Seritinga
+MG,Serra Azul de Minas
+MG,Serra da Saudade
+MG,Serra do Salitre
+MG,Serra dos Aimorés
+MG,Serrania
+MG,Serranópolis de Minas
+MG,Serranos
+MG,Serro
+MG,Sete Lagoas
+MG,Setubinha
+MG,Silveirânia
+MG,Silvianópolis
+MG,Simão Pereira
+MG,Simonésia
+MG,Sobrália
+MG,Soledade de Minas
+MG,Tabuleiro
+MG,Taiobeiras
+MG,Taparuba
+MG,Tapira
+MG,Tapiraí
+MG,Taquaraçu de Minas
+MG,Tarumirim
 MG,Teixeiras
+MG,Teófilo Otoni
+MG,Timóteo
+MG,Tiradentes
+MG,Tiros
+MG,Tocantins
+MG,Tocos do Moji
+MG,Toledo
+MG,Tombos
+MG,Três Corações
+MG,Três Marias
+MG,Três Pontas
+MG,Tumiritinga
+MG,Tupaciguara
+MG,Turmalina
+MG,Turvolândia
+MG,Ubá
+MG,Ubaí
+MG,Ubaporanga
+MG,Uberaba
+MG,Uberlândia
+MG,Umburatiba
+MG,Unaí
+MG,União de Minas
+MG,Uruana de Minas
+MG,Urucânia
+MG,Urucuia
+MG,Vargem Alegre
+MG,Vargem Bonita
+MG,Vargem Grande do Rio Pardo
+MG,Varginha
+MG,Varjão de Minas
+MG,Várzea da Palma
+MG,Varzelândia
+MG,Vazante
+MG,Verdelândia
+MG,Veredinha
+MG,Veríssimo
+MG,Vermelho Novo
+MG,Vespasiano
 MG,Viçosa
-PA,Almeirim
-PA,Porto de Moz
-PA,Faro
-PA,Juruti
-PA,Óbidos
-PA,Oriximiná
-PA,Terra Santa
-PA,Alenquer
-PA,Belterra
-PA,Curuá
-PA,Mojuí dos Campos
-PA,Monte Alegre
-PA,Placas
-PA,Prainha
-PA,Santarém
-PA,Cachoeira do Arari
-PA,Chaves
-PA,Muaná
-PA,Ponta de Pedras
-PA,Salvaterra
-PA,Santa Cruz do Arari
-PA,Soure
+MG,Vieiras
+MG,Virgem da Lapa
+MG,Virgínia
+MG,Virginópolis
+MG,Virgolândia
+MG,Visconde do Rio Branco
+MG,Volta Grande
+MG,Wenceslau Braz
+PA,Abaetetuba
+PA,Abel Figueiredo
+PA,Acará
 PA,Afuá
+PA,Água Azul do Norte
+PA,Alenquer
+PA,Almeirim
+PA,Altamira
 PA,Anajás
-PA,Breves
-PA,Curralinho
-PA,São Sebastião da Boa Vista
-PA,Bagre
-PA,Gurupá
-PA,Melgaço
-PA,Portel
 PA,Ananindeua
+PA,Anapu
+PA,Augusto Corrêa
+PA,Aurora do Pará
+PA,Aveiro
+PA,Bagre
+PA,Baião
+PA,Bannach
 PA,Barcarena
 PA,Belém
+PA,Belterra
 PA,Benevides
-PA,Marituba
-PA,Santa Bárbara do Pará
-PA,Bujaru
-PA,Castanhal
-PA,Inhangapi
-PA,Santa Isabel do Pará
-PA,Santo Antônio do Tauá
-PA,Augusto Corrêa
+PA,Bom Jesus do Tocantins
 PA,Bonito
 PA,Bragança
-PA,Capanema
-PA,Igarapé-Açu
-PA,Nova Timboteua
-PA,Peixe-Boi
-PA,Primavera
-PA,Quatipuru
-PA,Santa Maria do Pará
-PA,Santarém Novo
-PA,São Francisco do Pará
-PA,Tracuateua
-PA,Abaetetuba
-PA,Baião
-PA,Cametá
-PA,Igarapé-Miri
-PA,Limoeiro do Ajuru
-PA,Mocajuba
-PA,Oeiras do Pará
-PA,Aurora do Pará
+PA,Brasil Novo
+PA,Brejo Grande do Araguaia
+PA,Breu Branco
+PA,Breves
+PA,Bujaru
+PA,Cachoeira do Arari
 PA,Cachoeira do Piriá
+PA,Cametá
+PA,Canaã dos Carajás
+PA,Capanema
 PA,Capitão Poço
+PA,Castanhal
+PA,Chaves
+PA,Colares
+PA,Conceição do Araguaia
+PA,Concórdia do Pará
+PA,Cumaru do Norte
+PA,Curionópolis
+PA,Curralinho
+PA,Curuá
+PA,Curuçá
+PA,Dom Eliseu
+PA,Eldorado dos Carajás
+PA,Faro
+PA,Floresta do Araguaia
 PA,Garrafão do Norte
+PA,Goianésia do Pará
+PA,Gurupá
+PA,Igarapé-Açu
+PA,Igarapé-Miri
+PA,Inhangapi
 PA,Ipixuna do Pará
 PA,Irituia
+PA,Itaituba
+PA,Itupiranga
+PA,Jacareacanga
+PA,Jacundá
+PA,Juruti
+PA,Limoeiro do Ajuru
 PA,Mãe do Rio
-PA,Nova Esperança do Piriá
-PA,Ourém
-PA,Santa Luzia do Pará
-PA,São Domingos do Capim
-PA,São Miguel do Guamá
-PA,Viseu
-PA,Colares
-PA,Curuçá
 PA,Magalhães Barata
+PA,Marabá
 PA,Maracanã
 PA,Marapanim
-PA,Salinópolis
-PA,São Caetano de Odivelas
-PA,São João da Ponta
-PA,São João de Pirabas
-PA,Terra Alta
-PA,Vigia
-PA,Acará
-PA,Concórdia do Pará
+PA,Marituba
+PA,Medicilândia
+PA,Melgaço
+PA,Mocajuba
 PA,Moju
-PA,Tailândia
-PA,Tomé-Açu
-PA,Conceição do Araguaia
-PA,Floresta do Araguaia
-PA,Santa Maria das Barreiras
-PA,Santana do Araguaia
-PA,Brejo Grande do Araguaia
-PA,Marabá
+PA,Mojuí dos Campos
+PA,Monte Alegre
+PA,Muaná
+PA,Nova Esperança do Piriá
+PA,Nova Ipixuna
+PA,Nova Timboteua
+PA,Novo Progresso
+PA,Novo Repartimento
+PA,Óbidos
+PA,Oeiras do Pará
+PA,Oriximiná
+PA,Ourém
+PA,Ourilândia do Norte
+PA,Pacajá
 PA,Palestina do Pará
-PA,São Domingos do Araguaia
-PA,São João do Araguaia
-PA,Abel Figueiredo
-PA,Bom Jesus do Tocantins
-PA,Dom Eliseu
-PA,Goianésia do Pará
 PA,Paragominas
-PA,Rondon do Pará
-PA,Ulianópolis
-PA,Água Azul do Norte
-PA,Canaã dos Carajás
-PA,Curionópolis
-PA,Eldorado dos Carajás
 PA,Parauapebas
 PA,Pau d'Arco
+PA,Peixe-Boi
 PA,Piçarra
+PA,Placas
+PA,Ponta de Pedras
+PA,Portel
+PA,Porto de Moz
+PA,Prainha
+PA,Primavera
+PA,Quatipuru
 PA,Redenção
 PA,Rio Maria
-PA,São Geraldo do Araguaia
-PA,Sapucaia
-PA,Xinguara
-PA,Bannach
-PA,Cumaru do Norte
-PA,Ourilândia do Norte
-PA,São Félix do Xingu
-PA,Tucumã
-PA,Breu Branco
-PA,Itupiranga
-PA,Jacundá
-PA,Nova Ipixuna
-PA,Novo Repartimento
-PA,Tucuruí
-PA,Altamira
-PA,Anapu
-PA,Brasil Novo
-PA,Medicilândia
-PA,Pacajá
-PA,Senador José Porfírio
-PA,Uruará
-PA,Vitória do Xingu
-PA,Aveiro
-PA,Itaituba
-PA,Jacareacanga
-PA,Novo Progresso
+PA,Rondon do Pará
 PA,Rurópolis
+PA,Salinópolis
+PA,Salvaterra
+PA,Santa Bárbara do Pará
+PA,Santa Cruz do Arari
+PA,Santa Isabel do Pará
+PA,Santa Luzia do Pará
+PA,Santa Maria das Barreiras
+PA,Santa Maria do Pará
+PA,Santana do Araguaia
+PA,Santarém
+PA,Santarém Novo
+PA,Santo Antônio do Tauá
+PA,São Caetano de Odivelas
+PA,São Domingos do Araguaia
+PA,São Domingos do Capim
+PA,São Félix do Xingu
+PA,São Francisco do Pará
+PA,São Geraldo do Araguaia
+PA,São João da Ponta
+PA,São João de Pirabas
+PA,São João do Araguaia
+PA,São Miguel do Guamá
+PA,São Sebastião da Boa Vista
+PA,Sapucaia
+PA,Senador José Porfírio
+PA,Soure
+PA,Tailândia
+PA,Terra Alta
+PA,Terra Santa
+PA,Tomé-Açu
+PA,Tracuateua
 PA,Trairão
+PA,Tucumã
+PA,Tucuruí
+PA,Ulianópolis
+PA,Uruará
+PA,Vigia
+PA,Viseu
+PA,Vitória do Xingu
+PA,Xinguara
+PB,Água Branca
+PB,Aguiar
 PB,Alagoa Grande
 PB,Alagoa Nova
-PB,Areia
-PB,Bananeiras
-PB,Borborema
-PB,Matinhas
-PB,Pilões
-PB,Serraria
-PB,Boa Vista
-PB,Campina Grande
-PB,Fagundes
-PB,Lagoa Seca
-PB,Massaranduba
-PB,Puxinanã
-PB,Queimadas
-PB,Serra Redonda
-PB,Algodão de Jandaíra
-PB,Arara
-PB,Barra de Santa Rosa
-PB,Cuité
-PB,Damião
-PB,Nova Floresta
-PB,Olivedos
-PB,Pocinhos
-PB,Remígio
-PB,Soledade
-PB,Sossêgo
-PB,Araruna
-PB,Cacimba de Dentro
-PB,Casserengue
-PB,Dona Inês
-PB,Riachão
-PB,Solânea
-PB,Tacima
-PB,Areial
-PB,Esperança
-PB,Montadas
-PB,São Sebastião de Lagoa de Roça
 PB,Alagoinha
-PB,Araçagi
-PB,Belém
-PB,Caiçara
-PB,Cuitegi
-PB,Duas Estradas
-PB,Guarabira
-PB,Lagoa de Dentro
-PB,Logradouro
-PB,Mulungu
-PB,Pilõezinhos
-PB,Pirpirituba
-PB,Serra da Raiz
-PB,Sertãozinho
-PB,Caldas Brandão
-PB,Gurinhém
-PB,Ingá
-PB,Itabaiana
-PB,Itatuba
-PB,Juarez Távora
-PB,Mogeiro
-PB,Riachão do Bacamarte
-PB,Salgado de São Félix
-PB,Aroeiras
-PB,Gado Bravo
-PB,Natuba
-PB,Santa Cecília
-PB,Umbuzeiro
-PB,Amparo
-PB,Assunção
-PB,Camalaú
-PB,Congo
-PB,Coxixola
-PB,Livramento
-PB,Monteiro
-PB,Ouro Velho
-PB,Parari
-PB,Prata
-PB,São João do Tigre
-PB,São José dos Cordeiros
-PB,São Sebastião do Umbuzeiro
-PB,Serra Branca
-PB,Sumé
-PB,Taperoá
-PB,Zabelê
 PB,Alcantil
+PB,Algodão de Jandaíra
+PB,Alhandra
+PB,Amparo
+PB,Aparecida
+PB,Araçagi
+PB,Arara
+PB,Araruna
+PB,Areia
+PB,Areia de Baraúnas
+PB,Areial
+PB,Aroeiras
+PB,Assunção
+PB,Baía da Traição
+PB,Bananeiras
+PB,Baraúna
+PB,Barra de Santa Rosa
 PB,Barra de Santana
 PB,Barra de São Miguel
-PB,Boqueirão
-PB,Cabaceiras
-PB,Caraúbas
-PB,Caturité
-PB,Gurjão
-PB,Riacho de Santo Antônio
-PB,Santo André
-PB,São Domingos do Cariri
-PB,São João do Cariri
-PB,Junco do Seridó
-PB,Salgadinho
-PB,Santa Luzia
-PB,São José do Sabugi
-PB,São Mamede
-PB,Várzea
-PB,Baraúna
-PB,Cubati
-PB,Frei Martinho
-PB,Juazeirinho
-PB,Nova Palmeira
-PB,Pedra Lavrada
-PB,Picuí
-PB,Seridó
-PB,Tenório
 PB,Bayeux
-PB,Cabedelo
-PB,Conde
-PB,João Pessoa
-PB,Lucena
-PB,Santa Rita
-PB,Baía da Traição
-PB,Capim
-PB,Cuité de Mamanguape
-PB,Curral de Cima
-PB,Itapororoca
-PB,Jacaraú
-PB,Mamanguape
-PB,Marcação
-PB,Mataraca
-PB,Pedro Régis
-PB,Rio Tinto
-PB,Alhandra
-PB,Caaporã
-PB,Pedras de Fogo
-PB,Pitimbu
-PB,Cruz do Espírito Santo
-PB,Juripiranga
-PB,Mari
-PB,Pilar
-PB,Riachão do Poço
-PB,São José dos Ramos
-PB,São Miguel de Taipu
-PB,Sapé
-PB,Sobrado
-PB,Bernardino Batista
-PB,Bom Jesus
-PB,Bonito de Santa Fé
-PB,Cachoeira dos Índios
-PB,Cajazeiras
-PB,Carrapateira
-PB,Joca Claudino
-PB,Monte Horebe
-PB,Poço Dantas
-PB,Poço de José de Moura
-PB,Santa Helena
-PB,São João do Rio do Peixe
-PB,São José de Piranhas
-PB,Triunfo
-PB,Uiraúna
+PB,Belém
 PB,Belém do Brejo do Cruz
+PB,Bernardino Batista
+PB,Boa Ventura
+PB,Boa Vista
+PB,Bom Jesus
 PB,Bom Sucesso
+PB,Bonito de Santa Fé
+PB,Boqueirão
+PB,Borborema
 PB,Brejo do Cruz
 PB,Brejo dos Santos
-PB,Catolé do Rocha
-PB,Jericó
-PB,Lagoa
-PB,Mato Grosso
-PB,Riacho dos Cavalos
-PB,São Bento
-PB,São José do Brejo do Cruz
-PB,Boa Ventura
-PB,Conceição
-PB,Curral Velho
-PB,Diamante
-PB,Ibiara
-PB,Itaporanga
-PB,Pedra Branca
-PB,Santa Inês
-PB,Santana de Mangueira
-PB,São José de Caiana
-PB,Serra Grande
-PB,Areia de Baraúnas
+PB,Caaporã
+PB,Cabaceiras
+PB,Cabedelo
+PB,Cachoeira dos Índios
 PB,Cacimba de Areia
+PB,Cacimba de Dentro
+PB,Cacimbas
+PB,Caiçara
+PB,Cajazeiras
+PB,Cajazeirinhas
+PB,Caldas Brandão
+PB,Camalaú
+PB,Campina Grande
+PB,Capim
+PB,Caraúbas
+PB,Carrapateira
+PB,Casserengue
+PB,Catingueira
+PB,Catolé do Rocha
+PB,Caturité
+PB,Conceição
+PB,Condado
+PB,Conde
+PB,Congo
+PB,Coremas
+PB,Coxixola
+PB,Cruz do Espírito Santo
+PB,Cubati
+PB,Cuité
+PB,Cuité de Mamanguape
+PB,Cuitegi
+PB,Curral de Cima
+PB,Curral Velho
+PB,Damião
+PB,Desterro
+PB,Diamante
+PB,Dona Inês
+PB,Duas Estradas
+PB,Emas
+PB,Esperança
+PB,Fagundes
+PB,Frei Martinho
+PB,Gado Bravo
+PB,Guarabira
+PB,Gurinhém
+PB,Gurjão
+PB,Ibiara
+PB,Igaracy
+PB,Imaculada
+PB,Ingá
+PB,Itabaiana
+PB,Itaporanga
+PB,Itapororoca
+PB,Itatuba
+PB,Jacaraú
+PB,Jericó
+PB,João Pessoa
+PB,Joca Claudino
+PB,Juarez Távora
+PB,Juazeirinho
+PB,Junco do Seridó
+PB,Juripiranga
+PB,Juru
+PB,Lagoa
+PB,Lagoa de Dentro
+PB,Lagoa Seca
+PB,Lastro
+PB,Livramento
+PB,Logradouro
+PB,Lucena
 PB,Mãe d'Água
+PB,Malta
+PB,Mamanguape
+PB,Manaíra
+PB,Marcação
+PB,Mari
+PB,Marizópolis
+PB,Massaranduba
+PB,Mataraca
+PB,Matinhas
+PB,Mato Grosso
+PB,Maturéia
+PB,Mogeiro
+PB,Montadas
+PB,Monte Horebe
+PB,Monteiro
+PB,Mulungu
+PB,Natuba
+PB,Nazarezinho
+PB,Nova Floresta
+PB,Nova Olinda
+PB,Nova Palmeira
+PB,Olho d'Água
+PB,Olivedos
+PB,Ouro Velho
+PB,Parari
 PB,Passagem
 PB,Patos
-PB,Quixabá
-PB,Santa Teresinha
-PB,São José de Espinharas
-PB,São José do Bonfim
-PB,Aguiar
-PB,Catingueira
-PB,Coremas
-PB,Emas
-PB,Igaracy
-PB,Nova Olinda
-PB,Olho d'Água
+PB,Paulista
+PB,Pedra Branca
+PB,Pedra Lavrada
+PB,Pedras de Fogo
+PB,Pedro Régis
 PB,Piancó
-PB,Santana dos Garrotes
-PB,Água Branca
-PB,Cacimbas
-PB,Desterro
-PB,Imaculada
-PB,Juru
-PB,Manaíra
-PB,Maturéia
+PB,Picuí
+PB,Pilar
+PB,Pilões
+PB,Pilõezinhos
+PB,Pirpirituba
+PB,Pitimbu
+PB,Pocinhos
+PB,Poço Dantas
+PB,Poço de José de Moura
+PB,Pombal
+PB,Prata
 PB,Princesa Isabel
+PB,Puxinanã
+PB,Queimadas
+PB,Quixabá
+PB,Remígio
+PB,Riachão
+PB,Riachão do Bacamarte
+PB,Riachão do Poço
+PB,Riacho de Santo Antônio
+PB,Riacho dos Cavalos
+PB,Rio Tinto
+PB,Salgadinho
+PB,Salgado de São Félix
+PB,Santa Cecília
+PB,Santa Cruz
+PB,Santa Helena
+PB,Santa Inês
+PB,Santa Luzia
+PB,Santa Rita
+PB,Santa Teresinha
+PB,Santana de Mangueira
+PB,Santana dos Garrotes
+PB,Santo André
+PB,São Bentinho
+PB,São Bento
+PB,São Domingos
+PB,São Domingos do Cariri
+PB,São Francisco
+PB,São João do Cariri
+PB,São João do Rio do Peixe
+PB,São João do Tigre
+PB,São José da Lagoa Tapada
+PB,São José de Caiana
+PB,São José de Espinharas
+PB,São José de Piranhas
 PB,São José de Princesa
+PB,São José do Bonfim
+PB,São José do Brejo do Cruz
+PB,São José do Sabugi
+PB,São José dos Cordeiros
+PB,São José dos Ramos
+PB,São Mamede
+PB,São Miguel de Taipu
+PB,São Sebastião de Lagoa de Roça
+PB,São Sebastião do Umbuzeiro
+PB,Sapé
+PB,Seridó
+PB,Serra Branca
+PB,Serra da Raiz
+PB,Serra Grande
+PB,Serra Redonda
+PB,Serraria
+PB,Sertãozinho
+PB,Sobrado
+PB,Solânea
+PB,Soledade
+PB,Sossêgo
+PB,Sousa
+PB,Sumé
+PB,Tacima
+PB,Taperoá
 PB,Tavares
 PB,Teixeira
-PB,Aparecida
-PB,Cajazeirinhas
-PB,Condado
-PB,Lastro
-PB,Malta
-PB,Marizópolis
-PB,Nazarezinho
-PB,Paulista
-PB,Pombal
-PB,Santa Cruz
-PB,São Bentinho
-PB,São Domingos
-PB,São Francisco
-PB,São José da Lagoa Tapada
-PB,Sousa
+PB,Tenório
+PB,Triunfo
+PB,Uiraúna
+PB,Umbuzeiro
+PB,Várzea
 PB,Vieirópolis
 PB,Vista Serrana
-PR,Araruna
-PR,Barbosa Ferraz
-PR,Campo Mourão
-PR,Corumbataí do Sul
-PR,Engenheiro Beltrão
-PR,Farol
-PR,Fênix
-PR,Iretama
-PR,Luiziana
-PR,Mamborê
-PR,Peabiru
-PR,Quinta do Sol
-PR,Roncador
-PR,Terra Boa
-PR,Altamira do Paraná
-PR,Boa Esperança
-PR,Campina da Lagoa
-PR,Goioerê
-PR,Janiópolis
-PR,Juranda
-PR,Moreira Sales
-PR,Nova Cantu
-PR,Quarto Centenário
-PR,Rancho Alegre d'Oeste
-PR,Ubiratã
-PR,Arapoti
-PR,Jaguariaíva
-PR,Piraí do Sul
-PR,Sengés
-PR,Carambeí
-PR,Castro
-PR,Palmeira
-PR,Ponta Grossa
-PR,Imbaú
-PR,Ortigueira
-PR,Reserva
-PR,Telêmaco Borba
-PR,Tibagi
-PR,Ventania
-PR,Campina do Simão
-PR,Candói
-PR,Cantagalo
-PR,Espigão Alto do Iguaçu
-PR,Foz do Jordão
-PR,Goioxim
-PR,Guarapuava
-PR,Inácio Martins
-PR,Laranjeiras do Sul
-PR,Marquinho
-PR,Nova Laranjeiras
-PR,Pinhão
-PR,Porto Barreiro
-PR,Quedas do Iguaçu
-PR,Reserva do Iguaçu
-PR,Rio Bonito do Iguaçu
-PR,Turvo
-PR,Virmond
-PR,Clevelândia
-PR,Coronel Domingos Soares
-PR,Honório Serpa
-PR,Mangueirinha
-PR,Palmas
-PR,Boa Ventura de São Roque
-PR,Laranjal
-PR,Mato Rico
-PR,Palmital
-PR,Pitanga
-PR,Santa Maria do Oeste
+PB,Zabelê
+PR,Abatiá
 PR,Adrianópolis
-PR,Cerro Azul
-PR,Doutor Ulysses
-PR,Almirante Tamandaré
-PR,Araucária
-PR,Balsa Nova
-PR,Bocaiuva do Sul
-PR,Campina Grande do Sul
-PR,Campo Largo
-PR,Campo Magro
-PR,Colombo
-PR,Contenda
-PR,Curitiba (State Capital)
-PR,Fazenda Rio Grande
-PR,Itaperuçu
-PR,Mandirituba
-PR,Pinhais
-PR,Piraquara
-PR,Quatro Barras
-PR,Rio Branco do Sul
-PR,São José dos Pinhais
-PR,Tunas do Paraná
-PR,Lapa
-PR,Porto Amazonas
-PR,Antonina
-PR,Guaraqueçaba
-PR,Guaratuba
-PR,Matinhos
-PR,Morretes
-PR,Paranaguá
-PR,Pontal do Paraná
 PR,Agudos do Sul
-PR,Campo do Tenente
-PR,Pien
-PR,Quitandinha
-PR,Rio Negro
-PR,Tijucas do Sul
-PR,Cianorte
-PR,Cidade Gaúcha
-PR,Guaporema
-PR,Indianópolis
-PR,Japurá
-PR,Jussara
-PR,Rondon
-PR,São Manoel do Paraná
-PR,São Tomé
-PR,Tapejara
-PR,Tuneiras do Oeste
-PR,Alto Paraná
-PR,Amaporã
-PR,Cruzeiro do Sul
-PR,Diamante do Norte
-PR,Guairaçá
-PR,Inajá
-PR,Itaúna do Sul
-PR,Jardim Olinda
-PR,Loanda
-PR,Marilena
-PR,Mirador
-PR,Nova Aliança do Ivaí
-PR,Nova Londrina
-PR,Paraíso do Norte
-PR,Paranacity
-PR,Paranapoema
-PR,Paranavaí
-PR,Planaltina do Paraná
-PR,Porto Rico
-PR,Querência do Norte
-PR,Santa Cruz de Monte Castelo
-PR,Santa Isabel do Ivaí
-PR,Santa Mônica
-PR,Santo Antônio do Caiuá
-PR,São Carlos do Ivaí
-PR,São João do Caiuá
-PR,São Pedro do Paraná
-PR,Tamboara
-PR,Terra Rica
+PR,Almirante Tamandaré
+PR,Altamira do Paraná
 PR,Alto Paraíso
+PR,Alto Paraná
 PR,Alto Piquiri
 PR,Altônia
-PR,Brasilândia do Sul
-PR,Cafezal do Sul
-PR,Cruzeiro do Oeste
-PR,Douradina
-PR,Esperança Nova
-PR,Francisco Alves
-PR,Icaraíma
-PR,Iporã
-PR,Ivaté
-PR,Maria Helena
-PR,Mariluz
-PR,Nova Olímpia
-PR,Perobal
-PR,Pérola
-PR,São Jorge do Patrocínio
-PR,Tapira
-PR,Umuarama
-PR,Xambrê
+PR,Alvorada do Sul
+PR,Amaporã
+PR,Ampére
+PR,Anahy
+PR,Andirá
+PR,Ângulo
+PR,Antonina
+PR,Antônio Olinto
 PR,Apucarana
 PR,Arapongas
-PR,Califórnia
-PR,Cambira
-PR,Jandaia do Sul
-PR,Marilândia do Sul
-PR,Mauá da Serra
-PR,Novo Itacolomi
-PR,Sabáudia
-PR,Ângulo
+PR,Arapoti
+PR,Arapuã
+PR,Araruna
+PR,Araucária
+PR,Ariranha do Ivaí
+PR,Assaí
+PR,Assis Chateaubriand
 PR,Astorga
 PR,Atalaia
-PR,Cafeara
-PR,Centenário do Sul
-PR,Colorado
-PR,Flórida
-PR,Guaraci
-PR,Iguaraçu
-PR,Itaguajé
-PR,Jaguapitã
-PR,Lobato
-PR,Lupionópolis
-PR,Mandaguaçu
-PR,Munhoz de Melo
-PR,Nossa Senhora das Graças
-PR,Nova Esperança
-PR,Presidente Castelo Branco
-PR,Santa Fé
-PR,Santa Inês
-PR,Santo Inácio
-PR,Uniflor
+PR,Balsa Nova
+PR,Bandeirantes
+PR,Barbosa Ferraz
+PR,Barra do Jacaré
+PR,Barracão
+PR,Bela Vista da Caroba
+PR,Bela Vista do Paraíso
+PR,Bituruna
+PR,Boa Esperança
+PR,Boa Esperança do Iguaçu
+PR,Boa Ventura de São Roque
+PR,Boa Vista da Aparecida
+PR,Bocaiuva do Sul
+PR,Bom Jesus do Sul
 PR,Bom Sucesso
+PR,Bom Sucesso do Sul
 PR,Borrazópolis
+PR,Braganey
+PR,Brasilândia do Sul
+PR,Cafeara
+PR,Cafelândia
+PR,Cafezal do Sul
+PR,Califórnia
+PR,Cambará
+PR,Cambé
+PR,Cambira
+PR,Campina da Lagoa
+PR,Campina do Simão
+PR,Campina Grande do Sul
+PR,Campo Bonito
+PR,Campo do Tenente
+PR,Campo Largo
+PR,Campo Magro
+PR,Campo Mourão
+PR,Cândido de Abreu
+PR,Candói
+PR,Cantagalo
+PR,Capanema
+PR,Capitão Leônidas Marques
+PR,Carambeí
+PR,Carlópolis
+PR,Cascavel
+PR,Castro
+PR,Catanduvas
+PR,Centenário do Sul
+PR,Cerro Azul
+PR,Céu Azul
+PR,Chopinzinho
+PR,Cianorte
+PR,Cidade Gaúcha
+PR,Clevelândia
+PR,Colombo
+PR,Colorado
+PR,Congonhinhas
+PR,Conselheiro Mairinck
+PR,Contenda
+PR,Corbélia
+PR,Cornélio Procópio
+PR,Coronel Domingos Soares
+PR,Coronel Vivida
+PR,Corumbataí do Sul
+PR,Cruz Machado
+PR,Cruzeiro do Iguaçu
+PR,Cruzeiro do Oeste
+PR,Cruzeiro do Sul
 PR,Cruzmaltina
-PR,Faxinal
-PR,Kaloré
-PR,Marumbi
-PR,Rio Bom
+PR,Curitiba (State Capital)
+PR,Curiúva
+PR,Diamante do Norte
+PR,Diamante do Sul
+PR,Diamante d'Oeste
+PR,Dois Vizinhos
+PR,Douradina
 PR,Doutor Camargo
+PR,Doutor Ulysses
+PR,Enéas Marques
+PR,Engenheiro Beltrão
+PR,Entre Rios do Oeste
+PR,Esperança Nova
+PR,Espigão Alto do Iguaçu
+PR,Farol
+PR,Faxinal
+PR,Fazenda Rio Grande
+PR,Fênix
+PR,Fernandes Pinheiro
+PR,Figueira
+PR,Flor da Serra do Sul
 PR,Floraí
 PR,Floresta
-PR,Itambé
-PR,Ivatuba
-PR,Ourizona
-PR,São Jorge do Ivaí
-PR,Arapuã
-PR,Ariranha do Ivaí
-PR,Cândido de Abreu
-PR,Godoy Moreira
-PR,Grandes Rios
-PR,Ivaiporã
-PR,Jardim Alegre
-PR,Lidianópolis
-PR,Lunardelli
-PR,Manoel Ribas
-PR,Nova Tebas
-PR,Rio Branco do Ivaí
-PR,Rosário do Ivaí
-PR,São João do Ivaí
-PR,São Pedro do Ivaí
-PR,Cambé
-PR,Ibiporã
-PR,Londrina
-PR,Pitangueiras
-PR,Rolândia
-PR,Tamarana
-PR,Mandaguari
-PR,Marialva
-PR,Maringá
-PR,Paiçandu
-PR,Sarandi
-PR,Alvorada do Sul
-PR,Bela Vista do Paraíso
 PR,Florestópolis
-PR,Miraselva
-PR,Porecatu
-PR,Prado Ferreira
-PR,Primeiro de Maio
-PR,Sertanópolis
-PR,Assaí
-PR,Jataizinho
-PR,Nova Santa Bárbara
-PR,Rancho Alegre
-PR,Santa Cecília do Pavão
-PR,São Jerônimo da Serra
-PR,São Sebastião da Amoreira
-PR,Uraí
-PR,Abatiá
-PR,Andirá
-PR,Bandeirantes
-PR,Congonhinhas
-PR,Cornélio Procópio
-PR,Itambaracá
-PR,Leópolis
-PR,Nova América da Colina
-PR,Nova Fátima
-PR,Ribeirão do Pinhal
-PR,Santa Amélia
-PR,Santa Mariana
-PR,Santo Antônio do Paraíso
-PR,Sertaneja
-PR,Conselheiro Mairinck
-PR,Curiúva
-PR,Figueira
-PR,Ibaiti
-PR,Jaboti
-PR,Japira
-PR,Pinhalão
-PR,Sapopema
-PR,Barra do Jacaré
-PR,Cambará
-PR,Jacarezinho
-PR,Jundiaí do Sul
-PR,Ribeirão Claro
-PR,Santo Antônio da Platina
-PR,Carlópolis
-PR,Guapirama
-PR,Joaquim Távora
-PR,Quatiguá
-PR,Salto do Itararé
-PR,Santana do Itararé
-PR,São José da Boa Vista
-PR,Siqueira Campos
-PR,Tomazina
-PR,Wenceslau Braz
-PR,Anahy
-PR,Boa Vista da Aparecida
-PR,Braganey
-PR,Cafelândia
-PR,Campo Bonito
-PR,Capitão Leônidas Marques
-PR,Cascavel
-PR,Catanduvas
-PR,Corbélia
-PR,Diamante do Sul
-PR,Guaraniaçu
-PR,Ibema
-PR,Iguatu
-PR,Lindoeste
-PR,Nova Aurora
-PR,Santa Lúcia
-PR,Santa Tereza do Oeste
-PR,Três Barras do Paraná
-PR,Céu Azul
-PR,Foz do Iguaçu
-PR,Itaipulândia
-PR,Matelândia
-PR,Medianeira
-PR,Missal
-PR,Ramilândia
-PR,Santa Terezinha de Itaipu
-PR,São Miguel do Iguaçu
-PR,Serranópolis do Iguaçu
-PR,Vera Cruz do Oeste
-PR,Assis Chateaubriand
-PR,Diamante d'Oeste
-PR,Entre Rios do Oeste
+PR,Flórida
 PR,Formosa do Oeste
-PR,Guaíra
-PR,Iracema do Oeste
-PR,Jesuítas
-PR,Marechal Cândido Rondon
-PR,Maripá
-PR,Mercedes
-PR,Nova Santa Rosa
-PR,Ouro Verde do Oeste
-PR,Palotina
-PR,Pato Bragado
-PR,Quatro Pontes
-PR,Santa Helena
-PR,São José das Palmeiras
-PR,São Pedro do Iguaçu
-PR,Terra Roxa
-PR,Toledo
-PR,Tupãssi
-PR,Irati
-PR,Mallet
-PR,Rebouças
-PR,Rio Azul
-PR,Fernandes Pinheiro
-PR,Guamiranga
-PR,Imbituva
-PR,Ipiranga
-PR,Ivaí
-PR,Prudentópolis
-PR,Teixeira Soares
-PR,Antônio Olinto
-PR,São João do Triunfo
-PR,São Mateus do Sul
-PR,Bituruna
-PR,Cruz Machado
+PR,Foz do Iguaçu
+PR,Foz do Jordão
+PR,Francisco Alves
+PR,Francisco Beltrão
 PR,General Carneiro
+PR,Godoy Moreira
+PR,Goioerê
+PR,Goioxim
+PR,Grandes Rios
+PR,Guaíra
+PR,Guairaçá
+PR,Guamiranga
+PR,Guapirama
+PR,Guaporema
+PR,Guaraci
+PR,Guaraniaçu
+PR,Guarapuava
+PR,Guaraqueçaba
+PR,Guaratuba
+PR,Honório Serpa
+PR,Ibaiti
+PR,Ibema
+PR,Ibiporã
+PR,Icaraíma
+PR,Iguaraçu
+PR,Iguatu
+PR,Imbaú
+PR,Imbituva
+PR,Inácio Martins
+PR,Inajá
+PR,Indianópolis
+PR,Ipiranga
+PR,Iporã
+PR,Iracema do Oeste
+PR,Irati
+PR,Iretama
+PR,Itaguajé
+PR,Itaipulândia
+PR,Itambaracá
+PR,Itambé
+PR,Itapejara d'Oeste
+PR,Itaperuçu
+PR,Itaúna do Sul
+PR,Ivaí
+PR,Ivaiporã
+PR,Ivaté
+PR,Ivatuba
+PR,Jaboti
+PR,Jacarezinho
+PR,Jaguapitã
+PR,Jaguariaíva
+PR,Jandaia do Sul
+PR,Janiópolis
+PR,Japira
+PR,Japurá
+PR,Jardim Alegre
+PR,Jardim Olinda
+PR,Jataizinho
+PR,Jesuítas
+PR,Joaquim Távora
+PR,Jundiaí do Sul
+PR,Juranda
+PR,Jussara
+PR,Kaloré
+PR,Lapa
+PR,Laranjal
+PR,Laranjeiras do Sul
+PR,Leópolis
+PR,Lidianópolis
+PR,Lindoeste
+PR,Loanda
+PR,Lobato
+PR,Londrina
+PR,Luiziana
+PR,Lunardelli
+PR,Lupionópolis
+PR,Mallet
+PR,Mamborê
+PR,Mandaguaçu
+PR,Mandaguari
+PR,Mandirituba
+PR,Manfrinópolis
+PR,Mangueirinha
+PR,Manoel Ribas
+PR,Marechal Cândido Rondon
+PR,Maria Helena
+PR,Marialva
+PR,Marilândia do Sul
+PR,Marilena
+PR,Mariluz
+PR,Maringá
+PR,Mariópolis
+PR,Maripá
+PR,Marmeleiro
+PR,Marquinho
+PR,Marumbi
+PR,Matelândia
+PR,Matinhos
+PR,Mato Rico
+PR,Mauá da Serra
+PR,Medianeira
+PR,Mercedes
+PR,Mirador
+PR,Miraselva
+PR,Missal
+PR,Moreira Sales
+PR,Morretes
+PR,Munhoz de Melo
+PR,Nossa Senhora das Graças
+PR,Nova Aliança do Ivaí
+PR,Nova América da Colina
+PR,Nova Aurora
+PR,Nova Cantu
+PR,Nova Esperança
+PR,Nova Esperança do Sudoeste
+PR,Nova Fátima
+PR,Nova Laranjeiras
+PR,Nova Londrina
+PR,Nova Olímpia
+PR,Nova Prata do Iguaçu
+PR,Nova Santa Bárbara
+PR,Nova Santa Rosa
+PR,Nova Tebas
+PR,Novo Itacolomi
+PR,Ortigueira
+PR,Ourizona
+PR,Ouro Verde do Oeste
+PR,Paiçandu
+PR,Palmas
+PR,Palmeira
+PR,Palmital
+PR,Palotina
+PR,Paraíso do Norte
+PR,Paranacity
+PR,Paranaguá
+PR,Paranapoema
+PR,Paranavaí
+PR,Pato Bragado
+PR,Pato Branco
 PR,Paula Freitas
 PR,Paulo Frontin
-PR,Porto Vitória
-PR,União da Vitória
-PR,Ampére
-PR,Bela Vista da Caroba
-PR,Capanema
+PR,Peabiru
+PR,Perobal
+PR,Pérola
 PR,Pérola d'Oeste
-PR,Planalto
-PR,Pranchita
-PR,Realeza
-PR,Santa Izabel do Oeste
-PR,Barracão
-PR,Boa Esperança do Iguaçu
-PR,Bom Jesus do Sul
-PR,Cruzeiro do Iguaçu
-PR,Dois Vizinhos
-PR,Enéas Marques
-PR,Flor da Serra do Sul
-PR,Francisco Beltrão
-PR,Manfrinópolis
-PR,Marmeleiro
-PR,Nova Esperança do Sudoeste
-PR,Nova Prata do Iguaçu
+PR,Pien
+PR,Pinhais
 PR,Pinhal de São Bento
+PR,Pinhalão
+PR,Pinhão
+PR,Piraí do Sul
+PR,Piraquara
+PR,Pitanga
+PR,Pitangueiras
+PR,Planaltina do Paraná
+PR,Planalto
+PR,Ponta Grossa
+PR,Pontal do Paraná
+PR,Porecatu
+PR,Porto Amazonas
+PR,Porto Barreiro
+PR,Porto Rico
+PR,Porto Vitória
+PR,Prado Ferreira
+PR,Pranchita
+PR,Presidente Castelo Branco
+PR,Primeiro de Maio
+PR,Prudentópolis
+PR,Quarto Centenário
+PR,Quatiguá
+PR,Quatro Barras
+PR,Quatro Pontes
+PR,Quedas do Iguaçu
+PR,Querência do Norte
+PR,Quinta do Sol
+PR,Quitandinha
+PR,Ramilândia
+PR,Rancho Alegre
+PR,Rancho Alegre d'Oeste
+PR,Realeza
+PR,Rebouças
 PR,Renascença
+PR,Reserva
+PR,Reserva do Iguaçu
+PR,Ribeirão Claro
+PR,Ribeirão do Pinhal
+PR,Rio Azul
+PR,Rio Bom
+PR,Rio Bonito do Iguaçu
+PR,Rio Branco do Ivaí
+PR,Rio Branco do Sul
+PR,Rio Negro
+PR,Rolândia
+PR,Roncador
+PR,Rondon
+PR,Rosário do Ivaí
+PR,Sabáudia
 PR,Salgado Filho
+PR,Salto do Itararé
 PR,Salto do Lontra
+PR,Santa Amélia
+PR,Santa Cecília do Pavão
+PR,Santa Cruz de Monte Castelo
+PR,Santa Fé
+PR,Santa Helena
+PR,Santa Inês
+PR,Santa Isabel do Ivaí
+PR,Santa Izabel do Oeste
+PR,Santa Lúcia
+PR,Santa Maria do Oeste
+PR,Santa Mariana
+PR,Santa Mônica
+PR,Santa Tereza do Oeste
+PR,Santa Terezinha de Itaipu
+PR,Santana do Itararé
+PR,Santo Antônio da Platina
+PR,Santo Antônio do Caiuá
+PR,Santo Antônio do Paraíso
 PR,Santo Antônio do Sudoeste
-PR,São Jorge d'Oeste
-PR,Verê
-PR,Bom Sucesso do Sul
-PR,Chopinzinho
-PR,Coronel Vivida
-PR,Itapejara d'Oeste
-PR,Mariópolis
-PR,Pato Branco
+PR,Santo Inácio
+PR,São Carlos do Ivaí
+PR,São Jerônimo da Serra
 PR,São João
+PR,São João do Caiuá
+PR,São João do Ivaí
+PR,São João do Triunfo
+PR,São Jorge do Ivaí
+PR,São Jorge do Patrocínio
+PR,São Jorge d'Oeste
+PR,São José da Boa Vista
+PR,São José das Palmeiras
+PR,São José dos Pinhais
+PR,São Manoel do Paraná
+PR,São Mateus do Sul
+PR,São Miguel do Iguaçu
+PR,São Pedro do Iguaçu
+PR,São Pedro do Ivaí
+PR,São Pedro do Paraná
+PR,São Sebastião da Amoreira
+PR,São Tomé
+PR,Sapopema
+PR,Sarandi
 PR,Saudade do Iguaçu
+PR,Sengés
+PR,Serranópolis do Iguaçu
+PR,Sertaneja
+PR,Sertanópolis
+PR,Siqueira Campos
 PR,Sulina
+PR,Tamarana
+PR,Tamboara
+PR,Tapejara
+PR,Tapira
+PR,Teixeira Soares
+PR,Telêmaco Borba
+PR,Terra Boa
+PR,Terra Rica
+PR,Terra Roxa
+PR,Tibagi
+PR,Tijucas do Sul
+PR,Toledo
+PR,Tomazina
+PR,Três Barras do Paraná
+PR,Tunas do Paraná
+PR,Tuneiras do Oeste
+PR,Tupãssi
+PR,Turvo
+PR,Ubiratã
+PR,Umuarama
+PR,União da Vitória
+PR,Uniflor
+PR,Uraí
+PR,Ventania
+PR,Vera Cruz do Oeste
+PR,Verê
+PR,Virmond
 PR,Vitorino
-PE,Casinhas
-PE,Frei Miguelinho
-PE,Santa Cruz do Capibaribe
-PE,Santa Maria do Cambucá
-PE,Surubim
-PE,Taquaritinga do Norte
-PE,Toritama
-PE,Vertente do Lério
-PE,Vertentes
+PR,Wenceslau Braz
+PR,Xambrê
+PE,Abreu e Lima
+PE,Afogados da Ingazeira
+PE,Afrânio
 PE,Agrestina
+PE,Água Preta
+PE,Águas Belas
+PE,Alagoinha
+PE,Aliança
 PE,Altinho
-PE,Barra de Guabiraba
-PE,Bonito
-PE,Camocim de São Félix
-PE,Cupira
-PE,Ibirajuba
-PE,Lagoa dos Gatos
-PE,Panelas
-PE,Sairé
-PE,São Joaquim do Monte
+PE,Amaraji
 PE,Angelim
+PE,Araçoiaba
+PE,Araripina
+PE,Arcoverde
+PE,Barra de Guabiraba
+PE,Barreiros
+PE,Belém de Maria
+PE,Belém de São Francisco
+PE,Belo Jardim
+PE,Betânia
+PE,Bezerros
+PE,Bodocó
 PE,Bom Conselho
+PE,Bom Jardim
+PE,Bonito
 PE,Brejão
+PE,Brejinho
+PE,Brejo da Madre de Deus
+PE,Buenos Aires
+PE,Buíque
+PE,Cabo de Santo Agostinho
+PE,Cabrobó
+PE,Cachoeirinha
 PE,Caetés
 PE,Calçado
+PE,Calumbi
+PE,Camaragibe
+PE,Camocim de São Félix
+PE,Camutanga
 PE,Canhotinho
+PE,Capoeiras
+PE,Carnaíba
+PE,Carnaubeira da Penha
+PE,Carpina
+PE,Caruaru
+PE,Casinhas
+PE,Catende
+PE,Cedro
+PE,Chã de Alegria
+PE,Chã Grande
+PE,Condado
 PE,Correntes
+PE,Cortês
+PE,Cumaru
+PE,Cupira
+PE,Custódia
+PE,Dormentes
+PE,Escada
+PE,Exu
+PE,Feira Nova
+PE,Fernando de Noronha
+PE,Ferreiros
+PE,Flores
+PE,Floresta
+PE,Frei Miguelinho
+PE,Gameleira
 PE,Garanhuns
+PE,Glória do Goitá
+PE,Goiana
+PE,Granito
+PE,Gravatá
 PE,Iati
+PE,Ibimirim
+PE,Ibirajuba
+PE,Igarassu
+PE,Iguaraci
+PE,Ilha de Itamaracá
+PE,Inajá
+PE,Ingazeira
+PE,Ipojuca
+PE,Ipubi
+PE,Itacuruba
+PE,Itaíba
+PE,Itambé
+PE,Itapetim
+PE,Itapissuma
+PE,Itaquitinga
+PE,Jaboatão dos Guararapes
+PE,Jaqueira
+PE,Jataúba
+PE,Jatobá
+PE,João Alfredo
+PE,Joaquim Nabuco
 PE,Jucati
 PE,Jupi
 PE,Jurema
+PE,Lagoa de Itaenga
+PE,Lagoa do Carro
 PE,Lagoa do Ouro
+PE,Lagoa dos Gatos
+PE,Lagoa Grande
 PE,Lajedo
-PE,Palmeirina
-PE,Paranatama
-PE,Saloá
-PE,São João
-PE,Terezinha
-PE,Bom Jardim
-PE,Cumaru
-PE,Feira Nova
-PE,João Alfredo
 PE,Limoeiro
+PE,Macaparana
 PE,Machados
-PE,Orobó
-PE,Passira
-PE,Salgadinho
-PE,São Vicente Ferrer
-PE,Águas Belas
-PE,Buíque
-PE,Itaíba
-PE,Pedra
-PE,Tupanatinga
-PE,Venturosa
-PE,Alagoinha
-PE,Belo Jardim
-PE,Bezerros
-PE,Brejo da Madre de Deus
-PE,Cachoeirinha
-PE,Capoeiras
-PE,Caruaru
-PE,Gravatá
-PE,Jataúba
-PE,Pesqueira
-PE,Poção
-PE,Riacho das Almas
-PE,Sanharó
-PE,São Bento do Una
-PE,São Caetano
-PE,Tacaimbó
-PE,Água Preta
-PE,Amaraji
-PE,Barreiros
-PE,Belém de Maria
-PE,Catende
-PE,Cortês
-PE,Escada
-PE,Gameleira
-PE,Jaqueira
-PE,Joaquim Nabuco
+PE,Manari
 PE,Maraial
+PE,Mirandiba
+PE,Moreilândia
+PE,Moreno
+PE,Nazaré da Mata
+PE,Olinda
+PE,Orobó
+PE,Orocó
+PE,Ouricuri
 PE,Palmares
+PE,Palmeirina
+PE,Panelas
+PE,Paranatama
+PE,Parnamirim
+PE,Passira
+PE,Paudalho
+PE,Paulista
+PE,Pedra
+PE,Pesqueira
+PE,Petrolândia
+PE,Petrolina
+PE,Poção
+PE,Pombos
 PE,Primavera
 PE,Quipapá
+PE,Quixaba
+PE,Recife (State Capital)
+PE,Riacho das Almas
 PE,Ribeirão
 PE,Rio Formoso
-PE,São Benedito do Sul
-PE,São José da Coroa Grande
-PE,Sirinhaém
-PE,Tamandaré
-PE,Xexéu
-PE,Aliança
-PE,Buenos Aires
-PE,Camutanga
-PE,Carpina
-PE,Condado
-PE,Ferreiros
-PE,Goiana
-PE,Itambé
-PE,Itaquitinga
-PE,Lagoa do Carro
-PE,Lagoa de Itaenga
-PE,Macaparana
-PE,Nazaré da Mata
-PE,Paudalho
-PE,Timbaúba
-PE,Tracunhaém
-PE,Vicência
-PE,Chã de Alegria
-PE,Chã Grande
-PE,Glória do Goitá
-PE,Pombos
-PE,Vitória de Santo Antão
-PE,Fernando de Noronha
-PE,Araçoiaba
-PE,Igarassu
-PE,Ilha de Itamaracá
-PE,Itapissuma
-PE,Abreu e Lima
-PE,Camaragibe
-PE,Jaboatão dos Guararapes
-PE,Moreno
-PE,Olinda
-PE,Paulista
-PE,Recife (State Capital)
-PE,São Lourenço da Mata
-PE,Cabo de Santo Agostinho
-PE,Ipojuca
-PE,Belém de São Francisco
-PE,Carnaubeira da Penha
-PE,Floresta
-PE,Itacuruba
-PE,Jatobá
-PE,Petrolândia
-PE,Tacaratu
-PE,Afrânio
-PE,Cabrobó
-PE,Dormentes
-PE,Lagoa Grande
-PE,Orocó
-PE,Petrolina
-PE,Santa Maria da Boa Vista
-PE,Terra Nova
-PE,Araripina
-PE,Bodocó
-PE,Exu
-PE,Granito
-PE,Ipubi
-PE,Moreilândia
-PE,Ouricuri
-PE,Santa Cruz
-PE,Santa Filomena
-PE,Trindade
-PE,Afogados da Ingazeira
-PE,Brejinho
-PE,Calumbi
-PE,Carnaíba
-PE,Flores
-PE,Iguaraci
-PE,Ingazeira
-PE,Itapetim
-PE,Quixaba
-PE,Santa Cruz da Baixa Verde
-PE,Santa Terezinha
-PE,São José do Egito
-PE,Serra Talhada
-PE,Solidão
-PE,Tabira
-PE,Triunfo
-PE,Tuparetama
-PE,Cedro
-PE,Mirandiba
-PE,Parnamirim
+PE,Sairé
+PE,Salgadinho
 PE,Salgueiro
+PE,Saloá
+PE,Sanharó
+PE,Santa Cruz
+PE,Santa Cruz da Baixa Verde
+PE,Santa Cruz do Capibaribe
+PE,Santa Filomena
+PE,Santa Maria da Boa Vista
+PE,Santa Maria do Cambucá
+PE,Santa Terezinha
+PE,São Benedito do Sul
+PE,São Bento do Una
+PE,São Caetano
+PE,São João
+PE,São Joaquim do Monte
+PE,São José da Coroa Grande
 PE,São José do Belmonte
+PE,São José do Egito
+PE,São Lourenço da Mata
+PE,São Vicente Ferrer
+PE,Serra Talhada
 PE,Serrita
-PE,Verdejante
-PE,Arcoverde
-PE,Betânia
-PE,Custódia
-PE,Ibimirim
-PE,Inajá
-PE,Manari
 PE,Sertânia
-PI,Alto Longá
-PI,Assunção do Piauí
-PI,Boqueirão do Piauí
-PI,Buriti dos Montes
-PI,Campo Maior
-PI,Capitão de Campos
-PI,Castelo do Piauí
-PI,Cocal de Telha
-PI,Domingos Mourão
-PI,Jatobá do Piauí
-PI,Juazeiro do Piauí
-PI,Lagoa de São Francisco
-PI,Milton Brandão
-PI,Nossa Senhora de Nazaré
-PI,Novo Santo Antônio
-PI,Pau d'Arco do Piauí
-PI,Pedro II
-PI,São João da Serra
-PI,São Miguel do Tapuio
-PI,Sigefredo Pacheco
+PE,Sirinhaém
+PE,Solidão
+PE,Surubim
+PE,Tabira
+PE,Tacaimbó
+PE,Tacaratu
+PE,Tamandaré
+PE,Taquaritinga do Norte
+PE,Terezinha
+PE,Terra Nova
+PE,Timbaúba
+PE,Toritama
+PE,Tracunhaém
+PE,Trindade
+PE,Triunfo
+PE,Tupanatinga
+PE,Tuparetama
+PE,Venturosa
+PE,Verdejante
+PE,Vertente do Lério
+PE,Vertentes
+PE,Vicência
+PE,Vitória de Santo Antão
+PE,Xexéu
+PI,Acauã
 PI,Agricolândia
 PI,Água Branca
+PI,Alagoinha do Piauí
+PI,Alegrete do Piauí
+PI,Alto Longá
+PI,Altos
+PI,Alvorada do Gurguéia
 PI,Amarante
 PI,Angical do Piauí
-PI,Arraial
-PI,Barro Duro
-PI,Francisco Ayres
-PI,Hugo Napoleão
-PI,Jardim do Mulato
-PI,Lagoinha do Piauí
-PI,Olho d'Água do Piauí
-PI,Palmeirais
-PI,Passagem Franca do Piauí
-PI,Regeneração
-PI,Santo Antônio dos Milagres
-PI,São Gonçalo do Piauí
-PI,São Pedro do Piauí
-PI,Altos
-PI,Beneditinos
-PI,Coivaras
-PI,Curralinhos
-PI,Demerval Lobão
-PI,José de Freitas
-PI,Lagoa Alegre
-PI,Lagoa do Piauí
-PI,Miguel Leão
-PI,Monsenhor Gil
-PI,Nazária
-PI,Teresina (State Capital)
-PI,União
+PI,Anísio de Abreu
+PI,Antônio Almeida
 PI,Aroazes
+PI,Aroeiras do Itaim
+PI,Arraial
+PI,Assunção do Piauí
+PI,Avelino Lopes
+PI,Baixa Grande do Ribeiro
 PI,Barra d'Alcântara
-PI,Elesbão Veloso
-PI,Francinópolis
-PI,Inhuma
-PI,Lagoa do Sítio
-PI,Novo Oriente do Piauí
-PI,Pimenteiras
-PI,Prata do Piauí
-PI,Santa Cruz dos Milagres
-PI,São Félix do Piauí
-PI,São Miguel da Baixa Grande
-PI,Valença do Piauí
-PI,Várzea Grande
 PI,Barras
+PI,Barreiras do Piauí
+PI,Barro Duro
 PI,Batalha
-PI,Boa Hora
-PI,Brasileira
-PI,Cabeceiras do Piauí
-PI,Campo Largo do Piauí
-PI,Esperantina
-PI,Joaquim Pires
-PI,Joca Marques
-PI,Luzilândia
-PI,Madeiro
-PI,Matias Olímpio
-PI,Miguel Alves
-PI,Morro do Chapéu do Piauí
-PI,Nossa Senhora dos Remédios
-PI,Piripiri
-PI,Porto
-PI,São João do Arraial
-PI,Bom Princípio do Piauí
-PI,Buriti dos Lopes
-PI,Cajueiro da Praia
-PI,Caraúbas do Piauí
-PI,Caxingó
-PI,Cocal
-PI,Cocal dos Alves
-PI,Ilha Grande
-PI,Luís Correia
-PI,Murici dos Portelas
-PI,Parnaíba
-PI,Piracuruca
-PI,São João da Fronteira
-PI,São José do Divino
-PI,Acauã
 PI,Bela Vista do Piauí
 PI,Belém do Piauí
+PI,Beneditinos
+PI,Bertolínia
 PI,Betânia do Piauí
+PI,Boa Hora
+PI,Bocaina
+PI,Bom Jesus
+PI,Bom Princípio do Piauí
+PI,Bonfim do Piauí
+PI,Boqueirão do Piauí
+PI,Brasileira
+PI,Brejo do Piauí
+PI,Buriti dos Lopes
+PI,Buriti dos Montes
+PI,Cabeceiras do Piauí
+PI,Cajazeiras do Piauí
+PI,Cajueiro da Praia
 PI,Caldeirão Grande do Piauí
 PI,Campinas do Piauí
 PI,Campo Alegre do Fidalgo
 PI,Campo Grande do Piauí
+PI,Campo Largo do Piauí
+PI,Campo Maior
+PI,Canavieira
+PI,Canto do Buriti
+PI,Capitão de Campos
 PI,Capitão Gervásio Oliveira
+PI,Caracol
+PI,Caraúbas do Piauí
 PI,Caridade do Piauí
+PI,Castelo do Piauí
+PI,Caxingó
+PI,Cocal
+PI,Cocal de Telha
+PI,Cocal dos Alves
+PI,Coivaras
+PI,Colônia do Gurguéia
+PI,Colônia do Piauí
 PI,Conceição do Canindé
+PI,Coronel José Dias
+PI,Corrente
+PI,Cristalândia do Piauí
+PI,Cristino Castro
+PI,Curimatá
+PI,Currais
 PI,Curral Novo do Piauí
+PI,Curralinhos
+PI,Demerval Lobão
+PI,Dirceu Arcoverde
+PI,Dom Expedito Lopes
+PI,Dom Inocêncio
+PI,Domingos Mourão
+PI,Elesbão Veloso
+PI,Eliseu Martins
+PI,Esperantina
+PI,Fartura do Piauí
+PI,Flores do Piauí
 PI,Floresta do Piauí
+PI,Floriano
+PI,Francinópolis
+PI,Francisco Ayres
 PI,Francisco Macêdo
+PI,Francisco Santos
 PI,Fronteiras
+PI,Geminiano
+PI,Gilbués
+PI,Guadalupe
+PI,Guaribas
+PI,Hugo Napoleão
+PI,Ilha Grande
+PI,Inhuma
+PI,Ipiranga do Piauí
 PI,Isaías Coelho
 PI,Itainópolis
+PI,Itaueira
 PI,Jacobina do Piauí
 PI,Jaicós
+PI,Jardim do Mulato
+PI,Jatobá do Piauí
+PI,Jerumenha
 PI,João Costa
+PI,Joaquim Pires
+PI,Joca Marques
+PI,José de Freitas
+PI,Juazeiro do Piauí
+PI,Júlio Borges
+PI,Jurema
+PI,Lagoa Alegre
+PI,Lagoa de São Francisco
 PI,Lagoa do Barro do Piauí
+PI,Lagoa do Piauí
+PI,Lagoa do Sítio
+PI,Lagoinha do Piauí
+PI,Landri Sales
+PI,Luís Correia
+PI,Luzilândia
+PI,Madeiro
+PI,Manoel Emídio
 PI,Marcolândia
+PI,Marcos Parente
 PI,Massapê do Piauí
+PI,Matias Olímpio
+PI,Miguel Alves
+PI,Miguel Leão
+PI,Milton Brandão
+PI,Monsenhor Gil
+PI,Monsenhor Hipólito
+PI,Monte Alegre do Piauí
+PI,Morro Cabeça no Tempo
+PI,Morro do Chapéu do Piauí
+PI,Murici dos Portelas
+PI,Nazaré do Piauí
+PI,Nazária
+PI,Nossa Senhora de Nazaré
+PI,Nossa Senhora dos Remédios
 PI,Nova Santa Rita
+PI,Novo Oriente do Piauí
+PI,Novo Santo Antônio
+PI,Oeiras
+PI,Olho d'Água do Piauí
 PI,Padre Marcos
 PI,Paes Landim
+PI,Pajeú do Piauí
+PI,Palmeira do Piauí
+PI,Palmeirais
+PI,Paquetá
+PI,Parnaguá
+PI,Parnaíba
+PI,Passagem Franca do Piauí
 PI,Patos do Piauí
+PI,Pau d'Arco do Piauí
 PI,Paulistana
+PI,Pavussu
+PI,Pedro II
 PI,Pedro Laurentino
+PI,Picos
+PI,Pimenteiras
+PI,Pio IX
+PI,Piracuruca
+PI,Piripiri
+PI,Porto
+PI,Porto Alegre do Piauí
+PI,Prata do Piauí
 PI,Queimada Nova
+PI,Redenção do Gurguéia
+PI,Regeneração
+PI,Riacho Frio
 PI,Ribeira do Piauí
+PI,Ribeiro Gonçalves
+PI,Rio Grande do Piauí
+PI,Santa Cruz do Piauí
+PI,Santa Cruz dos Milagres
+PI,Santa Filomena
+PI,Santa Luz
+PI,Santa Rosa do Piauí
+PI,Santana do Piauí
+PI,Santo Antônio de Lisboa
+PI,Santo Antônio dos Milagres
 PI,Santo Inácio do Piauí
+PI,São Braz do Piauí
+PI,São Félix do Piauí
 PI,São Francisco de Assis do Piauí
+PI,São Francisco do Piauí
+PI,São Gonçalo do Gurguéia
+PI,São Gonçalo do Piauí
+PI,São João da Canabrava
+PI,São João da Fronteira
+PI,São João da Serra
+PI,São João da Varjota
+PI,São João do Arraial
 PI,São João do Piauí
+PI,São José do Divino
+PI,São José do Peixe
+PI,São José do Piauí
+PI,São Julião
+PI,São Lourenço do Piauí
+PI,São Luís do Piauí
+PI,São Miguel da Baixa Grande
+PI,São Miguel do Fidalgo
+PI,São Miguel do Tapuio
+PI,São Pedro do Piauí
+PI,São Raimundo Nonato
+PI,Sebastião Barros
+PI,Sebastião Leal
+PI,Sigefredo Pacheco
 PI,Simões
 PI,Simplício Mendes
 PI,Socorro do Piauí
+PI,Sussuapara
+PI,Tamboril do Piauí
+PI,Tanque do Piauí
+PI,Teresina (State Capital)
+PI,União
+PI,Uruçuí
+PI,Valença do Piauí
+PI,Várzea Branca
+PI,Várzea Grande
 PI,Vera Mendes
 PI,Vila Nova do Piauí
-PI,Aroeiras do Itaim
-PI,Bocaina
-PI,Cajazeiras do Piauí
-PI,Colônia do Piauí
-PI,Dom Expedito Lopes
-PI,Geminiano
-PI,Ipiranga do Piauí
-PI,Oeiras
-PI,Paquetá
-PI,Picos
-PI,Santa Cruz do Piauí
-PI,Santa Rosa do Piauí
-PI,Santana do Piauí
-PI,São João da Canabrava
-PI,São João da Varjota
-PI,São José do Piauí
-PI,São Luís do Piauí
-PI,Sussuapara
-PI,Tanque do Piauí
 PI,Wall Ferraz
-PI,Alagoinha do Piauí
-PI,Alegrete do Piauí
-PI,Francisco Santos
-PI,Monsenhor Hipólito
-PI,Pio IX
-PI,Santo Antônio de Lisboa
-PI,São Julião
-PI,Alvorada do Gurguéia
-PI,Barreiras do Piauí
-PI,Bom Jesus
-PI,Cristino Castro
-PI,Currais
-PI,Gilbués
-PI,Monte Alegre do Piauí
-PI,Palmeira do Piauí
-PI,Redenção do Gurguéia
-PI,Santa Luz
-PI,São Gonçalo do Gurguéia
-PI,Baixa Grande do Ribeiro
-PI,Ribeiro Gonçalves
-PI,Santa Filomena
-PI,Uruçuí
-PI,Antônio Almeida
-PI,Bertolínia
-PI,Colônia do Gurguéia
-PI,Eliseu Martins
-PI,Landri Sales
-PI,Manoel Emídio
-PI,Marcos Parente
-PI,Porto Alegre do Piauí
-PI,Sebastião Leal
-PI,Avelino Lopes
-PI,Corrente
-PI,Cristalândia do Piauí
-PI,Curimatá
-PI,Júlio Borges
-PI,Morro Cabeça no Tempo
-PI,Parnaguá
-PI,Riacho Frio
-PI,Sebastião Barros
-PI,Canavieira
-PI,Flores do Piauí
-PI,Floriano
-PI,Guadalupe
-PI,Itaueira
-PI,Jerumenha
-PI,Nazaré do Piauí
-PI,Pavussu
-PI,Rio Grande do Piauí
-PI,São Francisco do Piauí
-PI,São José do Peixe
-PI,São Miguel do Fidalgo
-PI,Anísio de Abreu
-PI,Bonfim do Piauí
-PI,Brejo do Piauí
-PI,Canto do Buriti
-PI,Caracol
-PI,Coronel José Dias
-PI,Dirceu Arcoverde
-PI,Dom Inocêncio
-PI,Fartura do Piauí
-PI,Guaribas
-PI,Jurema
-PI,Pajeú do Piauí
-PI,São Braz do Piauí
-PI,São Lourenço do Piauí
-PI,São Raimundo Nonato
-PI,Tamboril do Piauí
-PI,Várzea Branca
-RJ,Casimiro de Abreu
-RJ,Rio das Ostras
-RJ,Silva Jardim
+RJ,Angra dos Reis
+RJ,Aperibé
 RJ,Araruama
+RJ,Areal
 RJ,Armação dos Búzios
 RJ,Arraial do Cabo
-RJ,Cabo Frio
-RJ,Iguaba Grande
-RJ,São Pedro da Aldeia
-RJ,Saquarema
-RJ,Cantagalo
-RJ,Carmo
-RJ,Cordeiro
-RJ,Macuco
-RJ,Bom Jardim
-RJ,Duas Barras
-RJ,Nova Friburgo
-RJ,Sumidouro
-RJ,Santa Maria Madalena
-RJ,São Sebastião do Alto
-RJ,Trajano de Morais
-RJ,Areal
-RJ,Comendador Levy Gasparian
-RJ,Paraíba do Sul
-RJ,Sapucaia
-RJ,Três Rios
-RJ,Itaguaí
-RJ,Mangaratiba
-RJ,Seropédica
-RJ,Cachoeiras de Macacu
-RJ,Rio Bonito
+RJ,Barra do Piraí
+RJ,Barra Mansa
 RJ,Belford Roxo
+RJ,Bom Jardim
+RJ,Bom Jesus do Itabapoana
+RJ,Cabo Frio
+RJ,Cachoeiras de Macacu
+RJ,Cambuci
+RJ,Campos dos Goytacazes
+RJ,Cantagalo
+RJ,Carapebus
+RJ,Cardoso Moreira
+RJ,Carmo
+RJ,Casimiro de Abreu
+RJ,Comendador Levy Gasparian
+RJ,Conceição de Macabu
+RJ,Cordeiro
+RJ,Duas Barras
 RJ,Duque de Caxias
+RJ,Engenheiro Paulo de Frontin
 RJ,Guapimirim
+RJ,Iguaba Grande
 RJ,Itaboraí
+RJ,Itaguaí
+RJ,Italva
+RJ,Itaocara
+RJ,Itaperuna
+RJ,Itatiaia
 RJ,Japeri
+RJ,Laje do Muriaé
+RJ,Macaé
+RJ,Macuco
 RJ,Magé
+RJ,Mangaratiba
 RJ,Maricá
+RJ,Mendes
+RJ,Mesquita
+RJ,Miguel Pereira
+RJ,Miracema
+RJ,Natividade
 RJ,Nilópolis
 RJ,Niterói
-RJ,Mesquita
+RJ,Nova Friburgo
 RJ,Nova Iguaçu
-RJ,Queimados
-RJ,Rio de Janeiro (State Capital)
-RJ,São Gonçalo
-RJ,São João de Meriti
-RJ,Tanguá
-RJ,Petrópolis
-RJ,São José do Vale do Rio Preto
-RJ,Teresópolis
-RJ,Engenheiro Paulo de Frontin
-RJ,Mendes
-RJ,Miguel Pereira
 RJ,Paracambi
-RJ,Paty do Alferes
-RJ,Vassouras
-RJ,Bom Jesus do Itabapoana
-RJ,Italva
-RJ,Itaperuna
-RJ,Laje do Muriaé
-RJ,Natividade
-RJ,Porciúncula
-RJ,Varre-Sai
-RJ,Aperibé
-RJ,Cambuci
-RJ,Itaocara
-RJ,Miracema
-RJ,Santo Antônio de Pádua
-RJ,São José de Ubá
-RJ,Campos dos Goytacazes
-RJ,Cardoso Moreira
-RJ,São Fidélis
-RJ,São Francisco de Itabapoana
-RJ,São João da Barra
-RJ,Carapebus
-RJ,Conceição de Macabu
-RJ,Macaé
-RJ,Quissamã
-RJ,Angra dos Reis
+RJ,Paraíba do Sul
 RJ,Paraty
-RJ,Barra do Piraí
-RJ,Rio das Flores
-RJ,Valença
-RJ,Barra Mansa
-RJ,Itatiaia
+RJ,Paty do Alferes
+RJ,Petrópolis
 RJ,Pinheiral
 RJ,Piraí
+RJ,Porciúncula
 RJ,Porto Real
 RJ,Quatis
+RJ,Queimados
+RJ,Quissamã
 RJ,Resende
+RJ,Rio Bonito
 RJ,Rio Claro
+RJ,Rio das Flores
+RJ,Rio das Ostras
+RJ,Rio de Janeiro (State Capital)
+RJ,Santa Maria Madalena
+RJ,Santo Antônio de Pádua
+RJ,São Fidélis
+RJ,São Francisco de Itabapoana
+RJ,São Gonçalo
+RJ,São João da Barra
+RJ,São João de Meriti
+RJ,São José de Ubá
+RJ,São José do Vale do Rio Preto
+RJ,São Pedro da Aldeia
+RJ,São Sebastião do Alto
+RJ,Sapucaia
+RJ,Saquarema
+RJ,Seropédica
+RJ,Silva Jardim
+RJ,Sumidouro
+RJ,Tanguá
+RJ,Teresópolis
+RJ,Trajano de Morais
+RJ,Três Rios
+RJ,Valença
+RJ,Varre-Sai
+RJ,Vassouras
 RJ,Volta Redonda
 RN,Acari
 RN,Afonso Bezerra
@@ -3848,1721 +3848,1721 @@ RN,Venha-Ver
 RN,Vera Cruz
 RN,Viçosa
 RN,Vila Flor
+RS,Aceguá
+RS,Água Santa
 RS,Agudo
-RS,Dona Francisca
-RS,Faxinal do Soturno
-RS,Formigueiro
-RS,Ivorá
-RS,Nova Palma
-RS,Restinga Seca
-RS,São João do Polêsine
-RS,Silveira Martins
-RS,Cacequi
-RS,Dilermando de Aguiar
-RS,Itaara
-RS,Jaguari
-RS,Mata
-RS,Nova Esperança do Sul
-RS,Santa Maria
-RS,São Martinho da Serra
-RS,São Pedro do Sul
-RS,São Sepé
-RS,São Vicente do Sul
-RS,Toropi
-RS,Vila Nova do Sul
-RS,Capão do Cipó
-RS,Itacurubi
-RS,Jari
-RS,Júlio de Castilhos
-RS,Pinhal Grande
-RS,Quevedos
-RS,Santiago
-RS,Tupanciretã
-RS,Unistalda
-RS,Cachoeira do Sul
-RS,Cerro Branco
-RS,Novo Cabrais
-RS,Pantano Grande
-RS,Paraíso do Sul
-RS,Passo do Sobrado
-RS,Rio Pardo
-RS,Arroio do Meio
-RS,Bom Retiro do Sul
-RS,Boqueirão do Leão
-RS,Canudos do Vale
-RS,Capitão
-RS,Colinas
-RS,Coqueiro Baixo
-RS,Cruzeiro do Sul
-RS,Doutor Ricardo
-RS,Encantado
-RS,Estrela
-RS,Fazenda Vilanova
-RS,Forquetinha
-RS,Imigrante
-RS,Lajeado
-RS,Marques de Souza
-RS,Muçum
-RS,Nova Bréscia
-RS,Paverama
-RS,Pouso Novo
-RS,Progresso
-RS,Relvado
-RS,Roca Sales
-RS,Santa Clara do Sul
-RS,Sério
-RS,Tabaí
-RS,Taquari
-RS,Teutônia
-RS,Travesseiro
-RS,Vespasiano Correa
-RS,Westfália
-RS,Arroio do Tigre
-RS,Candelária
-RS,Estrela Velha
-RS,Gramado Xavier
-RS,Herveiras
-RS,Ibarama
-RS,Lagoa Bonita do Sul
-RS,Mato Leitão
-RS,Passa Sete
-RS,Santa Cruz do Sul
-RS,Segredo
-RS,Sinimbu
-RS,Sobradinho
-RS,Vale do Sol
-RS,Venâncio Aires
-RS,Vera Cruz
-RS,Arambaré
-RS,Barra do Ribeiro
-RS,Camaquã
-RS,Cerro Grande do Sul
-RS,Chuvisca
-RS,Dom Feliciano
-RS,Sentinela do Sul
-RS,Tapes
-RS,Canela
-RS,Dois Irmãos
-RS,Gramado
-RS,Igrejinha
-RS,Ivoti
-RS,Lindolfo Collor
-RS,Morro Reuter
-RS,Nova Petrópolis
-RS,Picada Café
-RS,Presidente Lucena
-RS,Riozinho
-RS,Rolante
-RS,Santa Maria do Herval
-RS,Taquara
-RS,Três Coroas
+RS,Ajuricaba
+RS,Alecrim
+RS,Alegrete
+RS,Alegria
+RS,Almirante Tamandaré do Sul
+RS,Alpestre
+RS,Alto Alegre
 RS,Alto Feliz
-RS,Barão
-RS,Bom Princípio
-RS,Brochier
-RS,Capela de Santana
-RS,Feliz
-RS,Harmonia
-RS,Linha Nova
-RS,Maratá
-RS,Montenegro
-RS,Pareci Novo
-RS,Poço das Antas
-RS,Portão
-RS,Salvador do Sul
-RS,São José do Hortêncio
-RS,São José do Sul
-RS,São Pedro da Serra
-RS,São Sebastião do Caí
-RS,São Vendelino
-RS,Tupandi
-RS,Vale Real
-RS,Arroio do Sal
-RS,Balneário Pinhal
-RS,Capão da Canoa
-RS,Capivari do Sul
-RS,Caraá
-RS,Cidreira
-RS,Dom Pedro de Alcântara
-RS,Imbé
-RS,Itati
-RS,Mampituba
-RS,Maquiné
-RS,Morrinhos do Sul
-RS,Mostardas
-RS,Osório
-RS,Palmares do Sul
-RS,Santo Antônio da Patrulha
-RS,Tavares
-RS,Terra de Areia
-RS,Torres
-RS,Tramandaí
-RS,Três Cachoeiras
-RS,Três Forquilhas
-RS,Xangri-lá
 RS,Alvorada
-RS,Araricá
-RS,Cachoeirinha
-RS,Campo Bom
-RS,Canoas
-RS,Eldorado do Sul
-RS,Estância Velha
-RS,Esteio
-RS,Glorinha
-RS,Gravataí
-RS,Guaíba
-RS,Mariana Pimentel
-RS,Nova Hartz
-RS,Nova Santa Rita
-RS,Novo Hamburgo
-RS,Parobé
-RS,Porto Alegre (State Capital)
-RS,São Leopoldo
-RS,Sapiranga
-RS,Sapucaia do Sul
-RS,Sertão Santana
-RS,Viamão
-RS,Arroio dos Ratos
-RS,Barão do Triunfo
-RS,Butiá
-RS,Charqueadas
-RS,General Câmara
-RS,Minas do Leão
-RS,São Jerônimo
-RS,Triunfo
-RS,Vale Verde
-RS,Antônio Prado
-RS,Bento Gonçalves
-RS,Boa Vista do Sul
-RS,Carlos Barbosa
-RS,Caxias do Sul
-RS,Coronel Pilar
-RS,Cotiporã
-RS,Fagundes Varela
-RS,Farroupilha
-RS,Flores da Cunha
-RS,Garibaldi
-RS,Monte Belo do Sul
-RS,Nova Pádua
-RS,Nova Roma do Sul
-RS,Pinto Bandeira
-RS,Santa Tereza
-RS,São Marcos
-RS,Veranópolis
-RS,Vila Flores
+RS,Amaral Ferrador
+RS,Ametista do Sul
 RS,André da Rocha
 RS,Anta Gorda
+RS,Antônio Prado
+RS,Arambaré
+RS,Araricá
+RS,Aratiba
+RS,Arroio do Meio
+RS,Arroio do Padre
+RS,Arroio do Sal
+RS,Arroio do Tigre
+RS,Arroio dos Ratos
+RS,Arroio Grande
 RS,Arvorezinha
+RS,Augusto Pestana
+RS,Áurea
+RS,Bagé
+RS,Balneário Pinhal
+RS,Barão
+RS,Barão de Cotegipe
+RS,Barão do Triunfo
+RS,Barra do Guarita
+RS,Barra do Quaraí
+RS,Barra do Ribeiro
+RS,Barra do Rio Azul
+RS,Barra Funda
+RS,Barracão
+RS,Barros Cassal
+RS,Benjamin Constant do Sul
+RS,Bento Gonçalves
+RS,Boa Vista das Missões
+RS,Boa Vista do Buricá
+RS,Boa Vista do Cadeado
+RS,Boa Vista do Incra
+RS,Boa Vista do Sul
+RS,Bom Jesus
+RS,Bom Princípio
+RS,Bom Progresso
+RS,Bom Retiro do Sul
+RS,Boqueirão do Leão
+RS,Bossoroca
+RS,Bozano
+RS,Braga
+RS,Brochier
+RS,Butiá
+RS,Caçapava do Sul
+RS,Cacequi
+RS,Cachoeira do Sul
+RS,Cachoeirinha
+RS,Cacique Doble
+RS,Caibaté
+RS,Caiçara
+RS,Camaquã
+RS,Camargo
+RS,Cambará do Sul
+RS,Campestre da Serra
+RS,Campina das Missões
+RS,Campinas do Sul
+RS,Campo Bom
+RS,Campo Novo
+RS,Campos Borges
+RS,Candelária
+RS,Cândido Godói
+RS,Candiota
+RS,Canela
+RS,Canguçu
+RS,Canoas
+RS,Canudos do Vale
+RS,Capão Bonito do Sul
+RS,Capão da Canoa
+RS,Capão do Cipó
+RS,Capão do Leão
+RS,Capela de Santana
+RS,Capitão
+RS,Capivari do Sul
+RS,Caraá
+RS,Carazinho
+RS,Carlos Barbosa
+RS,Carlos Gomes
+RS,Casca
+RS,Caseiros
+RS,Catuípe
+RS,Caxias do Sul
+RS,Centenário
+RS,Cerrito
+RS,Cerro Branco
+RS,Cerro Grande
+RS,Cerro Grande do Sul
+RS,Cerro Largo
+RS,Chapada
+RS,Charqueadas
+RS,Charrua
+RS,Chiapeta
+RS,Chuí
+RS,Chuvisca
+RS,Cidreira
+RS,Ciríaco
+RS,Colinas
+RS,Colorado
+RS,Condor
+RS,Constantina
+RS,Coqueiro Baixo
+RS,Coqueiros do Sul
+RS,Coronel Barros
+RS,Coronel Bicaco
+RS,Coronel Pilar
+RS,Cotiporã
+RS,Coxilha
+RS,Crissiumal
+RS,Cristal
+RS,Cristal do Sul
+RS,Cruz Alta
+RS,Cruzaltense
+RS,Cruzeiro do Sul
+RS,David Canabarro
+RS,Derrubadas
+RS,Dezesseis de Novembro
+RS,Dilermando de Aguiar
+RS,Dois Irmãos
+RS,Dois Irmãos das Missões
 RS,Dois Lajeados
+RS,Dom Feliciano
+RS,Dom Pedrito
+RS,Dom Pedro de Alcântara
+RS,Dona Francisca
+RS,Doutor Maurício Cardoso
+RS,Doutor Ricardo
+RS,Eldorado do Sul
+RS,Encantado
+RS,Encruzilhada do Sul
+RS,Engenho Velho
+RS,Entre Rios do Sul
+RS,Entre-Ijuís
+RS,Erebango
+RS,Erechim
+RS,Ernestina
+RS,Erval Grande
+RS,Erval Seco
+RS,Esmeralda
+RS,Esperança do Sul
+RS,Espumoso
+RS,Estação
+RS,Estância Velha
+RS,Esteio
+RS,Estrela
+RS,Estrela Velha
+RS,Eugênio de Castro
+RS,Fagundes Varela
+RS,Farroupilha
+RS,Faxinal do Soturno
+RS,Faxinalzinho
+RS,Fazenda Vilanova
+RS,Feliz
+RS,Flores da Cunha
+RS,Floriano Peixoto
+RS,Fontoura Xavier
+RS,Formigueiro
+RS,Forquetinha
+RS,Fortaleza dos Valos
+RS,Frederico Westphalen
+RS,Garibaldi
+RS,Garruchos
+RS,Gaurama
+RS,General Câmara
+RS,Gentil
+RS,Getúlio Vargas
+RS,Giruá
+RS,Glorinha
+RS,Gramado
+RS,Gramado dos Loureiros
+RS,Gramado Xavier
+RS,Gravataí
 RS,Guabiju
+RS,Guaíba
 RS,Guaporé
+RS,Guarani das Missões
+RS,Harmonia
+RS,Herval
+RS,Herveiras
+RS,Horizontina
+RS,Hulha Negra
+RS,Humaitá
+RS,Ibarama
+RS,Ibiaçá
+RS,Ibiraiaras
+RS,Ibirapuitã
+RS,Ibirubá
+RS,Igrejinha
+RS,Ijuí
 RS,Ilópolis
+RS,Imbé
+RS,Imigrante
+RS,Independência
+RS,Inhacorá
+RS,Ipê
+RS,Ipiranga do Sul
+RS,Iraí
+RS,Itaara
+RS,Itacurubi
 RS,Itapuca
+RS,Itaqui
+RS,Itati
+RS,Itatiba do Sul
+RS,Ivorá
+RS,Ivoti
+RS,Jaboticaba
+RS,Jacuizinho
+RS,Jacutinga
+RS,Jaguarão
+RS,Jaguari
+RS,Jaquirana
+RS,Jari
+RS,Jóia
+RS,Júlio de Castilhos
+RS,Lagoa Bonita do Sul
+RS,Lagoa dos Três Cantos
+RS,Lagoa Vermelha
+RS,Lagoão
+RS,Lajeado
+RS,Lajeado do Bugre
+RS,Lavras do Sul
+RS,Liberato Salzano
+RS,Lindolfo Collor
+RS,Linha Nova
+RS,Maçambara
+RS,Machadinho
+RS,Mampituba
+RS,Manoel Viana
+RS,Maquiné
+RS,Maratá
+RS,Marau
+RS,Marcelino Ramos
+RS,Mariana Pimentel
+RS,Mariano Moro
+RS,Marques de Souza
+RS,Mata
+RS,Mato Castelhano
+RS,Mato Leitão
+RS,Mato Queimado
+RS,Maximiliano de Almeida
+RS,Minas do Leão
+RS,Miraguaí
 RS,Montauri
+RS,Monte Alegre dos Campos
+RS,Monte Belo do Sul
+RS,Montenegro
+RS,Mormaço
+RS,Morrinhos do Sul
+RS,Morro Redondo
+RS,Morro Reuter
+RS,Mostardas
+RS,Muçum
+RS,Muitos Capões
+RS,Muliterno
+RS,Não-Me-Toque
+RS,Nicolau Vergueiro
+RS,Nonoai
 RS,Nova Alvorada
 RS,Nova Araçá
 RS,Nova Bassano
-RS,Nova Prata
-RS,Paraí
-RS,Protásio Alves
-RS,Putinga
-RS,São Jorge
-RS,São Valentim do Sul
-RS,Serafina Corrêa
-RS,União da Serra
-RS,Vista Alegre do Prata
-RS,Bom Jesus
-RS,Cambará do Sul
-RS,Campestre da Serra
-RS,Capão Bonito do Sul
-RS,Esmeralda
-RS,Ipê
-RS,Jaquirana
-RS,Lagoa Vermelha
-RS,Monte Alegre dos Campos
-RS,Muitos Capões
-RS,Pinhal da Serra
-RS,São Francisco de Paula
-RS,São José dos Ausentes
-RS,Vacaria
-RS,Almirante Tamandaré do Sul
-RS,Barra Funda
-RS,Boa Vista das Missões
-RS,Carazinho
-RS,Cerro Grande
-RS,Chapada
-RS,Coqueiros do Sul
-RS,Jaboticaba
-RS,Lajeado do Bugre
 RS,Nova Boa Vista
+RS,Nova Bréscia
+RS,Nova Candelária
+RS,Nova Esperança do Sul
+RS,Nova Hartz
+RS,Nova Pádua
+RS,Nova Palma
+RS,Nova Petrópolis
+RS,Nova Prata
+RS,Nova Ramada
+RS,Nova Roma do Sul
+RS,Nova Santa Rita
 RS,Novo Barreiro
-RS,Palmeira das Missões
-RS,Pinhal
-RS,Sagrada Família
-RS,Santo Antônio do Planalto
-RS,São José das Missões
-RS,São Pedro das Missões
-RS,Sarandi
-RS,Caibaté
-RS,Campina das Missões
-RS,Cerro Largo
-RS,Guarani das Missões
-RS,Mato Queimado
-RS,Porto Xavier
-RS,Roque Gonzales
-RS,Salvador das Missões
-RS,São Paulo das Missões
-RS,São Pedro do Butiá
-RS,Sete de Setembro
-RS,Alto Alegre
-RS,Boa Vista do Cadeado
-RS,Boa Vista do Incra
-RS,Campos Borges
-RS,Cruz Alta
-RS,Espumoso
-RS,Fortaleza dos Valos
-RS,Ibirubá
-RS,Jacuizinho
-RS,Jóia
-RS,Quinze de Novembro
-RS,Saldanha Marinho
-RS,Salto do Jacuí
-RS,Santa Bárbara do Sul
-RS,Aratiba
-RS,Áurea
-RS,Barão de Cotegipe
-RS,Barra do Rio Azul
-RS,Benjamin Constant do Sul
-RS,Campinas do Sul
-RS,Carlos Gomes
-RS,Centenário
-RS,Cruzaltense
-RS,Entre Rios do Sul
-RS,Erebango
-RS,Erechim
-RS,Erval Grande
-RS,Estação
-RS,Faxinalzinho
-RS,Floriano Peixoto
-RS,Gaurama
-RS,Getúlio Vargas
-RS,Ipiranga do Sul
-RS,Itatiba do Sul
-RS,Jacutinga
-RS,Marcelino Ramos
-RS,Mariano Moro
-RS,Paulo Bento
-RS,Ponte Preta
-RS,Quatro Irmãos
-RS,São Valentim
-RS,Severiano de Almeida
-RS,Três Arroios
-RS,Viadutos
-RS,Alpestre
-RS,Ametista do Sul
-RS,Caiçara
-RS,Constantina
-RS,Cristal do Sul
-RS,Dois Irmãos das Missões
-RS,Engenho Velho
-RS,Erval Seco
-RS,Frederico Westphalen
-RS,Gramado dos Loureiros
-RS,Iraí
-RS,Liberato Salzano
-RS,Nonoai
+RS,Novo Cabrais
+RS,Novo Hamburgo
+RS,Novo Machado
 RS,Novo Tiradentes
 RS,Novo Xingu
-RS,Palmitinho
-RS,Pinheirinho do Vale
-RS,Planalto
-RS,Rio dos Índios
-RS,Rodeio Bonito
-RS,Rondinha
-RS,Seberi
-RS,Taquaruçu do Sul
-RS,Três Palmeiras
-RS,Trindade do Sul
-RS,Vicente Dutra
-RS,Vista Alegre
-RS,Ajuricaba
-RS,Alegria
-RS,Augusto Pestana
-RS,Bozano
-RS,Chiapeta
-RS,Condor
-RS,Coronel Barros
-RS,Coronel Bicaco
-RS,Ijuí
-RS,Inhacorá
-RS,Nova Ramada
-RS,Panambi
-RS,Pejuçara
-RS,Santo Augusto
-RS,São Valério do Sul
-RS,Colorado
-RS,Lagoa dos Três Cantos
-RS,Não-Me-Toque
-RS,Selbach
-RS,Tapera
-RS,Tio Hugo
-RS,Victor Graeff
-RS,Água Santa
-RS,Camargo
-RS,Casca
-RS,Caseiros
-RS,Charrua
-RS,Ciríaco
-RS,Coxilha
-RS,David Canabarro
-RS,Ernestina
-RS,Gentil
-RS,Ibiraiaras
-RS,Marau
-RS,Mato Castelhano
-RS,Muliterno
-RS,Nicolau Vergueiro
-RS,Passo Fundo
-RS,Pontão
-RS,Ronda Alta
-RS,Santa Cecília do Sul
-RS,Santo Antônio do Palma
-RS,São Domingos do Sul
-RS,Sertão
-RS,Tapejara
-RS,Vanini
-RS,Vila Lângaro
-RS,Vila Maria
-RS,Barracão
-RS,Cacique Doble
-RS,Ibiaçá
-RS,Machadinho
-RS,Maximiliano de Almeida
+RS,Osório
 RS,Paim Filho
-RS,Sananduva
-RS,Santo Expedito do Sul
-RS,São João da Urtiga
-RS,São José do Ouro
-RS,Tupanci do Sul
-RS,Alecrim
-RS,Cândido Godói
-RS,Independência
-RS,Novo Machado
+RS,Palmares do Sul
+RS,Palmeira das Missões
+RS,Palmitinho
+RS,Panambi
+RS,Pantano Grande
+RS,Paraí
+RS,Paraíso do Sul
+RS,Pareci Novo
+RS,Parobé
+RS,Passa Sete
+RS,Passo do Sobrado
+RS,Passo Fundo
+RS,Paulo Bento
+RS,Paverama
+RS,Pedras Altas
+RS,Pedro Osório
+RS,Pejuçara
+RS,Pelotas
+RS,Picada Café
+RS,Pinhal
+RS,Pinhal da Serra
+RS,Pinhal Grande
+RS,Pinheirinho do Vale
+RS,Pinheiro Machado
+RS,Pinto Bandeira
+RS,Pirapó
+RS,Piratini
+RS,Planalto
+RS,Poço das Antas
+RS,Pontão
+RS,Ponte Preta
+RS,Portão
+RS,Porto Alegre (State Capital)
 RS,Porto Lucena
 RS,Porto Mauá
 RS,Porto Vera Cruz
-RS,Santa Rosa
-RS,Santo Cristo
-RS,São José do Inhacorá
-RS,Três de Maio
-RS,Tucunduva
-RS,Tuparendi
-RS,Bossoroca
-RS,Catuípe
-RS,Dezesseis de Novembro
-RS,Entre-Ijuís
-RS,Eugênio de Castro
-RS,Giruá
-RS,Pirapó
+RS,Porto Xavier
+RS,Pouso Novo
+RS,Presidente Lucena
+RS,Progresso
+RS,Protásio Alves
+RS,Putinga
+RS,Quaraí
+RS,Quatro Irmãos
+RS,Quevedos
+RS,Quinze de Novembro
+RS,Redentora
+RS,Relvado
+RS,Restinga Seca
+RS,Rio dos Índios
+RS,Rio Grande
+RS,Rio Pardo
+RS,Riozinho
+RS,Roca Sales
+RS,Rodeio Bonito
 RS,Rolador
+RS,Rolante
+RS,Ronda Alta
+RS,Rondinha
+RS,Roque Gonzales
+RS,Rosário do Sul
+RS,Sagrada Família
+RS,Saldanha Marinho
+RS,Salto do Jacuí
+RS,Salvador das Missões
+RS,Salvador do Sul
+RS,Sananduva
+RS,Santa Bárbara do Sul
+RS,Santa Cecília do Sul
+RS,Santa Clara do Sul
+RS,Santa Cruz do Sul
+RS,Santa Margarida do Sul
+RS,Santa Maria
+RS,Santa Maria do Herval
+RS,Santa Rosa
+RS,Santa Tereza
+RS,Santa Vitória do Palmar
+RS,Santana da Boa Vista
+RS,Santana do Livramento
+RS,Santiago
 RS,Santo Ângelo
+RS,Santo Antônio da Patrulha
 RS,Santo Antônio das Missões
+RS,Santo Antônio do Palma
+RS,Santo Antônio do Planalto
+RS,Santo Augusto
+RS,Santo Cristo
+RS,Santo Expedito do Sul
+RS,São Borja
+RS,São Domingos do Sul
+RS,São Francisco de Assis
+RS,São Francisco de Paula
+RS,São Gabriel
+RS,São Jerônimo
+RS,São João da Urtiga
+RS,São João do Polêsine
+RS,São Jorge
+RS,São José das Missões
+RS,São José do Herval
+RS,São José do Hortêncio
+RS,São José do Inhacorá
+RS,São José do Norte
+RS,São José do Ouro
+RS,São José do Sul
+RS,São José dos Ausentes
+RS,São Leopoldo
+RS,São Lourenço do Sul
 RS,São Luiz Gonzaga
+RS,São Marcos
+RS,São Martinho
+RS,São Martinho da Serra
 RS,São Miguel das Missões
 RS,São Nicolau
-RS,Senador Salgado Filho
-RS,Ubiretama
-RS,Vitória das Missões
-RS,Barros Cassal
-RS,Fontoura Xavier
-RS,Ibirapuitã
-RS,Lagoão
-RS,Mormaço
-RS,São José do Herval
-RS,Soledade
-RS,Tunas
-RS,Barra do Guarita
-RS,Boa Vista do Buricá
-RS,Bom Progresso
-RS,Braga
-RS,Campo Novo
-RS,Crissiumal
-RS,Derrubadas
-RS,Doutor Maurício Cardoso
-RS,Esperança do Sul
-RS,Horizontina
-RS,Humaitá
-RS,Miraguaí
-RS,Nova Candelária
-RS,Redentora
-RS,São Martinho
+RS,São Paulo das Missões
+RS,São Pedro da Serra
+RS,São Pedro das Missões
+RS,São Pedro do Butiá
+RS,São Pedro do Sul
+RS,São Sebastião do Caí
+RS,São Sepé
+RS,São Valentim
+RS,São Valentim do Sul
+RS,São Valério do Sul
+RS,São Vendelino
+RS,São Vicente do Sul
+RS,Sapiranga
+RS,Sapucaia do Sul
+RS,Sarandi
+RS,Seberi
 RS,Sede Nova
+RS,Segredo
+RS,Selbach
+RS,Senador Salgado Filho
+RS,Sentinela do Sul
+RS,Serafina Corrêa
+RS,Sério
+RS,Sertão
+RS,Sertão Santana
+RS,Sete de Setembro
+RS,Severiano de Almeida
+RS,Silveira Martins
+RS,Sinimbu
+RS,Sobradinho
+RS,Soledade
+RS,Tabaí
+RS,Tapejara
+RS,Tapera
+RS,Tapes
+RS,Taquara
+RS,Taquari
+RS,Taquaruçu do Sul
+RS,Tavares
 RS,Tenente Portela
+RS,Terra de Areia
+RS,Teutônia
+RS,Tio Hugo
 RS,Tiradentes do Sul
+RS,Toropi
+RS,Torres
+RS,Tramandaí
+RS,Travesseiro
+RS,Três Arroios
+RS,Três Cachoeiras
+RS,Três Coroas
+RS,Três de Maio
+RS,Três Forquilhas
+RS,Três Palmeiras
 RS,Três Passos
-RS,Vista Gaúcha
-RS,Arroio Grande
-RS,Herval
-RS,Jaguarão
-RS,Chuí
-RS,Rio Grande
-RS,Santa Vitória do Palmar
-RS,São José do Norte
-RS,Arroio do Padre
-RS,Canguçu
-RS,Capão do Leão
-RS,Cerrito
-RS,Cristal
-RS,Morro Redondo
-RS,Pedro Osório
-RS,Pelotas
-RS,São Lourenço do Sul
+RS,Trindade do Sul
+RS,Triunfo
+RS,Tucunduva
+RS,Tunas
+RS,Tupanci do Sul
+RS,Tupanciretã
+RS,Tupandi
+RS,Tuparendi
 RS,Turuçu
-RS,Amaral Ferrador
-RS,Caçapava do Sul
-RS,Candiota
-RS,Encruzilhada do Sul
-RS,Pedras Altas
-RS,Pinheiro Machado
-RS,Piratini
-RS,Santana da Boa Vista
-RS,Rosário do Sul
-RS,Santa Margarida do Sul
-RS,Santana do Livramento
-RS,São Gabriel
-RS,Aceguá
-RS,Bagé
-RS,Dom Pedrito
-RS,Hulha Negra
-RS,Lavras do Sul
-RS,Alegrete
-RS,Barra do Quaraí
-RS,Garruchos
-RS,Itaqui
-RS,Maçambara
-RS,Manoel Viana
-RS,São Borja
-RS,São Francisco de Assis
+RS,Ubiretama
+RS,União da Serra
+RS,Unistalda
 RS,Uruguaiana
-RS,Quaraí
-RO,Alvorada d'Oeste
-RO,Nova Brasilândia d'Oeste
-RO,São Miguel do Guaporé
-RO,Seringueiras
-RO,Alto Paraíso
-RO,Ariquemes
-RO,Cacaulândia
-RO,Machadinho d'Oeste
-RO,Monte Negro
-RO,Rio Crespo
-RO,Vale do Anari
+RS,Vacaria
+RS,Vale do Sol
+RS,Vale Real
+RS,Vale Verde
+RS,Vanini
+RS,Venâncio Aires
+RS,Vera Cruz
+RS,Veranópolis
+RS,Vespasiano Correa
+RS,Viadutos
+RS,Viamão
+RS,Vicente Dutra
+RS,Victor Graeff
+RS,Vila Flores
+RS,Vila Lângaro
+RS,Vila Maria
+RS,Vila Nova do Sul
+RS,Vista Alegre
+RS,Vista Alegre do Prata
+RS,Vista Gaúcha
+RS,Vitória das Missões
+RS,Westfália
+RS,Xangri-lá
 RO,Alta Floresta d'Oeste
 RO,Alto Alegre dos Parecis
-RO,Cacoal
-RO,Castanheiras
-RO,Espigão d'Oeste
-RO,Ministro Andreazza
-RO,Novo Horizonte do Oeste
-RO,Rolim de Moura
-RO,Santa Luzia d'Oeste
+RO,Alto Paraíso
+RO,Alvorada d'Oeste
+RO,Ariquemes
+RO,Buritis
 RO,Cabixi
+RO,Cacaulândia
+RO,Cacoal
+RO,Campo Novo de Rondônia
+RO,Candeias do Jamari
+RO,Castanheiras
 RO,Cerejeiras
+RO,Chupinguaia
 RO,Colorado do Oeste
 RO,Corumbiara
-RO,Pimenteiras do Oeste
+RO,Costa Marques
+RO,Cujubim
+RO,Espigão d'Oeste
 RO,Governador Jorge Teixeira
+RO,Guajará-Mirim
+RO,Itapuã do Oeste
 RO,Jaru
 RO,Ji-Paraná
+RO,Machadinho d'Oeste
+RO,Ministro Andreazza
 RO,Mirante da Serra
+RO,Monte Negro
+RO,Nova Brasilândia d'Oeste
+RO,Nova Mamoré
 RO,Nova União
+RO,Novo Horizonte do Oeste
 RO,Ouro Preto do Oeste
+RO,Parecis
+RO,Pimenta Bueno
+RO,Pimenteiras do Oeste
+RO,Porto Velho (State Capital)
 RO,Presidente Médici
+RO,Primavera de Rondônia
+RO,Rio Crespo
+RO,Rolim de Moura
+RO,Santa Luzia d'Oeste
+RO,São Felipe d'Oeste
+RO,São Francisco do Guaporé
+RO,São Miguel do Guaporé
+RO,Seringueiras
 RO,Teixeirópolis
 RO,Theobroma
 RO,Urupá
+RO,Vale do Anari
 RO,Vale do Paraíso
-RO,Chupinguaia
-RO,Parecis
-RO,Pimenta Bueno
-RO,Primavera de Rondônia
-RO,São Felipe d'Oeste
 RO,Vilhena
-RO,Costa Marques
-RO,Guajará-Mirim
-RO,São Francisco do Guaporé
-RO,Buritis
-RO,Campo Novo de Rondônia
-RO,Candeias do Jamari
-RO,Cujubim
-RO,Itapuã do Oeste
-RO,Nova Mamoré
-RO,Porto Velho (State Capital)
 RR,Alto Alegre
 RR,Amajari
 RR,Boa Vista (state capital)
-RR,Pacaraima
 RR,Bonfim
 RR,Cantá
-RR,Normândia
-RR,Uiramutã
 RR,Caracaraí
+RR,Caroebe
 RR,Iracema
 RR,Mucajaí
-RR,Caroebe
+RR,Normândia
+RR,Pacaraima
 RR,Rorainópolis
 RR,São João da Baliza
 RR,São Luiz
-SC,Antônio Carlos
-SC,Biguaçu
-SC,Florianópolis (State Capital)
-SC,Governador Celso Ramos
-SC,Palhoça
-SC,Paulo Lopes
-SC,Santo Amaro da Imperatriz
-SC,São José
-SC,São Pedro de Alcântara
-SC,Águas Mornas
-SC,Alfredo Wagner
-SC,Anitápolis
-SC,Rancho Queimado
-SC,São Bonifácio
-SC,Angelina
-SC,Canelinha
-SC,Leoberto Leal
-SC,Major Gercino
-SC,Nova Trento
-SC,São João Batista
-SC,Tijucas
-SC,Bela Vista do Toldo
-SC,Canoinhas
-SC,Irineópolis
-SC,Itaiópolis
-SC,Mafra
-SC,Major Vieira
-SC,Monte Castelo
-SC,Papanduva
-SC,Porto União
-SC,Santa Terezinha
-SC,Timbó Grande
-SC,Três Barras
-SC,Araquari
-SC,Balneário Barra do Sul
-SC,Corupá
-SC,Garuva
-SC,Guaramirim
-SC,Itapoá
-SC,Jaraguá do Sul
-SC,Joinville
-SC,Massaranduba
-SC,São Francisco do Sul
-SC,Schroeder
-SC,Campo Alegre
-SC,Rio Negrinho
-SC,São Bento do Sul
+RR,Uiramutã
+SC,Abdon Batista
+SC,Abelardo Luz
+SC,Agrolândia
+SC,Agronômica
+SC,Água Doce
 SC,Águas de Chapecó
 SC,Águas Frias
+SC,Águas Mornas
+SC,Alfredo Wagner
+SC,Alto Bela Vista
+SC,Anchieta
+SC,Angelina
+SC,Anita Garibaldi
+SC,Anitápolis
+SC,Antônio Carlos
+SC,Apiúna
+SC,Arabutã
+SC,Araquari
+SC,Araranguá
+SC,Armazém
+SC,Arroio Trinta
+SC,Arvoredo
+SC,Ascurra
+SC,Atalanta
+SC,Aurora
+SC,Balneário Arroio do Silva
+SC,Balneário Barra do Sul
+SC,Balneário Camboriú
+SC,Balneário Gaivota
+SC,Balneário Piçarras
+SC,Balneário Rincão
+SC,Bandeirante
+SC,Barra Bonita
+SC,Barra Velha
+SC,Bela Vista do Toldo
+SC,Belmonte
+SC,Benedito Novo
+SC,Biguaçu
+SC,Blumenau
+SC,Bocaina do Sul
+SC,Bom Jardim da Serra
+SC,Bom Jesus
 SC,Bom Jesus do Oeste
+SC,Bom Retiro
+SC,Bombinhas
+SC,Botuverá
+SC,Braço do Norte
+SC,Braço do Trombudo
+SC,Brunópolis
+SC,Brusque
+SC,Caçador
 SC,Caibi
+SC,Calmon
+SC,Camboriú
+SC,Campo Alegre
+SC,Campo Belo do Sul
 SC,Campo Erê
+SC,Campos Novos
+SC,Canelinha
+SC,Canoinhas
+SC,Capão Alto
+SC,Capinzal
+SC,Capivari de Baixo
+SC,Catanduvas
 SC,Caxambu do Sul
+SC,Celso Ramos
+SC,Cerro Negro
+SC,Chapadão do Lageado
 SC,Chapecó
+SC,Cocal do Sul
+SC,Concórdia
 SC,Cordilheira Alta
 SC,Coronel Freitas
+SC,Coronel Martins
+SC,Correia Pinto
+SC,Corupá
+SC,Criciúma
 SC,Cunha Porã
 SC,Cunhataí
-SC,Flor do Sertão
-SC,Formosa do Sul
-SC,Guatambu
-SC,Iraceminha
-SC,Irati
-SC,Jardinópolis
-SC,Maravilha
-SC,Modelo
-SC,Nova Erechim
-SC,Nova Itaberaba
-SC,Novo Horizonte
-SC,Palmitos
-SC,Pinhalzinho
-SC,Planalto Alegre
-SC,Quilombo
-SC,Saltinho
-SC,Santa Terezinha do Progresso
-SC,Santiago do Sul
-SC,São Bernardino
-SC,São Carlos
-SC,São Lourenço do Oeste
-SC,São Miguel da Boa Vista
-SC,Saudades
-SC,Serra Alta
-SC,Sul Brasil
-SC,Tigrinhos
-SC,União do Oeste
-SC,Alto Bela Vista
-SC,Arabutã
-SC,Arvoredo
-SC,Concórdia
-SC,Ipira
-SC,Ipumirim
-SC,Irani
-SC,Itá
-SC,Lindóia do Sul
-SC,Paial
-SC,Peritiba
-SC,Piratuba
-SC,Presidente Castelo Branco
-SC,Seara
-SC,Xavantina
-SC,Água Doce
-SC,Arroio Trinta
-SC,Caçador
-SC,Calmon
-SC,Capinzal
-SC,Catanduvas
+SC,Curitibanos
+SC,Descanso
+SC,Dionísio Cerqueira
+SC,Dona Emma
+SC,Doutor Pedrinho
+SC,Entre Rios
+SC,Ermo
 SC,Erval Velho
+SC,Faxinal dos Guedes
+SC,Flor do Sertão
+SC,Florianópolis (State Capital)
+SC,Formosa do Sul
+SC,Forquilhinha
 SC,Fraiburgo
+SC,Frei Rogério
+SC,Galvão
+SC,Garopaba
+SC,Garuva
+SC,Gaspar
+SC,Governador Celso Ramos
+SC,Grão Pará
+SC,Gravatal
+SC,Guabiruba
+SC,Guaraciaba
+SC,Guaramirim
+SC,Guarujá do Sul
+SC,Guatambu
 SC,Herval d'Oeste
 SC,Ibiam
 SC,Ibicaré
-SC,Iomerê
-SC,Jaborá
-SC,Joaçaba
-SC,Lacerdópolis
-SC,Lebon Régis
-SC,Luzerna
-SC,Macieira
-SC,Matos Costa
-SC,Ouro
-SC,Pinheiro Preto
-SC,Rio das Antas
-SC,Salto Veloso
-SC,Tangará
-SC,Treze Tílias
-SC,Vargem Bonita
-SC,Videira
-SC,Anchieta
-SC,Bandeirante
-SC,Barra Bonita
-SC,Belmonte
-SC,Descanso
-SC,Dionísio Cerqueira
-SC,Guaraciaba
-SC,Guarujá do Sul
-SC,Iporã do Oeste
-SC,Itapiranga
-SC,Mondaí
-SC,Palma Sola
-SC,Paraíso
-SC,Princesa
-SC,Riqueza
-SC,Romelândia
-SC,Santa Helena
-SC,São João do Oeste
-SC,São José do Cedro
-SC,São Miguel do Oeste
-SC,Tunápolis
-SC,Abelardo Luz
-SC,Bom Jesus
-SC,Coronel Martins
-SC,Entre Rios
-SC,Faxinal dos Guedes
-SC,Galvão
-SC,Ipuaçu
-SC,Jupiá
-SC,Lajeado Grande
-SC,Marema
-SC,Ouro Verde
-SC,Passos Maia
-SC,Ponte Serrada
-SC,São Domingos
-SC,Vargeão
-SC,Xanxerê
-SC,Xaxim
-SC,Anita Garibaldi
-SC,Bocaina do Sul
-SC,Bom Jardim da Serra
-SC,Bom Retiro
-SC,Campo Belo do Sul
-SC,Capão Alto
-SC,Celso Ramos
-SC,Cerro Negro
-SC,Correia Pinto
-SC,Lages
-SC,Otacílio Costa
-SC,Painel
-SC,Palmeira
-SC,Rio Rufino
-SC,São Joaquim
-SC,São José do Cerrito
-SC,Urubici
-SC,Urupema
-SC,Abdon Batista
-SC,Brunópolis
-SC,Campos Novos
-SC,Curitibanos
-SC,Frei Rogério
-SC,Monte Carlo
-SC,Ponte Alta
-SC,Ponte Alta do Norte
-SC,Santa Cecília
-SC,São Cristóvão do Sul
-SC,Vargem
-SC,Zortéa
-SC,Araranguá
-SC,Balneário Arroio do Silva
-SC,Balneário Gaivota
-SC,Ermo
-SC,Jacinto Machado
-SC,Maracajá
-SC,Meleiro
-SC,Morro Grande
-SC,Passo de Torres
-SC,Praia Grande
-SC,Santa Rosa do Sul
-SC,São João do Sul
-SC,Sombrio
-SC,Timbé do Sul
-SC,Turvo
-SC,Balneário Rincão
-SC,Cocal do Sul
-SC,Criciúma
-SC,Forquilhinha
+SC,Ibirama
 SC,Içara
-SC,Lauro Müller
-SC,Morro da Fumaça
-SC,Nova Veneza
-SC,Siderópolis
-SC,Treviso
-SC,Urussanga
-SC,Armazém
-SC,Braço do Norte
-SC,Capivari de Baixo
-SC,Garopaba
-SC,Grão Pará
-SC,Gravatal
+SC,Ilhota
 SC,Imaruí
 SC,Imbituba
-SC,Jaguaruna
-SC,Laguna
-SC,Orleans
-SC,Pedras Grandes
-SC,Pescaria Brava
-SC,Rio Fortuna
-SC,Sangão
-SC,Santa Rosa de Lima
-SC,São Ludgero
-SC,São Martinho
-SC,Treze de Maio
-SC,Tubarão
-SC,Apiúna
-SC,Ascurra
-SC,Benedito Novo
-SC,Blumenau
-SC,Botuverá
-SC,Brusque
-SC,Doutor Pedrinho
-SC,Gaspar
-SC,Guabiruba
+SC,Imbuia
 SC,Indaial
-SC,Luiz Alves
-SC,Pomerode
-SC,Rio dos Cedros
-SC,Rodeio
-SC,Timbó
-SC,Balneário Camboriú
-SC,Balneário Piçarras
-SC,Barra Velha
-SC,Bombinhas
-SC,Camboriú
-SC,Ilhota
+SC,Iomerê
+SC,Ipira
+SC,Iporã do Oeste
+SC,Ipuaçu
+SC,Ipumirim
+SC,Iraceminha
+SC,Irani
+SC,Irati
+SC,Irineópolis
+SC,Itá
+SC,Itaiópolis
 SC,Itajaí
 SC,Itapema
-SC,Navegantes
-SC,Penha
-SC,Porto Belo
-SC,São João do Itaperiú
-SC,Agrolândia
-SC,Atalanta
-SC,Chapadão do Lageado
-SC,Imbuia
+SC,Itapiranga
+SC,Itapoá
 SC,Ituporanga
-SC,Petrolândia
-SC,Vidal Ramos
-SC,Agronômica
-SC,Aurora
-SC,Braço do Trombudo
-SC,Dona Emma
-SC,Ibirama
+SC,Jaborá
+SC,Jacinto Machado
+SC,Jaguaruna
+SC,Jaraguá do Sul
+SC,Jardinópolis
+SC,Joaçaba
+SC,Joinville
 SC,José Boiteux
+SC,Jupiá
+SC,Lacerdópolis
+SC,Lages
+SC,Laguna
+SC,Lajeado Grande
 SC,Laurentino
+SC,Lauro Müller
+SC,Lebon Régis
+SC,Leoberto Leal
+SC,Lindóia do Sul
 SC,Lontras
+SC,Luiz Alves
+SC,Luzerna
+SC,Macieira
+SC,Mafra
+SC,Major Gercino
+SC,Major Vieira
+SC,Maracajá
+SC,Maravilha
+SC,Marema
+SC,Massaranduba
+SC,Matos Costa
+SC,Meleiro
 SC,Mirim Doce
+SC,Modelo
+SC,Mondaí
+SC,Monte Carlo
+SC,Monte Castelo
+SC,Morro da Fumaça
+SC,Morro Grande
+SC,Navegantes
+SC,Nova Erechim
+SC,Nova Itaberaba
+SC,Nova Trento
+SC,Nova Veneza
+SC,Novo Horizonte
+SC,Orleans
+SC,Otacílio Costa
+SC,Ouro
+SC,Ouro Verde
+SC,Paial
+SC,Painel
+SC,Palhoça
+SC,Palma Sola
+SC,Palmeira
+SC,Palmitos
+SC,Papanduva
+SC,Paraíso
+SC,Passo de Torres
+SC,Passos Maia
+SC,Paulo Lopes
+SC,Pedras Grandes
+SC,Penha
+SC,Peritiba
+SC,Pescaria Brava
+SC,Petrolândia
+SC,Pinhalzinho
+SC,Pinheiro Preto
+SC,Piratuba
+SC,Planalto Alegre
+SC,Pomerode
+SC,Ponte Alta
+SC,Ponte Alta do Norte
+SC,Ponte Serrada
+SC,Porto Belo
+SC,Porto União
 SC,Pouso Redondo
+SC,Praia Grande
+SC,Presidente Castelo Branco
 SC,Presidente Getúlio
 SC,Presidente Nereu
+SC,Princesa
+SC,Quilombo
+SC,Rancho Queimado
+SC,Rio das Antas
 SC,Rio do Campo
 SC,Rio do Oeste
 SC,Rio do Sul
+SC,Rio dos Cedros
+SC,Rio Fortuna
+SC,Rio Negrinho
+SC,Rio Rufino
+SC,Riqueza
+SC,Rodeio
+SC,Romelândia
 SC,Salete
+SC,Saltinho
+SC,Salto Veloso
+SC,Sangão
+SC,Santa Cecília
+SC,Santa Helena
+SC,Santa Rosa de Lima
+SC,Santa Rosa do Sul
+SC,Santa Terezinha
+SC,Santa Terezinha do Progresso
+SC,Santiago do Sul
+SC,Santo Amaro da Imperatriz
+SC,São Bento do Sul
+SC,São Bernardino
+SC,São Bonifácio
+SC,São Carlos
+SC,São Cristóvão do Sul
+SC,São Domingos
+SC,São Francisco do Sul
+SC,São João Batista
+SC,São João do Itaperiú
+SC,São João do Oeste
+SC,São João do Sul
+SC,São Joaquim
+SC,São José
+SC,São José do Cedro
+SC,São José do Cerrito
+SC,São Lourenço do Oeste
+SC,São Ludgero
+SC,São Martinho
+SC,São Miguel da Boa Vista
+SC,São Miguel do Oeste
+SC,São Pedro de Alcântara
+SC,Saudades
+SC,Schroeder
+SC,Seara
+SC,Serra Alta
+SC,Siderópolis
+SC,Sombrio
+SC,Sul Brasil
 SC,Taió
+SC,Tangará
+SC,Tigrinhos
+SC,Tijucas
+SC,Timbé do Sul
+SC,Timbó
+SC,Timbó Grande
+SC,Três Barras
+SC,Treviso
+SC,Treze de Maio
+SC,Treze Tílias
 SC,Trombudo Central
+SC,Tubarão
+SC,Tunápolis
+SC,Turvo
+SC,União do Oeste
+SC,Urubici
+SC,Urupema
+SC,Urussanga
+SC,Vargeão
+SC,Vargem
+SC,Vargem Bonita
+SC,Vidal Ramos
+SC,Videira
 SC,Vitor Meireles
 SC,Witmarsum
-SP,Andradina
-SP,Castilho
-SP,Guaraçaí
-SP,Ilha Solteira
-SP,Itapura
-SP,Mirandópolis
-SP,Murutinga do Sul
-SP,Nova Independência
-SP,Pereira Barreto
-SP,Sud Mennucci
-SP,Suzanápolis
-SP,Araçatuba
-SP,Bento de Abreu
-SP,Guararapes
-SP,Lavínia
-SP,Rubiácea
-SP,Santo Antônio do Aracanguá
-SP,Valparaíso
-SP,Alto Alegre
-SP,Avanhandava
-SP,Barbosa
-SP,Bilac
-SP,Birigui
-SP,Braúna
-SP,Brejo Alegre
-SP,Buritama
-SP,Clementina
-SP,Coroados
-SP,Gabriel Monteiro
-SP,Glicério
-SP,Lourdes
-SP,Luiziânia
-SP,Penápolis
-SP,Piacatu
-SP,Santópolis do Aguapeí
-SP,Turiúba
-SP,Américo Brasiliense
-SP,Araraquara
-SP,Boa Esperança do Sul
-SP,Borborema
-SP,Dobrada
-SP,Gavião Peixoto
-SP,Ibitinga
-SP,Itápolis
-SP,Matão
-SP,Motuca
-SP,Nova Europa
-SP,Rincão
-SP,Santa Lúcia
-SP,Tabatinga
-SP,Trabiju
-SP,Analândia
-SP,Descalvado
-SP,Dourado
-SP,Ibaté
-SP,Ribeirão Bonito
-SP,São Carlos
-SP,Assis
-SP,Borá
-SP,Campos Novos Paulista
-SP,Cândido Mota
-SP,Cruzália
-SP,Florínia
-SP,Ibirarema
-SP,Iepê
-SP,Lutécia
-SP,Maracaí
-SP,Nantes
-SP,Palmital
-SP,Paraguaçu Paulista
-SP,Pedrinhas Paulista
-SP,Platina
-SP,Quatá
-SP,Tarumã
-SP,Bernardino de Campos
-SP,Canitar
-SP,Chavantes
-SP,Espírito Santo do Turvo
-SP,Fartura
-SP,Ipaussu
-SP,Manduri
-SP,Óleo
-SP,Ourinhos
-SP,Piraju
-SP,Ribeirão do Sul
-SP,Salto Grande
-SP,Santa Cruz do Rio Pardo
-SP,São Pedro do Turvo
-SP,Sarutaiá
-SP,Taguaí
-SP,Tejupá
-SP,Timburi
-SP,Águas de Santa Bárbara
-SP,Arandu
-SP,Avaré
-SP,Cerqueira César
-SP,Iaras
-SP,Itaí
-SP,Itatinga
-SP,Paranapanema
-SP,Agudos
-SP,Arealva
-SP,Areiópolis
-SP,Avaí
-SP,Balbinos
-SP,Bauru
-SP,Borebi
-SP,Cabrália Paulista
-SP,Duartina
-SP,Guarantã
-SP,Iacanga
-SP,Lençóis Paulista
-SP,Lucianópolis
-SP,Paulistânia
-SP,Pirajuí
-SP,Piratininga
-SP,Pongaí
-SP,Presidente Alves
-SP,Reginópolis
-SP,Ubirajara
-SP,Uru
-SP,Anhembi
-SP,Bofete
-SP,Botucatu
-SP,Conchas
-SP,Pardinho
-SP,Pratânia
-SP,São Manuel
-SP,Bariri
-SP,Barra Bonita
-SP,Bocaina
-SP,Boraceia
-SP,Dois Córregos
-SP,Igaraçu do Tietê
-SP,Itaju
-SP,Itapuí
-SP,Jaú
-SP,Macatuba
-SP,Mineiros do Tietê
-SP,Pederneiras
-SP,Cafelândia
-SP,Getulina
-SP,Guaiçara
-SP,Guaimbê
-SP,Júlio Mesquita
-SP,Lins
-SP,Promissão
-SP,Sabino
-SP,Águas de Lindoia
-SP,Amparo
-SP,Lindoia
-SP,Monte Alegre do Sul
-SP,Pedra Bela
-SP,Pinhalzinho
-SP,Serra Negra
-SP,Socorro
-SP,Americana
-SP,Campinas
-SP,Cosmópolis
-SP,Elias Fausto
-SP,Holambra
-SP,Hortolândia
-SP,Indaiatuba
-SP,Jaguariúna
-SP,Monte Mor
-SP,Nova Odessa
-SP,Paulínia
-SP,Pedreira
-SP,Santa Bárbara d'Oeste
-SP,Sumaré
-SP,Valinhos
-SP,Vinhedo
-SP,Artur Nogueira
-SP,Engenheiro Coelho
-SP,Estiva Gerbi
-SP,Itapira
-SP,Mogi Guaçu
-SP,Mogi Mirim
-SP,Santo Antônio de Posse
+SC,Xanxerê
+SC,Xavantina
+SC,Xaxim
+SC,Zortéa
+SP,Adamantina
+SP,Adolfo
 SP,Aguaí
-SP,Pirassununga
-SP,Porto Ferreira
-SP,Santa Cruz das Palmeiras
 SP,Águas da Prata
-SP,Caconde
-SP,Casa Branca
-SP,Divinolândia
-SP,Espírito Santo do Pinhal
-SP,Itobi
-SP,Mococa
-SP,Santo Antônio do Jardim
-SP,São João da Boa Vista
-SP,São José do Rio Pardo
-SP,São Sebastião da Grama
-SP,Tambaú
-SP,Tapiratiba
-SP,Vargem Grande do Sul
-SP,Apiaí
-SP,Barra do Chapéu
-SP,Capão Bonito
-SP,Guapiara
-SP,Iporanga
-SP,Itaóca
-SP,Itapirapuã Paulista
-SP,Ribeira
-SP,Ribeirão Branco
-SP,Ribeirão Grande
+SP,Águas de Lindoia
+SP,Águas de Santa Bárbara
+SP,Águas de São Pedro
+SP,Agudos
 SP,Alambari
-SP,Angatuba
-SP,Campina do Monte Alegre
-SP,Guareí
-SP,Itapetininga
-SP,Barão de Antonina
-SP,Bom Sucesso de Itararé
-SP,Buri
-SP,Coronel Macedo
-SP,Itaberá
-SP,Itapeva
-SP,Itaporanga
-SP,Itararé
-SP,Nova Campina
-SP,Riversul
-SP,Taquarituba
-SP,Taquarivaí
-SP,Boituva
-SP,Cerquilho
-SP,Cesário Lange
-SP,Laranjal Paulista
-SP,Pereiras
-SP,Porangaba
-SP,Quadra
-SP,Tatuí
-SP,Torre de Pedra
-SP,Itanhaém
-SP,Itariri
-SP,Mongaguá
-SP,Pedro de Toledo
-SP,Peruíbe
-SP,Barra do Turvo
-SP,Cajati
-SP,Cananéia
-SP,Eldorado
-SP,Iguape
-SP,Ilha Comprida
-SP,Jacupiranga
-SP,Juquiá
-SP,Miracatu
-SP,Pariquera-Açu
-SP,Registro
-SP,Sete Barras
-SP,Atibaia
-SP,Bom Jesus dos Perdões
-SP,Bragança Paulista
-SP,Itatiba
-SP,Jarinu
-SP,Joanópolis
-SP,Morungaba
-SP,Nazaré Paulista
-SP,Piracaia
-SP,Tuiuti
-SP,Vargem
-SP,Campo Limpo Paulista
-SP,Itupeva
-SP,Jundiaí
-SP,Louveira
-SP,Várzea Paulista
-SP,Ibiúna
-SP,Piedade
-SP,Pilar do Sul
-SP,São Miguel Arcanjo
-SP,Tapiraí
+SP,Alfredo Marcondes
+SP,Altair
+SP,Altinópolis
+SP,Alto Alegre
 SP,Alumínio
-SP,Araçariguama
-SP,Araçoiaba da Serra
-SP,Cabreúva
-SP,Capela do Alto
-SP,Iperó
-SP,Itu
-SP,Mairinque
-SP,Porto Feliz
-SP,Salto
-SP,Salto de Pirapora
-SP,São Roque
-SP,Sarapuí
-SP,Sorocaba
-SP,Votorantim
+SP,Álvares Florence
+SP,Álvares Machado
 SP,Álvaro de Carvalho
 SP,Alvinlândia
-SP,Echaporã
-SP,Fernão
-SP,Gália
-SP,Garça
-SP,Lupércio
-SP,Marília
-SP,Ocauçu
-SP,Oriente
-SP,Oscar Bressane
-SP,Pompeia
-SP,Vera Cruz
+SP,Americana
+SP,Américo Brasiliense
+SP,Américo de Campos
+SP,Amparo
+SP,Analândia
+SP,Andradina
+SP,Angatuba
+SP,Anhembi
+SP,Anhumas
+SP,Aparecida
+SP,Aparecida d'Oeste
+SP,Apiaí
+SP,Araçariguama
+SP,Araçatuba
+SP,Araçoiaba da Serra
+SP,Aramina
+SP,Arandu
+SP,Arapeí
+SP,Araraquara
+SP,Araras
 SP,Arco-Íris
-SP,Bastos
-SP,Herculândia
-SP,Iacri
-SP,Queiroz
-SP,Quintana
-SP,Tupã
-SP,Caieiras
-SP,Francisco Morato
-SP,Franco da Rocha
-SP,Mairiporã
+SP,Arealva
+SP,Areias
+SP,Areiópolis
+SP,Ariranha
+SP,Artur Nogueira
 SP,Arujá
-SP,Guarulhos
-SP,Santa Isabel
+SP,Aspásia
+SP,Assis
+SP,Atibaia
+SP,Auriflama
+SP,Avaí
+SP,Avanhandava
+SP,Avaré
+SP,Bady Bassitt
+SP,Balbinos
+SP,Bálsamo
+SP,Bananal
+SP,Barão de Antonina
+SP,Barbosa
+SP,Bariri
+SP,Barra Bonita
+SP,Barra do Chapéu
+SP,Barra do Turvo
+SP,Barretos
+SP,Barrinha
+SP,Barueri
+SP,Bastos
+SP,Batatais
+SP,Bauru
+SP,Bebedouro
+SP,Bento de Abreu
+SP,Bernardino de Campos
+SP,Bertioga
+SP,Bilac
+SP,Birigui
+SP,Biritiba-Mirim
+SP,Boa Esperança do Sul
+SP,Bocaina
+SP,Bofete
+SP,Boituva
+SP,Bom Jesus dos Perdões
+SP,Bom Sucesso de Itararé
+SP,Borá
+SP,Boraceia
+SP,Borborema
+SP,Borebi
+SP,Botucatu
+SP,Bragança Paulista
+SP,Braúna
+SP,Brejo Alegre
+SP,Brodowski
+SP,Brotas
+SP,Buri
+SP,Buritama
+SP,Buritizal
+SP,Cabrália Paulista
+SP,Cabreúva
+SP,Caçapava
+SP,Cachoeira Paulista
+SP,Caconde
+SP,Cafelândia
+SP,Caiabu
+SP,Caieiras
+SP,Caiuá
+SP,Cajamar
+SP,Cajati
+SP,Cajobi
+SP,Cajuru
+SP,Campina do Monte Alegre
+SP,Campinas
+SP,Campo Limpo Paulista
+SP,Campos do Jordão
+SP,Campos Novos Paulista
+SP,Cananéia
+SP,Canas
+SP,Cândido Mota
+SP,Cândido Rodrigues
+SP,Canitar
+SP,Capão Bonito
+SP,Capela do Alto
+SP,Capivari
+SP,Caraguatatuba
+SP,Carapicuíba
+SP,Cardoso
+SP,Casa Branca
+SP,Cássia dos Coqueiros
+SP,Castilho
+SP,Catanduva
+SP,Catiguá
+SP,Cedral
+SP,Cerqueira César
+SP,Cerquilho
+SP,Cesário Lange
+SP,Charqueada
+SP,Chavantes
+SP,Clementina
+SP,Colina
+SP,Colômbia
+SP,Conchal
+SP,Conchas
+SP,Cordeirópolis
+SP,Coroados
+SP,Coronel Macedo
+SP,Corumbataí
+SP,Cosmópolis
+SP,Cosmorama
 SP,Cotia
+SP,Cravinhos
+SP,Cristais Paulista
+SP,Cruzália
+SP,Cruzeiro
+SP,Cubatão
+SP,Cunha
+SP,Descalvado
+SP,Diadema
+SP,Dirce Reis
+SP,Divinolândia
+SP,Dobrada
+SP,Dois Córregos
+SP,Dolcinópolis
+SP,Dourado
+SP,Dracena
+SP,Duartina
+SP,Dumont
+SP,Echaporã
+SP,Eldorado
+SP,Elias Fausto
+SP,Elisiário
+SP,Embaúba
 SP,Embu
 SP,Embu-Guaçu
-SP,Itapecerica da Serra
-SP,Juquitiba
-SP,São Lourenço da Serra
-SP,Taboão da Serra
-SP,Vargem Grande Paulista
-SP,Biritiba-Mirim
-SP,Ferraz de Vasconcelos
-SP,Guararema
-SP,Itaquaquecetuba
-SP,Mogi das Cruzes
-SP,Poá
-SP,Salesópolis
-SP,Suzano
-SP,Barueri
-SP,Cajamar
-SP,Carapicuíba
-SP,Itapevi
-SP,Jandira
-SP,Osasco
-SP,Pirapora do Bom Jesus
-SP,Santana de Parnaíba
-SP,Bertioga
-SP,Cubatão
-SP,Guarujá
-SP,Praia Grande
-SP,Santos
-SP,São Vicente
-SP,Diadema
-SP,Mauá
-SP,Ribeirão Pires
-SP,Rio Grande da Serra
-SP,Santo André
-SP,São Bernardo do Campo
-SP,São Caetano do Sul
-SP,São Paulo (State Capital)
-SP,Araras
-SP,Conchal
-SP,Cordeirópolis
-SP,Iracemápolis
-SP,Leme
-SP,Limeira
-SP,Santa Cruz da Conceição
-SP,Santa Gertrudes
-SP,Águas de São Pedro
-SP,Capivari
-SP,Charqueada
-SP,Jumirim
-SP,Mombuca
-SP,Piracicaba
-SP,Rafard
-SP,Rio das Pedras
-SP,Saltinho
-SP,Santa Maria da Serra
-SP,São Pedro
-SP,Tietê
-SP,Brotas
-SP,Corumbataí
-SP,Ipeúna
-SP,Itirapina
-SP,Rio Claro
-SP,Torrinha
-SP,Adamantina
-SP,Flora Rica
-SP,Flórida Paulista
-SP,Inúbia Paulista
-SP,Irapuru
-SP,Lucélia
-SP,Mariápolis
-SP,Osvaldo Cruz
-SP,Pacaembu
-SP,Parapuã
-SP,Pracinha
-SP,Rinópolis
-SP,Sagres
-SP,Salmourão
-SP,Dracena
-SP,Junqueirópolis
-SP,Monte Castelo
-SP,Nova Guataporanga
-SP,Ouro Verde
-SP,Panorama
-SP,Pauliceia
-SP,Santa Mercedes
-SP,São João do Pau d'Alho
-SP,Tupi Paulista
-SP,Alfredo Marcondes
-SP,Álvares Machado
-SP,Anhumas
-SP,Caiabu
-SP,Caiuá
 SP,Emilianópolis
+SP,Engenheiro Coelho
+SP,Espírito Santo do Pinhal
+SP,Espírito Santo do Turvo
+SP,Estiva Gerbi
 SP,Estrela do Norte
+SP,Estrela d'Oeste
 SP,Euclides da Cunha Paulista
+SP,Fartura
+SP,Fernando Prestes
+SP,Fernandópolis
+SP,Fernão
+SP,Ferraz de Vasconcelos
+SP,Flora Rica
+SP,Floreal
+SP,Flórida Paulista
+SP,Florínia
+SP,Franca
+SP,Francisco Morato
+SP,Franco da Rocha
+SP,Gabriel Monteiro
+SP,Gália
+SP,Garça
+SP,Gastão Vidigal
+SP,Gavião Peixoto
+SP,General Salgado
+SP,Getulina
+SP,Glicério
+SP,Guaiçara
+SP,Guaimbê
+SP,Guaíra
+SP,Guapiaçu
+SP,Guapiara
+SP,Guará
+SP,Guaraçaí
+SP,Guaraci
+SP,Guarani d'Oeste
+SP,Guarantã
+SP,Guararapes
+SP,Guararema
+SP,Guaratinguetá
+SP,Guareí
+SP,Guariba
+SP,Guarujá
+SP,Guarulhos
+SP,Guatapará
+SP,Guzolândia
+SP,Herculândia
+SP,Holambra
+SP,Hortolândia
+SP,Iacanga
+SP,Iacri
+SP,Iaras
+SP,Ibaté
+SP,Ibirá
+SP,Ibirarema
+SP,Ibitinga
+SP,Ibiúna
+SP,Icém
+SP,Iepê
+SP,Igaraçu do Tietê
+SP,Igarapava
+SP,Igaratá
+SP,Iguape
+SP,Ilha Comprida
+SP,Ilha Solteira
+SP,Ilhabela
+SP,Indaiatuba
 SP,Indiana
+SP,Indiaporã
+SP,Inúbia Paulista
+SP,Ipaussu
+SP,Iperó
+SP,Ipeúna
+SP,Ipiguá
+SP,Iporanga
+SP,Ipuã
+SP,Iracemápolis
+SP,Irapuã
+SP,Irapuru
+SP,Itaberá
+SP,Itaí
+SP,Itajobi
+SP,Itaju
+SP,Itanhaém
+SP,Itaóca
+SP,Itapecerica da Serra
+SP,Itapetininga
+SP,Itapeva
+SP,Itapevi
+SP,Itapira
+SP,Itapirapuã Paulista
+SP,Itápolis
+SP,Itaporanga
+SP,Itapuí
+SP,Itapura
+SP,Itaquaquecetuba
+SP,Itararé
+SP,Itariri
+SP,Itatiba
+SP,Itatinga
+SP,Itirapina
+SP,Itirapuã
+SP,Itobi
+SP,Itu
+SP,Itupeva
+SP,Ituverava
+SP,Jaborandi
+SP,Jaboticabal
+SP,Jacareí
+SP,Jaci
+SP,Jacupiranga
+SP,Jaguariúna
+SP,Jales
+SP,Jambeiro
+SP,Jandira
+SP,Jardinópolis
+SP,Jarinu
+SP,Jaú
+SP,Jeriquara
+SP,Joanópolis
 SP,João Ramalho
+SP,José Bonifácio
+SP,Júlio Mesquita
+SP,Jumirim
+SP,Jundiaí
+SP,Junqueirópolis
+SP,Juquiá
+SP,Juquitiba
+SP,Lagoinha
+SP,Laranjal Paulista
+SP,Lavínia
+SP,Lavrinhas
+SP,Leme
+SP,Lençóis Paulista
+SP,Limeira
+SP,Lindoia
+SP,Lins
+SP,Lorena
+SP,Lourdes
+SP,Louveira
+SP,Lucélia
+SP,Lucianópolis
+SP,Luís Antônio
+SP,Luiziânia
+SP,Lupércio
+SP,Lutécia
+SP,Macatuba
+SP,Macaubal
+SP,Macedônia
+SP,Magda
+SP,Mairinque
+SP,Mairiporã
+SP,Manduri
 SP,Marabá Paulista
+SP,Maracaí
+SP,Marapoama
+SP,Mariápolis
+SP,Marília
+SP,Marinópolis
 SP,Martinópolis
+SP,Matão
+SP,Mauá
+SP,Mendonça
+SP,Meridiano
+SP,Mesópolis
+SP,Miguelópolis
+SP,Mineiros do Tietê
+SP,Mira Estrela
+SP,Miracatu
+SP,Mirandópolis
 SP,Mirante do Paranapanema
+SP,Mirassol
+SP,Mirassolândia
+SP,Mococa
+SP,Mogi das Cruzes
+SP,Mogi Guaçu
+SP,Mogi Mirim
+SP,Mombuca
+SP,Monções
+SP,Mongaguá
+SP,Monte Alegre do Sul
+SP,Monte Alto
+SP,Monte Aprazível
+SP,Monte Azul Paulista
+SP,Monte Castelo
+SP,Monte Mor
+SP,Monteiro Lobato
+SP,Morro Agudo
+SP,Morungaba
+SP,Motuca
+SP,Murutinga do Sul
+SP,Nantes
 SP,Narandiba
+SP,Natividade da Serra
+SP,Nazaré Paulista
+SP,Neves Paulista
+SP,Nhandeara
+SP,Nipoã
+SP,Nova Aliança
+SP,Nova Campina
+SP,Nova Canaã Paulista
+SP,Nova Castilho
+SP,Nova Europa
+SP,Nova Granada
+SP,Nova Guataporanga
+SP,Nova Independência
+SP,Nova Luzitânia
+SP,Nova Odessa
+SP,Novais
+SP,Novo Horizonte
+SP,Nuporanga
+SP,Ocauçu
+SP,Óleo
+SP,Olímpia
+SP,Onda Verde
+SP,Oriente
+SP,Orindiúva
+SP,Orlândia
+SP,Osasco
+SP,Oscar Bressane
+SP,Osvaldo Cruz
+SP,Ourinhos
+SP,Ouro Verde
+SP,Ouroeste
+SP,Pacaembu
+SP,Palestina
+SP,Palmares Paulista
+SP,Palmeira d'Oeste
+SP,Palmital
+SP,Panorama
+SP,Paraguaçu Paulista
+SP,Paraibuna
+SP,Paraíso
+SP,Paranapanema
+SP,Paranapuã
+SP,Parapuã
+SP,Pardinho
+SP,Pariquera-Açu
+SP,Parisi
+SP,Patrocínio Paulista
+SP,Pauliceia
+SP,Paulínia
+SP,Paulistânia
+SP,Paulo de Faria
+SP,Pederneiras
+SP,Pedra Bela
+SP,Pedranópolis
+SP,Pedregulho
+SP,Pedreira
+SP,Pedrinhas Paulista
+SP,Pedro de Toledo
+SP,Penápolis
+SP,Pereira Barreto
+SP,Pereiras
+SP,Peruíbe
+SP,Piacatu
+SP,Piedade
+SP,Pilar do Sul
+SP,Pindamonhangaba
+SP,Pindorama
+SP,Pinhalzinho
 SP,Piquerobi
+SP,Piquete
+SP,Piracaia
+SP,Piracicaba
+SP,Piraju
+SP,Pirajuí
+SP,Pirangi
+SP,Pirapora do Bom Jesus
 SP,Pirapozinho
+SP,Pirassununga
+SP,Piratininga
+SP,Pitangueiras
+SP,Planalto
+SP,Platina
+SP,Poá
+SP,Poloni
+SP,Pompeia
+SP,Pongaí
+SP,Pontal
+SP,Pontalinda
+SP,Pontes Gestal
+SP,Populina
+SP,Porangaba
+SP,Porto Feliz
+SP,Porto Ferreira
+SP,Potim
+SP,Potirendaba
+SP,Pracinha
+SP,Pradópolis
+SP,Praia Grande
+SP,Pratânia
+SP,Presidente Alves
 SP,Presidente Bernardes
 SP,Presidente Epitácio
 SP,Presidente Prudente
 SP,Presidente Venceslau
+SP,Promissão
+SP,Quadra
+SP,Quatá
+SP,Queiroz
+SP,Queluz
+SP,Quintana
+SP,Rafard
 SP,Rancharia
+SP,Redenção da Serra
 SP,Regente Feijó
-SP,Ribeirão dos Índios
-SP,Rosana
-SP,Sandovalina
-SP,Santo Anastácio
-SP,Santo Expedito
-SP,Taciba
-SP,Tarabai
-SP,Teodoro Sampaio
-SP,Barretos
-SP,Colina
-SP,Colômbia
-SP,Altinópolis
-SP,Batatais
-SP,Cajuru
-SP,Cássia dos Coqueiros
-SP,Santa Cruz da Esperança
-SP,Santo Antônio da Alegria
-SP,Cristais Paulista
-SP,Franca
-SP,Itirapuã
-SP,Jeriquara
-SP,Patrocínio Paulista
-SP,Pedregulho
+SP,Reginópolis
+SP,Registro
 SP,Restinga
+SP,Ribeira
+SP,Ribeirão Bonito
+SP,Ribeirão Branco
 SP,Ribeirão Corrente
-SP,Rifaina
-SP,São José da Bela Vista
-SP,Aramina
-SP,Buritizal
-SP,Guará
-SP,Igarapava
-SP,Ituverava
-SP,Bebedouro
-SP,Cândido Rodrigues
-SP,Fernando Prestes
-SP,Guariba
-SP,Jaboticabal
-SP,Monte Alto
-SP,Monte Azul Paulista
-SP,Pirangi
-SP,Pitangueiras
-SP,Santa Ernestina
-SP,Taiaçu
-SP,Taiúva
-SP,Taquaral
-SP,Taquaritinga
-SP,Terra Roxa
-SP,Viradouro
-SP,Vista Alegre do Alto
-SP,Barrinha
-SP,Brodowski
-SP,Cravinhos
-SP,Dumont
-SP,Guatapará
-SP,Jardinópolis
-SP,Luís Antônio
-SP,Pontal
-SP,Pradópolis
+SP,Ribeirão do Sul
+SP,Ribeirão dos Índios
+SP,Ribeirão Grande
+SP,Ribeirão Pires
 SP,Ribeirão Preto
-SP,Santa Rita do Passa Quatro
-SP,Santa Rosa de Viterbo
-SP,São Simão
-SP,Serra Azul
-SP,Serrana
-SP,Sertãozinho
-SP,Guaíra
-SP,Ipuã
-SP,Jaborandi
-SP,Miguelópolis
-SP,Morro Agudo
-SP,Nuporanga
-SP,Orlândia
-SP,Sales Oliveira
-SP,São Joaquim da Barra
-SP,Auriflama
-SP,Floreal
-SP,Gastão Vidigal
-SP,General Salgado
-SP,Guzolândia
-SP,Magda
-SP,Nova Castilho
-SP,Nova Luzitânia
-SP,São João de Iracema
-SP,Ariranha
-SP,Cajobi
-SP,Catanduva
-SP,Catiguá
-SP,Elisiário
-SP,Embaúba
-SP,Novais
-SP,Palmares Paulista
-SP,Paraíso
-SP,Pindorama
-SP,Santa Adélia
-SP,Severínia
-SP,Tabapuã
-SP,Estrela d'Oeste
-SP,Fernandópolis
-SP,Guarani d'Oeste
-SP,Indiaporã
-SP,Macedônia
-SP,Meridiano
-SP,Mira Estrela
-SP,Ouroeste
-SP,Pedranópolis
-SP,São João das Duas Pontes
-SP,Turmalina
-SP,Aparecida d'Oeste
-SP,Aspásia
-SP,Dirce Reis
-SP,Dolcinópolis
-SP,Jales
-SP,Marinópolis
-SP,Mesópolis
-SP,Nova Canaã Paulista
-SP,Palmeira d'Oeste
-SP,Paranapuã
-SP,Pontalinda
-SP,Populina
+SP,Rifaina
+SP,Rincão
+SP,Rinópolis
+SP,Rio Claro
+SP,Rio das Pedras
+SP,Rio Grande da Serra
+SP,Riolândia
+SP,Riversul
+SP,Rosana
+SP,Roseira
+SP,Rubiácea
 SP,Rubinéia
+SP,Sabino
+SP,Sagres
+SP,Sales
+SP,Sales Oliveira
+SP,Salesópolis
+SP,Salmourão
+SP,Saltinho
+SP,Salto
+SP,Salto de Pirapora
+SP,Salto Grande
+SP,Sandovalina
+SP,Santa Adélia
 SP,Santa Albertina
+SP,Santa Bárbara d'Oeste
+SP,Santa Branca
 SP,Santa Clara d'Oeste
+SP,Santa Cruz da Conceição
+SP,Santa Cruz da Esperança
+SP,Santa Cruz das Palmeiras
+SP,Santa Cruz do Rio Pardo
+SP,Santa Ernestina
 SP,Santa Fé do Sul
+SP,Santa Gertrudes
+SP,Santa Isabel
+SP,Santa Lúcia
+SP,Santa Maria da Serra
+SP,Santa Mercedes
+SP,Santa Rita do Passa Quatro
 SP,Santa Rita d'Oeste
+SP,Santa Rosa de Viterbo
 SP,Santa Salete
 SP,Santana da Ponte Pensa
-SP,São Francisco
-SP,Três Fronteiras
-SP,Urânia
-SP,Vitória Brasil
-SP,Macaubal
-SP,Monções
-SP,Monte Aprazível
-SP,Neves Paulista
-SP,Nhandeara
-SP,Nipoã
-SP,Poloni
-SP,Sebastianópolis do Sul
-SP,União Paulista
-SP,Irapuã
-SP,Itajobi
-SP,Marapoama
-SP,Novo Horizonte
-SP,Sales
-SP,Urupês
-SP,Adolfo
-SP,Altair
-SP,Bady Bassitt
-SP,Bálsamo
-SP,Cedral
-SP,Guapiaçu
-SP,Guaraci
-SP,Ibirá
-SP,Icém
-SP,Ipiguá
-SP,Jaci
-SP,José Bonifácio
-SP,Mendonça
-SP,Mirassol
-SP,Mirassolândia
-SP,Nova Aliança
-SP,Nova Granada
-SP,Olímpia
-SP,Onda Verde
-SP,Orindiúva
-SP,Palestina
-SP,Paulo de Faria
-SP,Planalto
-SP,Potirendaba
-SP,São José do Rio Preto
-SP,Tanabi
-SP,Ubarana
-SP,Uchoa
-SP,Zacarias
-SP,Álvares Florence
-SP,Américo de Campos
-SP,Cardoso
-SP,Cosmorama
-SP,Parisi
-SP,Pontes Gestal
-SP,Riolândia
-SP,Valentim Gentil
-SP,Votuporanga
-SP,Arapeí
-SP,Areias
-SP,Bananal
-SP,São José do Barreiro
-SP,Silveiras
-SP,Campos do Jordão
-SP,Monteiro Lobato
+SP,Santana de Parnaíba
+SP,Santo Anastácio
+SP,Santo André
+SP,Santo Antônio da Alegria
+SP,Santo Antônio de Posse
+SP,Santo Antônio do Aracanguá
+SP,Santo Antônio do Jardim
 SP,Santo Antônio do Pinhal
+SP,Santo Expedito
+SP,Santópolis do Aguapeí
+SP,Santos
 SP,São Bento do Sapucaí
-SP,Caraguatatuba
-SP,Ilhabela
-SP,São Sebastião
-SP,Ubatuba
-SP,Aparecida
-SP,Cachoeira Paulista
-SP,Canas
-SP,Cruzeiro
-SP,Guaratinguetá
-SP,Lavrinhas
-SP,Lorena
-SP,Piquete
-SP,Potim
-SP,Queluz
-SP,Roseira
-SP,Cunha
-SP,Jambeiro
-SP,Lagoinha
-SP,Natividade da Serra
-SP,Paraibuna
-SP,Redenção da Serra
-SP,São Luiz do Paraitinga
-SP,Caçapava
-SP,Igaratá
-SP,Jacareí
-SP,Pindamonhangaba
-SP,Santa Branca
+SP,São Bernardo do Campo
+SP,São Caetano do Sul
+SP,São Carlos
+SP,São Francisco
+SP,São João da Boa Vista
+SP,São João das Duas Pontes
+SP,São João de Iracema
+SP,São João do Pau d'Alho
+SP,São Joaquim da Barra
+SP,São José da Bela Vista
+SP,São José do Barreiro
+SP,São José do Rio Pardo
+SP,São José do Rio Preto
 SP,São José dos Campos
+SP,São Lourenço da Serra
+SP,São Luiz do Paraitinga
+SP,São Manuel
+SP,São Miguel Arcanjo
+SP,São Paulo (State Capital)
+SP,São Pedro
+SP,São Pedro do Turvo
+SP,São Roque
+SP,São Sebastião
+SP,São Sebastião da Grama
+SP,São Simão
+SP,São Vicente
+SP,Sarapuí
+SP,Sarutaiá
+SP,Sebastianópolis do Sul
+SP,Serra Azul
+SP,Serra Negra
+SP,Serrana
+SP,Sertãozinho
+SP,Sete Barras
+SP,Severínia
+SP,Silveiras
+SP,Socorro
+SP,Sorocaba
+SP,Sud Mennucci
+SP,Sumaré
+SP,Suzanápolis
+SP,Suzano
+SP,Tabapuã
+SP,Tabatinga
+SP,Taboão da Serra
+SP,Taciba
+SP,Taguaí
+SP,Taiaçu
+SP,Taiúva
+SP,Tambaú
+SP,Tanabi
+SP,Tapiraí
+SP,Tapiratiba
+SP,Taquaral
+SP,Taquaritinga
+SP,Taquarituba
+SP,Taquarivaí
+SP,Tarabai
+SP,Tarumã
+SP,Tatuí
 SP,Taubaté
+SP,Tejupá
+SP,Teodoro Sampaio
+SP,Terra Roxa
+SP,Tietê
+SP,Timburi
+SP,Torre de Pedra
+SP,Torrinha
+SP,Trabiju
 SP,Tremembé
-SE,Areia Branca
-SE,Campo do Brito
-SE,Itabaiana
-SE,Macambira
-SE,Malhador
-SE,Moita Bonita
-SE,São Domingos
-SE,Lagarto
-SE,Riachão do Dantas
+SP,Três Fronteiras
+SP,Tuiuti
+SP,Tupã
+SP,Tupi Paulista
+SP,Turiúba
+SP,Turmalina
+SP,Ubarana
+SP,Ubatuba
+SP,Ubirajara
+SP,Uchoa
+SP,União Paulista
+SP,Urânia
+SP,Uru
+SP,Urupês
+SP,Valentim Gentil
+SP,Valinhos
+SP,Valparaíso
+SP,Vargem
+SP,Vargem Grande do Sul
+SP,Vargem Grande Paulista
+SP,Várzea Paulista
+SP,Vera Cruz
+SP,Vinhedo
+SP,Viradouro
+SP,Vista Alegre do Alto
+SP,Vitória Brasil
+SP,Votorantim
+SP,Votuporanga
+SP,Zacarias
+SE,Amparo de São Francisco
 SE,Aquidabã
-SE,Cumbe
-SE,Malhada dos Bois
-SE,Muribeca
-SE,Nossa Senhora das Dores
-SE,São Miguel do Aleixo
-SE,Poço Verde
-SE,Simão Dias
-SE,Tobias Barreto
 SE,Aracaju (State Capital)
-SE,Barra dos Coqueiros
-SE,Nossa Senhora do Socorro
-SE,São Cristóvão
-SE,Carmópolis
-SE,General Maynard
-SE,Laranjeiras
-SE,Maruim
-SE,Riachuelo
-SE,Rosário do Catete
-SE,Santo Amaro das Brotas
 SE,Arauá
+SE,Areia Branca
+SE,Barra dos Coqueiros
 SE,Boquim
-SE,Cristinápolis
-SE,Itabaianinha
-SE,Pedrinhas
-SE,Salgado
-SE,Tomar do Geru
-SE,Umbaúba
+SE,Brejo Grande
+SE,Campo do Brito
+SE,Canhoba
+SE,Canindé de São Francisco
 SE,Capela
+SE,Carira
+SE,Carmópolis
+SE,Cedro de São João
+SE,Cristinápolis
+SE,Cumbe
 SE,Divina Pastora
-SE,Santa Rosa de Lima
-SE,Siriri
 SE,Estância
+SE,Feira Nova
+SE,Frei Paulo
+SE,Gararu
+SE,General Maynard
+SE,Gracho Cardoso
+SE,Ilha das Flores
 SE,Indiaroba
+SE,Itabaiana
+SE,Itabaianinha
+SE,Itabi
 SE,Itaporanga d'Ajuda
-SE,Santa Luzia do Itanhy
 SE,Japaratuba
 SE,Japoatã
-SE,Pacatuba
-SE,Pirambu
-SE,São Francisco
-SE,Amparo de São Francisco
-SE,Brejo Grande
-SE,Canhoba
-SE,Cedro de São João
-SE,Ilha das Flores
-SE,Neópolis
-SE,Nossa Senhora de Lourdes
-SE,Propriá
-SE,Santana do São Francisco
-SE,Telha
-SE,Carira
-SE,Frei Paulo
-SE,Nossa Senhora Aparecida
-SE,Pedra Mole
-SE,Pinhão
-SE,Ribeirópolis
-SE,Canindé de São Francisco
-SE,Feira Nova
-SE,Gararu
-SE,Gracho Cardoso
-SE,Itabi
+SE,Lagarto
+SE,Laranjeiras
+SE,Macambira
+SE,Malhada dos Bois
+SE,Malhador
+SE,Maruim
+SE,Moita Bonita
 SE,Monte Alegre de Sergipe
+SE,Muribeca
+SE,Neópolis
+SE,Nossa Senhora Aparecida
 SE,Nossa Senhora da Glória
+SE,Nossa Senhora das Dores
+SE,Nossa Senhora de Lourdes
+SE,Nossa Senhora do Socorro
+SE,Pacatuba
+SE,Pedra Mole
+SE,Pedrinhas
+SE,Pinhão
+SE,Pirambu
 SE,Poço Redondo
+SE,Poço Verde
 SE,Porto da Folha
-TO,Aragominas
-TO,Araguaína
-TO,Araguanã
-TO,Arapoema
-TO,Babaçulândia
-TO,Bandeirantes do Tocantins
-TO,Carmolândia
-TO,Colinas do Tocantins
-TO,Filadélfia
-TO,Muricilândia
-TO,Nova Olinda
-TO,Palmeirante
-TO,Pau d'Arco
-TO,Piraquê
-TO,Santa Fé do Araguaia
-TO,Wanderlândia
-TO,Xambioá
+SE,Propriá
+SE,Riachão do Dantas
+SE,Riachuelo
+SE,Ribeirópolis
+SE,Rosário do Catete
+SE,Salgado
+SE,Santa Luzia do Itanhy
+SE,Santa Rosa de Lima
+SE,Santana do São Francisco
+SE,Santo Amaro das Brotas
+SE,São Cristóvão
+SE,São Domingos
+SE,São Francisco
+SE,São Miguel do Aleixo
+SE,Simão Dias
+SE,Siriri
+SE,Telha
+SE,Tobias Barreto
+SE,Tomar do Geru
+SE,Umbaúba
+TO,Abreulândia
 TO,Aguiarnópolis
+TO,Aliança do Tocantins
+TO,Almas
+TO,Alvorada
 TO,Ananás
 TO,Angico
-TO,Araguatins
-TO,Augustinópolis
-TO,Axixá do Tocantins
-TO,Buriti do Tocantins
-TO,Cachoeirinha
-TO,Carrasco Bonito
-TO,Darcinópolis
-TO,Esperantina
-TO,Itaguatins
-TO,Luzinópolis
-TO,Maurilândia do Tocantins
-TO,Nazaré
-TO,Palmeiras do Tocantins
-TO,Praia Norte
-TO,Riachinho
-TO,Sampaio
-TO,Santa Terezinha do Tocantins
-TO,São Bento do Tocantins
-TO,São Miguel do Tocantins
-TO,São Sebastião do Tocantins
-TO,Sítio Novo do Tocantins
-TO,Tocantinópolis
-TO,Aliança do Tocantins
-TO,Alvorada
-TO,Brejinho de Nazaré
-TO,Cariri do Tocantins
-TO,Crixás do Tocantins
-TO,Figueirópolis
-TO,Gurupi
-TO,Jaú do Tocantins
-TO,Peixe
-TO,Palmeirópolis
-TO,Santa Rita do Tocantins
-TO,São Salvador do Tocantins
-TO,Sucupira
-TO,Talismã
-TO,Abreulândia
+TO,Aparecida do Rio Negro
+TO,Aragominas
 TO,Araguacema
+TO,Araguaçu
+TO,Araguaína
+TO,Araguanã
+TO,Araguatins
+TO,Arapoema
+TO,Arraias
+TO,Augustinópolis
+TO,Aurora do Tocantins
+TO,Axixá do Tocantins
+TO,Babaçulândia
+TO,Bandeirantes do Tocantins
+TO,Barra do Ouro
 TO,Barrolândia
 TO,Bernardo Sayão
+TO,Bom Jesus do Tocantins
 TO,Brasilândia do Tocantins
+TO,Brejinho de Nazaré
+TO,Buriti do Tocantins
+TO,Cachoeirinha
+TO,Campos Lindos
+TO,Cariri do Tocantins
+TO,Carmolândia
+TO,Carrasco Bonito
 TO,Caseara
-TO,Colméia
-TO,Couto de Magalhães
-TO,Divinópolis do Tocantins
-TO,Dois Irmãos do Tocantins
-TO,Fortaleza do Tabocão
-TO,Goianorte
-TO,Guaraí
-TO,Itaporã do Tocantins
-TO,Juarina
-TO,Marianópolis do Tocantins
-TO,Miracema do Tocantins
-TO,Miranorte
-TO,Monte Santo do Tocantins
-TO,Pequizeiro
-TO,Presidente Kennedy
-TO,Rio dos Bois
-TO,Tupirama
-TO,Tupiratins
-TO,Araguaçu
-TO,Chapada de Areia
-TO,Cristalândia
-TO,Dueré
-TO,Fátima
-TO,Formoso do Araguaia
-TO,Lagoa da Confusão
-TO,Nova Rosalândia
-TO,Oliveira de Fátima
-TO,Paraíso do Tocantins
-TO,Pium
-TO,Pugmil
-TO,Sandolândia
-TO,Almas
-TO,Arraias
-TO,Aurora do Tocantins
+TO,Centenário
 TO,Chapada da Natividade
+TO,Chapada de Areia
+TO,Colinas do Tocantins
+TO,Colméia
 TO,Combinado
 TO,Conceição do Tocantins
+TO,Couto de Magalhães
+TO,Cristalândia
+TO,Crixás do Tocantins
+TO,Darcinópolis
 TO,Dianópolis
+TO,Divinópolis do Tocantins
+TO,Dois Irmãos do Tocantins
+TO,Dueré
+TO,Esperantina
+TO,Fátima
+TO,Figueirópolis
+TO,Filadélfia
+TO,Formoso do Araguaia
+TO,Fortaleza do Tabocão
+TO,Goianorte
+TO,Goiatins
+TO,Guaraí
+TO,Gurupi
+TO,Ipueiras
+TO,Itacajá
+TO,Itaguatins
+TO,Itapiratins
+TO,Itaporã do Tocantins
+TO,Jaú do Tocantins
+TO,Juarina
+TO,Lagoa da Confusão
+TO,Lagoa do Tocantins
+TO,Lajeado
 TO,Lavandeira
+TO,Lizarda
+TO,Luzinópolis
+TO,Marianópolis do Tocantins
+TO,Mateiros
+TO,Maurilândia do Tocantins
+TO,Miracema do Tocantins
+TO,Miranorte
+TO,Monte do Carmo
+TO,Monte Santo do Tocantins
+TO,Muricilândia
 TO,Natividade
+TO,Nazaré
+TO,Nova Olinda
+TO,Nova Rosalândia
+TO,Novo Acordo
 TO,Novo Alegre
 TO,Novo Jardim
+TO,Oliveira de Fátima
+TO,Palmas (State capital)
+TO,Palmeirante
+TO,Palmeiras do Tocantins
+TO,Palmeirópolis
+TO,Paraíso do Tocantins
 TO,Paranã
+TO,Pau d'Arco
+TO,Pedro Afonso
+TO,Peixe
+TO,Pequizeiro
 TO,Pindorama do Tocantins
+TO,Piraquê
+TO,Pium
 TO,Ponte Alta do Bom Jesus
+TO,Ponte Alta do Tocantins
 TO,Porto Alegre do Tocantins
+TO,Porto Nacional
+TO,Praia Norte
+TO,Presidente Kennedy
+TO,Pugmil
+TO,Recursolândia
+TO,Riachinho
 TO,Rio da Conceição
+TO,Rio dos Bois
+TO,Rio Sono
+TO,Sampaio
+TO,Sandolândia
+TO,Santa Fé do Araguaia
+TO,Santa Maria do Tocantins
+TO,Santa Rita do Tocantins
 TO,Santa Rosa do Tocantins
+TO,Santa Tereza do Tocantins
+TO,Santa Terezinha do Tocantins
+TO,São Bento do Tocantins
+TO,São Félix do Tocantins
+TO,São Miguel do Tocantins
+TO,São Salvador do Tocantins
+TO,São Sebastião do Tocantins
 TO,São Valério da Natividade
+TO,Silvanópolis
+TO,Sítio Novo do Tocantins
+TO,Sucupira
 TO,Taguatinga
 TO,Taipas do Tocantins
-TO,Barra do Ouro
-TO,Campos Lindos
-TO,Centenário
-TO,Goiatins
-TO,Itacajá
-TO,Itapiratins
-TO,Lagoa do Tocantins
-TO,Lizarda
-TO,Recursolândia
-TO,Rio Sono
-TO,Mateiros
-TO,Novo Acordo
-TO,Ponte Alta do Tocantins
-TO,Santa Tereza do Tocantins
-TO,São Félix do Tocantins
-TO,Aparecida do Rio Negro
-TO,Bom Jesus do Tocantins
-TO,Ipueiras
-TO,Lajeado
-TO,Monte do Carmo
-TO,Palmas (State capital)
-TO,Pedro Afonso
-TO,Porto Nacional
-TO,Santa Maria do Tocantins
-TO,Silvanópolis
+TO,Talismã
 TO,Tocantínia
+TO,Tocantinópolis
+TO,Tupirama
+TO,Tupiratins
+TO,Wanderlândia
+TO,Xambioá
