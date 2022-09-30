@@ -523,7 +523,7 @@ def Q2():
         return redirect(url_for('Q1'))
 
 
-@app.route('/Q3+4', methods=['GET', 'POST'])
+@app.route('/Q3', methods=['GET', 'POST'])
 @login_required
 def Q3():
     form = Form()
@@ -537,7 +537,6 @@ def Q3():
         session['Q4'] = municipal.name
 
         return redirect(url_for('Q5'))
-        # return 'State: {}, Municipal: {}'.format(form.state.data, municipal.name)
 
     question = "In which state do you live?"
     return render_template('QSelectField.html', form=form, question=question)
