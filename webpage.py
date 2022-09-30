@@ -464,6 +464,7 @@ def Q2():
             # convert the final_dict's value to a list
             final_list = list(final_dict.values())
             final_list = np.array(final_list)
+            return redirect(url_for('Q5'))
 
 
 
