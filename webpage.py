@@ -468,12 +468,15 @@ def Q2():
 
 
 
-            # initiate the DRSModel
-            parser = argparse.ArgumentParser()
-            parser.add_argument('--filepath', default='Destination_tags_sum.csv')
-            parser.add_argument('--model', default='drs_model')
-            config = parser.parse_args()
-            model = DRSModel(config)
+            # # initiate the DRSModel
+            # parser = argparse.ArgumentParser()
+            # parser.add_argument('--filepath', default='./Destination_tags_sum.csv')
+            # parser.add_argument('--model', default='./drs_model')
+            # config = parser.parse_args() # this f*cking line!!!
+
+            filepath = '/Destination_tags_sum.csv'
+            drs_model = './drs_model'
+            model = DRSModel(filepath, drs_model)
 
             # use predict function from model.py to get recommendation, but the return is a tuple, 2nd element in that tuple is the np.array we need
             result = model.predict(final_list)
@@ -522,7 +525,7 @@ def Q2():
         return redirect(url_for('Q1'))
 
 
-@app.route('/Q3+4', methods=['GET', 'POST'])
+@app.route('/Q3', methods=['GET', 'POST'])
 @login_required
 def Q3():
     form = Form()
@@ -536,7 +539,6 @@ def Q3():
         session['Q4'] = municipal.name
 
         return redirect(url_for('Q5'))
-        # return 'State: {}, Municipal: {}'.format(form.state.data, municipal.name)
 
     question = "In which state do you live?"
     return render_template('QSelectField.html', form=form, question=question)

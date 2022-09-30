@@ -7,7 +7,7 @@ import argparse
 
 
 class DRSModel:
-    def __init__(self, config) -> None:
+    def __init__(self, filepath, drs_model) -> None:
         """
         load the model
         Args:
@@ -15,11 +15,12 @@ class DRSModel:
         Returns:
             ret
         """
-        if os.path.exists(config.model):
-            self.model = load(config.model)
-        else:
-            self.model = None
-        self.location_filepath = config.filepath
+        # if os.path.exists(config.model):
+        #     self.model = load(config.model)
+        # else:
+        #     self.model = None
+        self.location_filepath = filepath
+        self.model = load(drs_model)
         self.scalar = Normalizer()
 
     def fit(self, location_names):
@@ -56,8 +57,8 @@ class DRSModel:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--filepath', default='Destination_tags_sum.csv')
-    parser.add_argument('--model', default='drs_model')
+    parser.add_argument('--filepath', default='./Destination_tags_sum.csv')
+    parser.add_argument('--model', default='./drs_model')
     config = parser.parse_args()
     model = DRSModel(config)
 
