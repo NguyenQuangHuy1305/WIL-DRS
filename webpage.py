@@ -474,7 +474,7 @@ def Q2():
             parser.add_argument('--model', default='drs_model')
             config = parser.parse_args()
             model = DRSModel(config)
-            return redirect(url_for('Q5'))
+            return redirect(url_for('Q3'))
 
             # use predict function from model.py to get recommendation, but the return is a tuple, 2nd element in that tuple is the np.array we need
             result = model.predict(final_list)
