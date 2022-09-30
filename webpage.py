@@ -470,11 +470,12 @@ def Q2():
 
             # initiate the DRSModel
             parser = argparse.ArgumentParser()
+            return redirect(url_for('Q3'))
+
             parser.add_argument('--filepath', default='Destination_tags_sum.csv')
             parser.add_argument('--model', default='drs_model')
             config = parser.parse_args()
             model = DRSModel(config)
-            return redirect(url_for('Q3'))
 
             # use predict function from model.py to get recommendation, but the return is a tuple, 2nd element in that tuple is the np.array we need
             result = model.predict(final_list)
