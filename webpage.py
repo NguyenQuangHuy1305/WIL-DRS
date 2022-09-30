@@ -464,7 +464,6 @@ def Q2():
             # convert the final_dict's value to a list
             final_list = list(final_dict.values())
             final_list = np.array(final_list)
-            return redirect(url_for('Q5'))
 
 
 
@@ -475,6 +474,7 @@ def Q2():
             parser.add_argument('--model', default='drs_model')
             config = parser.parse_args()
             model = DRSModel(config)
+            return redirect(url_for('Q5'))
 
             # use predict function from model.py to get recommendation, but the return is a tuple, 2nd element in that tuple is the np.array we need
             result = model.predict(final_list)
