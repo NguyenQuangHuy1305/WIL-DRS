@@ -470,9 +470,9 @@ def Q2():
 
             # initiate the DRSModel
             parser = argparse.ArgumentParser()
+            parser.add_argument('--filepath', default='Destination_tags_sum.csv')
             return redirect(url_for('Q3'))
 
-            parser.add_argument('--filepath', default='Destination_tags_sum.csv')
             parser.add_argument('--model', default='drs_model')
             config = parser.parse_args()
             model = DRSModel(config)
