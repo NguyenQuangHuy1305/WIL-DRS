@@ -219,16 +219,36 @@
                                         <p> No review for {{ top_three_activity.capitalize() }}</p>
                                     </div>
                                 {% endif %}
-
                             </div>
                             {% endfor %}
-                            <div class="q20-submit">
-                                <div class="submit-button"><button type="submit" value="Next">More Destinations</button></div>
-                            </div>
+                            <!-- <div class="q20-submit">
+                                <div class="submit-button"><button type="submit">More Destinations</button></div>
+                            </div> -->
                         </form>
                     </div>
                 </div>                
             </div>
+
+            <p class="question-q20">
+                {{question}}
+            </p>
+
+            <div id="form-block">
+                <form method="POST" action="">
+                    {% for answer in answers %}
+                    <div id="ck-button">
+                        <label>
+                            <input type="checkbox" value="{{ answer }}" name="DestinationDetail"><span>{{ answer }}</span>
+                        </label>
+                    </div><br>
+                    {% endfor %}
+                    <div class="container">
+                        <div class="submit-button"><button type="submit">Next Destination</button></div>
+                    </div>
+                </form>
+            </div>
+
+
         </div>
     </div>
 </div>

@@ -137,6 +137,14 @@ class Answer(db.Model):
     Q18 = db.Column(db.String(100), nullable=True)
     Q19 = db.Column(db.String(100), nullable=True)
 
+class Interest(db.Model):
+    """
+    1 row in this table means that user (ex: 1) is interested in visiting location_id (ex: 59)
+    """
+    id = db.Column("id", db.Integer, primary_key=True)
+    user = db.Column(db.String(100))
+    location_id = db.Column(db.String(100))
+
 class Form(FlaskForm):
     state = SelectField('state', choices=[
         ('AC', 'Acre'),
@@ -355,6 +363,19 @@ def Q0():
             flash("You can only choose 1 option", 'danger')
             return redirect(url_for('Q0'))
         elif "No - I am just curious to find out about destinations in general" in answer:
+            last_id = Location.query.count()
+            random_id_list = random.sample(range(1, last_id), 10)
+            random_location_list = []
+            locations = Location.query.all()
+
+            for location in locations:
+                for i in random_id_list:
+                    if location.id == i:
+                        random_location_list.append(location.id)
+            recommended_id_list = random_location_list
+
+            session['recommended_id_list'] = recommended_id_list
+
             return redirect(url_for('Q20'))
         elif "Yes - I want information for a specific trip" in answer:
             return redirect(url_for('Q1'))
@@ -784,7 +805,7 @@ def Q13():
 
     if 'Q1' in session and 'Q2' in session:
         question = "What is your current relationship status?"
-        answers = ['Single', 'De facto', 'Married', 'Divorced of Widowed', 'Prefer not to say']
+        answers = ['Single', 'De facto', 'Married', 'Divorced or Widowed', 'Prefer not to say']
         return render_template('Q1.html', question=question, answers=answers)
     elif 'Q1' in session and 'Q2' not in session:
         flash("You have to answer this question before proceeding", 'danger')
@@ -1013,21 +1034,7 @@ def Q19():
 @app.route("/Q20", methods=["POST", "GET"])
 @login_required
 def Q20():
-    # if we have recommended_id_list in session, which mean the user has answered Q1 and Q2:
-    if 'recommended_id_list' in session:
-        recommended_id_list = session['recommended_id_list']
-    # if the user chose "random location recommendation func", then get random locations to recommend
-    elif 'recommended_id_list' not in session:
-        last_id = Location.query.count()
-        random_id_list = random.sample(range(1, last_id), 10)
-        random_location_list = []
-        locations = Location.query.all()
-
-        for location in locations:
-            for i in random_id_list:
-                if location.id == i:
-                    random_location_list.append(location.id)
-        recommended_id_list = random_location_list
+    recommended_id_list = session['recommended_id_list']
     
     times_needed_to_loop = 3 # times_needed_to_loop = how many time do we need to loop Q20
     times_looped = session['times_looped']
@@ -1044,8 +1051,8 @@ def Q20():
         answer = request.form.getlist('Q20')
 
         # if the user choose both yes and no
-        if "Yes" in answer and "No" in answer:
-            flash("You can only choose 1 option", 'danger')
+        if len(answer) != 1:
+            flash("You must choose 1 option", 'danger')
             return redirect(url_for('Q20'))
 
         # if the user had been to this location before (yes)
@@ -1135,63 +1142,12 @@ def Q20():
         # if the user has not been to this location before (no)
         elif "No" in answer and times_looped != times_needed_to_loop:
             location = Location.query.filter_by(id=recommended_id_list[times_looped]).first()
-            location_name = location.name     
+            session['location_name'] = location.name
+            session['location_id'] = location.id
+            print(session)
 
-            avg = {}
-            # query all average ratings of all activities belong to that location
-            ratings = Rating.__table__.columns.keys()
-            ratings = ratings[4:]
-
-            # get all rating belongs to the current location
-            all_rating_of_current_location = Rating.query.filter_by(location_id=location.id).all()
-
-            # get the average rating of a location:
-            sum = 0
-            count = 0
-            for i in all_rating_of_current_location:
-                score = i.location_rating
-                if score != 0:
-                    sum = sum + score
-                    count += 1
-            if count != 0:
-                location_average_rating = sum / count
-            elif count == 0:
-                location_average_rating = 0
-
-            # loop through all rating, we'll add key-value pair (rating-avg_rating) to the avg dict with each loop
-            for rating in ratings:
-                sum = 0
-                count = 0
-                for i in all_rating_of_current_location:
-                    score = getattr(i, rating)
-                    # we only count if the rating is not 0, 0 means that no one has rated that location, or any location related activities yet
-                    if score != 0:
-                        sum = sum + score
-                        count += 1
-                # if we found out that indeed there had been rating for this location, then add the activity-avg_rating to the avg dict
-                if count != 0:
-                    avg[f'{rating}'] = sum / count
-                # if we can't find any rating for that location, then just give the default value of 0
-                elif count == 0:
-                    avg[f'{rating}'] = 0
-
-            # getting the top 3 pairs (highest value aka average rating) in avg dict
-            c = Counter(avg)
-            top_three_activities = c.most_common(3)  # returns top 3 pairs
-            formatted_top_3_activities = {}
-            for activity in top_three_activities:
-                new_key = activity[0].replace('_', ' ')
-                formatted_top_3_activities[f'{new_key}'] = activity[1]
-
-            # getting the images of the current location
-            img_data = Image.query.filter_by(location_name=location.name).all()
-            images = []
-            for i in img_data:
-                images.append(i.img_url)
-
-            # create a dict for those 3 activities
             session['times_looped'] += 1
-            return render_template('DestinationDetail.html', location=location_name, top_three_activities=formatted_top_3_activities, images=images)
+            return redirect(url_for('DestinationDetail'))
 
     question = "Have you been to this destination?"
     answers = ['Yes', 'No']
@@ -1224,7 +1180,6 @@ def DestinationEvaluation():
         # loop through the list of 8 (ideally) activities being rated in the DestinationEvaluation route, get the corresponding rating from the form, then create new key-value pairs in data dict accordingly
         for activity in final_activities:
             activity_rate = request.form.getlist(f'{activity}')
-            # print(activity_rate)
             if len(activity_rate) != 0:
                 data[f'{activity}'] = activity_rate[0]
             elif len(activity_rate) == 0:
@@ -1267,6 +1222,90 @@ def DestinationEvaluation():
     images= session['images']
     
     return render_template('DestinationEvaluation.html', location_name=location_name, question=question, final_activities=final_activities, images=images)
+
+@app.route("/DestinationDetail", methods=["POST", "GET"])
+@login_required
+def DestinationDetail():
+    location_id = session['location_id']
+    location_name = session['location_name']
+
+    avg = {}
+    # query all average ratings of all activities belong to that location
+    ratings = Rating.__table__.columns.keys()
+    ratings = ratings[4:]
+
+    # get all rating belongs to the current location
+    all_rating_of_current_location = Rating.query.filter_by(location_id=location_id).all()
+
+    # # get the average rating of a location:
+    # sum = 0
+    # count = 0
+    # for i in all_rating_of_current_location:
+    #     score = i.location_rating
+    #     if score != 0:
+    #         sum = sum + score
+    #         count += 1
+    # if count != 0:
+    #     location_average_rating = sum / count
+    # elif count == 0:
+    #     location_average_rating = 0
+
+    # loop through all rating, we'll add key-value pair (rating-avg_rating) to the avg dict with each loop
+    for rating in ratings:
+        sum = 0
+        count = 0
+        for i in all_rating_of_current_location:
+            score = getattr(i, rating)
+            # we only count if the rating is not 0, 0 means that no one has rated that location, or any location related activities yet
+            if score != 0:
+                sum = sum + score
+                count += 1
+        # if we found out that indeed there had been rating for this location, then add the activity-avg_rating to the avg dict
+        if count != 0:
+            avg[f'{rating}'] = sum / count
+        # if we can't find any rating for that location, then just give the default value of 0
+        elif count == 0:
+            avg[f'{rating}'] = 0
+
+    # getting the top 3 pairs (highest value aka average rating) in avg dict
+    c = Counter(avg)
+    top_three_activities = c.most_common(3)  # returns top 3 pairs
+    formatted_top_3_activities = {}
+    for activity in top_three_activities:
+        new_key = activity[0].replace('_', ' ')
+        formatted_top_3_activities[f'{new_key}'] = activity[1]
+
+    # getting the images of the current location
+    img_data = Image.query.filter_by(location_name=location_name).all()
+    images = []
+    for i in img_data:
+        images.append(i.img_url)
+
+    if request.method == 'POST':
+        answer = request.form.getlist('DestinationDetail')
+
+        if len(answer) != 1:
+            flash("You must choose 1 option", 'danger')
+            return redirect(url_for('DestinationDetail'))
+
+        # if the user had been to this location before (yes)
+        elif "Yes" in answer:
+            # save in Interest table
+            new_interest = Interest(user=current_user.id, location_id=location_id)
+            db.session.add(new_interest)
+            db.session.commit()
+
+            return redirect(url_for('Q20'))
+
+        elif "No" in answer:
+            # back to Q20
+            return redirect(url_for('Q20'))
+
+    question='Will you visit this destination?'
+    answers = ['Yes', 'No']
+
+    return render_template('DestinationDetail.html', location=location_name, top_three_activities=formatted_top_3_activities, images=images, question=question, answers=answers)
+
 
 @app.route("/Q21", methods=["POST", "GET"])
 @login_required
