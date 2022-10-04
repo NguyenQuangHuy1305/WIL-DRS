@@ -57,6 +57,7 @@
         margin-left: 16px;
         margin-right: 16px;
         margin-top: 25px;
+        text-align: center;
     }
 
     .option-block {
@@ -153,6 +154,95 @@
         animation-duration: 1.5s;
     }
 
+    .yes-or-no-choices {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 12px;
+    }
+
+    .question-q20 {
+        margin-top: 10px;
+        margin-bottom: 0;
+        text-align: center;
+        font-size: 15px;
+        line-height: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+        color: #545563;
+        font-weight: 400;
+    }
+
+    #ck-button {
+        border-radius: 8px;
+        border: 1px solid #D0D0D0;
+        overflow: auto;
+        float: left;
+        box-shadow: 2px 4px #f3f3f3;
+        width: 45%;
+        margin: 10px 0px
+    }
+
+    input[type=checkbox],
+    select {
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    #ck-button label {
+        float: left;
+        width: 100%;
+        overflow: hidden;
+        color: #2B2B43;
+        font-weight: bold;
+    }
+
+    #ck-button label span {
+        text-align: center;
+        padding: 8px 0px;
+        display: block;
+        border-radius: 4px;
+        height: 100%;
+    }
+
+    #ck-button label input {
+        position: absolute;
+        top: -30px;
+    }
+
+    #ck-button input:hover {
+        background-color: #f6c7ae;
+    }
+
+    #ck-button input:checked+span {
+        background-color: #f29e70;
+        color: #fff;
+    }
+
+    #ck-button input:checked:hover+span {
+        background-color: #dc7e4b;
+        color: #fff;
+    }
+
+    .submit-button {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+    }
+
+    button {
+        background-color: #301c12;
+        color: white;
+        padding: 14px 20px;
+        margin: 10px auto;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
     @keyframes fade {
         from {opacity: .4} 
         to {opacity: 1}
@@ -229,20 +319,22 @@
                 </div>                
             </div>
 
-            <p class="question-q20">
+            <p class="rating-title">
                 {{question}}
             </p>
 
             <div id="form-block">
                 <form method="POST" action="">
-                    {% for answer in answers %}
-                    <div id="ck-button">
-                        <label>
-                            <input type="checkbox" value="{{ answer }}" name="DestinationDetail"><span>{{ answer }}</span>
-                        </label>
-                    </div><br>
-                    {% endfor %}
-                    <div class="container">
+                    <div class="yes-or-no-choices">
+                        {% for answer in answers %}
+                        <div id="ck-button">
+                            <label>
+                                <input type="checkbox" value="{{ answer }}" name="DestinationDetail"><span>{{ answer }}</span>
+                            </label>
+                        </div><br>
+                        {% endfor %}
+                    </div>
+                    <div class="q20-submit">
                         <div class="submit-button"><button type="submit">Next Destination</button></div>
                     </div>
                 </form>
