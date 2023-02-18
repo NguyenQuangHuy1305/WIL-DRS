@@ -938,7 +938,7 @@ def Q18():
         answer = request.form.getlist('Q1')
 
         if len(answer) != 1:
-            flash("You can only choose 1 option", 'danger')
+            flash("You can choose only 1 option", 'danger')
             return redirect(url_for('Q18'))
         else:
             # immediately store the answer into session to save later
